@@ -1,18 +1,10 @@
 # React Native Typescript Boilerplate
 
-An opinionated boilerplate to build enterprise iOS / Android React Native apps.
+### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Eslint](https://github.com/airbnb/javascript) to build iOS / Android apps using TypeScript
 
 ##### Built using Microsft TypeScript & React Native
 
-The project has been setup based off instructions from Microsoft's Github TypeScript React Native Starter repo:
-https://github.com/Microsoft/TypeScript-React-Native-Starter
-
-- [React Native](https://facebook.github.io/react-native/) - 0.58.1
-- [React Native Navigation](https://github.com/wix/react-native-navigation) - 2.x.x
-- [Redux](https://github.com/reduxjs/redux)
-- [Thunk](https://github.com/reduxjs/redux-thunk)
-
-The project also uses [eslint](https://github.com/airbnb/javascript). Tests cases have been written using [jest](https://github.com/facebook/jest)
+The project has been setup based off instructions from [Microsoft's Github TypeScript React Native](https://github.com/Microsoft/TypeScript-React-Native-Starter) Starter repo
 
 ### Table of Contents
 
@@ -21,8 +13,7 @@ The project also uses [eslint](https://github.com/airbnb/javascript). Tests case
 - [Deployment](#deployment)
   - [Codepush](#codepush)
 - [Lint](#lint)
-- [Running Unit Tests](#running-unit-tests)
-- [Rename the app](#rename-the-app)
+- [Unit Tests](#unit-tests)
 - [TODO](#todo)
 - [Cheat Sheet](#cheat-sheet)
 
@@ -43,17 +34,16 @@ The project also uses [eslint](https://github.com/airbnb/javascript). Tests case
 │   └── utilities
 ├── src
 │   ├── config					App Configuration
-│   │	    └── defaults
 │   ├── constants				Screens, Localization
 │   ├── navigators				Router, Navigation
-│   ├── view				UI compoments - Screens, Widgets
+│   ├── view					UI compoments - Screens, Widgets
 │   │	    ├── elements				Custom elements
-│   │	    ├── icons
+│   │	    ├── assets
 │   │	    ├── screens
 │   │	    ├── styles				Typography
 │   │	    └── widgets				Custom components
 │   └── utilities
-├── tests					Unit Tests
+├── __tests__				Unit Tests
 │   ├── presentation
 │   └── redux
 ├── .babelrc
@@ -122,11 +112,11 @@ Example:
 
 ```
 appcenter codepush release-react -a AmitM30/rnts-ios -d Staging --description "Code Push !"
-appcenter codepush release-react -a AmitM30/rnts-android -d Staging --description "Code Push !"
 ```
 
 ###### Command Options
 
+List apps registered.
 `<ownerName>/<appName>`
 
 ```
@@ -136,30 +126,9 @@ AmitM30/rnts-ios
 ```
 
 `<deploymentName>`
-iOS Keys:
 
 ```
 $ appcenter codepush deployment list -a AmitM30/rnts-ios
-┌────────────┬───────────────────────────────────────┐
-│ Name       │ Key                                   │
-├────────────┼───────────────────────────────────────┤
-│ Staging    │ xxxxxx │
-├────────────┼───────────────────────────────────────┤
-│ Production │ xxxxxx │
-└────────────┴───────────────────────────────────────┘
-```
-
-Android Keys:
-
-```
-$ appcenter codepush deployment list -a AmitM30/rnts-android
-┌────────────┬──────────────────────────────────────────────────────────────────┐
-│ Name       │ Key                                                              │
-├────────────┼──────────────────────────────────────────────────────────────────┤
-│ Staging    │ xxxxx-xxxx-xxxx │
-├────────────┼──────────────────────────────────────────────────────────────────┤
-│ Production │ xxxxx-xxxx-xxxx │
-└────────────┴──────────────────────────────────────────────────────────────────┘
 ```
 
 ###### Release History
@@ -174,14 +143,6 @@ Or:
 
 ```
 code-push deployment history AmitM30/rnts-ios Staging
-```
-
-###### Rollout Percentage
-
-Command:
-
-```
-appcenter codepush patch -a AmitM30/rnts-android Staging -t v2 -r 80
 ```
 
 #### Lint
@@ -219,3 +180,7 @@ npm run test:coverage
 ##### Items to come here
 
 Test Item
+
+#### TODO
+
+- [ ] Build React app using `shared` business logic

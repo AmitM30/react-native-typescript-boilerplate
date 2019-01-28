@@ -320,3 +320,6 @@ android/.idea/**
 
 #ios
 Pods/*
+
+# Jest
+.jest/
