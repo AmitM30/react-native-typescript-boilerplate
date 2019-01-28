@@ -146,7 +146,7 @@ The application launches with a blank splash screen, and the moves to a tabbed b
 
 ##### Styles
 
-The `styles` folder contain global style and typography for the application. Styles for each screen has been placed with the screen, and not together, as they are going to be used together, unlike web.
+The `styles` folder contain global style and typography for the application. Styles for each screen has been placed with the screen, as they are going to be used together with the screen, unlike web.
 
 ##### Widgets / Elements
 
@@ -154,8 +154,8 @@ The custom components have been broken into 2 major categories, namely - **widge
 
 A Good use case would be:
 
-- widgets: carousels component, banner component etc.
-- elements: a custom, may be `<CText>` or `<ButtonDefault>`, element that has default font properties like font, size.
+- widgets: carousels component, banner component, any component providing a complete functionality
+- elements: A custom, may be `<CText>` or `<ButtonDefault>`, element that has default font properties like font, size and overrides the native elements.
 
 #### Contributing
 
