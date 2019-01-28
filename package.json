@@ -1,0 +1,77 @@
+{
+  "name": "friday-app",
+  "description": "React Native Boilerplate, TypeScript with React Native Navigation",
+  "keywords": [
+    "react native",
+    "typescript",
+    "boilerplate",
+    "react native navigation"
+  ],
+  "version": "0.1.0",
+  "author": {
+    "name": "Amit Mangal",
+    "email": "mangalamitash@gmail.com",
+    "url": "https://github.com/AmitM30"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AmitM30/react-native-typescript-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/AmitM30/react-native-typescript-boilerplate/issues",
+    "email": "mangalamitash@gmail.com"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android": "react-native run-android --variant=Debug",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.1",
+    "react-native-navigation": "^2.8.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "24.0.0",
+    "babel-preset-airbnb": "^3.2.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.2",
+    "eslint-watch": "^4.0.2",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "^0.51.1",
+    "react-test-renderer": "16.6.3",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!ios/**",
+      "!android/**"
+    ]
+  },
+  "engines": {
+    "node": ">=8.11.0 <=9",
+    "npm": ">=6.0.0",
+    "yarn": ">=1.9.2"
+  }
+}
