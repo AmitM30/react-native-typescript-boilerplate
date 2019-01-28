@@ -76,7 +76,7 @@ Everything related to application business logic (store) resides under this dire
 Only presentation layer for the app, styles, images, icons are meant to be under this.
 
 `web`
-Going forward, plann is to add a web folder to the project, that can leverage the business logic from shared folder.
+Going forward, plan is to add a web folder to the project, that can leverage the business logic from shared folder.
 
 #### Running
 
@@ -159,8 +159,8 @@ A Good use case would be:
 
 #### Contributing
 
-Please check out [Contributing] document(https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
+Please check out [Contributing](https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
 
 #### TODO
 
-- [ ] Build React app using `shared` business logic
+- [ ] Build React web app using `shared` business logic
