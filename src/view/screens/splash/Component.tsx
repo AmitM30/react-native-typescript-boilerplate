@@ -3,8 +3,12 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 
-class Splash extends PureComponent {
-  constructor(props) {
+export interface Props {}
+
+interface State {}
+
+class Splash extends PureComponent<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {};
   }
