@@ -2,7 +2,8 @@
 
 const Screens = {
   Splash: 'Splash',
-  Home: 'Home'
+  Home: 'Home',
+  Settings: 'Settings'
 };
 
 export default Screens;

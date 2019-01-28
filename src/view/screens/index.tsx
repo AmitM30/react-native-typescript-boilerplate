@@ -4,13 +4,14 @@ import Screens from '../../constants/screen';
 
 import Splash from './splash';
 import Home from './home';
+import Settings from './settings';
 
-const registerComponentWithRedux = redux => (name, component) => {
+const registerComponentWithRedux = (redux: any) => (name: string, component: any) => {
   Navigation.registerComponentWithRedux(name, () => component, redux.Provider, redux.store);
 };
 
-export default function registerScreens(redux) {
-  registerComponentWithRedux(redux)(Screens.Home, Home);
+export default function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(Screens.Splash, Splash);
-  // registerComponent(redux)(Screens.Splash, Splash);
+  registerComponentWithRedux(redux)(Screens.Home, Home);
+  registerComponentWithRedux(redux)(Screens.Settings, Settings);
 }

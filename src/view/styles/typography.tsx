@@ -1,11 +1,11 @@
 const Color = {
   // CTA
-  Primary: '#ed6c0d',
-  Secondary: '#255394',
+  Primary: '#565656',
+  Secondary: '#399be0',
   Default: '#FFFFFF',
   Border: '#E7E7E8',
-  Success: '#2bc480',
-  Warning: '#d91e5b'
+  Success: '#2BC480',
+  Warning: '#D91E5B'
 };
 
 const Font = {

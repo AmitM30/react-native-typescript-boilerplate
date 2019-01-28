@@ -1,21 +1,34 @@
 # React Native Typescript Boilerplate
 
-### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Eslint](https://github.com/airbnb/javascript) to build iOS / Android apps using TypeScript
+### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Eslint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
-##### Built using Microsft TypeScript & React Native
+The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
-The project has been setup based off instructions from [Microsoft's Github TypeScript React Native](https://github.com/Microsoft/TypeScript-React-Native-Starter) Starter repo
+This repo supports the latest version of React Native (v0.57.8+) supported by RNN (at the time of writing).
+
+### Who is this for?
+
+Someone looking to jumpstart building apps using RN and loves TS. The base setup has been taken care of, just `npm install` and get going.
+
+You might also want to [rename](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35) the app for your own use.
+
+_Disclaimer_:
+This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
+
+The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, eslint, separation of concern and structure to build a maintainable app.
 
 ### Table of Contents
 
 - [Project Structure](#project-structure)
 - [Running](#running)
-- [Deployment](#deployment)
-  - [Codepush](#codepush)
 - [Lint](#lint)
 - [Unit Tests](#unit-tests)
-- [TODO](#todo)
 - [Cheat Sheet](#cheat-sheet)
+  - [React Native Navigation](#react-native-navigation)
+  - [Styles](#styles)
+  - [Widgets / Elements](#widgets---elements)
+- [Contributing](#contributing)
+- [TODO](#todo)
 
 #### Project Structure
 
@@ -43,7 +56,7 @@ The project has been setup based off instructions from [Microsoft's Github TypeS
 │   │	    ├── styles				Typography
 │   │	    └── widgets				Custom components
 │   └── utilities
-├── __tests__				Unit Tests
+├── __tests__					Unit Tests
 │   ├── presentation
 │   └── redux
 ├── .babelrc
@@ -56,6 +69,15 @@ The project has been setup based off instructions from [Microsoft's Github TypeS
 └── README.md
 ```
 
+`shared`
+Everything related to application business logic (store) resides under this directory.
+
+`src`
+Only presentation layer for the app, styles, images, icons are meant to be under this.
+
+`web`
+Going forward, plann is to add a web folder to the project, that can leverage the business logic from shared folder.
+
 #### Running
 
 Make sure node version installed is `>=8.11.x <=9`
@@ -64,86 +86,27 @@ Make sure node version installed is `>=8.11.x <=9`
 yarn install
 ```
 
-##### iOS
+#### Launch
 
-move to `ios` directory
+###### iOS
 
-```
-$ cd ios
-```
+Launch application from XCode
 
-install pods
+###### Android
 
-```
-$ pod install
-```
-
-##### Launch
-
-Launch application from iOS and Android IDEs
-
-#### Deployment
-
-##### CodePush
-
-What is React Native without CodePush. The application uses Microsoft [AppCenter](https://github.com/Microsoft/appcenter-cli) cli.
-
-Generate Bundle:
-
-`Development:`
+For android, you will need to first create the bundle:
 
 ```
 react-native bundle --platform ios --entry-file index.js --bundle-output ./ios/main.jsbundle --assets-dest ./ --dev false
 ```
 
-`Production:`
+then run the Metro Bundler from the terminal
 
 ```
-react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+npm run start
 ```
 
-Push:
-
-```
-appcenter codepush release -a <ownerName>/<appName> -t <targetBinaryVersion> -d <deploymentName>
-```
-
-Example:
-
-```
-appcenter codepush release-react -a AmitM30/rnts-ios -d Staging --description "Code Push !"
-```
-
-###### Command Options
-
-List apps registered.
-`<ownerName>/<appName>`
-
-```
-$ appcenter apps list
-AmitM30/rnts-android
-AmitM30/rnts-ios
-```
-
-`<deploymentName>`
-
-```
-$ appcenter codepush deployment list -a AmitM30/rnts-ios
-```
-
-###### Release History
-
-Command:
-
-```
-appcenter codepush deployment history -a AmitM30/rnts-ios Staging
-```
-
-Or:
-
-```
-code-push deployment history AmitM30/rnts-ios Staging
-```
+and the launch from IDE.
 
 #### Lint
 
@@ -177,9 +140,26 @@ npm run test:coverage
 
 #### Cheat Sheet
 
-##### Items to come here
+##### React Native Navigation
 
-Test Item
+The application launches with a blank splash screen, and the moves to a tabbed based home view. Developers can feel free to add application launch logic to this, or entirely skip the splash if not required, or change this altogether.
+
+##### Styles
+
+The `styles` folder contain global style and typography for the application. Styles for each screen has been placed with the screen, and not together, as they are going to be used together, unlike web.
+
+##### Widgets / Elements
+
+The custom components have been broken into 2 major categories, namely - **widgets**, **elements**
+
+A Good use case would be:
+
+- widgets: carousels component, banner component etc.
+- elements: a custom, may be `<CText>` or `<ButtonDefault>`, element that has default font properties like font, size.
+
+#### Contributing
+
+Please check out [Contributing] document(https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
 
 #### TODO
 

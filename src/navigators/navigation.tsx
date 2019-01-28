@@ -3,16 +3,6 @@ import { Navigation } from 'react-native-navigation';
 import Screens from '../constants/screen';
 import TYPOGRAPHY from '../view/styles/typography';
 
-export const showOnBoarding = () => {
-  Navigation.setRoot({
-    root: {
-      component: {
-        name: Screens.OnBoarding
-      }
-    }
-  });
-};
-
 export const showSplash = () => {
   Navigation.setRoot({
     root: {
@@ -46,7 +36,7 @@ export const tabbedNavigation = () => Navigation.setRoot({
                     bottomTab: {
                       fontSize: 12,
                       text: 'Home',
-                      textColor: TYPOGRAPHY.Color.SecondaryText,
+                      textColor: TYPOGRAPHY.Color.Primary,
                       selectedTextColor: TYPOGRAPHY.Color.Primary,
                       icon: require('../view/assets/images/tabbar/home.png'),
                       selectedIcon: require('../view/assets/images/tabbar/home.png')
@@ -62,7 +52,7 @@ export const tabbedNavigation = () => Navigation.setRoot({
             children: [
               {
                 component: {
-                  name: Screens.Branches,
+                  name: Screens.Settings,
                   options: {
                     topBar: {
                       visible: false,
@@ -70,9 +60,9 @@ export const tabbedNavigation = () => Navigation.setRoot({
                       animate: true
                     },
                     bottomTab: {
-                      text: 'Branches',
+                      text: 'Settings',
                       fontSize: 12,
-                      textColor: TYPOGRAPHY.Color.SecondaryText,
+                      textColor: TYPOGRAPHY.Color.Primary,
                       selectedTextColor: TYPOGRAPHY.Color.Primary,
                       icon: require('../view/assets/images/tabbar/settings.png'),
                       selectedIcon: require('../view/assets/images/tabbar/settings.png')
