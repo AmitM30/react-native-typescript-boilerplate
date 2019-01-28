@@ -4,9 +4,9 @@ buildscript {
     ext {
         buildToolsVersion = "27.0.3"
         minSdkVersion = 19
-        compileSdkVersion = 26
+        compileSdkVersion = 28
         targetSdkVersion = 26
-        supportLibVersion = "26.1.0"
+        supportLibVersion = "28.0.0"
     }
     repositories {
         google()
@@ -35,6 +35,21 @@ allprojects {
         maven { url 'https://jitpack.io' }
     }
 }
+
+subprojects { subproject ->
+        afterEvaluate {
+                if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+                        android {
+                                variantFilter { variant ->
+                                        def names = variant.flavors*.name
+                                        if (names.contains("reactNative51") || names.contains("reactNative55")) {
+                                                setIgnore(true)
+                                            }
+                                    }
+                            }
+                    }
+            }
+    }
 
 
 task wrapper(type: Wrapper) {
