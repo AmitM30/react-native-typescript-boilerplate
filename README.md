@@ -161,6 +161,12 @@ A Good use case would be:
 
 Please check out [Contributing](https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
 
+#### Authors
+
+- **Anurag** - _Android Setup_ - [Profile](https://github.com/a7urag)
+
+See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors) who participated in this project.
+
 #### TODO
 
 - [ ] Build React web app using `shared` business logic
