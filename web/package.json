@@ -1,0 +1,44 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "friday-web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
+  },
+  "author": "deepakthakkar1990",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^2.1.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "@babel/proposal-class-properties"
+    ]
+  }
+}
