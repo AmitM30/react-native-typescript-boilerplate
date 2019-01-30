@@ -1,43 +1,10 @@
 # safelist
-branches:
-  only:
-  - master
-  - dev
-
-- stage: Test and lint ✅
+- branches:
+    only:
+      - master
+      - dev
+- stage: Test and lint
   language: node_js
   node_js: 8.11.2
   install: yarn
   script: npm run lint
-
-# To Test
-# - stage: Deploy Android 🤖
-#   if: branch = master AND type = push
-#   language: android
-#   jdk: oraclejdk8
-#   android:
-#     components:
-#       - tools
-#       - platform-tools
-#       - android-26
-#       - extra-google-m2repository
-#       - extra-google-google_play_services
-#   before_install:
-#     - nvm install 8.11.2
-#     - gem install bundler
-#     - bundle install
-#   before_script:
-#     - ./internals/scripts/travis/gitconfig.sh
-#   install: yarn
-#   script: npm run android
-# - stage: Deploy iOS 🍏
-#   if: branch = master AND type = push
-#   language: node_js
-#   node_js: 8.11.2
-#   os: osx
-#   osx_image: xcode9.2
-#   before_install: bundle install
-#   before_script:
-#     - ./internals/scripts/travis/gitconfig.sh
-#   install: yarn
-#   script: react-native run-ios
