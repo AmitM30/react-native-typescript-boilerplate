@@ -10,9 +10,10 @@ jobs:
     #   script: npm run lint
     - stage: Build Android 🤖
       before_install:
-        - sudo apt-get install -y nodejs
-        - sudo apt-get install -y nodejs-legacy
-        - sudo apt-get install -y npm
+        - sudo apt-get install build-essential checkinstall && sudo apt-get install libssl-dev
+        - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+        - source ~/.profile
+        - nvm install 8.11.2
         - node --version
         - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
