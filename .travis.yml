@@ -20,7 +20,6 @@ jobs:
         components:
           - tools
           - platform-tools
-          - tools
           # - build-tools-26.0.2
           - build-tools-27.0.3
           # - android-26
@@ -33,6 +32,6 @@ jobs:
         - echo $ANDROID_HOME
         - cd /usr/local/android-sdk/tools/bin
         # - yes | ./sdkmanager --licenses
-        - y | ./sdkmanager --update
+        - yes | ./sdkmanager --update
         - cd -
         - cd android && ./gradlew assembleRelease && cd ..
