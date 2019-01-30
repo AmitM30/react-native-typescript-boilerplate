@@ -1,4 +1,8 @@
 # safelist
+branches:
+  only:
+    - master
+    - dev
 jobs:
   include:
     - stage: Test and lint ✅
