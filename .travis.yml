@@ -1,0 +1,5 @@
+- stage: Test and lint ✅
+  language: node_js
+  node_js: 8.11.2
+  install: yarn
+  script: npm run lint
