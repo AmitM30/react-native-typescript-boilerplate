@@ -32,6 +32,7 @@ jobs:
       script:
         - echo $ANDROID_HOME
         - cd /usr/local/android-sdk/tools/bin
-        - yes | ./sdkmanager --licenses
+        # - yes | ./sdkmanager --licenses
+        - sdkmanager --update
         - cd -
         - cd android && ./gradlew assembleRelease && cd ..
