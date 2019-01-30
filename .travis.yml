@@ -31,6 +31,6 @@ jobs:
         - yarn install
       script:
         - echo $ANDROID_HOME
-        - cd /usr/local/android-sdk/tools/bin/sdkmanager && yes | ./sdkmanager --licenses
+        - cd /usr/local/android-sdk/tools/bin && yes | ./sdkmanager --licenses
         - cd -
         - cd android && ./gradlew assembleRelease && cd ..
