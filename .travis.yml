@@ -30,6 +30,6 @@ jobs:
       install:
         - yarn install
       script:
-        - cd ~/Library/Android/sdk/tools/bin && yes | ./sdkmanager --licenses
+        - cd $ANDROID_HOME/tools/bin/sdkmanager && yes | ./sdkmanager --licenses
         - cd -
         - cd android && ./gradlew assembleRelease && cd ..
