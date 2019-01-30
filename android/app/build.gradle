@@ -103,7 +103,13 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57" // See note below!
+        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57"
+        ndk {
+            abiFilters "armeabi-v7a", "x86", 'armeabi', 'arm64-v8a'
+        }
+        packagingOptions {
+            exclude "lib/arm64-v8a/libgnustl_shared.so"
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
