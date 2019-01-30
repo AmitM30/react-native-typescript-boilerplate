@@ -1,21 +1,22 @@
 jobs:
   include:
-    - stage: Test and lint ✅
-      before_install:
-        - npm i -g npm@6.7.0
-        - npm i -g yarn@1.9.2
-      language: node_js
-      node_js: 8.11.2
-      install: yarn
-      script: npm run lint
+    # - stage: Test and lint ✅
+    #   before_install:
+    #     - npm i -g npm@6.7.0
+    #     - npm i -g yarn@1.9.2
+    #   language: node_js
+    #   node_js: 8.11.2
+    #   install: yarn
+    #   script: npm run lint
     - stage: Build Android 🤖
       before_install:
         - sudo apt-get install -y nodejs npm
+        - node --version
         - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
         - apt-key adv --keyserver keys.gnupg.net --recv-keys A4EBAC6667697DD2
-        - sudo apt update
-        - sudo apt install yarn
+        - sudo apt-get update
+        - sudo apt-get install yarn
         # - npm i -g yarn@1.9.2
       language: android
       android:
@@ -24,9 +25,9 @@ jobs:
           - platform-tools
           - tools
           - build-tools-26.0.2
-          - build-tools-27.0.3
+          # - build-tools-27.0.3
           - android-26
-          - android-27
+          # - android-27
           - addon-google_apis-google-26
       sudo: true
       install:
