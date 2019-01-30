@@ -1,6 +1,6 @@
 # React Native Typescript Boilerplate
 
-![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Build](https://build.appcenter.ms/v0.1/apps/d3466edd-c992-45c8-abd3-a2f40f6a7fa1/branches/dev/badge)
+![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Build](https://build.appcenter.ms/v0.1/apps/d3466edd-c992-45c8-abd3-a2f40f6a7fa1/branches/master/badge)
 
 ### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Eslint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
