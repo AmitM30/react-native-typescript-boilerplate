@@ -1,14 +1,17 @@
-before_install:
-  - npm i -g npm@6.7.0
-  - npm i -g yarn@1.9.2
 jobs:
   include:
     - stage: Test and lint ✅
+      before_install:
+        - npm i -g npm@6.7.0
+        - npm i -g yarn@1.9.2
       language: node_js
       node_js: 8.11.2
       install: yarn
       script: npm run lint
     - stage: Build Android ✅
+      before_install:
+        - sudo apt-get install -y nodejs
+        - npm i -g yarn@1.9.2
       language: android
       android:
         components:
