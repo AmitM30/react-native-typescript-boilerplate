@@ -10,7 +10,9 @@ jobs:
     #   script: npm run lint
     - stage: Build Android 🤖
       before_install:
-        - sudo apt-get install -y nodejs npm
+        - sudo apt-get install -y nodejs
+        - sudo apt-get install -y nodejs-legacy
+        - sudo apt-get install -y npm
         - node --version
         - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
