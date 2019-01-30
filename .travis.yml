@@ -13,7 +13,7 @@ jobs:
         - sudo apt-get install -y nodejs npm
         - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-        - apt-key adv --keyserver keys.gnupg.net --recv-keys 6B05F25D762E3157
+        - apt-key adv --keyserver keys.gnupg.net --recv-keys A4EBAC6667697DD2
         - sudo apt update
         - sudo apt install yarn
         # - npm i -g yarn@1.9.2
