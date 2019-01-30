@@ -1,0 +1,15 @@
+# safelist
+branches:
+  only:
+    - master
+    - dev
+before_install:
+  - npm i -g npm@6.7.0
+  - npm i -g yarn@1.9.2
+jobs:
+  include:
+    - stage: Test and lint ✅
+      language: node_js
+      node_js: 8.11.2
+      install: yarn
+      script: npm run lint
