@@ -10,7 +10,7 @@ jobs:
       script: npm run lint
     - stage: Build Android 🤖
       before_install:
-        - sudo apt-get install -y nodejs
+        - sudo apt-get install -y nodejs npm
         - npm i -g yarn@1.9.2
       language: android
       android:
