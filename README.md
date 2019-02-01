@@ -52,7 +52,7 @@ The project uses and encourages to use industry best practices / tools / librari
 │   ├── constants				Screens, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments - Screens, Widgets
-│   │	    ├── elements				Custom elements
+│   │	    ├── elements			Custom elements
 │   │	    ├── assets
 │   │	    ├── screens
 │   │	    ├── styles				Typography
@@ -63,8 +63,9 @@ The project uses and encourages to use industry best practices / tools / librari
 │   └── redux
 ├── .babelrc
 ├── .eslintrc					Lint configuration - extending AirBnb
-├── .flowconfig					Flow configuration
 ├── .gitignore
+├── .travis.yml				Travis CI
+├── tsconfig.json				TypeScript Configuration
 ├── app.json
 ├── index.js					Application Entry point
 ├── package.json
@@ -144,11 +145,11 @@ npm run test:coverage
 
 ##### React Native Navigation
 
-The application launches with a blank splash screen, and the moves to a tabbed based home view. Developers can feel free to add application launch logic to this, or entirely skip the splash if not required, or change this altogether.
+The application launches with a blank splash screen, and then moves to a tabbed based home view. Developers can feel free to add application launch logic to this, like fetch user token, load persist state etc., or skip the splash if not required, or change this setup altogether.
 
 ##### Styles
 
-The `styles` folder contain global style and typography for the application. Styles for each screen has been placed with the screen, as they are going to be used together with the screen, unlike web.
+The `styles` folder contains `global` style and `typography` for the application. Styles for each screen has been placed with the screen, as they are going to be used together with the screen, unlike web.
 
 ##### Widgets / Elements
 
@@ -165,7 +166,7 @@ Please check out [Contributing](https://github.com/AmitM30/react-native-typescri
 
 #### Authors
 
-- **Anurag** - _Android Setup_ - [Profile](https://github.com/a7urag)
+- **Anurag Chutani** - _Android Setup_ - [Profile](https://github.com/a7urag)
 
 See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors) who participated in this project.
 

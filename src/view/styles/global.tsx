@@ -7,7 +7,7 @@ export const WidgetPaddingValue = 16;
 const Layout = StyleSheet.create({
   SafeArea: {
     flex: 1,
-    backgroundColor: TYPOGRAPHY.Color.BgPrimary
+    backgroundColor: TYPOGRAPHY.Color.Primary
   },
   container: {
     flex: 1
@@ -36,7 +36,7 @@ const CTA = {
     },
     primaryText: {
       fontSize: 16,
-      color: TYPOGRAPHY.Color.BgPrimary,
+      color: TYPOGRAPHY.Color.Primary,
       textAlign: 'center'
     },
     secondary: {
@@ -69,12 +69,12 @@ const Fonts = StyleSheet.create({
   body: {
     fontSize: 16,
     fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.Body
+    color: TYPOGRAPHY.Color.Default
   },
   subTitle: {
     fontSize: 14,
     fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.SecondaryText
+    color: TYPOGRAPHY.Color.Secondary
   }
 });
 
@@ -83,13 +83,13 @@ const Text = StyleSheet.create({
     textAlign: 'left',
     fontFamily: TYPOGRAPHY.Font.Primary,
     fontSize: 14,
-    color: TYPOGRAPHY.Color.PrimaryText
+    color: TYPOGRAPHY.Color.Primary
   },
   Bold: {
     textAlign: 'left',
     fontSize: 14,
-    fontFamily: TYPOGRAPHY.Font.Bold,
-    color: TYPOGRAPHY.Color.PrimaryText
+    fontFamily: TYPOGRAPHY.Font.Primary,
+    color: TYPOGRAPHY.Color.Primary
   }
 });
 
@@ -101,15 +101,15 @@ const TextInput = {
       fontSize: 12,
       borderWidth: 0.2,
       borderColor: TYPOGRAPHY.Color.Border,
-      color: TYPOGRAPHY.Color.PrimaryText
+      color: TYPOGRAPHY.Color.Primary
     },
     Bold: {
-      fontFamily: TYPOGRAPHY.Font.Bold,
+      fontFamily: TYPOGRAPHY.Font.Primary,
       textAlign: 'left',
       fontSize: 12,
       borderWidth: 0.2,
       borderColor: TYPOGRAPHY.Color.Border,
-      color: TYPOGRAPHY.Color.PrimaryText
+      color: TYPOGRAPHY.Color.Primary
     }
   })
 };
