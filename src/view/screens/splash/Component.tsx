@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { View, Text, SafeAreaView, Button } from 'react-native';
+import { View, Image, SafeAreaView } from 'react-native';
 
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
+import { ButtonDefault } from '../../elements/buttons';
 
 export interface Props {}
 
@@ -24,8 +25,19 @@ class Splash extends React.PureComponent<Props, State> {
     return (
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container}>
-          <Text>Splash</Text>
-          <Button title="Continue" onPress={this.navigateToHome} />
+          <Image
+            style={styles.image}
+            resizeMode="contain"
+            source={require('../../assets/images/rnn2.png')}
+          />
+          <Image
+            resizeMode="center"
+            source={require('../../assets/images/rn_ts.png')}
+          />
+          <ButtonDefault
+            title="Continue To App"
+            onClick={this.navigateToHome}
+          />
         </View>
       </SafeAreaView>
     );

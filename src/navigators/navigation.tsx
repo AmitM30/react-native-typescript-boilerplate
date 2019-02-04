@@ -35,8 +35,8 @@ export const tabbedNavigation = () =>
                       bottomTab: {
                         fontSize: 12,
                         text: 'Home',
-                        textColor: TYPOGRAPHY.Color.Primary,
-                        selectedTextColor: TYPOGRAPHY.Color.Primary,
+                        textColor: TYPOGRAPHY.COLOR.Primary,
+                        selectedTextColor: TYPOGRAPHY.COLOR.Secondary,
                         icon: require('../view/assets/images/tabbar/home.png'),
                         selectedIcon: require('../view/assets/images/tabbar/home.png'),
                       },
@@ -61,8 +61,8 @@ export const tabbedNavigation = () =>
                       bottomTab: {
                         text: 'Settings',
                         fontSize: 12,
-                        textColor: TYPOGRAPHY.Color.Primary,
-                        selectedTextColor: TYPOGRAPHY.Color.Primary,
+                        textColor: TYPOGRAPHY.COLOR.Primary,
+                        selectedTextColor: TYPOGRAPHY.COLOR.Secondary,
                         icon: require('../view/assets/images/tabbar/settings.png'),
                         selectedIcon: require('../view/assets/images/tabbar/settings.png'),
                       },
@@ -77,7 +77,7 @@ export const tabbedNavigation = () =>
           bottomTabs: {
             visible: true,
             titleDisplayMode: 'alwaysShow',
-            backgroundColor: TYPOGRAPHY.Color.Default,
+            backgroundColor: TYPOGRAPHY.COLOR.Default,
             drawBehind: true,
           },
         },

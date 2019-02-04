@@ -1,6 +1,6 @@
 import { StyleSheet, Platform } from 'react-native';
 
-import { TYPOGRAPHY } from './TYPOGRAPHY';
+import { TYPOGRAPHY } from './typography';
 
 export const widgetPaddingValue = 16;
 
@@ -16,10 +16,10 @@ const LAYOUT = StyleSheet.create({
     padding: 16,
   },
   shadow: {
-    shadowOpacity: 0.5,
-    shadowRadius: 2.5,
-    shadowOffset: { width: 2, height: 2 },
-    elevation: Platform.OS === 'ios' ? 0 : 7,
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    shadowOffset: { width: 3, height: 3 },
+    elevation: Platform.OS === 'ios' ? 0 : 3,
   },
 });
 
@@ -31,8 +31,10 @@ const CTA = {
       justifyContent: 'space-between',
       height: 48,
       paddingVertical: 8,
-      paddingHorizontal: 10,
-      borderRadius: 5,
+      paddingHorizontal: 20,
+      borderRadius: 10,
+      borderWidth: 1,
+      backgroundColor: TYPOGRAPHY.COLOR.Default,
     },
     primaryText: {
       fontSize: 16,
