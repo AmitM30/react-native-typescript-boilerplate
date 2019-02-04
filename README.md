@@ -19,6 +19,10 @@ This is an **opinionated** approach to building apps with RN. The project struct
 
 The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, tslint, separation of concern and structure to build a maintainable app.
 
+| ![Splash](https://github.com/AmitM30/react-native-typescript-boilerplate/tree/master/src/view/assets/images/sample/1.png "Splash") | ![Home](https://github.com/AmitM30/react-native-typescript-boilerplate/tree/master/src/view/assets/images/sample/2.png "Home") |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+
+
 ### Table of Contents
 
 - [Project Structure](#project-structure)
