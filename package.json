@@ -26,8 +26,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "android": "react-native run-android --variant=Debug",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint": "tslint --project ./tsconfig.json",
+    "lint:fix": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
     "react": "16.6.3",
@@ -67,6 +67,8 @@
     "react-test-renderer": "16.6.3",
     "regenerator-runtime": "^0.13.1",
     "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.2.4"
   },
   "jest": {

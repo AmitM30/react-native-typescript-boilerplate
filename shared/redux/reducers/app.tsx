@@ -1,14 +1,14 @@
-import ActionTypes from '../constants/actionTypes';
+import { ACTION_TYPES } from '../constants/actionTypes';
 
 const initialState = {
-  isLoading: false
+  isLoading: false,
 };
 
-export default (state = initialState, action) => {
+export default (state = initialState, action: any) => {
   switch (action.type) {
-    case ActionTypes.SPLASH_LAUNCHED:
+    case ACTION_TYPES.SPLASH_LAUNCHED:
       return {
-        ...state
+        ...state,
       };
     default:
       return state;

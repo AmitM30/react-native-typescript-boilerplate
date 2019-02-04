@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-import TYPOGRAPHY from '../../styles/typography';
+import { TYPOGRAPHY } from '../../styles/typography';
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     display: 'flex',
-    backgroundColor: TYPOGRAPHY.Color.Default
-  }
+    backgroundColor: TYPOGRAPHY.COLOR.Default,
+  },
 });
 
-export default Styles;
+export default styles;

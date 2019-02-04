@@ -2,7 +2,7 @@ import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 
 import store from '../../shared/redux/store';
-import registerScreens from '../view/screens';
+import { registerScreens } from '../view/screens';
 import { showSplash } from './navigation';
 
 /**
@@ -10,16 +10,14 @@ import { showSplash } from './navigation';
  */
 registerScreens({ store, Provider });
 
-const App = () => {
+const app = () => {
   Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setDefaultOptions({
-      topBar: {
-        visible: true
-      }
+      topBar: { visible: true },
     });
 
     showSplash();
   });
 };
 
-export default App;
+export default app;

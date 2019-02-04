@@ -1,10 +1,10 @@
 import { applyMiddleware, createStore } from 'redux';
-import thunkMiddleware from 'redux-thunk';
+import * as thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 
 import reducers from '../reducers';
 
-let middlewares = [thunkMiddleware];
+let middlewares = [thunkMiddleware.default];
 if (__DEV__) {
   const loggerMiddleware = createLogger();
   middlewares = [...middlewares, loggerMiddleware];

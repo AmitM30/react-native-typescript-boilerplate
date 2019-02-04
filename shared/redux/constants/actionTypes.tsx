@@ -1,8 +1,8 @@
 /* Add All Action constants here  */
 
-const ActionTypes = {
+const ACTION_TYPES = {
   // Splash Actions
-  SPLASH_LAUNCHED: 'SPLASH_LAUNCHED'
+  SPLASH_LAUNCHED: 'SPLASH_LAUNCHED',
 };
 
-export default ActionTypes;
+export { ACTION_TYPES };

@@ -1,4 +1,4 @@
-const Color = {
+const COLOR = {
   // CTA
   Primary: '#565656',
   Secondary: '#399be0',
@@ -6,21 +6,21 @@ const Color = {
   DefaultSelected: '#222222',
   Border: '#E7E7E8',
   Success: '#2BC480',
-  Warning: '#D91E5B'
+  Warning: '#D91E5B',
 };
 
-const Font = {
-  Primary: 'Helvetica'
+const FONT = {
+  Primary: 'Helvetica',
 };
 
-const Button = {
-  radius: 5
+const BUTTON = {
+  radius: 5,
 };
 
 const TYPOGRAPHY = {
-  Color,
-  Font,
-  Button
+  COLOR,
+  FONT,
+  BUTTON,
 };
 
-export default TYPOGRAPHY;
+export { TYPOGRAPHY };

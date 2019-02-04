@@ -12,7 +12,7 @@ jobs:
       language: node_js
       node_js: 8.11.2
       install: yarn
-      script: npm run lint
+      script: yarn lint
     - stage: Build Android 🤖
       before_install:
         - sudo apt-get install build-essential checkinstall && sudo apt-get install libssl-dev
