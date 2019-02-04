@@ -11,12 +11,10 @@ export interface Props {
   style?: Text.propTypes.style;
 }
 
-interface State {}
-
 /**
  * Default Button
  */
-const ButtonDefault = ({ title, onClick, style }: Props) => (
+const BUTTON_DEFAULT = ({ title, onClick, style }: Props) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.primary, GLOBAL.LAYOUT.shadow, style]}
@@ -26,4 +24,4 @@ const ButtonDefault = ({ title, onClick, style }: Props) => (
   </TouchableOpacity>
 );
 
-export { ButtonDefault };
+export { BUTTON_DEFAULT };

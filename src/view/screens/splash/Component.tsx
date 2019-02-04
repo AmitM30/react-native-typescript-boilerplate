@@ -3,7 +3,7 @@ import { View, Image, SafeAreaView } from 'react-native';
 
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
-import { ButtonDefault } from '../../elements/buttons';
+import { BUTTON_DEFAULT } from '../../elements/buttons';
 
 export interface Props {}
 
@@ -34,7 +34,7 @@ class Splash extends React.PureComponent<Props, State> {
             resizeMode="center"
             source={require('../../assets/images/rn_ts.png')}
           />
-          <ButtonDefault
+          <BUTTON_DEFAULT
             title="Continue To App"
             onClick={this.navigateToHome}
           />
