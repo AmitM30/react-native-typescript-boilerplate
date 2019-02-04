@@ -1,6 +1,6 @@
 # React Native Typescript Boilerplate
 
-![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Build](https://build.appcenter.ms/v0.1/apps/d3466edd-c992-45c8-abd3-a2f40f6a7fa1/branches/master/badge)
+![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master)
 
 ### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [TSLint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
@@ -19,8 +19,8 @@ This is an **opinionated** approach to building apps with RN. The project struct
 
 The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, tslint, separation of concern and structure to build a maintainable app.
 
-| ![Splash](https://github.com/AmitM30/react-native-typescript-boilerplate/tree/master/src/view/assets/images/sample/1.png "Splash") | ![Home](https://github.com/AmitM30/react-native-typescript-boilerplate/tree/master/src/view/assets/images/sample/2.png "Home") |
-| :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| ![Splash](./src/view/assets/images/sample/1.png "Splash") | ![Home](./src/view/assets/images/sample/2.png "Home") |
+| :-------------------------------------------------------: | :---------------------------------------------------: |
 
 
 ### Table of Contents
