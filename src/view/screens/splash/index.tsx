@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 
-import Splash from './Component';
+import Component from './Component';
 
 const mapStateToProps = () => ({});
 
 const mapDispatchToProps = () => ({});
 
-const SplashContainer = connect(
+const splashContainer = connect(
   mapStateToProps,
-  mapDispatchToProps
-)(Splash);
+  mapDispatchToProps,
+)(Component);
 
-export default SplashContainer;
+export default splashContainer;

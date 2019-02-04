@@ -1,7 +1,5 @@
-import React, { PureComponent } from 'react';
-import {
-  View, Text, SafeAreaView, Button
-} from 'react-native';
+import * as React from 'react';
+import { View, Text, SafeAreaView, Button } from 'react-native';
 
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
@@ -10,7 +8,7 @@ export interface Props {}
 
 interface State {}
 
-class Splash extends PureComponent<Props, State> {
+class Splash extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {};
@@ -20,7 +18,7 @@ class Splash extends PureComponent<Props, State> {
 
   navigateToHome = () => {
     tabbedNavigation();
-  };
+  }
 
   render() {
     return (

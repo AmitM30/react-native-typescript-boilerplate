@@ -1,26 +1,26 @@
 import { StyleSheet, Platform } from 'react-native';
 
-import TYPOGRAPHY from './typography';
+import { TYPOGRAPHY } from './TYPOGRAPHY';
 
-export const WidgetPaddingValue = 16;
+export const widgetPaddingValue = 16;
 
-const Layout = StyleSheet.create({
+const LAYOUT = StyleSheet.create({
   SafeArea: {
     flex: 1,
-    backgroundColor: TYPOGRAPHY.Color.Primary
+    backgroundColor: TYPOGRAPHY.COLOR.Primary,
   },
   container: {
-    flex: 1
+    flex: 1,
   },
   pageContainer: {
-    padding: 16
+    padding: 16,
   },
   shadow: {
     shadowOpacity: 0.5,
     shadowRadius: 2.5,
     shadowOffset: { width: 2, height: 2 },
-    elevation: Platform.OS === 'ios' ? 0 : 7
-  }
+    elevation: Platform.OS === 'ios' ? 0 : 7,
+  },
 });
 
 const CTA = {
@@ -32,12 +32,12 @@ const CTA = {
       height: 48,
       paddingVertical: 8,
       paddingHorizontal: 10,
-      borderRadius: 5
+      borderRadius: 5,
     },
     primaryText: {
       fontSize: 16,
-      color: TYPOGRAPHY.Color.Primary,
-      textAlign: 'center'
+      color: TYPOGRAPHY.COLOR.Primary,
+      textAlign: 'center',
     },
     secondary: {
       flexDirection: 'row',
@@ -45,81 +45,81 @@ const CTA = {
       justifyContent: 'space-between',
       height: 48,
       borderWidth: 1,
-      backgroundColor: TYPOGRAPHY.Color.Default,
+      backgroundColor: TYPOGRAPHY.COLOR.Default,
       borderRadius: 5,
-      borderColor: TYPOGRAPHY.Color.Primary
+      borderColor: TYPOGRAPHY.COLOR.Primary,
     },
     secondaryText: {
-      color: TYPOGRAPHY.Color.Primary,
+      color: TYPOGRAPHY.COLOR.Primary,
       fontSize: 16,
-      textAlign: 'center'
-    }
+      textAlign: 'center',
+    },
   }),
   TouchableOpacity: {
-    default: 0.8
-  }
+    default: 0.8,
+  },
 };
 
-const Fonts = StyleSheet.create({
+const FONTS = StyleSheet.create({
   h1: {
     fontSize: 30,
-    fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.DefaultSelected
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.DefaultSelected,
   },
   body: {
     fontSize: 16,
-    fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.Default
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.Default,
   },
   subTitle: {
     fontSize: 14,
-    fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.Secondary
-  }
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.Secondary,
+  },
 });
 
-const Text = StyleSheet.create({
+const TEXT = StyleSheet.create({
   Default: {
     textAlign: 'left',
-    fontFamily: TYPOGRAPHY.Font.Primary,
+    fontFamily: TYPOGRAPHY.FONT.Primary,
     fontSize: 14,
-    color: TYPOGRAPHY.Color.Primary
+    color: TYPOGRAPHY.COLOR.Primary,
   },
   Bold: {
     textAlign: 'left',
     fontSize: 14,
-    fontFamily: TYPOGRAPHY.Font.Primary,
-    color: TYPOGRAPHY.Color.Primary
-  }
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.Primary,
+  },
 });
 
-const TextInput = {
+const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
-      fontFamily: TYPOGRAPHY.Font.Primary,
+      fontFamily: TYPOGRAPHY.FONT.Primary,
       textAlign: 'left',
       fontSize: 12,
       borderWidth: 0.2,
-      borderColor: TYPOGRAPHY.Color.Border,
-      color: TYPOGRAPHY.Color.Primary
+      borderColor: TYPOGRAPHY.COLOR.Border,
+      color: TYPOGRAPHY.COLOR.Primary,
     },
     Bold: {
-      fontFamily: TYPOGRAPHY.Font.Primary,
+      fontFamily: TYPOGRAPHY.FONT.Primary,
       textAlign: 'left',
       fontSize: 12,
       borderWidth: 0.2,
-      borderColor: TYPOGRAPHY.Color.Border,
-      color: TYPOGRAPHY.Color.Primary
-    }
-  })
+      borderColor: TYPOGRAPHY.COLOR.Border,
+      color: TYPOGRAPHY.COLOR.Primary,
+    },
+  }),
 };
 
 const GLOBAL = {
-  Layout,
+  LAYOUT,
   CTA,
-  Fonts,
-  Text,
-  TextInput
+  FONTS,
+  TEXT,
+  TEXT_INPUT,
 };
 
-export default GLOBAL;
+export { GLOBAL };

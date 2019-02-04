@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Build](https://build.appcenter.ms/v0.1/apps/d3466edd-c992-45c8-abd3-a2f40f6a7fa1/branches/master/badge)
 
-### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Eslint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
+### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [TSLint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
@@ -17,7 +17,7 @@ You might also want to [rename](https://medium.com/the-react-native-log/how-to-r
 _Disclaimer_:
 This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
 
-The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, eslint, separation of concern and structure to build a maintainable app.
+The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, tslint, separation of concern and structure to build a maintainable app.
 
 ### Table of Contents
 
@@ -62,10 +62,11 @@ The project uses and encourages to use industry best practices / tools / librari
 │   ├── presentation
 │   └── redux
 ├── .babelrc
-├── .eslintrc					Lint configuration - extending AirBnb
 ├── .gitignore
-├── .travis.yml				Travis CI
+├── .travis.yml					Travis CI
 ├── tsconfig.json				TypeScript Configuration
+├── tslint.js					TSLint configuration - extending AirBnb
+├── tsconfig.json
 ├── app.json
 ├── index.js					Application Entry point
 ├── package.json
@@ -113,16 +114,16 @@ and the launch from IDE.
 
 #### Lint
 
-To run lint on the application:
+To run tslint on the application:
 
 ```
-npm run lint
+yarn lint
 ```
 
-To fix lint issues automatically
+To fix most tslint issues automatically
 
 ```
-npm run lint:fix
+yarn lint:fix
 ```
 
 #### Unit Test
@@ -166,7 +167,7 @@ Please check out [Contributing](https://github.com/AmitM30/react-native-typescri
 
 #### Authors
 
-- **Anurag Chutani** - _Android Setup_ - [Profile](https://github.com/a7urag)
+- [**Anurag Chutani**](https://github.com/a7urag) - _Android Setup_
 
 See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors) who participated in this project.
 
