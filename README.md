@@ -1,6 +1,6 @@
 # React Native Typescript Boilerplate
 
-![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master)
+![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 ### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [TSLint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
@@ -8,14 +8,15 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 This repo supports the latest version of React Native (v0.57.8+) supported by RNN (at the time of writing).
 
+**UPDATE** (8th March '19): RNN upgraded to v2.13.1 | RN to 0.58.6 | React to 16.8.4
+
 ### Who is this for?
 
-Someone looking to jumpstart building apps using RN and loves TS. The base setup has been taken care of, just `npm install` and get going.
+Someone looking to jumpstart building apps using RN and prefers TS. The base setup has been taken care of, just `yarn install` and get going from respective IDEs.
 
 You might also want to [rename](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35) the app for your own use.
 
-_Disclaimer_:
-This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
+> _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
 
 The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, tslint, separation of concern and structure to build a maintainable app.
 
@@ -102,19 +103,13 @@ Launch application from XCode
 
 ###### Android
 
-For android, you will need to first create the bundle:
-
-```
-react-native bundle --platform ios --entry-file index.js --bundle-output ./ios/main.jsbundle --assets-dest ./ --dev false
-```
-
-then run the Metro Bundler from the terminal
+For android, run the Metro Bundler from the terminal
 
 ```
 npm run start
 ```
 
-and the launch from IDE.
+and then launch from IDE.
 
 #### Lint
 
