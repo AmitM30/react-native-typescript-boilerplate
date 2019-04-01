@@ -24,10 +24,10 @@
   },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
+    "test": "cross-env-shell jest",
     "android": "react-native run-android --variant=Debug",
-    "lint": "tslint --project ./tsconfig.json",
-    "lint:fix": "tslint --fix --project ./tsconfig.json"
+    "lint": "cross-env-shell tslint --project ./tsconfig.json",
+    "lint:fix": "cross-env-shell tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
     "react": "16.6.3",
@@ -53,6 +53,7 @@
     "babel-jest": "24.0.0",
     "babel-preset-airbnb": "^3.2.0",
     "babel-preset-react-native": "^4.0.1",
+    "cross-env": "^5.2.0",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
