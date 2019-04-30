@@ -30,10 +30,10 @@
     "lint:fix": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "react": "16.8.4",
-    "react-native": "0.58.6",
-    "react-native-navigation": "^2.13.1",
-    "react-redux": "^6.0.0",
+    "react": "^16.8.6",
+    "react-native": "^0.59.5",
+    "react-native-navigation": "^2.18.3",
+    "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
@@ -53,23 +53,23 @@
     "babel-jest": "24.0.0",
     "babel-preset-airbnb": "^3.2.0",
     "babel-preset-react-native": "^4.0.1",
-    "eslint": "^5.12.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^22.1.2",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.2",
     "eslint-watch": "^4.0.2",
-    "jest": "24.0.0",
+    "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.51.1",
     "react-addons-test-utils": "^15.6.2",
     "react-native-typescript-transformer": "^1.2.11",
     "react-test-renderer": "16.6.3",
     "regenerator-runtime": "^0.13.1",
     "ts-jest": "^23.10.5",
-    "tslint": "^5.12.1",
+    "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",
-    "typescript": "^3.2.4"
+    "typescript": "^3.4.5"
   },
   "jest": {
     "preset": "react-native",
