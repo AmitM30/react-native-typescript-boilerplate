@@ -167,6 +167,7 @@ Please check out [Contributing](https://github.com/AmitM30/react-native-typescri
 #### Authors
 
 - [**Anurag Chutani**](https://github.com/a7urag) - _Android Setup_
+- [**Brian Varley**](https://github.com/BrianJVarley) - _Windows Setup_
 
 See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors) who participated in this project.
 
