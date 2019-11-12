@@ -10,6 +10,10 @@ This repo supports the latest version of React Native (v0.57.8+) supported by RN
 
 **UPDATE** (8th March '19): RNN upgraded to v2.13.1 | RN to 0.58.6 | React to 16.8.4
 
+**UPDATE** (30th April '19): RNN upgraded to v2.18.3 | RN to 0.59.5 | React to 16.8.6
+
+**UPDATE** (2nd April '19): RNN upgraded to v2.26.2 | RN to 0.59.10
+
 ### Who is this for?
 
 Someone looking to jumpstart building apps using RN and prefers TS. The base setup has been taken care of, just `yarn install` and get going from respective IDEs.
