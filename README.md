@@ -12,7 +12,7 @@ This repo supports the latest version of React Native (v0.57.8+) supported by RN
 
 **UPDATE** (30th April '19): RNN upgraded to v2.18.3 | RN to 0.59.5 | React to 16.8.6
 
-**UPDATE** (2nd April '19): RNN upgraded to v2.26.2 | RN to 0.59.10
+**UPDATE** (2nd November '19): RNN upgraded to v2.26.2 | RN to 0.59.10
 
 ### Who is this for?
 
