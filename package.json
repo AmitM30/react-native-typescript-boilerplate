@@ -30,9 +30,9 @@
     "lint:fix": "cross-env-shell tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-native": "^0.59.10",
-    "react-native-navigation": "^2.26.2",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
+    "react-native-navigation": "^3.7.0",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/preset-env": "^7.3.1",
-    "@types/jest": "^23.3.13",
+    "@types/jest": "^24.0.23",
     "@types/react": "^16.7.21",
     "@types/react-native": "^0.57.32",
     "@types/react-redux": "^7.0.1",
@@ -67,10 +67,10 @@
     "react-test-renderer": "16.6.3",
     "redux-logger": "^3.0.6",
     "regenerator-runtime": "^0.13.1",
-    "ts-jest": "^23.10.5",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",
-    "typescript": "^3.4.5"
+    "typescript": "^3.7.2"
   },
   "jest": {
     "preset": "react-native",
