@@ -30,29 +30,29 @@ allprojects {
         jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
-            url "$rootDir/../node_modules/react-native/android"
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
         }
         maven { url 'https://jitpack.io' }
+
     }
 }
 
 subprojects { subproject ->
-        afterEvaluate {
-                if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
-                        android {
-                                variantFilter { variant ->
-                                        def names = variant.flavors*.name
-                                        if (names.contains("reactNative51") || names.contains("reactNative55")) {
-                                                setIgnore(true)
-                                            }
-                                    }
-                            }
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                variantFilter { variant ->
+                    def names = variant.flavors*.name
+                    if (names.contains("reactNative51") || names.contains("reactNative55") || names.contains("reactNative57")) {
+                        setIgnore(true)
                     }
+                }
             }
+        }
     }
-
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.7'
-    distributionUrl = distributionUrl.replace("bin", "all")
 }
+
