@@ -1,0 +1,94 @@
+extends:
+  - react-app
+
+settings:
+  ecmascript: 6
+  import/resolver:
+    node:
+      paths: # synonymous with NODE_PATH
+        - src/client
+        - cypress
+    typescript:
+      alwaysTryTypes: true
+  react:
+    pragma: React
+    version: detect
+
+plugins:
+  - react
+  - import
+  - emotion
+  - react-hooks
+  - cypress
+  - filenames
+
+parser: babel-eslint
+
+parserOptions:
+  sourceType: 'module'
+  ecmaVersion: 6
+  ecmaFeatures:
+    jsx: true
+
+env:
+  browser: true
+  jest: true
+  jquery: true
+  es6: true
+  commonjs: true
+  amd: true
+  cypress/globals: true
+
+globals:
+  angular: true
+
+rules:
+  semi: 0
+  eqeqeq: 2
+  no-unused-vars: 2
+  curly: 2
+  func-style: 0
+  func-names: 0
+  comma-dangle: 0
+  no-console: 0
+  no-param-reassign: 0
+  no-throw-literal: 0
+  quotes: [1, 'single']
+  linebreak-style: 0
+  object-shorthand: 2
+  no-underscore-dangle: 0
+  import/no-extraneous-dependencies: 2
+  import/no-unresolved: 1
+  import/extensions: [2, { 'json': 'always', 'less': 'always', 'css': 'always' }]
+  react/prefer-stateless-function: 1
+  react/no-children-prop: 2
+  react/forbid-prop-types: 0
+  react/prop-types: 2
+  emotion/jsx-import: 2
+  emotion/no-vanilla: 2
+  emotion/import-from-emotion: 2
+  emotion/styled-import: 2
+  react-hooks/rules-of-hooks: 2
+  react-hooks/exhaustive-deps: 2
+  react/jsx-filename-extension: [2, { 'extensions': ['.js', '.tsx'] }]
+overrides:
+  - files: ['**/*.ts', '**/*.tsx']
+    parser: '@typescript-eslint/parser'
+    extends:
+      - 'plugin:@typescript-eslint/eslint-recommended'
+      - 'plugin:@typescript-eslint/recommended'
+    rules:
+      react/prop-types: 0
+      '@typescript-eslint/camelcase': 0
+      '@typescript-eslint/no-empty-function': 0
+      '@typescript-eslint/no-use-before-define': 0
+      '@typescript-eslint/explicit-function-return-type': 0
+      '@typescript-eslint/member-delimiter-style':
+        - warn
+        - multiline:
+            delimiter: semi
+            requireLast: true
+          singleline:
+            delimiter: comma
+            requireLast: false
+      import/extensions: 0
