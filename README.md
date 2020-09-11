@@ -8,13 +8,12 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 This repo supports the latest version of React Native (v0.57.8+) supported by RNN (at the time of writing).
 
-**UPDATE** (8th March '19): RNN upgraded to v2.13.1 | RN to 0.58.6 | React to 16.8.4
-
-**UPDATE** (30th April '19): RNN upgraded to v2.18.3 | RN to 0.59.5 | React to 16.8.6
-
-**UPDATE** (2nd November '19): RNN upgraded to v2.26.2 | RN to 0.59.10
-
-**UPDATE** (27th April '20): RNN upgraded to v3.7.0 | RN to 0.61.5 | React to 16.9.0
+| UPDATE  | RNN | RN | React | Comments |
+|---|---|---|---|---|
+|  27th April '20 | v3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60
+|  2nd Nov '19 | v2.26.2 | 0.59.10 |  | Maintenance |
+|  30th April '19 | v2.18.3 | 0.59.5 | 16.8.6 | Maintenance |
+|  8th March '19 | v2.13.1 | 0.58.6 | 16.8.4 |
 
 ### Who is this for?
 
@@ -174,6 +173,7 @@ Please check out [Contributing](https://github.com/AmitM30/react-native-typescri
 
 - [**Anurag Chutani**](https://github.com/a7urag) - _Android Setup_
 - [**Brian Varley**](https://github.com/BrianJVarley) - _Windows Setup_
+- [**Nelson Omuto**](https://github.com/nelsonomuto) - _Update Podfile_
 
 See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors) who participated in this project.
 
