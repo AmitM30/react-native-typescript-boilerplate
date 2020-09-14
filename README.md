@@ -6,7 +6,7 @@
 
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
-This repo supports the latest version of React Native (v0.57.8+) supported by RNN (at the time of writing).
+This repo supports the latest version of React Native supported by React Native Navigation.
 
 | UPDATE  | RNN | RN | React | Comments |
 |---|---|---|---|---|
@@ -17,13 +17,13 @@ This repo supports the latest version of React Native (v0.57.8+) supported by RN
 
 ### Who is this for?
 
-Someone looking to jumpstart building apps using RN and prefers TS. The base setup has been taken care of, just `yarn install` and get going from respective IDEs.
+Someone looking to jumpstart building apps using RN and prefers TypeScript. The base setup has been taken care of, just `yarn install` and get going from respective IDEs.
 
 You might also want to [rename](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35) the app for your own use.
 
 > _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
 
-The project uses and encourages to use industry best practices / tools / libraries like RNN, redux, tslint, separation of concern and structure to build a maintainable app.
+The project uses and encourages to use industry best practices / tools / libraries like React Native Navigation, redux, tslint, separation of concern and structure to build a maintainable app.
 
 | ![Splash](./src/view/assets/images/sample/1.png "Splash") | ![Home](./src/view/assets/images/sample/2.png "Home") |
 | :-------------------------------------------------------: | :---------------------------------------------------: |
