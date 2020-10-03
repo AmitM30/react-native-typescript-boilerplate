@@ -97,7 +97,7 @@
     "cacheDirectory": ".jest/cache"
   },
   "engines": {
-    "node": ">=8.11.0 <=9",
+    "node": ">=8.11.0",
     "npm": ">=6.0.0",
     "yarn": ">=1.9.2"
   }
