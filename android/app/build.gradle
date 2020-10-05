@@ -114,7 +114,7 @@ android {
         packagingOptions {
             exclude "lib/arm64-v8a/libgnustl_shared.so"
         }
-        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative60"
+        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative63"
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -150,10 +150,10 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-navigation')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-    implementation "com.facebook.react:react-native:0.61.5"  // From node_modules
-    implementation project(':react-native-navigation')
+    implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"

@@ -9,7 +9,6 @@
 
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
 #import <React/RCTBundleURLProvider.h>
-#import <React/RCTRootView.h>
 
 @implementation AppDelegate
 
@@ -19,7 +18,7 @@
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
-  [ReactNativeNavigation bootstrap:jsCodeLocation launchOptions:launchOptions];
+  [ReactNativeNavigation bootstrapWithDelegate:jsCodeLocation launchOptions:launchOptions];
 
   return YES;
 }
