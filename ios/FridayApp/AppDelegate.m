@@ -31,10 +31,6 @@ static void InitializeFlipper(UIApplication *application) {
     InitializeFlipper(application);
   #endif
   
-//  NSURL *jsCodeLocation;
-//
-//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-
   [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
 
   return YES;
