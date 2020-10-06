@@ -2,18 +2,21 @@
 
 ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate)
 
-### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [TSLint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
+### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation v7](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [TSLint](https://github.com/airbnb/javascript) to build iOS / Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
-This repo supports the latest version of React Native supported by React Native Navigation.
+### Supports React Native 0.63.3 and React Native Navigation v7
+
+This repo supports the latest version of React Native compatible with React Native Navigation.
 
 | UPDATE  | RNN | RN | React | Comments |
 |---|---|---|---|---|
-|  27th April '20 | v3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60
-|  2nd Nov '19 | v2.26.2 | 0.59.10 |  | Maintenance |
-|  30th April '19 | v2.18.3 | 0.59.5 | 16.8.6 | Maintenance |
-|  8th March '19 | v2.13.1 | 0.58.6 | 16.8.4 |
+|  7th October '20 | 7.1.0 | 0.63.3 | 16.13.1 | Major Upgrade, Support for Flipper
+|  27th April '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60
+|  2nd Nov '19 | 2.26.2 | 0.59.10 |  | Maintenance |
+|  30th April '19 | 2.18.3 | 0.59.5 | 16.8.6 | Maintenance |
+|  8th March '19 | 2.13.1 | 0.58.6 | 16.8.4 |
 
 ### Who is this for?
 

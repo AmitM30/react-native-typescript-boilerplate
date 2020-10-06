@@ -7,10 +7,10 @@ jobs:
   include:
     - stage: Test and lint ✅
       before_install:
-        - npm i -g npm@6.7.0
-        - npm i -g yarn@1.9.2
+        - npm i -g npm@6.14.6
+        - npm i -g yarn@1.22.10
       language: node_js
-      node_js: 8.11.2
+      node_js: 12.18.4
       install: yarn
       script: yarn lint
     - stage: Build Android 🤖
@@ -18,8 +18,8 @@ jobs:
         - sudo apt-get install build-essential checkinstall && sudo apt-get install libssl-dev
         - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
         - source ~/.profile
-        - nvm install 8.11.2
-        - npm i -g yarn@1.9.2
+        - nvm install 12.18.4
+        - npm i -g yarn@1.22.10
       language: android
       android:
         components:
