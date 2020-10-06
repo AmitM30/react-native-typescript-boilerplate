@@ -36,4 +36,4 @@ jobs:
       script:
         - cd /usr/local/android-sdk/tools/bin
         - yes | ./sdkmanager --update
-        - cd - && cd android && ./gradlew assembleRelease && cd ..
+        - cd - && cd android && ./gradlew assembleRelease -x bundleReleaseJsAndAssets && cd ..

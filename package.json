@@ -27,6 +27,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "cross-env-shell jest",
     "android": "react-native run-android --variant=Debug",
+    "build:android:debug": "./gradlew assembleDebug",
+    "build:android:release": "./gradlew assembleRelease -x bundleReleaseJsAndAssets",
     "lint": "cross-env-shell tslint --project ./tsconfig.json",
     "lint:fix": "cross-env-shell tslint --fix --project ./tsconfig.json"
   },
