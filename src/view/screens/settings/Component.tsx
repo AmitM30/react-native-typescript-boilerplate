@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
@@ -18,9 +18,9 @@ class Settings extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <CText>Settings</CText>
-      </View>
+      </SafeAreaView>
     );
   }
 }

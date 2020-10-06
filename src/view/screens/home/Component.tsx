@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
@@ -16,7 +16,7 @@ class Home extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      name: props.name || 'RN + TS + RNN2',
+      name: props.name || 'Redux + TypeScript + React Native Navigation'
     };
   }
 
@@ -26,10 +26,10 @@ class Home extends React.PureComponent<Props, State> {
     const { name } = this.state;
 
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <CText>Home</CText>
         <CText>{name}</CText>
-      </View>
+      </SafeAreaView>
     );
   }
 }
