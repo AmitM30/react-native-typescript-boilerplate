@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Provider } from 'react-redux';
 import { Navigation } from 'react-native-navigation';
 
@@ -12,12 +12,15 @@ const registerComponentWithRedux = (redux: any) => (
   name: string,
   screen: any,
 ) => {
-  Navigation.registerComponent(name, () => (props) => (
-    <Provider store={redux.store}>
-      <screen.default {...props} />
-    </Provider>
-  ), () => screen.default);
-}
+  Navigation.registerComponent(
+    name,
+    () => (props: any) => (
+      <Provider store={redux.store}>
+        <screen.default {...props} />
+      </Provider>
+    ),
+    () => screen.default);
+};
 
 export function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(SCREENS.Splash, Splash);

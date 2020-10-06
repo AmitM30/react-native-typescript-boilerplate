@@ -16,7 +16,7 @@ class Home extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
-      name: props.name || 'Redux + TypeScript + React Native Navigation'
+      name: props.name || 'Redux + TypeScript + React Native Navigation',
     };
   }
 
