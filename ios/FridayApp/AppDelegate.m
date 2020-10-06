@@ -1,6 +1,5 @@
 #import "AppDelegate.h"
 
-//#import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
@@ -35,8 +34,6 @@ static void InitializeFlipper(UIApplication *application) {
 //  NSURL *jsCodeLocation;
 //
 //  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-//
-//  [ReactNativeNavigation bootstrapWithDelegate:jsCodeLocation launchOptions:launchOptions];
 
   [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
 
