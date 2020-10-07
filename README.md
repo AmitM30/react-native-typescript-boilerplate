@@ -42,7 +42,7 @@ You might also want to [rename](https://medium.com/the-react-native-log/how-to-r
 - [Lint](#lint)
 - [Unit Tests](#unit-tests)
 - [Cheat Sheet](#cheat-sheet)
-  - [React Native Navigation](#react-native-navigation)
+  - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
   - [Styles](#styles)
   - [Widgets / Elements](#widgets---elements)
 - [Contributing](#contributing)
