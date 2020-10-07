@@ -4,14 +4,17 @@ import { SafeAreaView } from 'react-native';
 import styles from './styles';
 import { CText } from '../../elements/custom';
 
-export interface Props {}
+export interface Props {
+  name: string;
+}
 
-interface State {}
+interface State {
+  name: string;
+}
 
-class Settings extends React.PureComponent<Props, State> {
+class Drawer extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
-    this.state = {};
   }
 
   componentDidMount() {}
@@ -19,10 +22,10 @@ class Settings extends React.PureComponent<Props, State> {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <CText>Settings</CText>
+        <CText>Drawer Menu</CText>
       </SafeAreaView>
     );
   }
 }
 
-export default Settings;
+export default Drawer;
