@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { SafeAreaView, TouchableOpacity, View, Image } from 'react-native';
+import { Navigation } from 'react-native-navigation';
+import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-// import { BUTTON_DEFAULT } from '../../elements/buttons';
-import { Navigation } from 'react-native-navigation';
-
 
 export interface Props {
   name: string;
