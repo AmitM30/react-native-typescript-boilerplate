@@ -4,7 +4,7 @@ import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import Router from '../../../navigators/router';
+import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 
 export interface Props {
@@ -39,12 +39,12 @@ class Home extends React.PureComponent<Props, State> {
 
   showPushScreen = () => {
     const { componentId } = this.props;
-    Router.showPushScreen({
+    router.showPushScreen({
       componentId,
       passProps: {
-        dummyText: 'Hello from Home !!!'
-      }
-    })
+        dummyText: 'Hello from Home !!!',
+      },
+    });
   }
 
   render() {

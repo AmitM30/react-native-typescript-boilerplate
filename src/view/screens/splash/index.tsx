@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import Component from './Component';
 import {
-  splashScreenLaunched
+  splashScreenLaunched,
 } from '../../../../shared/redux/thunk/app';
 
 const mapStateToProps = () => ({});

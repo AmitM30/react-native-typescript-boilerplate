@@ -3,13 +3,13 @@
  * Good place to define some commonly used methods like
  *          `popToScreen`, `dismissModal`...
  */
-import { Navigation } from "react-native-navigation";
+import { Navigation } from 'react-native-navigation';
 
-import { SCREENS } from "../constants/screen";
+import { SCREENS } from '../constants/screen';
 
 interface Screen {
-  componentId: string,
-  passProps?: object
+  componentId: string;
+  passProps?: object;
 }
 
 /**
@@ -22,14 +22,14 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
       name: SCREENS.Dummy,
       id: SCREENS.Dummy,
       passProps: {
-        ...passProps
+        ...passProps,
       },
       options: {
         topBar: {
           visible: true,
-        }
-      }
-    }
+        },
+      },
+    },
   });
 };
 
@@ -45,12 +45,12 @@ const pop = ({ componentId }: Screen) => Navigation.pop(componentId);
 
 const popToRoot = ({ componentId }: Screen) => Navigation.popToRoot(componentId);
 
-const Router = {
+const ROUTER = {
   showPushScreen,
   popToScreen,
   dismissModal,
   pop,
-  popToRoot
+  popToRoot,
 };
 
-export default Router;
+export default ROUTER;

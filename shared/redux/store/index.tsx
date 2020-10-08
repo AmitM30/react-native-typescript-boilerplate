@@ -7,7 +7,7 @@ let middlewares = [thunkMiddleware.default];
 if (__DEV__) {
   const logger = require('redux-logger');
   const loggerMiddleware = logger.createLogger({
-    duration: true
+    duration: true,
   });
   middlewares = [...middlewares, loggerMiddleware];
 }

@@ -9,7 +9,7 @@ export default (state = initialState, action: any) => {
     case ACTION_TYPES.SPLASH.SPLASH_LAUNCHED:
       return {
         ...state,
-        isLoading: false
+        isLoading: false,
       };
     default:
       return state;

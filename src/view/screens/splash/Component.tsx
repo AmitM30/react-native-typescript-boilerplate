@@ -6,7 +6,7 @@ import styles from './styles';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 
 export interface Props {
-  splashLaunched: Function,
+  splashLaunched: Function;
 }
 
 interface State {}

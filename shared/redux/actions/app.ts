@@ -4,5 +4,5 @@
 import { ACTION_TYPES } from '../constants/actionTypes';
 
 export const splashLaunched = () => ({
-  type: ACTION_TYPES.SPLASH.SPLASH_LAUNCHED
+  type: ACTION_TYPES.SPLASH.SPLASH_LAUNCHED,
 });
