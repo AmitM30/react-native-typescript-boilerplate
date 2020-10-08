@@ -5,7 +5,9 @@ import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 
-export interface Props {}
+export interface Props {
+  splashLaunched: Function;
+}
 
 interface State {}
 
@@ -15,7 +17,10 @@ class Splash extends React.PureComponent<Props, State> {
     this.state = {};
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    const { splashLaunched } = this.props;
+    splashLaunched();
+  }
 
   navigateToHome = () => {
     tabbedNavigation();

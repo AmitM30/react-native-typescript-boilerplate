@@ -1,3 +1,6 @@
+/**
+ * Application navigation stacks to be defined here.
+ */
 import { Navigation } from 'react-native-navigation';
 
 import { SCREENS } from '../constants/screen';

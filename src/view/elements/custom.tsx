@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Text, TextProps } from 'react-native';
+import { Text, TextStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
 
 export interface Props {
-  style: TextProps;
+  style: TextStyle;
 }
 
 interface State {}

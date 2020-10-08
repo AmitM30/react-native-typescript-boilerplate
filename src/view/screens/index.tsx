@@ -8,6 +8,7 @@ import * as Splash from './splash';
 import * as Home from './home';
 import * as Settings from './settings';
 import * as Drawer from './drawer';
+import * as Dummy from './dummy';
 
 const registerComponentWithRedux = (redux: any) => (
   name: string,
@@ -28,4 +29,5 @@ export function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(SCREENS.Home, Home);
   registerComponentWithRedux(redux)(SCREENS.Settings, Settings);
   registerComponentWithRedux(redux)(SCREENS.Drawer, Drawer);
+  registerComponentWithRedux(redux)(SCREENS.Dummy, Dummy);
 }
