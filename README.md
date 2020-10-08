@@ -37,13 +37,6 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - Code Lint
   - [Airbnb's JS](https://github.com/airbnb/javascript) Linting
 
-You might also want to rename the app for your own use. Follow any of the links below.
-- [How to Rename A React Native App](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35)
-
-Or
-
-- NPM Package: [react-native-rename](https://www.npmjs.com/package/react-native-rename)
-
 > _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
 
 ##### App Screens
@@ -61,6 +54,7 @@ Or
 - [Getting Started](#getting-started)
 - [Cheat Sheet](#cheat-sheet)
   - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
+  - [Renaming the App](#renaming-the-app)
 - [Contributing](#contributing)
 - [TODO](#todo)
 
@@ -160,6 +154,15 @@ yarn android
 The application launches with a splash screen, and then moves to a tabbed based navigation. Splash screen is a good place to fetch data / build application launch logic like getting user token from API or Async Store, load persist state etc.
 
 For Single screen application, replace this tabbed based navigation with a single screen - just `home`, or simply use the splash screen to setup the app, may be with a burger menu.
+
+#### Renaming the App
+
+You might also want to rename the app for your own use. Follow any of the links below.
+- [How to Rename A React Native App](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35)
+
+Or
+
+- NPM Package: [react-native-rename](https://www.npmjs.com/package/react-native-rename)
 
 ### Contributing
 
