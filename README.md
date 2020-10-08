@@ -4,19 +4,20 @@
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
+___
+
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
 ### Supports React Native 0.63.3, React Native Navigation v7 and Flipper
 
-| UPDATE  | RNN | RN | React | Comments |
+|  | RNN | RN | React | Comments |
 |---|---|---|---|---|
 |  07 Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
 |  27 Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
 |  02 Nov '19 | 2.26.2 | 0.59.10 |  | Maintenance |
-|  30 Apr '19 | 2.18.3 | 0.59.5 | 16.8.6 | Maintenance |
 |  08 Mar '19 | 2.13.1 | 0.58.6 | 16.8.4 |
 
-### Introduction
+## Introduction
 
 Jumpstart building robust apps using React Native and TypeScript with most commoly needed tools already setup. Just `yarn install` and get going from respective IDEs.
 
@@ -27,7 +28,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - [Redux](https://redux.js.org/introduction/getting-started)
   - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware
 - Widgets / Elements
-Build your own design system with these building blocks.
+  
+  Build your own design system with these building blocks.
   - **elements**: `<BUTTON_DEFAULT>` or `<CText>`. They are custom elements that have default properties like font, size and so on.
   - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
 - Typography
@@ -37,7 +39,9 @@ Build your own design system with these building blocks.
 
 You might also want to rename the app for your own use. Follow any of the links below.
 - [How to Rename A React Native App](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35)
+
 Or
+
 - NPM Package: [react-native-rename](https://www.npmjs.com/package/react-native-rename)
 
 > _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
@@ -55,7 +59,6 @@ Or
 
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Lint](#lint)
 - [Cheat Sheet](#cheat-sheet)
   - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
 - [Contributing](#contributing)
@@ -143,25 +146,11 @@ Start an Android Simulator from:
 Android Studio > Tools > AVD Manager > Run any device
 ```
 
-Similarly, run from Android Studio itself or from Terminal:
+Similarly, run from Android Studio itself Or from Terminal:
 ```
 yarn android
 # runs the following command
 # react-native run-android --variant=Debug
-```
-
-### Lint
-
-To run lint on the application, run:
-
-```
-yarn lint
-```
-
-Fixes most tslint issues automatically:
-
-```
-yarn lint:fix
 ```
 
 ### Cheat Sheet
