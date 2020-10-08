@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TouchableOpacity, TextProps } from 'react-native';
+import { TouchableOpacity, ViewStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
 import { CText } from './custom';
@@ -8,7 +8,7 @@ type Callback = () => any;
 export interface Props {
   title: string;
   onClick: Callback;
-  style?: TextProps;
+  style?: ViewStyle;
 }
 
 /**
