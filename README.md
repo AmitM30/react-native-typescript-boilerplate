@@ -10,7 +10,7 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 ### Supports React Native 0.63.3, React Native Navigation v7 and Flipper
 
-|  | RNN | RN | React | Comments |
+| Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
 |  07 Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
 |  27 Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
@@ -28,7 +28,6 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - [Redux](https://redux.js.org/introduction/getting-started)
   - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware
 - Widgets / Elements
-  
   Build your own design system with these building blocks.
   - **elements**: `<BUTTON_DEFAULT>` or `<CText>`. They are custom elements that have default properties like font, size and so on.
   - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
