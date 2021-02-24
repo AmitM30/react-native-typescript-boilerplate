@@ -1,12 +1,12 @@
-# React Native Typescript Boilerplate
+# React Native Template - TypeScript
 
 ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
-___
-
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
+
+___
 
 ### Supports React Native 0.63.3, React Native Navigation v7 and Flipper
 
@@ -65,23 +65,23 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 ├── ios						iOS Native Code
 ├── shared
 │   ├── redux					Applications Logic
-│   │	    ├── constants
-│   │	    ├── actions
-│   │	    ├── api
-│   │	    ├── reducers
-│   │	    ├── store
-│   │	    └── thunk
+│   │   ├── constants
+│   │   ├── actions
+│   │   ├── api
+│   │   ├── reducers
+│   │   ├── store
+│   │   └── thunk
 │   └── utilities
 ├── src
 │   ├── config					Global Configuration
 │   ├── constants				Screens, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments
-│   │	    ├── elements			Custom elements
-│   │	    ├── assets
-│   │	    ├── screens
-│   │	    ├── styles				Typography
-│   │	    └── widgets				Custom components
+│   │   ├── elements			  Custom elements
+│   │   ├── assets
+│   │   ├── screens
+│   │   ├── styles				  Typography
+│   │   └── widgets				  Custom components
 │   └── utilities
 ├── __tests__					Unit Tests
 │   ├── presentation
