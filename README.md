@@ -1,16 +1,16 @@
-# React Native Typescript Boilerplate
+# React Native Template - TypeScript
 
 ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
-___
-
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
+
+___
 
 ### Supports React Native 0.63.3, React Native Navigation v7 and Flipper
 
-|  | RNN | RN | React | Comments |
+| Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
 |  07 Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
 |  27 Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
@@ -28,7 +28,6 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - [Redux](https://redux.js.org/introduction/getting-started)
   - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware
 - Widgets / Elements
-  
   Build your own design system with these building blocks.
   - **elements**: `<BUTTON_DEFAULT>` or `<CText>`. They are custom elements that have default properties like font, size and so on.
   - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
@@ -66,23 +65,23 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 ├── ios						iOS Native Code
 ├── shared
 │   ├── redux					Applications Logic
-│   │	    ├── constants
-│   │	    ├── actions
-│   │	    ├── api
-│   │	    ├── reducers
-│   │	    ├── store
-│   │	    └── thunk
+│   │   ├── constants
+│   │   ├── actions
+│   │   ├── api
+│   │   ├── reducers
+│   │   ├── store
+│   │   └── thunk
 │   └── utilities
 ├── src
 │   ├── config					Global Configuration
 │   ├── constants				Screens, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments
-│   │	    ├── elements			Custom elements
-│   │	    ├── assets
-│   │	    ├── screens
-│   │	    ├── styles				Typography
-│   │	    └── widgets				Custom components
+│   │   ├── elements			  Custom elements
+│   │   ├── assets
+│   │   ├── screens
+│   │   ├── styles				  Typography
+│   │   └── widgets				  Custom components
 │   └── utilities
 ├── __tests__					Unit Tests
 │   ├── presentation
