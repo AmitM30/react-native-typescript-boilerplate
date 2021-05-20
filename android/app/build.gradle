@@ -78,7 +78,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "index.js",
+    // entryFile: "index.js",
     enableHermes: false,  // clean and rebuild if changing
     // hermesCommand: "../../node_modules/hermes-engine/%OS-BIN%/hermes"
     bundleInDebug: true
@@ -124,6 +124,7 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
+    ndkVersion rootProject.ext.ndkVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -133,7 +134,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57"
+        // sourceCompatibility "RNN.reactNativeVersion", "reactNative57"
         ndk {
             abiFilters "armeabi-v7a", "x86", 'armeabi', 'arm64-v8a'
         }
@@ -184,8 +185,9 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     // implementation project(':react-native-navigation')
-    //noinspection GradleDynamicVersion
+    // noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    compile 'com.android.support:multidex:1.0.0'
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
@@ -193,6 +195,7 @@ dependencies {
     }
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
+        exclude group:'com.squareup.okhttp3', module:'okhttp'
     }
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'

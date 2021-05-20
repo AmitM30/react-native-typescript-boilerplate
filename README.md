@@ -12,10 +12,11 @@ ___
 
 | Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
-|  07 Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
-|  27 Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
-|  02 Nov '19 | 2.26.2 | 0.59.10 |  | Maintenance |
-|  08 Mar '19 | 2.13.1 | 0.58.6 | 16.8.4 |
+|  May '21 | 7.14.0 | 0.64.1 | 17.0.1 | Update RN RNN, Hermes Support
+|  Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
+|  Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
+|  Nov '19 | 2.26.2 | 0.59.10 |  | Maintenance |
+|  Mar '19 | 2.13.1 | 0.58.6 | 16.8.4 |
 
 ## Introduction
 
