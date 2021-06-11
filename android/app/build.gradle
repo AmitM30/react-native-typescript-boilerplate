@@ -221,6 +221,12 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
+project.afterEvaluate {
+        tasks.findAll { task ->
+            task.name.startsWith('merge') && task.name.endsWith('Resources')
+        }.each { t -> t.dependsOn "copyReleaseBundledJs" }
+}
+
 subprojects { subproject ->
     afterEvaluate {
         if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
