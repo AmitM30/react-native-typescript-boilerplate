@@ -30,7 +30,7 @@
     "ios": "npx react-native run-ios --simulator='iPhone 11'",
     "android": "npx react-native run-android --variant=Debug",
     "build:android:debug": "./gradlew assembleDebug",
-    "build:android:release": "./gradlew assembleRelease -x bundleReleaseJsAndAssets",
+    "build:android:release": "./gradlew assembleRelease",
     "lint": "cross-env-shell tslint --project ./tsconfig.json",
     "lint:fix": "cross-env-shell tslint --fix --project ./tsconfig.json"
   },
