@@ -23,6 +23,7 @@ class Drawer extends React.PureComponent<Props, State> {
     return (
       <SafeAreaView style={styles.container}>
         <CText>Drawer Menu</CText>
+        <CText>Add items here</CText>
       </SafeAreaView>
     );
   }

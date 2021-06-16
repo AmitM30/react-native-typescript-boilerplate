@@ -9,7 +9,18 @@ import { TYPOGRAPHY } from '../view/styles/typography';
 export const showSplash = () => {
   Navigation.setRoot({
     root: {
-      component: { name: SCREENS.Splash },
+      sideMenu: {
+        left: {
+          component: {
+            name: SCREENS.Drawer,
+            id: 'drawerComponentId'
+          }
+        },
+        center: {
+          component:  { name: SCREENS.Splash },
+        }
+      }
+      // component: { name: SCREENS.Splash },
     },
   });
 };

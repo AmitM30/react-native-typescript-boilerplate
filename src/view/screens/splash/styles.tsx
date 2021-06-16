@@ -9,6 +9,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
   },
+  menu: {
+    width: 44,
+    height: 44,
+    marginHorizontal: 10
+  },
   image: {
     width: '70%',
   },

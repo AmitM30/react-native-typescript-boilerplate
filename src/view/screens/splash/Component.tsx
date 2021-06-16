@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { View, Image, SafeAreaView } from 'react-native';
+import { View, Image, SafeAreaView, Pressable } from 'react-native';
+import { Navigation } from 'react-native-navigation';
 
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
@@ -26,9 +27,26 @@ class Splash extends React.PureComponent<Props, State> {
     tabbedNavigation();
   }
 
+  showBurgerMenu () {
+    Navigation.mergeOptions('drawerComponentId', {
+      sideMenu: {
+        left: {
+          visible: true,
+        },
+      },
+    });
+  }
+
   render() {
     return (
       <SafeAreaView style={{ flex: 1 }}>
+        <Pressable onPress={this.showBurgerMenu}>
+          <Image
+            style={styles.menu}
+            resizeMode="contain"
+            source={require('../../assets/images/burger-menu.png')}
+          />
+        </Pressable>
         <View style={styles.container}>
           <Image
             style={styles.image}

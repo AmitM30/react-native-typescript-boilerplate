@@ -5,6 +5,7 @@ import { GLOBAL } from '../styles/global';
 
 export interface Props {
   style: TextStyle;
+  children: Element | String;
 }
 
 interface State {}
