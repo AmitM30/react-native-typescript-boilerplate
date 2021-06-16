@@ -8,7 +8,7 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 ___
 
-### Supports React Native 0.64.1, React Native Navigation v7 and Flipper
+### Supports React Native 0.64.1, React Native Navigation v7, Flipper and Hermes
 
 | Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
