@@ -44,6 +44,7 @@ export const tabbedNavigation = () =>
                   children: [
                     {
                       component: {
+                        id: SCREENS.Home,
                         name: SCREENS.Home,
                         passProps: {
                           text: 'This is Home',
@@ -74,6 +75,7 @@ export const tabbedNavigation = () =>
                   children: [
                     {
                       component: {
+                        id: SCREENS.Settings,
                         name: SCREENS.Settings,
                       },
                     },

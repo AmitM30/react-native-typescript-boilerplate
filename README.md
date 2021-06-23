@@ -2,12 +2,14 @@
 
 ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-## Newline Course Branch
+# Newline Course Branch
 
-This branch is specifically for the Newline course that I have written on developing apps using React Native.
+This branch is specifically for the **Newline** course that I have written on developing apps using React Native.
 
 [The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers/welcome)
 <!-- TODO: Add link here  -->
+
+This branch contains all the code that has been discussed in the course.
 ___
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
@@ -61,10 +63,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Cheat Sheet](#cheat-sheet)
-  - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
   - [Renaming the App](#renaming-the-app)
 - [Contributing](#contributing)
-- [TODO](#todo)
 
 ### Project Structure
 
@@ -175,11 +175,3 @@ Or
 ### Contributing
 
 Please check out [Contributing](https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
-
-### Authors
-
-- [**Anurag Chutani**](https://github.com/a7urag) - _Android Setup_
-- [**Brian Varley**](https://github.com/BrianJVarley) - _Windows Setup_
-- [**Nelson Omuto**](https://github.com/nelsonomuto) - _Update Podfile_
-
-See also the list of [contributors](https://github.com/AmitM30/react-native-typescript-boilerplate/contributors).

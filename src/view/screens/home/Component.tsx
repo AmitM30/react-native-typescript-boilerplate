@@ -7,6 +7,8 @@ import { CText } from '../../elements/custom';
 import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 
+// import List from  './sectionlist';
+
 export interface Props {
   name: string;
   componentId: string;
@@ -61,6 +63,7 @@ class Home extends React.PureComponent<Props, State> {
         </TouchableOpacity>
         <CText>Home</CText>
         <CText>{name}</CText>
+        {/* <List /> */}
         <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
       </SafeAreaView>
     );
