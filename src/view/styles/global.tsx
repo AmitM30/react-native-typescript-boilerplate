@@ -7,7 +7,7 @@ export const widgetPaddingValue = 16;
 const LAYOUT = StyleSheet.create({
   SafeArea: {
     flex: 1,
-    backgroundColor: TYPOGRAPHY.COLOR.Primary,
+    backgroundColor: TYPOGRAPHY.COLOR.Default,
   },
   container: {
     flex: 1,

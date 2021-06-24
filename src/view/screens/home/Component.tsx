@@ -6,8 +6,10 @@ import styles from './styles';
 import { CText } from '../../elements/custom';
 import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { SCREENS } from '../../../constants/screen';
+import ROUTER from '../../../navigators/router';
 
-// import List from  './sectionlist';
+// import List from  '../../widgets/sectionList';
 
 export interface Props {
   name: string;
@@ -30,13 +32,7 @@ class Home extends React.PureComponent<Props, State> {
   componentDidMount() {}
 
   showBurgerMenu () {
-    Navigation.mergeOptions('drawerComponentId', {
-      sideMenu: {
-        left: {
-          visible: true,
-        },
-      },
-    });
+    ROUTER.showDrawer();
   }
 
   showPushScreen = () => {
@@ -49,22 +45,36 @@ class Home extends React.PureComponent<Props, State> {
     });
   }
 
+  showCartScreen = () => {
+    const { componentId } = this.props;
+    ROUTER.showCartScreen({ componentId });
+  }
+
+  showModal = () => {
+    ROUTER.showModal(SCREENS.Dummy2, SCREENS.Dummy2);
+  }
+
+  renderHeader = () => (
+    <TouchableOpacity onPress={this.showCartScreen} style={styles.header}>
+      <Image
+        style={styles.image}
+        resizeMode="contain"
+        source={require('../../assets/images/cart.png')}
+      />
+    </TouchableOpacity>
+  );
+
   render() {
     const { name } = this.state;
 
     return (
       <SafeAreaView style={styles.container}>
-        <TouchableOpacity onPress={this.showBurgerMenu}>
-          <Image
-            style={styles.image}
-            resizeMode="contain"
-            source={require('../../assets/images/burger-menu.png')}
-          />
-        </TouchableOpacity>
+        {this.renderHeader()}
         <CText>Home</CText>
         <CText>{name}</CText>
         {/* <List /> */}
         <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
+        <BUTTON_DEFAULT onClick={this.showModal} title={'Show Modal'} style={styles.button} />
       </SafeAreaView>
     );
   }

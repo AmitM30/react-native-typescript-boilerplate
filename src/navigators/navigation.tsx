@@ -13,14 +13,22 @@ export const showSplash = () => {
         left: {
           component: {
             name: SCREENS.Drawer,
-            id: 'drawerComponentId'
-          }
+            id: 'drawerComponentId',
+          },
         },
         center: {
-          component:  { name: SCREENS.Splash },
+          stack: {
+            children: [
+              {
+                component: {
+                  id: SCREENS.Splash,
+                  name: SCREENS.Splash,
+                }
+              }
+            ]
+          }
         }
       }
-      // component: { name: SCREENS.Splash },
     },
   });
 };
@@ -66,6 +74,62 @@ export const tabbedNavigation = () =>
                       selectedIconColor: TYPOGRAPHY.COLOR.Warning,
                       icon: require('../view/assets/images/tabbar/home.png'),
                       selectedIcon: require('../view/assets/images/tabbar/home.png'),
+                    },
+                  },
+                },
+              },
+              {
+                stack: {
+                  children: [
+                    {
+                      component: {
+                        id: SCREENS.Search,
+                        name: SCREENS.Search,
+                      },
+                    },
+                  ],
+                  options: {
+                    topBar: {
+                      visible: false,
+                      drawBehind: true,
+                      animate: true,
+                    },
+                    bottomTab: {
+                      text: 'Search',
+                      fontSize: 14,
+                      textColor: TYPOGRAPHY.COLOR.Primary,
+                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
+                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
+                      icon: require('../view/assets/images/tabbar/settings.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/settings.png'),
+                    },
+                  },
+                },
+              },
+              {
+                stack: {
+                  children: [
+                    {
+                      component: {
+                        id: SCREENS.Cart,
+                        name: SCREENS.Cart,
+                      },
+                    },
+                  ],
+                  options: {
+                    topBar: {
+                      visible: false,
+                      drawBehind: true,
+                      animate: true,
+                    },
+                    bottomTab: {
+                      text: 'Cart',
+                      fontSize: 14,
+                      textColor: TYPOGRAPHY.COLOR.Primary,
+                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
+                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
+                      icon: require('../view/assets/images/tabbar/settings.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/settings.png'),
                     },
                   },
                 },

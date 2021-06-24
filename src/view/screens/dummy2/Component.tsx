@@ -16,7 +16,7 @@ interface State {
   name: string;
 }
 
-class Dummy extends React.PureComponent<Props, State> {
+class Dummy2 extends React.PureComponent<Props, State> {
   constructor(props: Props) {
     super(props);
   }
@@ -24,8 +24,7 @@ class Dummy extends React.PureComponent<Props, State> {
   componentDidMount() {}
 
   backNavigation = () => {
-    const { componentId } = this.props;
-    Navigation.pop(componentId);
+    Navigation.pop(this.props.componentId);
   }
 
   render() {
@@ -33,13 +32,13 @@ class Dummy extends React.PureComponent<Props, State> {
 
     return (
       <SafeAreaView style={styles.container}>
-        <CText>Dummy Screen 1</CText>
-        <CText>{`Prop passed: ${dummyText}`}</CText>
-        <BUTTON_DEFAULT title={'Push 2'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy2, name: SCREENS.Dummy2 } }) }} />
+        <CText>Dummy 2</CText>
+        <BUTTON_DEFAULT title={'Push 3'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy3, name: SCREENS.Dummy3 } }) }} />
         <BUTTON_DEFAULT title={'Go Back'} onClick={this.backNavigation} />
+        <BUTTON_DEFAULT title={'Dismiss Modal'} onClick={() => { Navigation.dismissModal(componentId); }} />
       </SafeAreaView>
     );
   }
 }
 
-export default Dummy;
+export default Dummy2;

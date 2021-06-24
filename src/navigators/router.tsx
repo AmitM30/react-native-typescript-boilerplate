@@ -33,8 +33,41 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
   });
 };
 
+const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
+  Navigation.mergeOptions(componentId, {
+    bottomTabs: {
+      currentTabIndex: 2,
+    },
+  });
+};
+
+const showDrawer = () => {
+  Navigation.mergeOptions('drawerComponentId', {
+    sideMenu: {
+      left: {
+        visible: true,
+      },
+    },
+  });
+};
+
 const popToScreen = (componentId: string) => {
   Navigation.popTo(componentId);
+};
+
+const showModal = (name: string, id?: string) => {
+  Navigation.showModal({
+    stack: {
+      children: [
+        {
+          component: {
+            name,
+            id
+          }
+        }
+      ]
+    }
+  })
 };
 
 const dismissModal = (componentId: string) => {
@@ -48,9 +81,12 @@ const popToRoot = ({ componentId }: Screen) => Navigation.popToRoot(componentId)
 const ROUTER = {
   showPushScreen,
   popToScreen,
+  showModal,
   dismissModal,
   pop,
   popToRoot,
+  showCartScreen,
+  showDrawer,
 };
 
 export default ROUTER;

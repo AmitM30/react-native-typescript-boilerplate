@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { GLOBAL } from '../../styles/global';
 
 import { TYPOGRAPHY } from '../../styles/typography';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    ...GLOBAL.LAYOUT.container,
     display: 'flex',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
   },

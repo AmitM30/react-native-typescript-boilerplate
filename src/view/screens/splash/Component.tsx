@@ -5,9 +5,11 @@ import { Navigation } from 'react-native-navigation';
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
+import ROUTER from '../../../navigators/router';
 
 export interface Props {
   splashLaunched: Function;
+  componentId: string;
 }
 
 interface State {}
@@ -35,6 +37,11 @@ class Splash extends React.PureComponent<Props, State> {
         },
       },
     });
+  }
+
+  pushToScreen = () => {
+    const { componentId } = this.props;
+    ROUTER.showPushScreen({ componentId });
   }
 
   render() {

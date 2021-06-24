@@ -1,21 +1,14 @@
 import { StyleSheet } from 'react-native';
 
+import { GLOBAL } from '../../styles/global';
 import { TYPOGRAPHY } from '../../styles/typography';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    ...GLOBAL.LAYOUT.container,
     display: 'flex',
-    alignItems: 'center',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
-  },
-  menu: {
-    height: 44,
-    width: 44,
-    marginHorizontal: 10
-  },
-  image: {
-    width: '70%',
+    marginHorizontal: 10,
   },
 });
 

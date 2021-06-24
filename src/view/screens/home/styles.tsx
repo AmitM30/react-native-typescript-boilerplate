@@ -13,6 +13,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: 40,
     height: 40,
+    alignSelf: 'flex-end'
+  },
+  header: {
+    display: 'flex',
   },
   button: {
     alignSelf: 'center',

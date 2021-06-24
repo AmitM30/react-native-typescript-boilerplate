@@ -62,9 +62,14 @@ module.exports = {
     'trailing-comma': [
       true,
       {
-        multiline: 'always',
+        multiline: {
+          "objects": "never",     // <==================
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
         singleline: 'never',
-        esSpecCompliant: true
+        // esSpecCompliant: true
       }
     ], // 20.2
     semicolon: [true, 'always'], // 21.1
