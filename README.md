@@ -18,7 +18,7 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 ___
 
-### Supports React Native 0.63.3, React Native Navigation v7 and Flipper
+### Supports React Native 0.64.1, React Native Navigation v7, Flipper and Hermes
 
 | Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
@@ -64,6 +64,7 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - [Getting Started](#getting-started)
 - [Cheat Sheet](#cheat-sheet)
   - [Renaming the App](#renaming-the-app)
+  - [iOS Launch Screen](#iOS-launch-screen)
 - [Contributing](#contributing)
 
 ### Project Structure
@@ -156,6 +157,16 @@ yarn android
 ```
 
 ### Cheat Sheet
+
+#### iOS Launch Screen
+
+```shell
+XCode -> Project Folder -> Click on `Images.xcassets` -> Click on `LaunchScreen`
+```
+
+Change the 3 images here to set the new launch screen for iOS.
+
+![Launch Screen](./src/view/assets/images/sample/splash-image.png "Launch Screen")
 
 #### Single Screen vs Tabbed Based Navigation
 
