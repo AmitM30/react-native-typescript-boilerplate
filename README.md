@@ -64,7 +64,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - [Getting Started](#getting-started)
 - [Cheat Sheet](#cheat-sheet)
   - [Renaming the App](#renaming-the-app)
-  - [iOS Launch Screen](#iOS-launch-screen)
+  - [iOS Launch Screen](#ios-launch-screen)
+  - [Android Launch Screen](#android-launch-screen)
 - [Contributing](#contributing)
 
 ### Project Structure
@@ -167,6 +168,14 @@ XCode -> Project Folder -> Click on `Images.xcassets` -> Click on `LaunchScreen`
 Change the 3 images here to set the new launch screen for iOS.
 
 ![Launch Screen](./src/view/assets/images/sample/splash-image.png "Launch Screen")
+
+#### Android Launch Screen
+
+```shell
+`./android/app/src/main/res/drawable-*` folders
+```
+
+Change the images the `drawable-*` folders to set the new launch screen for Android.
 
 #### Single Screen vs Tabbed Based Navigation
 
