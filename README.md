@@ -55,6 +55,7 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - [Cheat Sheet](#cheat-sheet)
   - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
   - [Renaming the App](#renaming-the-app)
+  - [iOS Launch Screen](#iOS-launch-screen)
 - [Contributing](#contributing)
 - [TODO](#todo)
 
@@ -148,6 +149,16 @@ yarn android
 ```
 
 ### Cheat Sheet
+
+#### iOS Launch Screen
+
+```shell
+XCode -> Project Folder -> Click on `Images.xcassets` -> Click on `LaunchScreen`
+```
+
+Change the 3 images here to set the new launch screen for iOS.
+
+![Launch Screen](./src/view/assets/images/sample/splash-image.png "Launch Screen")
 
 #### Single Screen vs Tabbed Based Navigation
 
