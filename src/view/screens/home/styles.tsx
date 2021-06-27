@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   image: {
-    marginBottom: 20,
-    width: 40,
-    height: 40,
-    alignSelf: 'flex-end'
+    width: 36,
+    height: 36,
+    alignSelf: 'flex-end',
+    marginHorizontal: 6
   },
   header: {
     display: 'flex',

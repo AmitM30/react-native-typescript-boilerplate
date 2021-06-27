@@ -1,34 +1,8 @@
 import * as React from 'react';
-import { SafeAreaView, SectionList, StyleSheet, View, StatusBar } from 'react-native';
+import { SectionList, View } from 'react-native';
 
 import { CText } from '../../elements/custom';
-// import { BUTTON_DEFAULT } from '../../elements/buttons';
-// import { TYPOGRAPHY } from '../../styles/typography';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
-    // marginHorizontal: 16
-  },
-  item: {
-    backgroundColor: "#FFF",
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    marginVertical: 8
-  },
-  header: {
-    fontSize: 20,
-    backgroundColor: "#EEE",
-    borderWidth: 1,
-    borderColor: '#DDD',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-  },
-  title: {
-    fontSize: 18
-  }
-});
+import styles from './styles';
 
 const DATA = [
   {
@@ -56,7 +30,7 @@ const Item = ({ title }: Props ) => (
 );
 
 const List = () => {
-  return <SafeAreaView style={styles.container}>
+  return (
     <SectionList
       sections={DATA}
       keyExtractor={(item, index) => item + index}
@@ -65,7 +39,7 @@ const List = () => {
         <CText style={styles.header}>{title}</CText>
       )}
     />
-  </SafeAreaView>
-}
+  );
+};
 
 export default List;

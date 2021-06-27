@@ -6,6 +6,9 @@ import { Navigation } from 'react-native-navigation';
 import { SCREENS } from '../constants/screen';
 import { TYPOGRAPHY } from '../view/styles/typography';
 
+/**
+ * Stacked Navigation
+ */
 export const showSplash = () => {
   Navigation.setRoot({
     root: {
@@ -31,6 +34,23 @@ export const showSplash = () => {
       }
     },
   });
+};
+
+/**
+ * Tabbed Navigation
+ */
+const TOP_BAR_OPTIONS = {
+  visible: false,
+  drawBehind: true,
+  animate: true,
+};
+
+const BOTTOM_TAB_OPTIONS = {
+  fontSize: 14,
+  text: '',
+  textColor: TYPOGRAPHY.COLOR.Primary,
+  selectedTextColor: TYPOGRAPHY.COLOR.Warning,
+  selectedIconColor: TYPOGRAPHY.COLOR.Warning,
 };
 
 export const tabbedNavigation = () =>
@@ -61,17 +81,10 @@ export const tabbedNavigation = () =>
                     },
                   ],
                   options: {
-                    topBar: {
-                      visible: false,
-                      drawBehind: true,
-                      animate: true,
-                    },
+                    topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
-                      fontSize: 14,
+                      ...BOTTOM_TAB_OPTIONS,
                       text: 'Home',
-                      textColor: TYPOGRAPHY.COLOR.Primary,
-                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
                       icon: require('../view/assets/images/tabbar/home.png'),
                       selectedIcon: require('../view/assets/images/tabbar/home.png'),
                     },
@@ -89,17 +102,10 @@ export const tabbedNavigation = () =>
                     },
                   ],
                   options: {
-                    topBar: {
-                      visible: false,
-                      drawBehind: true,
-                      animate: true,
-                    },
+                    topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
+                      ...BOTTOM_TAB_OPTIONS,
                       text: 'Search',
-                      fontSize: 14,
-                      textColor: TYPOGRAPHY.COLOR.Primary,
-                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
                       icon: require('../view/assets/images/tabbar/settings.png'),
                       selectedIcon: require('../view/assets/images/tabbar/settings.png'),
                     },
@@ -117,17 +123,10 @@ export const tabbedNavigation = () =>
                     },
                   ],
                   options: {
-                    topBar: {
-                      visible: false,
-                      drawBehind: true,
-                      animate: true,
-                    },
+                    topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
+                      ...BOTTOM_TAB_OPTIONS,
                       text: 'Cart',
-                      fontSize: 14,
-                      textColor: TYPOGRAPHY.COLOR.Primary,
-                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
                       icon: require('../view/assets/images/tabbar/settings.png'),
                       selectedIcon: require('../view/assets/images/tabbar/settings.png'),
                     },
@@ -145,17 +144,10 @@ export const tabbedNavigation = () =>
                     },
                   ],
                   options: {
-                    topBar: {
-                      visible: false,
-                      drawBehind: true,
-                      animate: true,
-                    },
+                    topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
+                      ...BOTTOM_TAB_OPTIONS,
                       text: 'Settings',
-                      fontSize: 14,
-                      textColor: TYPOGRAPHY.COLOR.Primary,
-                      selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-                      selectedIconColor: TYPOGRAPHY.COLOR.Warning,
                       icon: require('../view/assets/images/tabbar/settings.png'),
                       selectedIcon: require('../view/assets/images/tabbar/settings.png'),
                     },

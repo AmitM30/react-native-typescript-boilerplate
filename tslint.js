@@ -64,12 +64,12 @@ module.exports = {
       {
         multiline: {
           "objects": "never",     // <==================
-          "arrays": "always",
+          "arrays": "never",
           "functions": "never",
           "typeLiterals": "ignore"
         },
         singleline: 'never',
-        // esSpecCompliant: true
+        esSpecCompliant: true
       }
     ], // 20.2
     semicolon: [true, 'always'], // 21.1
