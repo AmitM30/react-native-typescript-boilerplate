@@ -50,7 +50,7 @@ const BOTTOM_TAB_OPTIONS = {
   text: '',
   textColor: TYPOGRAPHY.COLOR.Primary,
   selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-  selectedIconColor: TYPOGRAPHY.COLOR.Warning,
+  // selectedIconColor: TYPOGRAPHY.COLOR.Warning,
 };
 
 export const tabbedNavigation = () =>
@@ -84,9 +84,10 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      text: 'Home',
+                      text: '',
                       icon: require('../view/assets/images/tabbar/home.png'),
                       selectedIcon: require('../view/assets/images/tabbar/home.png'),
+                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected
                     },
                   },
                 },
@@ -105,9 +106,9 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      text: 'Search',
-                      icon: require('../view/assets/images/tabbar/settings.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/settings.png'),
+                      text: '',
+                      icon: require('../view/assets/images/tabbar/search.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/search_active.png'),
                     },
                   },
                 },
@@ -126,9 +127,9 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      text: 'Cart',
-                      icon: require('../view/assets/images/tabbar/settings.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/settings.png'),
+                      text: '',
+                      icon: require('../view/assets/images/tabbar/cart.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/cart_active.png'),
                     },
                   },
                 },
@@ -147,9 +148,11 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      text: 'Settings',
-                      icon: require('../view/assets/images/tabbar/settings.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/settings.png'),
+                      text: '',
+                      icon: require('../view/assets/images/tabbar/profile.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
+                      badge: '1',
+                      badgeColor: TYPOGRAPHY.COLOR.Warning
                     },
                   },
                 },

@@ -72,6 +72,11 @@ class Home extends React.PureComponent<Props, State> {
         {this.renderHeader()}
         <CText>Home</CText>
         <CText>{name}</CText>
+        {/* <Image
+          style={styles.image}
+          resizeMode="contain"
+          source={{ uri: 'sample' }}
+        /> */}
         {/* <List /> */}
         <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
         <BUTTON_DEFAULT onClick={this.showModal} title={'Show Modal'} style={styles.button} />
