@@ -14,10 +14,12 @@ import ROUTER from '../../../navigators/router';
 export interface Props {
   name: string;
   componentId: string;
+  text: string;
 }
 
 interface State {
   name: string;
+  text: string;
 }
 
 class Home extends React.PureComponent<Props, State> {
@@ -26,10 +28,21 @@ class Home extends React.PureComponent<Props, State> {
     Navigation.events().bindComponent(this);
     this.state = {
       name: props.name || 'Redux + TypeScript + React Native Navigation',
+      text: props.text,
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    // console.log('>>> MOUNT <<<');
+  }
+
+  // componentDidAppear() {
+  //   console.log('>>> APPEAR <<<');
+  // }
+
+  componentWillUnmount() {
+
+  }
 
   showBurgerMenu () {
     ROUTER.showDrawer();
@@ -40,7 +53,7 @@ class Home extends React.PureComponent<Props, State> {
     router.showPushScreen({
       componentId,
       passProps: {
-        dummyText: 'Hello from Home !!!',
+        dummyText: 'Dummy Title',
       },
     });
   }
@@ -65,18 +78,18 @@ class Home extends React.PureComponent<Props, State> {
   );
 
   render() {
-    const { name } = this.state;
+    const { name, text } = this.state;
 
     return (
       <SafeAreaView style={styles.container}>
         {this.renderHeader()}
         <CText>Home</CText>
-        <CText>{name}</CText>
-        {/* <Image
+        <CText>{text}</CText>
+        <Image
           style={styles.image}
           resizeMode="contain"
           source={{ uri: 'sample' }}
-        /> */}
+        />
         {/* <List /> */}
         <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
         <BUTTON_DEFAULT onClick={this.showModal} title={'Show Modal'} style={styles.button} />

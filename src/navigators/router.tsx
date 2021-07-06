@@ -5,7 +5,8 @@
  */
 import { Navigation } from 'react-native-navigation';
 
-import { SCREENS } from '../constants/screen';
+import { ACTION_BUTTONS, SCREENS } from '../constants/screen';
+import { TYPOGRAPHY } from '../view/styles/typography';
 
 interface Screen {
   componentId: string;
@@ -27,6 +28,22 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
       options: {
         topBar: {
           visible: true,
+          rightButtons: [
+            {
+              id: 'actionSheetRB',
+              icon: require('../view/assets/images/share.png'),
+              color: TYPOGRAPHY.COLOR.DefaultSelected
+            },
+            {
+              id: ACTION_BUTTONS.CartAB,
+              component: {
+                name: ACTION_BUTTONS.CartAB, id: ACTION_BUTTONS.CartAB,
+                passProps: {
+                  onClick: () => showCartScreen({ componentId })
+                }
+              }
+            }
+          ]
         },
       },
     },

@@ -2,6 +2,7 @@ import { Navigation } from 'react-native-navigation';
 
 import store from '../../shared/redux/store';
 import { registerScreens } from '../view/screens';
+import { TYPOGRAPHY } from '../view/styles/typography';
 import { showSplash } from './navigation';
 // import tabbedNavigation, { showSplash } from './navigation';
 
@@ -22,7 +23,14 @@ const app = () => {
       /**
        * Add default options right here
        */
-      topBar: { visible: true, elevation: 0 },
+      topBar: {
+        visible: true, elevation: 0,
+        backButton: {
+          // title: 'Back',
+          icon: require('../view/assets/images/back_button.png'),
+          color: TYPOGRAPHY.COLOR.DefaultSelected
+        }
+      },
     });
 
     showSplash();

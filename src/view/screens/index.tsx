@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 import { Navigation } from 'react-native-navigation';
 
-import { SCREENS } from '../../constants/screen';
+import { SCREENS, ACTION_BUTTONS } from '../../constants/screen';
 
 import * as Splash from './splash';
 import * as Home from './home';
@@ -13,6 +13,7 @@ import * as Dummy2 from './dummy2';
 import * as Dummy3 from './dummy3';
 import * as Search from './search';
 import * as Cart from './cart';
+import * as CART_BUTTON from '../elements/actionButton';
 
 const registerComponentWithRedux = (redux: any) => (
   name: string,
@@ -38,4 +39,5 @@ export function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(SCREENS.Cart, Cart);
   registerComponentWithRedux(redux)(SCREENS.Dummy2, Dummy2);
   registerComponentWithRedux(redux)(SCREENS.Dummy3, Dummy3);
+  registerComponentWithRedux(redux)(ACTION_BUTTONS.CartAB, CART_BUTTON);
 }

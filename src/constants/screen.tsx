@@ -13,4 +13,8 @@ const SCREENS = {
   Cart: 'Cart',
 };
 
-export { SCREENS };
+const ACTION_BUTTONS = {
+  CartAB: 'CartAB'
+};
+
+export { SCREENS, ACTION_BUTTONS };

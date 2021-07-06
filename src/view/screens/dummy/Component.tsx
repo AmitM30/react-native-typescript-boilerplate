@@ -17,6 +17,16 @@ interface State {
 }
 
 class Dummy extends React.PureComponent<Props, State> {
+  static options(props: Props) {
+    return {
+      topBar: {
+        title: {
+          text: props.dummyText,
+        },
+      },
+    };
+  }
+
   constructor(props: Props) {
     super(props);
   }

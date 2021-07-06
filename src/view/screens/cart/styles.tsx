@@ -5,9 +5,8 @@ import { TYPOGRAPHY } from '../../styles/typography';
 
 const styles = StyleSheet.create({
   container: {
-    ...GLOBAL.LAYOUT.container,
+    ...GLOBAL.LAYOUT.SafeArea,
     display: 'flex',
-    backgroundColor: TYPOGRAPHY.COLOR.Default,
     marginHorizontal: 10,
   },
 });

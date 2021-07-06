@@ -85,9 +85,8 @@ export const tabbedNavigation = () =>
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
-                      icon: require('../view/assets/images/tabbar/home.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/home.png'),
-                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected
+                      icon: require('../view/assets/images/tabbar/home_new.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/home_active.png'),
                     },
                   },
                 },
@@ -108,7 +107,8 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/search.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/search_active.png'),
+                      iconColor: TYPOGRAPHY.COLOR.Primary,
+                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected
                     },
                   },
                 },
@@ -129,7 +129,9 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/cart.png'),
+                      iconColor: TYPOGRAPHY.COLOR.Primary,
                       selectedIcon: require('../view/assets/images/tabbar/cart_active.png'),
+                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                     },
                   },
                 },
@@ -150,7 +152,9 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/profile.png'),
+                      iconColor: TYPOGRAPHY.COLOR.Primary,
                       selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
+                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                       badge: '1',
                       badgeColor: TYPOGRAPHY.COLOR.Warning
                     },
