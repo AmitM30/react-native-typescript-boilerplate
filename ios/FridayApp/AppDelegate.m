@@ -3,7 +3,7 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
-#import <CodePush/CodePush.h>
+// #import <CodePush/CodePush.h>
 
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -42,8 +42,8 @@ static void InitializeFlipper(UIApplication *application) {
   #if DEBUG
     return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   #else
-    return [CodePush bundleURL];
-    // return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+    // return [CodePush bundleURL];
+    return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
   #endif
 }
 
