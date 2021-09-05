@@ -4,25 +4,19 @@ import { Text, TextStyle } from 'react-native';
 import { GLOBAL } from '../styles/global';
 
 export interface Props {
-  style: TextStyle;
+  children: JSX.Element | string;
+  style?: TextStyle;
 }
 
-interface State {}
+/**
+ * Native Text element with default styles
+ * @param props style, children
+ * @returns JSX.Element
+ */
+const CTEXT: React.FC<Props> = (props: Props) => (
+  <Text {...props} style={[GLOBAL.TEXT.Default, props.style]}>
+    {props.children}
+  </Text>
+);
 
-class CText extends React.PureComponent<Props, State> {
-  static defaultProps = {
-    style: GLOBAL.TEXT.Default,
-  };
-
-  render() {
-    const { style, children } = this.props;
-
-    return (
-      <Text {...this.props} style={[GLOBAL.TEXT.Default, style]}>
-        {children}
-      </Text>
-    );
-  }
-}
-
-export { CText };
+export { CTEXT };
