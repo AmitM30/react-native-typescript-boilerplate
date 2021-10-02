@@ -6,7 +6,7 @@
 
 This branch is specifically for the **Newline** course that I have written on developing apps using React Native.
 
-[The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers/welcome)
+[The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers)
 <!-- TODO: Add link here  -->
 
 This branch contains all the code that has been discussed in the course.
