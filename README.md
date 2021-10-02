@@ -18,6 +18,10 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 ___
 
+#### The eCommerce App - From the course
+
+![eCommerce](./src/view/assets/images/sample/layout.png "eCommerce")
+
 ### Supports React Native 0.64.1, React Native Navigation v7, Flipper and Hermes
 
 | Updates | RNN | RN | React | Comments |
