@@ -4,7 +4,6 @@ import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 import { SCREENS } from '../../../constants/screen';
 import ROUTER from '../../../navigators/router';
@@ -50,7 +49,7 @@ class Home extends React.PureComponent<Props, State> {
 
   showPushScreen = () => {
     const { componentId } = this.props;
-    router.showPushScreen({
+    ROUTER.showPushScreen({
       componentId,
       passProps: {
         dummyText: 'Dummy Title',
@@ -78,12 +77,12 @@ class Home extends React.PureComponent<Props, State> {
   );
 
   render() {
-    const { name, text } = this.state;
+    const { text } = this.state;
 
     return (
       <SafeAreaView style={styles.container}>
         {this.renderHeader()}
-        <CText>Home</CText>
+        <CText>{'Home'}</CText>
         <CText>{text}</CText>
         <Image
           style={styles.image}

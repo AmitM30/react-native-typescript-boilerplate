@@ -26,19 +26,19 @@ const LAYOUT = StyleSheet.create({
 const CTA = {
   Style: StyleSheet.create({
     primary: {
-      flexDirection: 'row',
+      // flexDirection: 'row',
       alignItems: 'center',
-      justifyContent: 'space-between',
-      height: 48,
+      justifyContent: 'center',
+      height: 60,
       paddingVertical: 8,
-      paddingHorizontal: 20,
-      borderRadius: 10,
-      borderWidth: 1,
-      backgroundColor: TYPOGRAPHY.COLOR.Default,
+      paddingHorizontal: 0,
+      borderRadius: 5,
+      // borderWidth: 1,
+      backgroundColor: TYPOGRAPHY.COLOR.Primary,
     },
     primaryText: {
       fontSize: 16,
-      color: TYPOGRAPHY.COLOR.Primary,
+      color: TYPOGRAPHY.COLOR.Default,
       textAlign: 'center',
     },
     secondary: {

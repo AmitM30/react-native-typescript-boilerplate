@@ -1,4 +1,4 @@
-import 'react-native';
+import * as React from 'react';
 import reactTestRenderer from 'react-test-renderer';
 
 import * as Home from '../../src/view/screens/home';
