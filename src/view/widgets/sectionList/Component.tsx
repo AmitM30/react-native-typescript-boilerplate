@@ -6,24 +6,24 @@ import styles from './styles';
 
 const DATA = [
   {
-    title: "Countries",
-    data: ["India", "USA", "France"]
+    title: 'Countries',
+    data: ['India', 'USA', 'France'],
   },
   {
-    title: "Cities",
-    data: ["New Delhi", "Washington", "Paris", "Berlin", "Wellington"]
+    title: 'Cities',
+    data: ['New Delhi', 'Washington', 'Paris', 'Berlin', 'Wellington'],
   },
   {
-    title: "Currency",
-    data: ["INR", "USD", "Euro", "Euro", "NZD"]
-  }
+    title: 'Currency',
+    data: ['INR', 'USD', 'Euro', 'Euro', 'NZD'],
+  },
 ];
 
 interface Props {
-  title: String
+  title: string;
 }
 
-const Item = ({ title }: Props ) => (
+const Item = ({ title }: Props) => (
   <View style={styles.item}>
     <CText style={styles.title}>{title}</CText>
   </View>

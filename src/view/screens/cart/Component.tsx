@@ -14,6 +14,6 @@ const Cart = (props: Props) => {
       <CText>Cart</CText>
     </SafeAreaView>
   );
-}
+};
 
 export default Cart;

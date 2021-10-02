@@ -4,8 +4,8 @@ import { Navigation } from 'react-native-navigation';
 
 import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
-import ROUTER from '../../../navigators/router';
+import { BUTTON_SECONDARY } from '../../elements/buttons';
+import router from '../../../navigators/router';
 
 export interface Props {
   splashLaunched: Function;
@@ -41,7 +41,7 @@ class Splash extends React.PureComponent<Props, State> {
 
   pushToScreen = () => {
     const { componentId } = this.props;
-    ROUTER.showPushScreen({ componentId });
+    router.showPushScreen({ componentId });
   }
 
   render() {
@@ -64,8 +64,8 @@ class Splash extends React.PureComponent<Props, State> {
             resizeMode="center"
             source={require('../../assets/images/rn_ts.png')}
           />
-          <BUTTON_DEFAULT
-            title="Continue To App"
+          <BUTTON_SECONDARY
+            title="Continue"
             onClick={this.navigateToHome}
           />
         </View>

@@ -14,7 +14,7 @@ const SCREENS = {
 };
 
 const ACTION_BUTTONS = {
-  CartAB: 'CartAB'
+  CartAB: 'CartAB',
 };
 
 export { SCREENS, ACTION_BUTTONS };

@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 import { Navigation } from 'react-native-navigation';
 import { SCREENS } from '../../../constants/screen';
 
@@ -45,8 +45,8 @@ class Dummy extends React.PureComponent<Props, State> {
       <SafeAreaView style={styles.container}>
         <CText>Dummy Screen 1</CText>
         <CText>{`Prop passed: ${dummyText}`}</CText>
-        <BUTTON_DEFAULT title={'Push 2'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy2, name: SCREENS.Dummy2 } }) }} />
-        <BUTTON_DEFAULT title={'Go Back'} onClick={this.backNavigation} />
+        <BUTTON_PRIMARY title={'Push 2'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy2, name: SCREENS.Dummy2 } }); }} />
+        <BUTTON_PRIMARY title={'Go Back'} onClick={this.backNavigation} />
       </SafeAreaView>
     );
   }

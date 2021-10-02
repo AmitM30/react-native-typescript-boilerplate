@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { TYPOGRAPHY } from './typography';
 
@@ -13,48 +13,39 @@ const LAYOUT = StyleSheet.create({
     flex: 1,
   },
   pageContainer: {
-    padding: 16,
+    padding: TYPOGRAPHY.SPACING.page,
   },
-  shadow: {
-    shadowOpacity: 0.25,
-    shadowRadius: 3,
-    shadowOffset: { width: 3, height: 3 },
-    elevation: Platform.OS === 'ios' ? 0 : 3,
-  },
+  shadow: TYPOGRAPHY.SHADOW,
 });
 
 const CTA = {
   Style: StyleSheet.create({
     primary: {
-      // flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      height: 60,
-      paddingVertical: 8,
-      paddingHorizontal: 0,
-      borderRadius: 5,
-      // borderWidth: 1,
       backgroundColor: TYPOGRAPHY.COLOR.Primary,
+      height: TYPOGRAPHY.BUTTON.primary.height,
+      borderRadius: TYPOGRAPHY.BUTTON.primary.borderRadius,
     },
     primaryText: {
-      fontSize: 16,
-      color: TYPOGRAPHY.COLOR.Default,
       textAlign: 'center',
+      color: TYPOGRAPHY.COLOR.Default,
+      fontSize: TYPOGRAPHY.BUTTON.primary.text.fontSize,
     },
     secondary: {
-      flexDirection: 'row',
       alignItems: 'center',
-      justifyContent: 'space-between',
-      height: 48,
-      borderWidth: 1,
-      backgroundColor: TYPOGRAPHY.COLOR.Default,
-      borderRadius: 5,
+      justifyContent: 'center',
       borderColor: TYPOGRAPHY.COLOR.Primary,
+      backgroundColor: TYPOGRAPHY.COLOR.Default,
+      height: TYPOGRAPHY.BUTTON.secondary.height,
+      borderWidth: TYPOGRAPHY.BUTTON.secondary.borderWidth,
+      borderRadius: TYPOGRAPHY.BUTTON.secondary.borderRadius,
+      paddingHorizontal: TYPOGRAPHY.BUTTON.secondary.paddingHorizontal,
     },
     secondaryText: {
-      color: TYPOGRAPHY.COLOR.Primary,
-      fontSize: 16,
       textAlign: 'center',
+      color: TYPOGRAPHY.COLOR.Primary,
+      fontSize: TYPOGRAPHY.BUTTON.secondary.text.fontSize,
     },
   }),
   TouchableOpacity: {
@@ -63,55 +54,54 @@ const CTA = {
 };
 
 const FONTS = StyleSheet.create({
-  h1: {
-    fontSize: 30,
+  title: {
+    fontWeight: 'bold',
+    fontSize: TYPOGRAPHY.FONT.title.fontSize,
     fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.DefaultSelected,
   },
   body: {
-    fontSize: 16,
+    color: TYPOGRAPHY.COLOR.Paragraph,
     fontFamily: TYPOGRAPHY.FONT.Primary,
-    color: TYPOGRAPHY.COLOR.Default,
+    fontSize: TYPOGRAPHY.FONT.paragraph.fontSize,
   },
   subTitle: {
-    fontSize: 14,
-    fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.Secondary,
+    fontFamily: TYPOGRAPHY.FONT.Primary,
+    fontSize: TYPOGRAPHY.FONT.subtitle.fontSize,
   },
 });
 
 const TEXT = StyleSheet.create({
   Default: {
     textAlign: 'left',
+    color: TYPOGRAPHY.COLOR.Paragraph,
     fontFamily: TYPOGRAPHY.FONT.Primary,
-    fontSize: 14,
-    color: TYPOGRAPHY.COLOR.Primary,
+    fontSize: TYPOGRAPHY.FONT.paragraph.fontSize,
   },
   Bold: {
     textAlign: 'left',
-    fontSize: 14,
+    color: TYPOGRAPHY.COLOR.Paragraph,
     fontFamily: TYPOGRAPHY.FONT.Primary,
-    color: TYPOGRAPHY.COLOR.Primary,
+    fontSize: TYPOGRAPHY.FONT.paragraph.fontSize,
   },
 });
 
 const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
-      fontFamily: TYPOGRAPHY.FONT.Primary,
-      textAlign: 'left',
-      fontSize: 12,
-      borderWidth: 0.2,
-      borderColor: TYPOGRAPHY.COLOR.Border,
       color: TYPOGRAPHY.COLOR.Primary,
+      fontFamily: TYPOGRAPHY.FONT.Primary,
+      borderColor: TYPOGRAPHY.COLOR.Border,
+      fontSize: TYPOGRAPHY.FONT.input.fontSize,
+      borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
     },
     Bold: {
-      fontFamily: TYPOGRAPHY.FONT.Primary,
-      textAlign: 'left',
-      fontSize: 12,
-      borderWidth: 0.2,
-      borderColor: TYPOGRAPHY.COLOR.Border,
       color: TYPOGRAPHY.COLOR.Primary,
+      fontFamily: TYPOGRAPHY.FONT.Primary,
+      borderColor: TYPOGRAPHY.COLOR.Border,
+      fontSize: TYPOGRAPHY.FONT.input.fontSize,
+      borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
     },
   }),
 };

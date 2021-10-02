@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 
 export interface Props {
   componentId: string;
@@ -13,9 +13,9 @@ const Search = (props: Props) => {
   return (
     <SafeAreaView style={styles.container}>
       <CText>Search</CText>
-      <BUTTON_DEFAULT title={'Search'} onClick={() => {}} />
+      <BUTTON_PRIMARY title={'Search'} onClick={() => {}} />
     </SafeAreaView>
   );
-}
+};
 
 export default Search;

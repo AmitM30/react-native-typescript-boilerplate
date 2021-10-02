@@ -60,7 +60,7 @@
     "babel-jest": "^25.1.0",
     "babel-preset-airbnb": "^3.2.0",
     "babel-preset-react-native": "^4.0.1",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",

@@ -14,14 +14,30 @@ export interface Props {
 /**
  * Default Button
  */
-const BUTTON_DEFAULT = ({ title, onClick, style }: Props) => (
+const BUTTON_PRIMARY = ({ title, onClick, style }: Props) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.primary, GLOBAL.LAYOUT.shadow, style]}
-    onPress={() => onClick()}
+    onPress={onClick}
   >
-    <CText style={GLOBAL.CTA.Style.primaryText}>{title}</CText>
+    <CText style={GLOBAL.CTA.Style.primaryText}>{title.toLocaleUpperCase()}</CText>
   </TouchableOpacity>
 );
 
-export { BUTTON_DEFAULT };
+/**
+ * Default Button
+ */
+const BUTTON_SECONDARY = ({ title, onClick, style }: Props) => (
+  <TouchableOpacity
+    activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
+    style={[GLOBAL.CTA.Style.secondary, style]}
+    onPress={onClick}
+  >
+    <CText style={GLOBAL.CTA.Style.secondaryText}>{title}</CText>
+  </TouchableOpacity>
+);
+
+export {
+  BUTTON_PRIMARY,
+  BUTTON_SECONDARY,
+};

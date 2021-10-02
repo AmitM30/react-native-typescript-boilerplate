@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   },
 });
 
-
 /**
  * Cart Button
  */

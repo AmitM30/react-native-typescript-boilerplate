@@ -26,12 +26,12 @@ export const showSplash = () => {
                 component: {
                   id: SCREENS.Splash,
                   name: SCREENS.Splash,
-                }
-              }
-            ]
-          }
-        }
-      }
+                },
+              },
+            ],
+          },
+        },
+      },
     },
   });
 };
@@ -48,7 +48,7 @@ const TOP_BAR_OPTIONS = {
 const BOTTOM_TAB_OPTIONS = {
   fontSize: 14,
   text: '',
-  textColor: TYPOGRAPHY.COLOR.Primary,
+  textColor: TYPOGRAPHY.COLOR.Title,
   selectedTextColor: TYPOGRAPHY.COLOR.Warning,
   // selectedIconColor: TYPOGRAPHY.COLOR.Warning,
 };
@@ -107,8 +107,8 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/search.png'),
-                      iconColor: TYPOGRAPHY.COLOR.Primary,
-                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected
+                      iconColor: TYPOGRAPHY.COLOR.Title,
+                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                     },
                   },
                 },
@@ -129,7 +129,7 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/cart.png'),
-                      iconColor: TYPOGRAPHY.COLOR.Primary,
+                      iconColor: TYPOGRAPHY.COLOR.Title,
                       selectedIcon: require('../view/assets/images/tabbar/cart_active.png'),
                       selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                     },
@@ -152,11 +152,11 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/profile.png'),
-                      iconColor: TYPOGRAPHY.COLOR.Primary,
+                      iconColor: TYPOGRAPHY.COLOR.Title,
                       selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
                       selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                       badge: '1',
-                      badgeColor: TYPOGRAPHY.COLOR.Warning
+                      badgeColor: TYPOGRAPHY.COLOR.Warning,
                     },
                   },
                 },

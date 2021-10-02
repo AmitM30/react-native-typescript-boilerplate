@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 import { Navigation } from 'react-native-navigation';
 
 export interface Props {
@@ -32,7 +32,7 @@ class Dummy3 extends React.PureComponent<Props, State> {
     return (
       <SafeAreaView style={styles.container}>
         <CText>Dummy 3</CText>
-        <BUTTON_DEFAULT title={'Go Back to Dummy 1'} onClick={this.backNavigation} />
+        <BUTTON_PRIMARY title={'Go Back to Dummy 1'} onClick={this.backNavigation} />
       </SafeAreaView>
     );
   }

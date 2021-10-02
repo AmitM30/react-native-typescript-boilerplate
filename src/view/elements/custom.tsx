@@ -10,9 +10,9 @@ export interface TextProps {
 }
 
 export interface TextInputProps {
-  style?: Object,
-  textInputRef?: any,
-  placeholderTextColor?: string
+  style?: Object;
+  textInputRef?: any;
+  placeholderTextColor?: string;
 }
 
 const CText: React.FC<TextProps> = (props: TextProps) => (
@@ -25,22 +25,22 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
   const {
     style,
     placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
-    textInputRef
+    textInputRef,
   } = props;
-  const [data, setData] = React.useState('')
-  
+  const [data, setData] = React.useState('');
+
   return (
     <TextInput
       ref={textInputRef}
       value={data}
-      onChange={(e) => { console.log('>>> e:', e, e.nativeEvent.text); setData(e.nativeEvent.text)}}
+      onChange={(e) => { console.log('>>> e:', e, e.nativeEvent.text); setData(e.nativeEvent.text);}}
       placeholderTextColor={placeholderTextColor}
       underlineColorAndroid={'transparent'}
       {...props}
       style={[GLOBAL.TEXT_INPUT.Style.Default, style]}
       autoCorrect={false}
     />
-  )
+  );
 };
 
 export { CText, CTextInput };

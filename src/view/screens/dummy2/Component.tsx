@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 import { Navigation } from 'react-native-navigation';
 import { SCREENS } from '../../../constants/screen';
 
@@ -33,9 +33,9 @@ class Dummy2 extends React.PureComponent<Props, State> {
     return (
       <SafeAreaView style={styles.container}>
         <CText>Dummy 2</CText>
-        <BUTTON_DEFAULT title={'Push 3'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy3, name: SCREENS.Dummy3 } }) }} />
-        <BUTTON_DEFAULT title={'Go Back'} onClick={this.backNavigation} />
-        <BUTTON_DEFAULT title={'Dismiss Modal'} onClick={() => { Navigation.dismissModal(componentId); }} />
+        <BUTTON_PRIMARY title={'Push 3'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy3, name: SCREENS.Dummy3 } }); }} />
+        <BUTTON_PRIMARY title={'Go Back'} onClick={this.backNavigation} />
+        <BUTTON_PRIMARY title={'Dismiss Modal'} onClick={() => { Navigation.dismissModal(componentId); }} />
       </SafeAreaView>
     );
   }

@@ -28,8 +28,8 @@ const app = () => {
         backButton: {
           // title: 'Back',
           icon: require('../view/assets/images/back_button.png'),
-          color: TYPOGRAPHY.COLOR.DefaultSelected
-        }
+          color: TYPOGRAPHY.COLOR.DefaultSelected,
+        },
       },
     });
 

@@ -4,9 +4,10 @@ import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
-import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 import { SCREENS } from '../../../constants/screen';
-import ROUTER from '../../../navigators/router';
+import router from '../../../navigators/router';
+import { GLOBAL } from '../../styles/global';
 
 // import List from  '../../widgets/sectionList';
 
@@ -44,12 +45,12 @@ class Home extends React.PureComponent<Props, State> {
   }
 
   showBurgerMenu () {
-    ROUTER.showDrawer();
+    router.showDrawer();
   }
 
   showPushScreen = () => {
     const { componentId } = this.props;
-    ROUTER.showPushScreen({
+    router.showPushScreen({
       componentId,
       passProps: {
         dummyText: 'Dummy Title',
@@ -59,11 +60,11 @@ class Home extends React.PureComponent<Props, State> {
 
   showCartScreen = () => {
     const { componentId } = this.props;
-    ROUTER.showCartScreen({ componentId });
+    router.showCartScreen({ componentId });
   }
 
   showModal = () => {
-    ROUTER.showModal(SCREENS.Dummy2, SCREENS.Dummy2);
+    router.showModal(SCREENS.Dummy2, SCREENS.Dummy2);
   }
 
   renderHeader = () => (
@@ -74,7 +75,7 @@ class Home extends React.PureComponent<Props, State> {
         source={require('../../assets/images/cart.png')}
       />
     </TouchableOpacity>
-  );
+  )
 
   render() {
     const { text } = this.state;
@@ -90,8 +91,11 @@ class Home extends React.PureComponent<Props, State> {
           source={{ uri: 'sample' }}
         />
         {/* <List /> */}
-        <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
-        <BUTTON_DEFAULT onClick={this.showModal} title={'Show Modal'} style={styles.button} />
+        <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
+        <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
+        <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
+        <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
+        <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
       </SafeAreaView>
     );
   }

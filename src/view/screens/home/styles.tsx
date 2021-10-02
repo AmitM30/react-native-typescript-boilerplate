@@ -13,15 +13,15 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     alignSelf: 'flex-end',
-    marginHorizontal: 6
+    marginHorizontal: 6,
   },
   header: {
     display: 'flex',
   },
   button: {
     alignSelf: 'center',
-    marginTop: 50,
-    width: 250,
+    marginVertical: 10,
+    width: 200,
   },
 });
 

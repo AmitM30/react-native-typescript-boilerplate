@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     paddingHorizontal: 20,
     paddingVertical: 12,
-    marginVertical: 8
+    marginVertical: 8,
   },
   header: {
     fontSize: 20,
@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   title: {
-    fontSize: 18
-  }
+    fontSize: 18,
+  },
 });
 
 export default styles;

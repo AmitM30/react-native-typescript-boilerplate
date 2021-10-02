@@ -32,18 +32,18 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
             {
               id: 'actionSheetRB',
               icon: require('../view/assets/images/share.png'),
-              color: TYPOGRAPHY.COLOR.DefaultSelected
+              color: TYPOGRAPHY.COLOR.DefaultSelected,
             },
             {
               id: ACTION_BUTTONS.CartAB,
               component: {
                 name: ACTION_BUTTONS.CartAB, id: ACTION_BUTTONS.CartAB,
                 passProps: {
-                  onClick: () => showCartScreen({ componentId })
-                }
-              }
-            }
-          ]
+                  onClick: () => showCartScreen({ componentId }),
+                },
+              },
+            },
+          ],
         },
       },
     },
@@ -79,12 +79,12 @@ const showModal = (name: string, id?: string) => {
         {
           component: {
             name,
-            id
-          }
-        }
-      ]
-    }
-  })
+            id,
+          },
+        },
+      ],
+    },
+  });
 };
 
 const dismissModal = (componentId: string) => {

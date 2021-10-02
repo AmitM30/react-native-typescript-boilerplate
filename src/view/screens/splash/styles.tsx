@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   menu: {
     height: 44,
     width: 44,
-    marginHorizontal: 10
+    marginHorizontal: 10,
   },
   image: {
     width: '70%',
