@@ -2,12 +2,15 @@
 
 ![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-This branch is specifically for the **Newline** course that I have written on developing apps using React Native.
+This branch is specifically for the **Newline** course that I have written on developing apps using React Native, from a Product perspective. It contains all the code that has been discussed in the course.
 
 [The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers)
-<!-- TODO: Add link here  -->
+___
 
-This branch contains all the code that has been discussed in the course.
+#### The eCommerce App - From the course
+
+![eCommerce](./src/view/assets/images/sample/layout.png "eCommerce")
+
 ___
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
@@ -15,10 +18,6 @@ ___
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
 
 ___
-
-#### The eCommerce App - From the course
-
-![eCommerce](./src/view/assets/images/sample/layout.png "eCommerce")
 
 ### Supports React Native 0.64.1, React Native Navigation v7, Flipper and Hermes
 
