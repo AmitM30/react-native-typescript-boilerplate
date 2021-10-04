@@ -7,13 +7,14 @@ export const widgetPaddingValue = 16;
 const LAYOUT = StyleSheet.create({
   SafeArea: {
     flex: 1,
+    display: 'flex',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
   },
   container: {
     flex: 1,
   },
   pageContainer: {
-    padding: TYPOGRAPHY.SPACING.page,
+    marginHorizontal: TYPOGRAPHY.SPACING.page,
   },
   shadow: TYPOGRAPHY.SHADOW,
 });
@@ -23,9 +24,10 @@ const CTA = {
     primary: {
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: TYPOGRAPHY.COLOR.Primary,
       height: TYPOGRAPHY.BUTTON.primary.height,
+      backgroundColor: TYPOGRAPHY.COLOR.Primary,
       borderRadius: TYPOGRAPHY.BUTTON.primary.borderRadius,
+      marginVertical: TYPOGRAPHY.BUTTON.primary.marginVertical,
     },
     primaryText: {
       textAlign: 'center',

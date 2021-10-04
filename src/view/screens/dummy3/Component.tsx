@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native';
 
-import styles from './styles';
 import { CText } from '../../elements/custom';
 import { BUTTON_PRIMARY } from '../../elements/buttons';
 import { Navigation } from 'react-native-navigation';
+import { GLOBAL } from '../../styles/global';
 
 export interface Props {
   dummyText: string;
@@ -30,7 +30,7 @@ class Dummy3 extends React.PureComponent<Props, State> {
     const { dummyText } = this.props;
 
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         <CText>Dummy 3</CText>
         <BUTTON_PRIMARY title={'Go Back to Dummy 1'} onClick={this.backNavigation} />
       </SafeAreaView>

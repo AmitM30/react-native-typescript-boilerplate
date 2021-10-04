@@ -38,6 +38,7 @@
     "react": "^17.0.1",
     "react-native": "0.64.1",
     "react-native-navigation": "^7.14.0",
+    "react-native-svg": "^12.1.1",
     "react-redux": "^7.2.4",
     "redux": "4.1.0",
     "redux-thunk": "^2.3.0"

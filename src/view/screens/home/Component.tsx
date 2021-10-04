@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, TouchableOpacity, Image, View } from 'react-native';
 
 import styles from './styles';
 import { CText } from '../../elements/custom';
@@ -8,6 +8,8 @@ import { BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 import { SCREENS } from '../../../constants/screen';
 import router from '../../../navigators/router';
 import { GLOBAL } from '../../styles/global';
+import SVGIcons from '../../assets/svgs'
+import { TYPOGRAPHY } from '../../styles/typography';
 
 // import List from  '../../widgets/sectionList';
 
@@ -68,7 +70,7 @@ class Home extends React.PureComponent<Props, State> {
   }
 
   renderHeader = () => (
-    <TouchableOpacity onPress={this.showCartScreen} style={styles.header}>
+    <TouchableOpacity onPress={this.showCartScreen}>
       <Image
         style={styles.image}
         resizeMode="contain"
@@ -81,21 +83,24 @@ class Home extends React.PureComponent<Props, State> {
     const { text } = this.state;
 
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         {this.renderHeader()}
-        <CText>{'Home'}</CText>
-        <CText>{text}</CText>
-        <Image
-          style={styles.image}
-          resizeMode="contain"
-          source={{ uri: 'sample' }}
-        />
-        {/* <List /> */}
-        <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
-        <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
-        <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
-        <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
-        <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
+        <View style={GLOBAL.LAYOUT.pageContainer}>
+          <CText>{'Home'}</CText>
+          <CText>{text}</CText>
+          <Image
+            style={styles.image}
+            resizeMode="contain"
+            source={{ uri: 'sample' }}
+          />
+          {/* <List /> */}
+          <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
+          <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
+          <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
+          <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
+          <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
+          <SVGIcons.Search color={TYPOGRAPHY.COLOR.Primary} />
+        </View>
       </SafeAreaView>
     );
   }

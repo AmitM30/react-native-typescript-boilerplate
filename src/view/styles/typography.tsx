@@ -38,6 +38,7 @@ const BUTTON = {
   primary: {
     height: 60,
     borderRadius: 5,
+    marginVertical: 5,
     text: {
       fontSize: 16,
     },
@@ -54,7 +55,7 @@ const BUTTON = {
 };
 
 const SPACING = {
-  page: 16,
+  page: 10,
 };
 
 const SHADOW = {
