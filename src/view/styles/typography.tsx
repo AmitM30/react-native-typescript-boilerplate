@@ -15,6 +15,9 @@ const COLOR = {
   Title: '#393939',
   SecondaryTitle: '#4E4E50',
   Paragraph: '#BDBEBF',
+
+  // StatusBar
+  StatusBar: 'transparent'
 };
 
 const FONT = {
@@ -29,8 +32,11 @@ const FONT = {
     fontSize: 14,
   },
   input :{
-    fontSize: 12,
+    height: 36,
+    fontSize: 14,
     borderWidth: 0.5,
+    borderRadius: 18,
+    paddingHorizontal: 12
   },
 };
 
@@ -48,6 +54,14 @@ const BUTTON = {
     borderRadius: 5,
     borderWidth: 1,
     paddingHorizontal: 8,
+    text: {
+      fontSize: 16,
+    },
+  },
+  category: {
+    radius: 48,
+    borderRadius: 24,
+    marginVertical: 5,
     text: {
       fontSize: 16,
     },

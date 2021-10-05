@@ -3,29 +3,44 @@ import { ViewStyle } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import { TYPOGRAPHY } from '../../styles/typography';
+import * as CategoryIcons from './category';
 
 interface Props {
   style?: ViewStyle,
   color?: string
 }
 
-const defaults: Props = {
-  style: { width: 24, height: 24 },
-  color: TYPOGRAPHY.COLOR.Default
+export const SVGDefaultProps: Props = {
+  style: { width: 32, height: 32 },
+  color: TYPOGRAPHY.COLOR.Primary
 }
 
-const Search = (props: Props) => {
+const Search = ({ style, color }: Props) => {
   return (
-    <Svg viewBox="0 0 30 30" style={props.style}>
+    <Svg viewBox="0 0 30 30" width={style?.width} height={style?.height} >
       <Path
-        fill={props.color}
+        fill={color}
         d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
       />
     </Svg>
   )
 }
-Search.defaultProps = defaults;
+Search.defaultProps = SVGDefaultProps;
+
+const Camera = ({ style, color = TYPOGRAPHY.COLOR.Primary }: Props) => {
+  return (
+    <Svg viewBox="0 0 50 50" style={style}>
+      <Path
+        fill={color}
+        d="M 19.265625 3 C 17.510922 3 15.879726 3.9224619 14.976562 5.4277344 L 13.433594 8 L 5.8183594 8 C 2.6180531 8 1.1842379e-15 10.618053 0 13.818359 L 0 36.183594 C 0 39.383104 2.6180531 42 5.8183594 42 L 44.183594 42 C 47.383104 42 50 39.381947 50 36.181641 L 50 13.818359 C 50 10.618053 47.381947 8 44.181641 8 L 36.566406 8 L 35.019531 5.421875 C 34.118597 3.9211502 32.492938 3 30.742188 3 L 19.265625 3 z M 19.265625 5 L 30.742188 5 C 31.793436 5 32.763621 5.5498967 33.304688 6.4511719 L 35.433594 10 L 44.181641 10 C 46.299334 10 48 11.700666 48 13.818359 L 48 36.181641 C 48 38.299334 46.300084 40 44.183594 40 L 5.8183594 40 C 3.7006656 40 2 38.300084 2 36.183594 L 2 13.818359 C 2 11.700666 3.7006656 10 5.8183594 10 L 14.566406 10 L 14.857422 9.5136719 L 16.691406 6.4570312 C 17.234243 5.5523038 18.210328 5 19.265625 5 z M 25 12 C 17.832139 12 12 17.832144 12 25 C 12 32.167856 17.832139 38 25 38 C 32.167861 38 38 32.167856 38 25 C 38 17.832144 32.167861 12 25 12 z M 25 14 C 31.086982 14 36 18.913022 36 25 C 36 31.086978 31.086982 36 25 36 C 18.913018 36 14 31.086978 14 25 C 14 18.913022 18.913018 14 25 14 z M 25 16.5 C 20.317422 16.5 16.5 20.317425 16.5 25 C 16.5 29.682575 20.317422 33.5 25 33.5 C 29.682578 33.5 33.5 29.682575 33.5 25 C 33.5 20.317425 29.682578 16.5 25 16.5 z M 25 18.5 C 28.601699 18.5 31.5 21.398304 31.5 25 C 31.5 28.601696 28.601699 31.5 25 31.5 C 21.398301 31.5 18.5 28.601696 18.5 25 C 18.5 21.398304 21.398301 18.5 25 18.5 z"
+      />
+    </Svg>
+  )
+}
+Camera.defaultProps = SVGDefaultProps;
 
 export default {
-  Search
+  Search,
+  Camera,
+  CategoryIcons,
 }

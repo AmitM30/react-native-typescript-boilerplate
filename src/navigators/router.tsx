@@ -7,6 +7,7 @@ import { Navigation } from 'react-native-navigation';
 
 import { ACTION_BUTTONS, SCREENS } from '../constants/screen';
 import { TYPOGRAPHY } from '../view/styles/typography';
+import { STATUS_BAR_OPTIONS } from './navigation';
 
 interface Screen {
   componentId: string;
@@ -26,6 +27,7 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
         ...passProps,
       },
       options: {
+        statusBar: STATUS_BAR_OPTIONS,
         topBar: {
           visible: true,
           rightButtons: [

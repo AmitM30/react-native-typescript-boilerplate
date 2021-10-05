@@ -11,6 +11,12 @@ export interface Props {
   style?: ViewStyle;
 }
 
+export interface IconProps {
+  icon: React.ReactElement;
+  onClick: Callback;
+  style?: ViewStyle;
+}
+
 /**
  * Default Button
  */
@@ -37,7 +43,21 @@ const BUTTON_SECONDARY = ({ title, onClick, style }: Props) => (
   </TouchableOpacity>
 );
 
+/**
+ * Category Icon Button
+ */
+const BUTTON_CATEGORY = ({ icon, onClick, style }: IconProps) => (
+  <TouchableOpacity
+    activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
+    style={[GLOBAL.CTA.Style.categoryIcons, style]}
+    onPress={onClick}
+  >
+    {icon}
+  </TouchableOpacity>
+);
+
 export {
   BUTTON_PRIMARY,
   BUTTON_SECONDARY,
+  BUTTON_CATEGORY
 };

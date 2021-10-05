@@ -24,6 +24,12 @@ export const showSplash = () => {
             children: [
               {
                 component: {
+                  options: {
+                    statusBar: {
+                      blur: true,
+                      drawBehind: true
+                    }
+                  },
                   id: SCREENS.Splash,
                   name: SCREENS.Splash,
                 },
@@ -45,12 +51,16 @@ const TOP_BAR_OPTIONS = {
   animate: true,
 };
 
+export const STATUS_BAR_OPTIONS = {
+  hideWithTopBar: true,
+  backgroundColor: TYPOGRAPHY.COLOR.StatusBar
+};
+
 const BOTTOM_TAB_OPTIONS = {
-  fontSize: 14,
   text: '',
+  fontSize: 14,
   textColor: TYPOGRAPHY.COLOR.Title,
   selectedTextColor: TYPOGRAPHY.COLOR.Warning,
-  // selectedIconColor: TYPOGRAPHY.COLOR.Warning,
 };
 
 export const tabbedNavigation = () =>
@@ -77,6 +87,9 @@ export const tabbedNavigation = () =>
                         passProps: {
                           text: 'This is Home',
                         },
+                        options: {
+                          statusBar: STATUS_BAR_OPTIONS
+                        }
                       },
                     },
                   ],
@@ -84,7 +97,6 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      text: '',
                       icon: require('../view/assets/images/tabbar/home_new.png'),
                       selectedIcon: require('../view/assets/images/tabbar/home_active.png'),
                     },
@@ -98,7 +110,10 @@ export const tabbedNavigation = () =>
                       component: {
                         id: SCREENS.Search,
                         name: SCREENS.Search,
-                      },
+                        options: {
+                          statusBar: STATUS_BAR_OPTIONS
+                        }
+                      }
                     },
                   ],
                   options: {
@@ -120,6 +135,9 @@ export const tabbedNavigation = () =>
                       component: {
                         id: SCREENS.Cart,
                         name: SCREENS.Cart,
+                        options: {
+                          statusBar: STATUS_BAR_OPTIONS
+                        }
                       },
                     },
                   ],
@@ -143,6 +161,9 @@ export const tabbedNavigation = () =>
                       component: {
                         id: SCREENS.Settings,
                         name: SCREENS.Settings,
+                        options: {
+                          statusBar: STATUS_BAR_OPTIONS
+                        }
                       },
                     },
                   ],

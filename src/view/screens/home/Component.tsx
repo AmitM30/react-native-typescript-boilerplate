@@ -3,8 +3,8 @@ import { Navigation } from 'react-native-navigation';
 import { SafeAreaView, TouchableOpacity, Image, View } from 'react-native';
 
 import styles from './styles';
-import { CText } from '../../elements/custom';
-import { BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
+import { CText, CTextInput } from '../../elements/custom';
+import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 import { SCREENS } from '../../../constants/screen';
 import router from '../../../navigators/router';
 import { GLOBAL } from '../../styles/global';
@@ -100,6 +100,10 @@ class Home extends React.PureComponent<Props, State> {
           <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
           <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
           <SVGIcons.Search color={TYPOGRAPHY.COLOR.Primary} />
+          <CTextInput />
+          <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Shoes />} />
+          <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Stileto />} />
+          <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Bulb />} />
         </View>
       </SafeAreaView>
     );

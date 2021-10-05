@@ -49,6 +49,16 @@ const CTA = {
       color: TYPOGRAPHY.COLOR.Primary,
       fontSize: TYPOGRAPHY.BUTTON.secondary.text.fontSize,
     },
+    categoryIcons: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: TYPOGRAPHY.BUTTON.category.radius,
+      width: TYPOGRAPHY.BUTTON.category.radius,
+      backgroundColor: TYPOGRAPHY.COLOR.Default,
+      borderRadius: TYPOGRAPHY.BUTTON.category.borderRadius,
+      marginVertical: TYPOGRAPHY.BUTTON.category.marginVertical,
+      ...TYPOGRAPHY.SHADOW
+    },
   }),
   TouchableOpacity: {
     default: 0.8,
@@ -92,11 +102,15 @@ const TEXT = StyleSheet.create({
 const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
-      color: TYPOGRAPHY.COLOR.Primary,
+      color: TYPOGRAPHY.COLOR.DefaultSelected,
+      height: TYPOGRAPHY.FONT.input.height,
+      borderRadius: TYPOGRAPHY.FONT.input.borderRadius,
+      backgroundColor: TYPOGRAPHY.COLOR.BgColor,
       fontFamily: TYPOGRAPHY.FONT.Primary,
       borderColor: TYPOGRAPHY.COLOR.Border,
       fontSize: TYPOGRAPHY.FONT.input.fontSize,
       borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
+      paddingHorizontal: TYPOGRAPHY.FONT.input.paddingHorizontal
     },
     Bold: {
       color: TYPOGRAPHY.COLOR.Primary,
