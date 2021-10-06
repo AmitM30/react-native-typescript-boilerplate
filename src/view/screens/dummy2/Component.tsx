@@ -1,44 +1,31 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
-import { CText } from '../../elements/custom';
-import { BUTTON_PRIMARY } from '../../elements/buttons';
-import { Navigation } from 'react-native-navigation';
-import { SCREENS } from '../../../constants/screen';
 import { GLOBAL } from '../../styles/global';
+import { CText } from '../../elements/inputs';
+import { SCREENS } from '../../../constants/screen';
+import { Navigation } from 'react-native-navigation';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 
 export interface Props {
-  dummyText: string;
   componentId: string;
 }
 
-interface State {
-  name: string;
-}
-
-class Dummy2 extends React.PureComponent<Props, State> {
-  constructor(props: Props) {
-    super(props);
+const DummyScreen2: React.FC<Props> = ({ componentId }: Props) => {
+  const backNavigation = () => {
+    Navigation.pop(componentId);
   }
 
-  componentDidMount() {}
-
-  backNavigation = () => {
-    Navigation.pop(this.props.componentId);
-  }
-
-  render() {
-    const { componentId } = this.props;
-
-    return (
-      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
-        <CText>Dummy 2</CText>
+  return (
+    <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+      <View style={GLOBAL.LAYOUT.pageContainer}>
+        <CText>{'Dummy 2'}</CText>
         <BUTTON_PRIMARY title={'Push 3'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy3, name: SCREENS.Dummy3 } }); }} />
-        <BUTTON_PRIMARY title={'Go Back'} onClick={this.backNavigation} />
+        <BUTTON_PRIMARY title={'Go Back'} onClick={backNavigation} />
         <BUTTON_PRIMARY title={'Dismiss Modal'} onClick={() => { Navigation.dismissModal(componentId); }} />
-      </SafeAreaView>
-    );
-  }
+      </View>
+    </SafeAreaView>
+  );
 }
 
-export default Dummy2;
+export default DummyScreen2;

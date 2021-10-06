@@ -1,17 +1,18 @@
 import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { SafeAreaView, TouchableOpacity, Image, View } from 'react-native';
+import { SafeAreaView, TouchableOpacity, View } from 'react-native';
 
 import styles from './styles';
-import { CText, CTextInput } from '../../elements/custom';
-import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
-import { SCREENS } from '../../../constants/screen';
-import router from '../../../navigators/router';
-import { GLOBAL } from '../../styles/global';
 import SVGIcons from '../../assets/svgs'
+import { GLOBAL } from '../../styles/global';
+import { CImage } from '../../elements/atoms';
+import router from '../../../navigators/router';
+import { SCREENS } from '../../../constants/screen';
+import { SearchInput } from '../../elements/search';
 import { TYPOGRAPHY } from '../../styles/typography';
-
-// import List from  '../../widgets/sectionList';
+import { CText, CTextInput } from '../../elements/inputs';
+import { SectionTitle } from '../../elements/section/title';
+import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 
 export interface Props {
   name: string;
@@ -21,7 +22,6 @@ export interface Props {
 
 interface State {
   name: string;
-  text: string;
 }
 
 class Home extends React.PureComponent<Props, State> {
@@ -29,8 +29,7 @@ class Home extends React.PureComponent<Props, State> {
     super(props);
     Navigation.events().bindComponent(this);
     this.state = {
-      name: props.name || 'Redux + TypeScript + React Native Navigation',
-      text: props.text,
+      name: props.name || 'Redux + TypeScript + React Native Navigation'
     };
   }
 
@@ -71,16 +70,17 @@ class Home extends React.PureComponent<Props, State> {
 
   renderHeader = () => (
     <TouchableOpacity onPress={this.showCartScreen}>
-      <Image
-        style={styles.image}
-        resizeMode="contain"
-        source={require('../../assets/images/cart.png')}
-      />
+      <CImage path={require('../../assets/images/cart.png')} style={{
+        width: 36,
+        height: 36,
+        alignSelf: 'flex-end',
+        marginHorizontal: 6,
+      }} />
     </TouchableOpacity>
   )
 
   render() {
-    const { text } = this.state;
+    const { text } = this.props;
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -88,22 +88,31 @@ class Home extends React.PureComponent<Props, State> {
         <View style={GLOBAL.LAYOUT.pageContainer}>
           <CText>{'Home'}</CText>
           <CText>{text}</CText>
-          <Image
-            style={styles.image}
-            resizeMode="contain"
-            source={{ uri: 'sample' }}
-          />
+          <CImage uri={'sample'} style={{
+            width: 36,
+            height: 36,
+            alignSelf: 'flex-end',
+            marginHorizontal: 6,
+          }} />
           {/* <List /> */}
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
+          <SectionTitle title={'Categories'} subTitle={'See all'} />
           <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
           <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
           <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
-          <SVGIcons.Search color={TYPOGRAPHY.COLOR.Primary} />
+          <SVGIcons.Search />
           <CTextInput />
           <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Shoes />} />
           <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Stileto />} />
           <BUTTON_CATEGORY onClick={this.showModal} icon={<SVGIcons.CategoryIcons.Bulb />} />
+          <BUTTON_CATEGORY
+            onClick={this.showModal}
+            style={GLOBAL.CTA.Style.cameraIcon}
+            icon={<SVGIcons.Camera color={GLOBAL.CTA.Style.cameraIcon.color} style={TYPOGRAPHY.BUTTON.cameraIcon} />}
+          />
+          <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>
+          <SearchInput disabled />
         </View>
       </SafeAreaView>
     );

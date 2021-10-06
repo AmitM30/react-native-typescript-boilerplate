@@ -1,16 +1,17 @@
 import * as React from 'react';
-import { Text, TextInput, TextStyle } from 'react-native';
+import { StyleProp, Text, TextInput, TextStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
 import { TYPOGRAPHY } from '../styles/typography';
 
 export interface TextProps {
   children: React.ReactElement | string;
-  style?: TextStyle;
+  style?: StyleProp<TextStyle>;
 }
 
 export interface TextInputProps {
   style?: Object;
+  disabled?: boolean;
   textInputRef?: any;
   placeholderTextColor?: string;
 }
@@ -26,6 +27,7 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     style,
     placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
     textInputRef,
+    disabled = false
   } = props;
   const [data, setData] = React.useState('');
 
@@ -33,7 +35,8 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     <TextInput
       ref={textInputRef}
       value={data}
-      onChange={(e) => { console.log('>>> e:', e, e.nativeEvent.text); setData(e.nativeEvent.text);}}
+      editable={!disabled}
+      onChange={(e) => setData(e.nativeEvent.text)}
       placeholderTextColor={placeholderTextColor}
       underlineColorAndroid={'transparent'}
       {...props}

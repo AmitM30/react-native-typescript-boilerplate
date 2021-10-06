@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { TouchableOpacity, ViewStyle, Image, StyleSheet } from 'react-native';
+import { TouchableOpacity, ViewStyle, StyleSheet } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
+import { CImage } from '../atoms';
 
 type Callback = () => any;
 interface Props {
@@ -19,15 +20,14 @@ const styles = StyleSheet.create({
 /**
  * Cart Button
  */
-const CART = ({ onClick }: Props) => (
+const CART: React.FC<Props> = ({ onClick }: Props) => (
   <TouchableOpacity
+    onPress={onClick}
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
-    onPress={() => onClick()}
   >
-    <Image
+    <CImage
       style={styles.icon}
-      resizeMode="contain"
-      source={require('../../assets/images/cart.png')}
+      path={require('../../assets/images/cart.png')}
     />
   </TouchableOpacity>
 );

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
-import styles from './styles';
-import { CText } from '../../elements/custom';
+import { GLOBAL } from '../../styles/global';
+import { CText } from '../../elements/inputs';
 
 export interface Props {
   name: string;
@@ -21,9 +21,11 @@ class Drawer extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <SafeAreaView style={styles.container}>
-        <CText>Drawer Menu</CText>
-        <CText>Add items here</CText>
+      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+        <View style={GLOBAL.LAYOUT.pageContainer}>
+          <CText>Drawer Menu</CText>
+          <CText>Add items here</CText>
+        </View>
       </SafeAreaView>
     );
   }

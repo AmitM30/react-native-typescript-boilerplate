@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
 
 import { TYPOGRAPHY } from './typography';
 
@@ -17,6 +17,11 @@ const LAYOUT = StyleSheet.create({
     marginHorizontal: TYPOGRAPHY.SPACING.page,
   },
   shadow: TYPOGRAPHY.SHADOW,
+  sectionTitle: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  }
 });
 
 const CTA = {
@@ -59,6 +64,10 @@ const CTA = {
       marginVertical: TYPOGRAPHY.BUTTON.category.marginVertical,
       ...TYPOGRAPHY.SHADOW
     },
+    cameraIcon: {
+      color: TYPOGRAPHY.COLOR.Default,
+      backgroundColor: TYPOGRAPHY.COLOR.Primary
+    }
   }),
   TouchableOpacity: {
     default: 0.8,
@@ -68,8 +77,8 @@ const CTA = {
 const FONTS = StyleSheet.create({
   title: {
     fontWeight: 'bold',
-    fontSize: TYPOGRAPHY.FONT.title.fontSize,
     fontFamily: TYPOGRAPHY.FONT.Primary,
+    fontSize: TYPOGRAPHY.FONT.title.fontSize,
     color: TYPOGRAPHY.COLOR.DefaultSelected,
   },
   body: {
@@ -82,6 +91,11 @@ const FONTS = StyleSheet.create({
     fontFamily: TYPOGRAPHY.FONT.Primary,
     fontSize: TYPOGRAPHY.FONT.subtitle.fontSize,
   },
+  price: {
+    color: TYPOGRAPHY.COLOR.Primary,
+    fontSize: TYPOGRAPHY.FONT.price.fontSize,
+    fontWeight: (TYPOGRAPHY.FONT.price.textStyle as TextStyle).fontWeight
+  }
 });
 
 const TEXT = StyleSheet.create({
@@ -119,6 +133,12 @@ const TEXT_INPUT = {
       fontSize: TYPOGRAPHY.FONT.input.fontSize,
       borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
     },
+    Search: {
+      left: 0,
+      width: '100%',
+      position: 'absolute',
+      paddingHorizontal: TYPOGRAPHY.FONT.searchInput.paddingHorizontal
+    }
   }),
 };
 

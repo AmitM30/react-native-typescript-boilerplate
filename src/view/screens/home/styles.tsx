@@ -7,9 +7,6 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     marginHorizontal: 6,
   },
-  // header: {
-  //   display: 'flex',
-  // },
   button: {
     alignSelf: 'center',
     width: 200,

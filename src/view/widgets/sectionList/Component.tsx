@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { SectionList, View } from 'react-native';
 
-import { CText } from '../../elements/custom';
 import styles from './styles';
+import { CText } from '../../elements/inputs';
 
 const DATA = [
   {

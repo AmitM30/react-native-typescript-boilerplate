@@ -23,7 +23,7 @@ const COLOR = {
 const FONT = {
   Primary: 'Helvetica',
   title: {
-    fontSize: 30,
+    fontSize: 22,
   },
   subtitle: {
     fontSize: 16,
@@ -38,15 +38,24 @@ const FONT = {
     borderRadius: 18,
     paddingHorizontal: 12
   },
+  searchInput: {
+    paddingHorizontal: 40
+  },
+  price: {
+    fontSize: 16,
+    textStyle: {
+      fontWeight: "bold"
+    }
+  }
 };
 
 const BUTTON = {
   primary: {
-    height: 60,
+    height: 54,
     borderRadius: 5,
     marginVertical: 5,
     text: {
-      fontSize: 16,
+      fontSize: 14,
     },
   },
   secondary: {
@@ -55,7 +64,7 @@ const BUTTON = {
     borderWidth: 1,
     paddingHorizontal: 8,
     text: {
-      fontSize: 16,
+      fontSize: 14,
     },
   },
   category: {
@@ -66,6 +75,7 @@ const BUTTON = {
       fontSize: 16,
     },
   },
+  cameraIcon: { width: 24, height: 24 }
 };
 
 const SPACING = {
@@ -79,12 +89,22 @@ const SHADOW = {
   elevation: Platform.OS === 'ios' ? 0 : 3,
 };
 
+const ELEMENTS = {
+  SearchInput: {
+    width: 24,
+    height: 24,
+    marginVertical: 5,
+    marginHorizontal: 10
+  }
+}
+
 const TYPOGRAPHY = {
   COLOR,
   FONT,
   BUTTON,
   SPACING,
   SHADOW,
+  ELEMENTS
 };
 
 export { TYPOGRAPHY };

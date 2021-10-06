@@ -1,26 +1,27 @@
 import * as React from 'react';
 import { TouchableOpacity, ViewStyle } from 'react-native';
 
+import { CText } from './inputs';
 import { GLOBAL } from '../styles/global';
-import { CText } from './custom';
 
 type Callback = () => any;
-export interface Props {
-  title: string;
+export interface BaseProps {
   onClick: Callback;
   style?: ViewStyle;
 }
 
-export interface IconProps {
+export interface ButtonProps extends BaseProps {
+  title: string;
+}
+
+export interface IconProps extends BaseProps {
   icon: React.ReactElement;
-  onClick: Callback;
-  style?: ViewStyle;
 }
 
 /**
- * Default Button
+ * Primary Button
  */
-const BUTTON_PRIMARY = ({ title, onClick, style }: Props) => (
+const BUTTON_PRIMARY: React.FC<ButtonProps> = ({ title, onClick, style }: ButtonProps) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.primary, GLOBAL.LAYOUT.shadow, style]}
@@ -31,22 +32,22 @@ const BUTTON_PRIMARY = ({ title, onClick, style }: Props) => (
 );
 
 /**
- * Default Button
+ * Secondary Button
  */
-const BUTTON_SECONDARY = ({ title, onClick, style }: Props) => (
+const BUTTON_SECONDARY: React.FC<ButtonProps> = ({ title, onClick, style }: ButtonProps) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.secondary, style]}
     onPress={onClick}
   >
-    <CText style={GLOBAL.CTA.Style.secondaryText}>{title}</CText>
+    <CText style={GLOBAL.CTA.Style.secondaryText}>{title.toLocaleUpperCase()}</CText>
   </TouchableOpacity>
 );
 
 /**
  * Category Icon Button
  */
-const BUTTON_CATEGORY = ({ icon, onClick, style }: IconProps) => (
+const BUTTON_CATEGORY: React.FC<IconProps> = ({ icon, onClick, style }: IconProps) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.categoryIcons, style]}
