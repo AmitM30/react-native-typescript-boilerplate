@@ -94,6 +94,12 @@ class Home extends React.PureComponent<Props, State> {
             alignSelf: 'flex-end',
             marginHorizontal: 6,
           }} />
+
+          {/* <CImage
+            style={{ width: 100, height: 70 }}
+            uri='https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F2020-Chevrolet-Corvette-Stingray%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349'
+          /> */}
+
           {/* <List /> */}
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
@@ -109,6 +115,7 @@ class Home extends React.PureComponent<Props, State> {
           <BUTTON_CATEGORY
             onClick={this.showModal}
             style={GLOBAL.CTA.Style.cameraIcon}
+            hideShadow={true}
             icon={<SVGIcons.Camera color={GLOBAL.CTA.Style.cameraIcon.color} style={TYPOGRAPHY.BUTTON.cameraIcon} />}
           />
           <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>

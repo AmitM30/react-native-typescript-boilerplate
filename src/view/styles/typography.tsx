@@ -54,6 +54,7 @@ const BUTTON = {
     height: 54,
     borderRadius: 5,
     marginVertical: 5,
+    paddingHorizontal: 8,
     text: {
       fontSize: 14,
     },
@@ -84,9 +85,9 @@ const SPACING = {
 
 const SHADOW = {
   shadowOpacity: 0.25,
-  shadowRadius: 3,
-  shadowOffset: { width: 3, height: 3 },
-  elevation: Platform.OS === 'ios' ? 0 : 3,
+  shadowRadius: 5,
+  shadowOffset: { width: 5, height: 5 },
+  elevation: Platform.OS === 'ios' ? 0 : 5,
 };
 
 const ELEMENTS = {

@@ -24,14 +24,11 @@ export const showSplash = () => {
             children: [
               {
                 component: {
-                  options: {
-                    statusBar: {
-                      blur: true,
-                      drawBehind: true
-                    }
-                  },
                   id: SCREENS.Splash,
                   name: SCREENS.Splash,
+                  options: {
+                    statusBar: STATUS_BAR_OPTIONS
+                  },
                 },
               },
             ],

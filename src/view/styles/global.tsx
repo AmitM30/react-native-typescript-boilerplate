@@ -33,6 +33,7 @@ const CTA = {
       backgroundColor: TYPOGRAPHY.COLOR.Primary,
       borderRadius: TYPOGRAPHY.BUTTON.primary.borderRadius,
       marginVertical: TYPOGRAPHY.BUTTON.primary.marginVertical,
+      paddingHorizontal: TYPOGRAPHY.BUTTON.primary.paddingHorizontal,
     },
     primaryText: {
       textAlign: 'center',
@@ -62,7 +63,6 @@ const CTA = {
       backgroundColor: TYPOGRAPHY.COLOR.Default,
       borderRadius: TYPOGRAPHY.BUTTON.category.borderRadius,
       marginVertical: TYPOGRAPHY.BUTTON.category.marginVertical,
-      ...TYPOGRAPHY.SHADOW
     },
     cameraIcon: {
       color: TYPOGRAPHY.COLOR.Default,

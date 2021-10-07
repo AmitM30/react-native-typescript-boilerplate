@@ -3,6 +3,7 @@ import { TouchableOpacity, ViewStyle } from 'react-native';
 
 import { CText } from './inputs';
 import { GLOBAL } from '../styles/global';
+import { TYPOGRAPHY } from '../styles/typography';
 
 type Callback = () => any;
 export interface BaseProps {
@@ -16,6 +17,7 @@ export interface ButtonProps extends BaseProps {
 
 export interface IconProps extends BaseProps {
   icon: React.ReactElement;
+  hideShadow?: boolean;
 }
 
 /**
@@ -47,10 +49,10 @@ const BUTTON_SECONDARY: React.FC<ButtonProps> = ({ title, onClick, style }: Butt
 /**
  * Category Icon Button
  */
-const BUTTON_CATEGORY: React.FC<IconProps> = ({ icon, onClick, style }: IconProps) => (
+const BUTTON_CATEGORY: React.FC<IconProps> = ({ icon, onClick, style, hideShadow = false }: IconProps) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
-    style={[GLOBAL.CTA.Style.categoryIcons, style]}
+    style={[GLOBAL.CTA.Style.categoryIcons, hideShadow ? {} : TYPOGRAPHY.SHADOW, style]}
     onPress={onClick}
   >
     {icon}

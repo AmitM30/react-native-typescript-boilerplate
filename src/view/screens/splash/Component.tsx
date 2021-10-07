@@ -2,10 +2,10 @@ import * as React from 'react';
 import { View, Image, SafeAreaView, Pressable } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 
-import { tabbedNavigation } from '../../../navigators/navigation';
 import styles from './styles';
-import { BUTTON_SECONDARY } from '../../elements/buttons';
 import router from '../../../navigators/router';
+import { BUTTON_SECONDARY } from '../../elements/buttons';
+import { tabbedNavigation } from '../../../navigators/navigation';
 
 export interface Props {
   splashLaunched: Function;
@@ -57,15 +57,15 @@ class Splash extends React.PureComponent<Props, State> {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            resizeMode="contain"
+            resizeMode={'contain'}
             source={require('../../assets/images/rnn2.png')}
           />
           <Image
-            resizeMode="center"
+            resizeMode={'center'}
             source={require('../../assets/images/rn_ts.png')}
           />
           <BUTTON_SECONDARY
-            title="Continue"
+            title={'Continue'}
             onClick={this.navigateToHome}
           />
         </View>

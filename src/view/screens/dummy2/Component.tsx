@@ -13,7 +13,7 @@ export interface Props {
 
 const DummyScreen2: React.FC<Props> = ({ componentId }: Props) => {
   const backNavigation = () => {
-    Navigation.pop(componentId);
+    Navigation.dismissModal(componentId);
   }
 
   return (
@@ -22,7 +22,7 @@ const DummyScreen2: React.FC<Props> = ({ componentId }: Props) => {
         <CText>{'Dummy 2'}</CText>
         <BUTTON_PRIMARY title={'Push 3'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy3, name: SCREENS.Dummy3 } }); }} />
         <BUTTON_PRIMARY title={'Go Back'} onClick={backNavigation} />
-        <BUTTON_PRIMARY title={'Dismiss Modal'} onClick={() => { Navigation.dismissModal(componentId); }} />
+        <BUTTON_PRIMARY title={'Dismiss Modal'} onClick={backNavigation} />
       </View>
     </SafeAreaView>
   );
