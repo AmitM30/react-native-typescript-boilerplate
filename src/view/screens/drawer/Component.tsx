@@ -6,10 +6,10 @@ import { CTEXT } from '../../elements/custom';
 
 interface Props {}
 
-const Drawer: React.FC<Props> = () => (
+const DRAWER: React.FC<Props> = () => (
   <SafeAreaView style={styles.container}>
     <CTEXT>{'Drawer Menu'}</CTEXT>
   </SafeAreaView>
 );
 
-export default Drawer;
+export default DRAWER;

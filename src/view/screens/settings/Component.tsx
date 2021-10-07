@@ -6,10 +6,10 @@ import { CTEXT } from '../../elements/custom';
 
 export interface Props {}
 
-const Settings: React.FC<Props> = (props: Props) => (
+const SETTINGS: React.FC<Props> = (props: Props) => (
   <SafeAreaView style={styles.container}>
     <CTEXT>{'Settings'}</CTEXT>
   </SafeAreaView>
 );
 
-export default Settings;
+export default SETTINGS;

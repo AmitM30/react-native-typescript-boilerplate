@@ -27,7 +27,7 @@ const CTEXTINPUT: React.FC<TextInputProps> = (props: TextInputProps) => {
     style,
     placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
     textInputRef,
-    disabled = false
+    disabled = false,
   } = props;
   const [data, setData] = React.useState('');
 
@@ -36,7 +36,7 @@ const CTEXTINPUT: React.FC<TextInputProps> = (props: TextInputProps) => {
       ref={textInputRef}
       value={data}
       editable={!disabled}
-      onChange={(e) => setData(e.nativeEvent.text)}
+      onChange={e => setData(e.nativeEvent.text)}
       placeholderTextColor={placeholderTextColor}
       underlineColorAndroid={'transparent'}
       {...props}

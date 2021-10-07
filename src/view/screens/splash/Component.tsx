@@ -9,7 +9,7 @@ export interface Props {
   splashLaunched: Function;
 }
 
-const Splash: React.FC<Props> = (props: Props) => {
+const SPLASH: React.FC<Props> = (props: Props) => {
 
   React.useEffect(() => {
     const { splashLaunched } = props;
@@ -41,4 +41,4 @@ const Splash: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default Splash;
+export default SPLASH;

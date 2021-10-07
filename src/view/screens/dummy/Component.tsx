@@ -9,11 +9,11 @@ export interface Props {
   componentId?: string;
 }
 
-const Dummy: React.FC<Props> = (props: Props) => (
+const DUMMY: React.FC<Props> = (props: Props) => (
   <SafeAreaView style={styles.container}>
     <CTEXT>{'This Screen has been pushed over Home screen'}</CTEXT>
     <CTEXT>{`Prop passed: ${props.dummyText}`}</CTEXT>
   </SafeAreaView>
 );
 
-export default Dummy;
+export default DUMMY;
