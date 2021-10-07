@@ -1,22 +1,49 @@
 import * as React from 'react';
-import { Text, TextStyle } from 'react-native';
+import { StyleProp, Text, TextInput, TextStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
+import { TYPOGRAPHY } from '../styles/typography';
 
-export interface Props {
-  children: JSX.Element | string;
-  style?: TextStyle;
+export interface TextProps {
+  children: React.ReactElement | string;
+  style?: StyleProp<TextStyle>;
 }
 
-/**
- * Native Text element with default styles
- * @param props style, children
- * @returns JSX.Element
- */
-const CTEXT: React.FC<Props> = (props: Props) => (
-  <Text {...props} style={[GLOBAL.TEXT.Default, props.style]}>
+export interface TextInputProps {
+  style?: Object;
+  disabled?: boolean;
+  textInputRef?: any;
+  placeholderTextColor?: string;
+}
+
+const CTEXT: React.FC<TextProps> = (props: TextProps) => (
+  <Text style={[GLOBAL.TEXT.Default, props.style]}>
     {props.children}
   </Text>
 );
 
-export { CTEXT };
+const CTEXTINPUT: React.FC<TextInputProps> = (props: TextInputProps) => {
+  const {
+    style,
+    placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
+    textInputRef,
+    disabled = false
+  } = props;
+  const [data, setData] = React.useState('');
+
+  return (
+    <TextInput
+      ref={textInputRef}
+      value={data}
+      editable={!disabled}
+      onChange={(e) => setData(e.nativeEvent.text)}
+      placeholderTextColor={placeholderTextColor}
+      underlineColorAndroid={'transparent'}
+      {...props}
+      style={[GLOBAL.TEXT_INPUT.Style.Default, style]}
+      autoCorrect={false}
+    />
+  );
+};
+
+export { CTEXT, CTEXTINPUT };

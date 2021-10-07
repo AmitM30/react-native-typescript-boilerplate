@@ -3,7 +3,7 @@ import { Navigation } from 'react-native-navigation';
 import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
 
 import styles from './styles';
-import { CTEXT } from '../../elements/custom';
+import { CTEXT, CTEXTINPUT } from '../../elements/custom';
 import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
 
@@ -61,6 +61,7 @@ class Home extends React.PureComponent<Props, State> {
         </TouchableOpacity>
         <CTEXT>{'Home'}</CTEXT>
         <CTEXT>{name}</CTEXT>
+        <CTEXTINPUT />
         <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
       </SafeAreaView>
     );
