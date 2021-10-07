@@ -149,6 +149,18 @@ yarn android
 # react-native run-android --variant=Debug
 ```
 
+### Commands
+
+|  | Remark |
+|---|---|
+| `yarn start` | Starts metro bundler |
+| `yarn ios` | Starts iOS app. Start metro bundler first |
+| `yarn android` | Starts Android app. Start metro bundler and Android emulator first |
+| `yarn lint` | linting |
+| `yarn lint:fix` | tries to fix linting issues automatically |
+| `yarn build:android:debug` | Android debug build |
+| `yarn build:android:release` | Android release build |
+
 ### Cheat Sheet
 
 #### iOS Launch Screen

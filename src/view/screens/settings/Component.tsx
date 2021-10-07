@@ -2,27 +2,14 @@ import * as React from 'react';
 import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
-import { CText } from '../../elements/custom';
+import { CTEXT } from '../../elements/custom';
 
 export interface Props {}
 
-interface State {}
+const SETTINGS: React.FC<Props> = (props: Props) => (
+  <SafeAreaView style={styles.container}>
+    <CTEXT>{'Settings'}</CTEXT>
+  </SafeAreaView>
+);
 
-class Settings extends React.PureComponent<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {}
-
-  render() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <CText>Settings</CText>
-      </SafeAreaView>
-    );
-  }
-}
-
-export default Settings;
+export default SETTINGS;

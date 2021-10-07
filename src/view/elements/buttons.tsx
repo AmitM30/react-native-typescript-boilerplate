@@ -2,7 +2,7 @@ import * as React from 'react';
 import { TouchableOpacity, ViewStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
-import { CText } from './custom';
+import { CTEXT } from './custom';
 
 type Callback = () => any;
 export interface Props {
@@ -12,15 +12,15 @@ export interface Props {
 }
 
 /**
- * Default Button
+ * Default Button for the application
  */
-const BUTTON_DEFAULT = ({ title, onClick, style }: Props) => (
+const BUTTON_DEFAULT: React.FC<Props> = ({ title, onClick, style }: Props) => (
   <TouchableOpacity
     activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
     style={[GLOBAL.CTA.Style.primary, GLOBAL.LAYOUT.shadow, style]}
     onPress={() => onClick()}
   >
-    <CText style={GLOBAL.CTA.Style.primaryText}>{title}</CText>
+    <CTEXT style={GLOBAL.CTA.Style.primaryText}>{title}</CTEXT>
   </TouchableOpacity>
 );
 

@@ -26,20 +26,17 @@ const LAYOUT = StyleSheet.create({
 const CTA = {
   Style: StyleSheet.create({
     primary: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
       height: 48,
-      paddingVertical: 8,
-      paddingHorizontal: 20,
-      borderRadius: 10,
       borderWidth: 1,
-      backgroundColor: TYPOGRAPHY.COLOR.Default,
+      borderRadius: 10,
+      paddingVertical: 8,
+      alignItems: 'center',
+      paddingHorizontal: 20,
+      backgroundColor: TYPOGRAPHY.COLOR.Secondary,
     },
     primaryText: {
       fontSize: 16,
-      color: TYPOGRAPHY.COLOR.Primary,
-      textAlign: 'center',
+      color: TYPOGRAPHY.COLOR.Default,
     },
     secondary: {
       flexDirection: 'row',
@@ -98,18 +95,19 @@ const TEXT = StyleSheet.create({
 const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
-      fontFamily: TYPOGRAPHY.FONT.Primary,
-      textAlign: 'left',
       fontSize: 12,
-      borderWidth: 0.2,
+      borderWidth: 1,
+      borderRadius: 5,
+      textAlign: 'left',
+      fontFamily: TYPOGRAPHY.FONT.Primary,
       borderColor: TYPOGRAPHY.COLOR.Border,
       color: TYPOGRAPHY.COLOR.Primary,
     },
     Bold: {
-      fontFamily: TYPOGRAPHY.FONT.Primary,
-      textAlign: 'left',
       fontSize: 12,
-      borderWidth: 0.2,
+      textAlign: 'left',
+      borderWidth: 1,
+      fontFamily: TYPOGRAPHY.FONT.Primary,
       borderColor: TYPOGRAPHY.COLOR.Border,
       color: TYPOGRAPHY.COLOR.Primary,
     },
