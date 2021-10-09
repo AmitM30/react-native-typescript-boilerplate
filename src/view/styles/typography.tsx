@@ -17,7 +17,7 @@ const COLOR = {
   Paragraph: '#BDBEBF',
 
   // StatusBar
-  StatusBar: 'transparent'
+  StatusBar: 'transparent',
 };
 
 const FONT = {
@@ -27,6 +27,10 @@ const FONT = {
   },
   subtitle: {
     fontSize: 16,
+    textStyle: {
+      fontWeight: 'bold',
+    },
+    margin: 4,
   },
   paragraph: {
     fontSize: 14,
@@ -36,17 +40,18 @@ const FONT = {
     fontSize: 14,
     borderWidth: 0.5,
     borderRadius: 18,
-    paddingHorizontal: 12
+    paddingHorizontal: 12,
   },
   searchInput: {
-    paddingHorizontal: 40
+    paddingHorizontal: 40,
   },
   price: {
     fontSize: 16,
     textStyle: {
-      fontWeight: "bold"
-    }
-  }
+      fontWeight: 'bold',
+    },
+    margin: 8,
+  },
 };
 
 const BUTTON = {
@@ -76,7 +81,7 @@ const BUTTON = {
       fontSize: 16,
     },
   },
-  cameraIcon: { width: 24, height: 24 }
+  cameraIcon: { width: 24, height: 24 },
 };
 
 const SPACING = {
@@ -95,9 +100,16 @@ const ELEMENTS = {
     width: 24,
     height: 24,
     marginVertical: 5,
-    marginHorizontal: 10
-  }
-}
+    marginHorizontal: 10,
+  },
+  ProductDisplay: {
+    width: '48%',
+  },
+  SectionTitle: {
+    marginBottom: 10,
+  },
+  CategoryIcons: { marginRight: 20 },
+};
 
 const TYPOGRAPHY = {
   COLOR,
@@ -105,7 +117,7 @@ const TYPOGRAPHY = {
   BUTTON,
   SPACING,
   SHADOW,
-  ELEMENTS
+  ELEMENTS,
 };
 
 export { TYPOGRAPHY };

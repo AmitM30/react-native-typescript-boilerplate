@@ -10,7 +10,7 @@ type Callback = () => any;
 export interface Props {
   style?: StyleProp<TextStyle>;
   onClick?: Callback;
-  disabled?: boolean
+  disabled?: boolean;
 }
 
 const SearchInput: React.FC<Props> = ({ disabled, style, onClick }: Props) => (

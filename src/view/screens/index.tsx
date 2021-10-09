@@ -10,7 +10,7 @@ import * as Settings from './settings';
 import * as Drawer from './drawer';
 import * as Dummy from './dummy';
 import * as Dummy2 from './dummy2';
-import * as Dummy3 from './dummy3';
+import * as Listings from './listings';
 import * as Search from './search';
 import * as Cart from './cart';
 import * as CART_BUTTON from '../elements/actionButton';
@@ -38,6 +38,6 @@ export function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(SCREENS.Search, Search);
   registerComponentWithRedux(redux)(SCREENS.Cart, Cart);
   registerComponentWithRedux(redux)(SCREENS.Dummy2, Dummy2);
-  registerComponentWithRedux(redux)(SCREENS.Dummy3, Dummy3);
+  registerComponentWithRedux(redux)(SCREENS.Listings, Listings);
   registerComponentWithRedux(redux)(ACTION_BUTTONS.CartAB, CART_BUTTON);
 }

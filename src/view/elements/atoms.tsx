@@ -10,7 +10,7 @@ export interface ImageProps {
 const CImage: React.FC<ImageProps> = ({ style, path, uri }: ImageProps) => (
   <Image
     style={style}
-    resizeMode={'contain'}
+    resizeMode={'cover'}
     source={path ? path : { uri }}
   />
 );

@@ -27,7 +27,7 @@ export const showSplash = () => {
                   id: SCREENS.Splash,
                   name: SCREENS.Splash,
                   options: {
-                    statusBar: STATUS_BAR_OPTIONS
+                    statusBar: STATUS_BAR_OPTIONS,
                   },
                 },
               },
@@ -50,7 +50,7 @@ const TOP_BAR_OPTIONS = {
 
 export const STATUS_BAR_OPTIONS = {
   hideWithTopBar: true,
-  backgroundColor: TYPOGRAPHY.COLOR.StatusBar
+  backgroundColor: TYPOGRAPHY.COLOR.StatusBar,
 };
 
 const BOTTOM_TAB_OPTIONS = {
@@ -85,8 +85,8 @@ export const tabbedNavigation = () =>
                           text: 'This is Home',
                         },
                         options: {
-                          statusBar: STATUS_BAR_OPTIONS
-                        }
+                          statusBar: STATUS_BAR_OPTIONS,
+                        },
                       },
                     },
                   ],
@@ -108,9 +108,9 @@ export const tabbedNavigation = () =>
                         id: SCREENS.Search,
                         name: SCREENS.Search,
                         options: {
-                          statusBar: STATUS_BAR_OPTIONS
-                        }
-                      }
+                          statusBar: STATUS_BAR_OPTIONS,
+                        },
+                      },
                     },
                   ],
                   options: {
@@ -133,8 +133,8 @@ export const tabbedNavigation = () =>
                         id: SCREENS.Cart,
                         name: SCREENS.Cart,
                         options: {
-                          statusBar: STATUS_BAR_OPTIONS
-                        }
+                          statusBar: STATUS_BAR_OPTIONS,
+                        },
                       },
                     },
                   ],
@@ -159,8 +159,8 @@ export const tabbedNavigation = () =>
                         id: SCREENS.Settings,
                         name: SCREENS.Settings,
                         options: {
-                          statusBar: STATUS_BAR_OPTIONS
-                        }
+                          statusBar: STATUS_BAR_OPTIONS,
+                        },
                       },
                     },
                   ],

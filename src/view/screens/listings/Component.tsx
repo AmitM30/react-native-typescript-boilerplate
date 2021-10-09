@@ -10,7 +10,7 @@ export interface Props {
   componentId: string;
 }
 
-const DummyScreen3: React.FC<Props> = ({ componentId }: Props) => {
+const Listings: React.FC<Props> = ({ componentId }: Props) => {
   const backNavigation = () => {
     Navigation.popToRoot(componentId);
   }
@@ -18,11 +18,11 @@ const DummyScreen3: React.FC<Props> = ({ componentId }: Props) => {
   return (
     <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
       <View style={GLOBAL.LAYOUT.pageContainer}>
-        <CText>{'Dummy 3'}</CText>
+        <CText>{'Listings'}</CText>
         <BUTTON_PRIMARY title={'Go Back to Dummy 1'} onClick={backNavigation} />
       </View>
     </SafeAreaView>
   );
 }
 
-export default DummyScreen3;
+export default Listings;

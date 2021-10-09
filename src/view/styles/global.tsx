@@ -21,7 +21,19 @@ const LAYOUT = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-  }
+    marginBottom: TYPOGRAPHY.ELEMENTS.SectionTitle.marginBottom,
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+});
+
+const ELEMENTS = StyleSheet.create({
+  CategoryIcons: {
+    alignItems: 'center',
+    marginRight: TYPOGRAPHY.ELEMENTS.CategoryIcons.marginRight,
+  },
 });
 
 const CTA = {
@@ -66,8 +78,8 @@ const CTA = {
     },
     cameraIcon: {
       color: TYPOGRAPHY.COLOR.Default,
-      backgroundColor: TYPOGRAPHY.COLOR.Primary
-    }
+      backgroundColor: TYPOGRAPHY.COLOR.Primary,
+    },
   }),
   TouchableOpacity: {
     default: 0.8,
@@ -90,12 +102,15 @@ const FONTS = StyleSheet.create({
     color: TYPOGRAPHY.COLOR.Secondary,
     fontFamily: TYPOGRAPHY.FONT.Primary,
     fontSize: TYPOGRAPHY.FONT.subtitle.fontSize,
+    fontWeight: (TYPOGRAPHY.FONT.subtitle.textStyle as TextStyle).fontWeight,
+    marginVertical: TYPOGRAPHY.FONT.subtitle.margin,
   },
   price: {
     color: TYPOGRAPHY.COLOR.Primary,
     fontSize: TYPOGRAPHY.FONT.price.fontSize,
-    fontWeight: (TYPOGRAPHY.FONT.price.textStyle as TextStyle).fontWeight
-  }
+    fontWeight: (TYPOGRAPHY.FONT.price.textStyle as TextStyle).fontWeight,
+    marginTop: TYPOGRAPHY.FONT.price.margin,
+  },
 });
 
 const TEXT = StyleSheet.create({
@@ -124,7 +139,7 @@ const TEXT_INPUT = {
       borderColor: TYPOGRAPHY.COLOR.Border,
       fontSize: TYPOGRAPHY.FONT.input.fontSize,
       borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
-      paddingHorizontal: TYPOGRAPHY.FONT.input.paddingHorizontal
+      paddingHorizontal: TYPOGRAPHY.FONT.input.paddingHorizontal,
     },
     Bold: {
       color: TYPOGRAPHY.COLOR.Primary,
@@ -137,13 +152,14 @@ const TEXT_INPUT = {
       left: 0,
       width: '100%',
       position: 'absolute',
-      paddingHorizontal: TYPOGRAPHY.FONT.searchInput.paddingHorizontal
-    }
+      paddingHorizontal: TYPOGRAPHY.FONT.searchInput.paddingHorizontal,
+    },
   }),
 };
 
 const GLOBAL = {
   LAYOUT,
+  ELEMENTS,
   CTA,
   FONTS,
   TEXT,

@@ -52,6 +52,28 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
   });
 };
 
+/**
+ * Router method to show a screen by pushing on top of current stack
+ * @param {object} params i.e {componentId is compulsory, passProps is optional},
+ */
+const push = ({ componentId, passProps = {} }: Screen) => {
+  Navigation.push(componentId, {
+    component: {
+      name: componentId,
+      id: componentId,
+      passProps: {
+        ...passProps,
+      },
+      options: {
+        statusBar: STATUS_BAR_OPTIONS,
+        topBar: {
+          visible: true,
+        },
+      },
+    },
+  });
+};
+
 const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
   Navigation.mergeOptions(componentId, {
     bottomTabs: {
@@ -106,6 +128,7 @@ const ROUTER = {
   popToRoot,
   showCartScreen,
   showDrawer,
+  push,
 };
 
 export default ROUTER;

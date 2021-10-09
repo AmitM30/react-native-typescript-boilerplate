@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { SafeAreaView, TouchableOpacity, View } from 'react-native';
+import { Dimensions, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 import SVGIcons from '../../assets/svgs'
@@ -13,6 +13,9 @@ import { TYPOGRAPHY } from '../../styles/typography';
 import { CText, CTextInput } from '../../elements/inputs';
 import { SectionTitle } from '../../elements/section/title';
 import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
+import ProductWidget from '../../widgets/productWidget/Component';
+import { Carousel } from '../../elements/layout';
+import CategoryWidget from '../../widgets/category/Component';
 
 export interface Props {
   name: string;
@@ -22,6 +25,7 @@ export interface Props {
 
 interface State {
   name: string;
+  carouselItems: any;
 }
 
 class Home extends React.PureComponent<Props, State> {
@@ -29,7 +33,11 @@ class Home extends React.PureComponent<Props, State> {
     super(props);
     Navigation.events().bindComponent(this);
     this.state = {
-      name: props.name || 'Redux + TypeScript + React Native Navigation'
+      name: props.name || 'Redux + TypeScript + React Native Navigation',
+      carouselItems: [
+        { url: 'https://i.pinimg.com/originals/2e/3a/29/2e3a290bef775346cdf97d810685d5ef.jpg' },
+        { url: 'https://i.pinimg.com/originals/f9/a8/f1/f9a8f1d12e769c5a6a33948b7a611028.jpg' }
+      ]
     };
   }
 
@@ -79,13 +87,24 @@ class Home extends React.PureComponent<Props, State> {
     </TouchableOpacity>
   )
 
+  renderCarouselItem = ({item, index}: any) => {
+    return (
+      <CImage
+        key={`home-carousel-item-${index}`}
+        style={{ width: Dimensions.get('screen').width, height: 200 }}
+        uri={item.url}
+      />
+    )
+  }
+
   render() {
     const { text } = this.props;
+    const { carouselItems } = this.state;
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         {this.renderHeader()}
-        <View style={GLOBAL.LAYOUT.pageContainer}>
+        <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
           <CText>{'Home'}</CText>
           <CText>{text}</CText>
           <CImage uri={'sample'} style={{
@@ -101,6 +120,9 @@ class Home extends React.PureComponent<Props, State> {
           /> */}
 
           {/* <List /> */}
+          <ProductWidget />
+          <Carousel data={carouselItems} item={this.renderCarouselItem} />
+          <CategoryWidget />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
           <SectionTitle title={'Categories'} subTitle={'See all'} />
@@ -120,7 +142,7 @@ class Home extends React.PureComponent<Props, State> {
           />
           <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>
           <SearchInput disabled />
-        </View>
+        </ScrollView>
       </SafeAreaView>
     );
   }
