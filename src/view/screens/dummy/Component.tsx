@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { SafeAreaView, View } from 'react-native';
 
-import { CText } from '../../elements/inputs';
-import { BUTTON_PRIMARY } from '../../elements/buttons';
-import { Navigation } from 'react-native-navigation';
-import { SCREENS } from '../../../constants/screen';
 import { GLOBAL } from '../../styles/global';
+import { CText } from '../../elements/inputs';
+import router from '../../../navigators/router';
+import { SCREENS } from '../../../constants/screen';
+import { Navigation } from 'react-native-navigation';
+import { BUTTON_PRIMARY } from '../../elements/buttons';
 
 export interface Props {
   dummyText: string;
@@ -46,7 +47,9 @@ class Dummy extends React.PureComponent<Props, State> {
         <View style={GLOBAL.LAYOUT.pageContainer}>
           <CText>{'Dummy Screen 1'}</CText>
           <CText>{`Prop passed: ${dummyText}`}</CText>
-          <BUTTON_PRIMARY title={'Push 2'} onClick={() => { Navigation.push(componentId, { component: { id: SCREENS.Dummy2, name: SCREENS.Dummy2 } }); }} />
+          <BUTTON_PRIMARY title={'Push 2'} onClick={
+            () => router.push({ componentId }, SCREENS.Dummy2)
+          } />
           <BUTTON_PRIMARY title={'Go Back'} onClick={this.backNavigation} />
         </View>
       </SafeAreaView>

@@ -19,12 +19,12 @@ const data = [
   { title: 'Games', icon: <SVGIcons.Gamepad /> },
   { title: 'Men', icon: <SVGIcons.Shoes /> },
   { title: 'Women', icon: <SVGIcons.Stileto /> },
-  { title: 'Devices', icon: <SVGIcons.Bulb /> }
+  { title: 'Devices', icon: <SVGIcons.Bulb /> },
 ];
 
 const onClick = () => {
   router.push({ componentId: SCREENS.Listings });
-}
+};
 
 const renderItem = ({ item }: any) => {
   return (
@@ -32,13 +32,13 @@ const renderItem = ({ item }: any) => {
       <BUTTON_CATEGORY onClick={onClick} icon={item.icon} />
       <CText style={GLOBAL.FONTS.body}>{item.title}</CText>
     </View>
-  )
-}
+  );
+};
 
 const CategoryWidget: React.FC<Props> = (props: Props) => {
   return (
     <Carousel title={'Categories'} data={data} item={renderItem} />
-  )
-}
+  );
+};
 
 export default CategoryWidget;

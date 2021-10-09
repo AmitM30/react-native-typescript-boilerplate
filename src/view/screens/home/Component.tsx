@@ -3,7 +3,7 @@ import { Navigation } from 'react-native-navigation';
 import { Dimensions, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
-import SVGIcons from '../../assets/svgs'
+import SVGIcons from '../../assets/svgs';
 import { GLOBAL } from '../../styles/global';
 import { CImage } from '../../elements/atoms';
 import router from '../../../navigators/router';
@@ -13,9 +13,9 @@ import { TYPOGRAPHY } from '../../styles/typography';
 import { CText, CTextInput } from '../../elements/inputs';
 import { SectionTitle } from '../../elements/section/title';
 import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
-import ProductWidget from '../../widgets/productWidget/Component';
+import ProductWidget from '../../widgets/productWidget';
 import { Carousel } from '../../elements/layout';
-import CategoryWidget from '../../widgets/category/Component';
+import CategoryWidget from '../../widgets/category';
 
 export interface Props {
   name: string;
@@ -36,8 +36,8 @@ class Home extends React.PureComponent<Props, State> {
       name: props.name || 'Redux + TypeScript + React Native Navigation',
       carouselItems: [
         { url: 'https://i.pinimg.com/originals/2e/3a/29/2e3a290bef775346cdf97d810685d5ef.jpg' },
-        { url: 'https://i.pinimg.com/originals/f9/a8/f1/f9a8f1d12e769c5a6a33948b7a611028.jpg' }
-      ]
+        { url: 'https://i.pinimg.com/originals/f9/a8/f1/f9a8f1d12e769c5a6a33948b7a611028.jpg' },
+      ],
     };
   }
 
@@ -87,24 +87,24 @@ class Home extends React.PureComponent<Props, State> {
     </TouchableOpacity>
   )
 
-  renderCarouselItem = ({item, index}: any) => {
+  renderCarouselItem = ({ item, index }: any) => {
     return (
       <CImage
         key={`home-carousel-item-${index}`}
         style={{ width: Dimensions.get('screen').width, height: 200 }}
         uri={item.url}
       />
-    )
+    );
   }
 
   render() {
-    const { text } = this.props;
+    const { text, componentId } = this.props;
     const { carouselItems } = this.state;
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         {this.renderHeader()}
-        <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
+        <ScrollView style={GLOBAL.LAYOUT.pageContainer} showsVerticalScrollIndicator={false}>
           <CText>{'Home'}</CText>
           <CText>{text}</CText>
           <CImage uri={'sample'} style={{
@@ -116,11 +116,11 @@ class Home extends React.PureComponent<Props, State> {
 
           {/* <CImage
             style={{ width: 100, height: 70 }}
-            uri='https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d35eacaf1176b0008974b54%2F2020-Chevrolet-Corvette-Stingray%2F960x0.jpg%3FcropX1%3D790%26cropX2%3D5350%26cropY1%3D784%26cropY2%3D3349'
+            uri='https://i.pinimg.com/originals/eb/c5/d0/ebc5d040c8ff5fff0e623d44b337e0fa.jpg'
           /> */}
 
           {/* <List /> */}
-          <ProductWidget />
+          <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
           <Carousel data={carouselItems} item={this.renderCarouselItem} />
           <CategoryWidget />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
@@ -138,7 +138,10 @@ class Home extends React.PureComponent<Props, State> {
             onClick={this.showModal}
             style={GLOBAL.CTA.Style.cameraIcon}
             hideShadow={true}
-            icon={<SVGIcons.Camera color={GLOBAL.CTA.Style.cameraIcon.color} style={TYPOGRAPHY.BUTTON.cameraIcon} />}
+            icon={<SVGIcons.Camera
+              color={GLOBAL.CTA.Style.cameraIcon.color}
+              style={TYPOGRAPHY.BUTTON.cameraIcon}
+            />}
           />
           <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>
           <SearchInput disabled />

@@ -30,6 +30,7 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
         statusBar: STATUS_BAR_OPTIONS,
         topBar: {
           visible: true,
+          drawBehind: false,
           rightButtons: [
             {
               id: 'actionSheetRB',
@@ -56,11 +57,11 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
  * Router method to show a screen by pushing on top of current stack
  * @param {object} params i.e {componentId is compulsory, passProps is optional},
  */
-const push = ({ componentId, passProps = {} }: Screen) => {
+const push = ({ componentId, passProps = {} }: Screen, id: string, name?: string ) => {
   Navigation.push(componentId, {
     component: {
-      name: componentId,
-      id: componentId,
+      id: id,
+      name: name || id.toString(),
       passProps: {
         ...passProps,
       },
@@ -68,6 +69,10 @@ const push = ({ componentId, passProps = {} }: Screen) => {
         statusBar: STATUS_BAR_OPTIONS,
         topBar: {
           visible: true,
+          drawBehind: false,
+          title: {
+            text: name || id.toString()
+          }
         },
       },
     },
@@ -104,6 +109,12 @@ const showModal = (name: string, id?: string) => {
           component: {
             name,
             id,
+            options: {
+              statusBar: STATUS_BAR_OPTIONS,
+              topBar: {
+                visible: false,
+              }
+            }
           },
         },
       ],

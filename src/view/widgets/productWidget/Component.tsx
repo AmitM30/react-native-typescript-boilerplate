@@ -3,33 +3,34 @@ import { View } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
 import { Card } from '../../elements/layout';
-import router from '../../../navigators/router'
+import ProductDisplay from '../productDisplay';
+import router from '../../../navigators/router';
 import { SCREENS } from '../../../constants/screen';
-import ProductDisplay from '../productDisplay/Component';
 import { SectionTitle } from '../../elements/section/title';
 
 interface Props {
-  title?: string;
+  title: string;
   price?: string;
   imageUrl?: string;
   subtitle?: string;
+  componentId: string;
 }
 
-const onClick = () => {
-  router.push({ componentId: SCREENS.Listings });
-}
+const onClick = (componentId: string) => {
+  router.push({ componentId }, SCREENS.Listings);
+};
 
-const ProductWidget: React.FC<Props> = (props: Props) => {
+const ProductWidget: React.FC<Props> = ({ title, subtitle, componentId }: Props) => {
 
   return (
     <Card>
-      <SectionTitle title={'Best Selling'} subTitle={'See all'} onClick={onClick} />
+      <SectionTitle title={title} subTitle={subtitle} onClick={() => onClick(componentId)} />
       <View style={GLOBAL.LAYOUT.row}>
         <ProductDisplay />
         <ProductDisplay />
       </View>
     </Card>
-  )
-}
+  );
+};
 
 export default ProductWidget;

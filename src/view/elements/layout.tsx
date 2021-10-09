@@ -4,7 +4,7 @@ import { FlatList, ListRenderItem, View } from 'react-native';
 import { SectionTitle } from './section/title';
 
 export interface Props {
-  children: React.ReactElement[]
+  children: React.ReactElement[];
 }
 
 export interface CarouselProps {
@@ -31,4 +31,4 @@ const Carousel: React.FC<CarouselProps> = ({ data, title, item }: CarouselProps)
   </View>
 );
 
-export { Card, Carousel }
+export { Card, Carousel };

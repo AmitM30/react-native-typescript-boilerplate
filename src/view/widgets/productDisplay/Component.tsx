@@ -19,13 +19,13 @@ const ProductDisplay: React.FC<Props> = (props: Props) => {
     <View style={TYPOGRAPHY.ELEMENTS.ProductDisplay}>
       <CImage
         style={{ width: '100%', height: 288 }}
-        uri='https://i.pinimg.com/originals/eb/c5/d0/ebc5d040c8ff5fff0e623d44b337e0fa.jpg'
+        uri={'https://i.pinimg.com/originals/eb/c5/d0/ebc5d040c8ff5fff0e623d44b337e0fa.jpg'}
       />
       <CText style={GLOBAL.FONTS.subTitle}>{'BeoPlay Speaker'}</CText>
       <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
       <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>
     </View>
-  )
-}
+  );
+};
 
 export default ProductDisplay;

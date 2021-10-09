@@ -13,7 +13,7 @@ export interface Props {
 const Listings: React.FC<Props> = ({ componentId }: Props) => {
   const backNavigation = () => {
     Navigation.popToRoot(componentId);
-  }
+  };
 
   return (
     <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -23,6 +23,6 @@ const Listings: React.FC<Props> = ({ componentId }: Props) => {
       </View>
     </SafeAreaView>
   );
-}
+};
 
 export default Listings;

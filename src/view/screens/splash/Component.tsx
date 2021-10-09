@@ -3,6 +3,7 @@ import { View, Image, SafeAreaView, Pressable } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 
 import styles from './styles';
+import { GLOBAL } from '../../styles/global';
 import router from '../../../navigators/router';
 import { BUTTON_SECONDARY } from '../../elements/buttons';
 import { tabbedNavigation } from '../../../navigators/navigation';
@@ -46,7 +47,7 @@ class Splash extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         <Pressable onPress={this.showBurgerMenu}>
           <Image
             style={styles.menu}

@@ -62,5 +62,5 @@ const BUTTON_CATEGORY: React.FC<IconProps> = ({ icon, onClick, style, hideShadow
 export {
   BUTTON_PRIMARY,
   BUTTON_SECONDARY,
-  BUTTON_CATEGORY
+  BUTTON_CATEGORY,
 };
