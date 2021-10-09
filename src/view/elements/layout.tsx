@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { FlatList, ListRenderItem, View } from 'react-native';
+import { FlatList, ListRenderItem, StyleProp, View, ViewStyle } from 'react-native';
+import { GLOBAL } from '../styles/global';
 
 import { SectionTitle } from './section/title';
 
 export interface Props {
-  children: React.ReactElement[];
+  children: React.ReactNode;
+  style?: StyleProp<ViewStyle>;
 }
 
 export interface CarouselProps {
@@ -14,7 +16,7 @@ export interface CarouselProps {
 }
 
 const Card: React.FC<Props> = (props: Props) => (
-  <View>
+  <View style={GLOBAL.ELEMENTS.Card}>
     {props.children}
   </View>
 );

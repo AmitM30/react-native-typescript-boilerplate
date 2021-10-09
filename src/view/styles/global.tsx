@@ -34,6 +34,15 @@ const ELEMENTS = StyleSheet.create({
     alignItems: 'center',
     marginRight: TYPOGRAPHY.ELEMENTS.CategoryIcons.marginRight,
   },
+  SearchInput: {
+    flex: 1
+  },
+  Header: {
+    marginVertical: TYPOGRAPHY.ELEMENTS.Header.marginVertical
+  },
+  Card: {
+    marginBottom: TYPOGRAPHY.ELEMENTS.Card.marginBottom
+  }
 });
 
 const CTA = {
@@ -79,6 +88,11 @@ const CTA = {
     cameraIcon: {
       color: TYPOGRAPHY.COLOR.Default,
       backgroundColor: TYPOGRAPHY.COLOR.Primary,
+      width: TYPOGRAPHY.BUTTON.cameraIcon.radius,
+      height: TYPOGRAPHY.BUTTON.cameraIcon.radius,
+      borderRadius: TYPOGRAPHY.BUTTON.cameraIcon.borderRadius,
+      marginVertical: TYPOGRAPHY.BUTTON.cameraIcon.marginVertical,
+      marginLeft: TYPOGRAPHY.BUTTON.cameraIcon.marginLeft,
     },
   }),
   TouchableOpacity: {

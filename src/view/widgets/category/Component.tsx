@@ -4,8 +4,8 @@ import { View } from 'react-native';
 import { GLOBAL } from '../../styles/global';
 import { CText } from '../../elements/inputs';
 import router from '../../../navigators/router';
-import { Carousel } from '../../elements/layout';
 import { SCREENS } from '../../../constants/screen';
+import { Card, Carousel } from '../../elements/layout';
 import * as SVGIcons from '../../assets/svgs/category';
 import { BUTTON_CATEGORY } from '../../elements/buttons';
 
@@ -23,7 +23,7 @@ const data = [
 ];
 
 const onClick = () => {
-  router.push({ componentId: SCREENS.Listings });
+  router.push({ componentId: SCREENS.Listings }, SCREENS.Listings);
 };
 
 const renderItem = ({ item }: any) => {
@@ -37,7 +37,9 @@ const renderItem = ({ item }: any) => {
 
 const CategoryWidget: React.FC<Props> = (props: Props) => {
   return (
-    <Carousel title={'Categories'} data={data} item={renderItem} />
+    <Card>
+      <Carousel title={'Categories'} data={data} item={renderItem} />
+    </Card>
   );
 };
 

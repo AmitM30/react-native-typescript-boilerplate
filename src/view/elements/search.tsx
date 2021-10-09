@@ -16,7 +16,7 @@ export interface Props {
 const SearchInput: React.FC<Props> = ({ disabled, style, onClick }: Props) => (
   <Pressable
     onPress={onClick}
-    style={style}
+    style={[GLOBAL.ELEMENTS.SearchInput, style]}
   >
     <CTextInput disabled={disabled} style={GLOBAL.TEXT_INPUT.Style.Search} />
     <SVGIcons.Search style={TYPOGRAPHY.ELEMENTS.SearchInput} />

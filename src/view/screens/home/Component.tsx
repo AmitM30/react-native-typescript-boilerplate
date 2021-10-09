@@ -16,6 +16,7 @@ import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../element
 import ProductWidget from '../../widgets/productWidget';
 import { Carousel } from '../../elements/layout';
 import CategoryWidget from '../../widgets/category';
+import Header from '../../widgets/header';
 
 export interface Props {
   name: string;
@@ -103,8 +104,14 @@ class Home extends React.PureComponent<Props, State> {
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
-        {this.renderHeader()}
+        {/* {this.renderHeader()} */}
         <ScrollView style={GLOBAL.LAYOUT.pageContainer} showsVerticalScrollIndicator={false}>
+          <Header />
+          <CategoryWidget />
+          <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
+          <Carousel data={carouselItems} item={this.renderCarouselItem} />
+
+
           <CText>{'Home'}</CText>
           <CText>{text}</CText>
           <CImage uri={'sample'} style={{
@@ -120,8 +127,8 @@ class Home extends React.PureComponent<Props, State> {
           /> */}
 
           {/* <List /> */}
-          <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
-          <Carousel data={carouselItems} item={this.renderCarouselItem} />
+          
+          
           <CategoryWidget />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />

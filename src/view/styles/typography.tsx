@@ -81,7 +81,13 @@ const BUTTON = {
       fontSize: 16,
     },
   },
-  cameraIcon: { width: 24, height: 24 },
+  cameraIcon: {
+    radius: 36,
+    borderRadius: 18,
+    marginVertical: 0,
+    marginLeft: 15,
+    icon: { width: 24, height: 24 }
+  },
 };
 
 const SPACING = {
@@ -89,9 +95,9 @@ const SPACING = {
 };
 
 const SHADOW = {
-  shadowOpacity: 0.25,
-  shadowRadius: 5,
-  shadowOffset: { width: 5, height: 5 },
+  shadowOpacity: 0.20,
+  shadowRadius: 6,
+  shadowOffset: { width: 0, height: 0 },
   elevation: Platform.OS === 'ios' ? 0 : 5,
 };
 
@@ -109,6 +115,12 @@ const ELEMENTS = {
     marginBottom: 10,
   },
   CategoryIcons: { marginRight: 20 },
+  Header: {
+    marginVertical: 5
+  },
+  Card: {
+    marginBottom: 30
+  }
 };
 
 const TYPOGRAPHY = {
