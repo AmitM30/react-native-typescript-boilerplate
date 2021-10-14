@@ -130,8 +130,8 @@ class Home extends React.PureComponent<Props, State> {
           
           
           <CategoryWidget />
-          <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
-          <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} style={styles.button} />
+          <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} />
+          <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} />
           <SectionTitle title={'Categories'} subTitle={'See all'} />
           <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
           <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
