@@ -112,15 +112,14 @@ const ELEMENTS = {
     width: '48%',
   },
   SectionTitle: {
-    marginBottom: 10,
+    marginBottom: 20,
   },
   CategoryIcons: { marginRight: 20 },
   Header: {
     marginVertical: 5
   },
-  Card: {
-    marginBottom: 30
-  }
+  Card: { marginBottom: 30 },
+  ListItem: { marginBottom: 20 },
 };
 
 const TYPOGRAPHY = {

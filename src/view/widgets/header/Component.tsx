@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { NativeSyntheticEvent, TextInputSubmitEditingEventData, View } from 'react-native';
 
 import SVGIcons from '../../assets/svgs';
 import { GLOBAL } from '../../styles/global';
@@ -10,18 +10,24 @@ import { SCREENS } from '../../../constants/screen';
 import { TYPOGRAPHY } from '../../styles/typography';
 import { BUTTON_CATEGORY } from '../../elements/buttons';
 
-interface Props {}
-
-const showModal = () => {
-  router.showModal(SCREENS.Dummy2, SCREENS.Dummy2);
+type Callback = () => any;
+type onSubmitEvent = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void;
+interface Props {
+  inputDisabled?: boolean;
+  onClick?: Callback;
+  onSubmit?: onSubmitEvent;
 }
 
-const Header: React.FC<Props> = (props: Props) => (
-  <Card>
+// const onSubmit = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
+//   console.log('>>> nativeEvent.text', nativeEvent.text);
+// }
+
+const Header: React.FC<Props> = ({ inputDisabled = false, onClick, onSubmit }: Props) => (
+  <Card onClick={onClick}>
     <View style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.Header]}>
-      <SearchInput />
+      <SearchInput onSubmit={onSubmit} disabled={inputDisabled} />
       <BUTTON_CATEGORY
-        onClick={showModal}
+        onClick={onClick || (() => {})}
         style={GLOBAL.CTA.Style.cameraIcon}
         hideShadow={true}
         icon={<SVGIcons.Camera

@@ -87,6 +87,14 @@ const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
   });
 };
 
+const showSearchScreen = ({ componentId, passProps = {} }: Screen) => {
+  Navigation.mergeOptions(componentId, {
+    bottomTabs: {
+      currentTabIndex: 1,
+    },
+  });
+};
+
 const showDrawer = () => {
   Navigation.mergeOptions('drawerComponentId', {
     sideMenu: {
@@ -138,6 +146,7 @@ const ROUTER = {
   pop,
   popToRoot,
   showCartScreen,
+  showSearchScreen,
   showDrawer,
   push,
 };

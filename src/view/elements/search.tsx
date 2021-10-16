@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Pressable, StyleProp, TextStyle } from 'react-native';
+import { NativeSyntheticEvent, Pressable, StyleProp, TextInputSubmitEditingEventData, TextStyle } from 'react-native';
 
 import SVGIcons from '../assets/svgs';
 import { CTextInput } from './inputs';
@@ -7,18 +7,20 @@ import { GLOBAL } from '../styles/global';
 import { TYPOGRAPHY } from '../styles/typography';
 
 type Callback = () => any;
+type onSubmitEvent = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void;
 export interface Props {
   style?: StyleProp<TextStyle>;
   onClick?: Callback;
   disabled?: boolean;
+  onSubmit?: onSubmitEvent;
 }
 
-const SearchInput: React.FC<Props> = ({ disabled, style, onClick }: Props) => (
+const SearchInput: React.FC<Props> = ({ disabled, style, onClick, onSubmit }: Props) => (
   <Pressable
     onPress={onClick}
     style={[GLOBAL.ELEMENTS.SearchInput, style]}
   >
-    <CTextInput disabled={disabled} style={GLOBAL.TEXT_INPUT.Style.Search} />
+    <CTextInput onSubmit={onSubmit} disabled={disabled} style={GLOBAL.TEXT_INPUT.Style.Search} />
     <SVGIcons.Search style={TYPOGRAPHY.ELEMENTS.SearchInput} />
   </Pressable>
 );

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
 import { Dimensions, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 
-import styles from './styles';
 import SVGIcons from '../../assets/svgs';
 import { GLOBAL } from '../../styles/global';
 import { CImage } from '../../elements/atoms';
@@ -73,6 +72,11 @@ class Home extends React.PureComponent<Props, State> {
     router.showCartScreen({ componentId });
   }
 
+  showSearchScreen = () => {
+    const { componentId } = this.props;
+    router.showSearchScreen({ componentId });
+  }
+
   showModal = () => {
     router.showModal(SCREENS.Dummy2, SCREENS.Dummy2);
   }
@@ -106,7 +110,7 @@ class Home extends React.PureComponent<Props, State> {
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         {/* {this.renderHeader()} */}
         <ScrollView style={GLOBAL.LAYOUT.pageContainer} showsVerticalScrollIndicator={false}>
-          <Header />
+          <Header inputDisabled={true} onClick={this.showSearchScreen} />
           <CategoryWidget />
           <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
           <Carousel data={carouselItems} item={this.renderCarouselItem} />

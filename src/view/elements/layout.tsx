@@ -1,24 +1,32 @@
 import * as React from 'react';
-import { FlatList, ListRenderItem, StyleProp, View, ViewStyle } from 'react-native';
+import { FlatList, ListRenderItem, Pressable, StyleProp, Touchable, View, ViewStyle } from 'react-native';
 import { GLOBAL } from '../styles/global';
 
 import { SectionTitle } from './section/title';
 
-export interface Props {
+type Callback = () => any;
+interface Props {
   children: React.ReactNode;
   style?: StyleProp<ViewStyle>;
+  onClick?: Callback;
 }
 
-export interface CarouselProps {
+interface CarouselProps {
   data: any[];
   title?: string;
   item: ListRenderItem<React.ReactElement>;
 }
 
+interface ListItemProps {
+  children: React.ReactNode;
+  style?: StyleProp<ViewStyle>;
+  onClick?: Callback;
+}
+
 const Card: React.FC<Props> = (props: Props) => (
-  <View style={GLOBAL.ELEMENTS.Card}>
+  <Pressable style={[GLOBAL.ELEMENTS.Card, props.style]} onPress={props.onClick}>
     {props.children}
-  </View>
+  </Pressable>
 );
 
 const Carousel: React.FC<CarouselProps> = ({ data, title, item }: CarouselProps) => (
@@ -33,4 +41,10 @@ const Carousel: React.FC<CarouselProps> = ({ data, title, item }: CarouselProps)
   </View>
 );
 
-export { Card, Carousel };
+const ListItem: React.FC<ListItemProps> = (props: ListItemProps) => (
+  <Pressable style={[GLOBAL.ELEMENTS.ListItem, props.style]} onPress={props.onClick}>
+    {props.children}
+  </Pressable>
+);
+
+export { Card, Carousel, ListItem };

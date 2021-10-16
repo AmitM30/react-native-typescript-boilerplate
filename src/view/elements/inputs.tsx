@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleProp, Text, TextInput, TextStyle } from 'react-native';
+import { NativeSyntheticEvent, StyleProp, Text, TextInput, TextInputSubmitEditingEventData, TextStyle } from 'react-native';
 
 import { GLOBAL } from '../styles/global';
 import { TYPOGRAPHY } from '../styles/typography';
@@ -9,11 +9,13 @@ export interface TextProps {
   style?: StyleProp<TextStyle>;
 }
 
+type onSubmitEvent = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void
 export interface TextInputProps {
   style?: Object;
   disabled?: boolean;
   textInputRef?: any;
   placeholderTextColor?: string;
+  onSubmit?: onSubmitEvent;
 }
 
 const CText: React.FC<TextProps> = (props: TextProps) => (
@@ -28,6 +30,7 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
     textInputRef,
     disabled = false,
+    onSubmit
   } = props;
   const [data, setData] = React.useState('');
 
@@ -39,6 +42,7 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
       onChange={e => setData(e.nativeEvent.text)}
       placeholderTextColor={placeholderTextColor}
       underlineColorAndroid={'transparent'}
+      onSubmitEditing={onSubmit}
       {...props}
       style={[GLOBAL.TEXT_INPUT.Style.Default, style]}
       autoCorrect={false}

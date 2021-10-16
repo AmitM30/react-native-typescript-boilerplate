@@ -42,7 +42,10 @@ const ELEMENTS = StyleSheet.create({
   },
   Card: {
     marginBottom: TYPOGRAPHY.ELEMENTS.Card.marginBottom
-  }
+  },
+  ListItem: {
+    marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom
+  },
 });
 
 const CTA = {
