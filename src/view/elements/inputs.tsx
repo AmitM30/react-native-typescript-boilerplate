@@ -12,6 +12,7 @@ export interface TextProps {
 type onSubmitEvent = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void
 export interface TextInputProps {
   style?: Object;
+  value?: string;
   disabled?: boolean;
   textInputRef?: any;
   placeholderTextColor?: string;
@@ -30,9 +31,10 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     placeholderTextColor = TYPOGRAPHY.COLOR.Secondary,
     textInputRef,
     disabled = false,
-    onSubmit
+    onSubmit,
+    value
   } = props;
-  const [data, setData] = React.useState('');
+  const [data, setData] = React.useState(value || '');
 
   return (
     <TextInput

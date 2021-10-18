@@ -9,6 +9,10 @@ const ACTION_TYPES = {
   HOME: {
     HOME_LAUNCHED: 'HOME_LAUNCHED',
   },
+  // Cart Actions
+  CART: {
+    ADD_TO_CART: 'ADD_TO_CART',
+  },
 };
 
 export { ACTION_TYPES };

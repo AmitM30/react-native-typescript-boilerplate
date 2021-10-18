@@ -3,25 +3,21 @@ import { Navigation } from 'react-native-navigation';
 import { Dimensions, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
 
 import SVGIcons from '../../assets/svgs';
+import Header from '../../widgets/header';
 import { GLOBAL } from '../../styles/global';
 import { CImage } from '../../elements/atoms';
 import router from '../../../navigators/router';
+import { Carousel } from '../../elements/layout';
 import { SCREENS } from '../../../constants/screen';
 import { SearchInput } from '../../elements/search';
+import CategoryWidget from '../../widgets/category';
 import { TYPOGRAPHY } from '../../styles/typography';
+import ProductWidget from '../../widgets/productWidget';
 import { CText, CTextInput } from '../../elements/inputs';
 import { SectionTitle } from '../../elements/section/title';
 import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
-import ProductWidget from '../../widgets/productWidget';
-import { Carousel } from '../../elements/layout';
-import CategoryWidget from '../../widgets/category';
-import Header from '../../widgets/header';
 
-export interface Props {
-  name: string;
-  componentId: string;
-  text: string;
-}
+import { Props } from './index';
 
 interface State {
   name: string;
@@ -102,8 +98,13 @@ class Home extends React.PureComponent<Props, State> {
     );
   }
 
+  addItemToCart = () => {
+    const { addItemToCart } = this.props;
+    addItemToCart({ sku: 'some_sku_123' });
+  }
+
   render() {
-    const { text, componentId } = this.props;
+    const { text, componentId, cart } = this.props;
     const { carouselItems } = this.state;
 
     return (
@@ -116,7 +117,6 @@ class Home extends React.PureComponent<Props, State> {
           <Carousel data={carouselItems} item={this.renderCarouselItem} />
 
 
-          <CText>{'Home'}</CText>
           <CText>{text}</CText>
           <CImage uri={'sample'} style={{
             width: 36,
@@ -131,7 +131,7 @@ class Home extends React.PureComponent<Props, State> {
           /> */}
 
           {/* <List /> */}
-          
+          <BUTTON_PRIMARY onClick={this.addItemToCart} title={`Add To Cart ${cart.items.length}`} />
           
           <CategoryWidget />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} />

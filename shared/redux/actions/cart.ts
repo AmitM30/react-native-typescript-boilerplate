@@ -2,9 +2,10 @@
  * Single location for Actions dispatched at `app` level
  */
 import { IAction } from '../types/IAction';
-import { ApplicationState } from '../types/stores/app';
+import { CartItem } from '../types/stores/cart';
 import { ACTION_TYPES } from '../constants/actionTypes';
 
-export const splashLaunched = (): IAction<ApplicationState> => ({
-  type: ACTION_TYPES.SPLASH.SPLASH_LAUNCHED,
+export const addToCart = (data: CartItem): IAction<CartItem> => ({
+  type: ACTION_TYPES.CART.ADD_TO_CART,
+  data
 });

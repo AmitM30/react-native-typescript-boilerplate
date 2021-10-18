@@ -14,7 +14,7 @@ export interface Props {
 
 const DummyScreen2: React.FC<Props> = ({ componentId }: Props) => {
   const backNavigation = () => {
-    Navigation.dismissModal(componentId);
+    Navigation.pop(componentId);
   };
 
   return (

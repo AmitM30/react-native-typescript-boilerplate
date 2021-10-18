@@ -6,6 +6,11 @@ import { Navigation } from 'react-native-navigation';
 import { SCREENS } from '../constants/screen';
 import { TYPOGRAPHY } from '../view/styles/typography';
 
+export const STATUS_BAR_OPTIONS = {
+  hideWithTopBar: true,
+  backgroundColor: TYPOGRAPHY.COLOR.StatusBar,
+};
+
 /**
  * Stacked Navigation
  */
@@ -28,6 +33,9 @@ export const showSplash = () => {
                   name: SCREENS.Splash,
                   options: {
                     statusBar: STATUS_BAR_OPTIONS,
+                    topBar: {
+                      visible: false
+                    }
                   },
                 },
               },
@@ -46,11 +54,6 @@ const TOP_BAR_OPTIONS = {
   visible: false,
   drawBehind: true,
   animate: true,
-};
-
-export const STATUS_BAR_OPTIONS = {
-  hideWithTopBar: true,
-  backgroundColor: TYPOGRAPHY.COLOR.StatusBar,
 };
 
 const BOTTOM_TAB_OPTIONS = {

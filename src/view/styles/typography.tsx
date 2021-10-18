@@ -14,7 +14,7 @@ const COLOR = {
   // Text
   Title: '#393939',
   SecondaryTitle: '#4E4E50',
-  Paragraph: '#BDBEBF',
+  Paragraph: '#868686',
 
   // StatusBar
   StatusBar: 'transparent',
@@ -86,7 +86,7 @@ const BUTTON = {
     borderRadius: 18,
     marginVertical: 0,
     marginLeft: 15,
-    icon: { width: 24, height: 24 }
+    icon: { width: 22, height: 22 }
   },
 };
 

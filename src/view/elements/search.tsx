@@ -5,6 +5,7 @@ import SVGIcons from '../assets/svgs';
 import { CTextInput } from './inputs';
 import { GLOBAL } from '../styles/global';
 import { TYPOGRAPHY } from '../styles/typography';
+import { SearchContext } from '../screens/search/Component';
 
 type Callback = () => any;
 type onSubmitEvent = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void;
@@ -15,14 +16,18 @@ export interface Props {
   onSubmit?: onSubmitEvent;
 }
 
-const SearchInput: React.FC<Props> = ({ disabled, style, onClick, onSubmit }: Props) => (
-  <Pressable
-    onPress={onClick}
-    style={[GLOBAL.ELEMENTS.SearchInput, style]}
-  >
-    <CTextInput onSubmit={onSubmit} disabled={disabled} style={GLOBAL.TEXT_INPUT.Style.Search} />
-    <SVGIcons.Search style={TYPOGRAPHY.ELEMENTS.SearchInput} />
-  </Pressable>
-);
+const SearchInput: React.FC<Props> = ({ disabled, style, onClick, onSubmit }: Props) => {
+  const search = React.useContext(SearchContext);
+
+  return (
+    <Pressable
+      onPress={onClick}
+      style={[GLOBAL.ELEMENTS.SearchInput, style]}
+    >
+      <CTextInput value={search.searchTerm} onSubmit={onSubmit} disabled={disabled} style={GLOBAL.TEXT_INPUT.Style.Search} />
+      <SVGIcons.Search style={TYPOGRAPHY.ELEMENTS.SearchInput} />
+    </Pressable>
+  )
+};
 
 export { SearchInput };

@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const CategoryIconDefaultProps: Props = {
-  style: { width: 32, height: 32 },
+  style: { width: 26, height: 26 },
   color: TYPOGRAPHY.COLOR.Primary,
 };
 
