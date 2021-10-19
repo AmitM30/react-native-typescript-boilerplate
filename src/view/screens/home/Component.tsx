@@ -122,7 +122,6 @@ class Home extends React.PureComponent<Props, State> {
             width: 36,
             height: 36,
             alignSelf: 'flex-end',
-            marginHorizontal: 6,
           }} />
 
           {/* <CImage

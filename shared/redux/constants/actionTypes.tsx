@@ -13,6 +13,11 @@ const ACTION_TYPES = {
   CART: {
     ADD_TO_CART: 'ADD_TO_CART',
   },
+  // Search Actions
+  SEARCH: {
+    SEARCH_INITIATED: 'SEARCH_INITIATED',
+    SEARCH_FAILED: 'SEARCH_FAILED',
+  },
 };
 
 export { ACTION_TYPES };

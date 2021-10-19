@@ -20,7 +20,7 @@ const mapStateToProps = (state: RootState) => ({
   cart: state.cart
 });
 
-const mapDispatchToProps = (dispatch: ThunkDispatch<{}, {}, any>) => ({
+const mapDispatchToProps = (dispatch: ThunkDispatch<{}, {}, any>): Partial<Props> => ({
   addItemToCart: (params: CartItem) => dispatch(addItemsToCart(params))
 });
 

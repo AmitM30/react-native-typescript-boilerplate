@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { View, Image, SafeAreaView, Pressable } from 'react-native';
 import { Navigation } from 'react-native-navigation';
+import { View, SafeAreaView, Pressable } from 'react-native';
 
 import styles from './styles';
 import { GLOBAL } from '../../styles/global';
+import { CImage } from '../../elements/atoms';
 import router from '../../../navigators/router';
 import { BUTTON_SECONDARY } from '../../elements/buttons';
 import { tabbedNavigation } from '../../../navigators/navigation';
@@ -49,21 +50,20 @@ class Splash extends React.PureComponent<Props, State> {
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
         <Pressable onPress={this.showBurgerMenu}>
-          <Image
+          <CImage
             style={styles.menu}
-            resizeMode="contain"
-            source={require('../../assets/images/burger-menu.png')}
+            path={require('../../assets/images/burger-menu.png')}
           />
         </Pressable>
         <View style={styles.container}>
-          <Image
+          <CImage
             style={styles.image}
             resizeMode={'contain'}
-            source={require('../../assets/images/rnn2.png')}
+            path={require('../../assets/images/rnn2.png')}
           />
-          <Image
+          <CImage
             resizeMode={'center'}
-            source={require('../../assets/images/rn_ts.png')}
+            path={require('../../assets/images/rn_ts.png')}
           />
           <BUTTON_SECONDARY
             title={'Continue'}

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { NativeSyntheticEvent, SafeAreaView, TextInputSubmitEditingEventData, View } from 'react-native';
+import ROUTER from '../../../navigators/router';
 import { CText } from '../../elements/inputs';
 import { ListItem } from '../../elements/layout';
 import { SectionTitle } from '../../elements/section/title';
@@ -45,7 +46,7 @@ const Search: React.FC<Props> = (props: Props) => {
           <SectionTitle title={'Recent Searches'} />
           {recentSearches.length > 0 && (
             recentSearches.map(
-              (text) => <ListItem key={text}><CText>{text}</CText></ListItem>
+              (text) => <ListItem onClick={() => ROUTER.showListingsScreen({ componentId: props.componentId, passProps: { query: text } }, text)} key={text}><CText>{text}</CText></ListItem>
             )
           )}
         </View>

@@ -90,6 +90,10 @@ const BUTTON = {
   },
 };
 
+const IMAGE = {
+  borderRadius: 5
+};
+
 const SPACING = {
   page: 10,
 };
@@ -110,6 +114,7 @@ const ELEMENTS = {
   },
   ProductDisplay: {
     width: '48%',
+    marginBottom: 20,
   },
   SectionTitle: {
     marginBottom: 20,
@@ -129,6 +134,7 @@ const TYPOGRAPHY = {
   SPACING,
   SHADOW,
   ELEMENTS,
+  IMAGE,
 };
 
 export { TYPOGRAPHY };

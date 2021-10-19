@@ -1,13 +1,13 @@
-import Config from '../config'
-import { jsonToQueryString } from '../utilities/lib'
+import Config from '../config';
+import { jsonToQueryString } from '../utilities/lib';
 
 const defaultHeaders = () => {
   return {
-    'Accept': 'application/json',
-    "x-rapidapi-host": Config.APIs.host,
-    "x-rapidapi-key": Config.APIs.token,
-    'Content-Type': 'application/json'
-  }
+    Accept: 'application/json',
+    'x-rapidapi-host': Config.APIs.host,
+    'x-rapidapi-key': Config.APIs.token,
+    'Content-Type': 'application/json',
+  };
 }
 
 const API = {

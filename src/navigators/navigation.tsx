@@ -51,15 +51,16 @@ export const showSplash = () => {
  * Tabbed Navigation
  */
 const TOP_BAR_OPTIONS = {
+  animate: true,
   visible: false,
   drawBehind: true,
-  animate: true,
 };
 
 const BOTTOM_TAB_OPTIONS = {
   text: '',
   fontSize: 14,
   textColor: TYPOGRAPHY.COLOR.Title,
+  badgeColor: TYPOGRAPHY.COLOR.Warning,
   selectedTextColor: TYPOGRAPHY.COLOR.Warning,
 };
 
@@ -177,7 +178,6 @@ export const tabbedNavigation = () =>
                       selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
                       selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                       badge: '1',
-                      badgeColor: TYPOGRAPHY.COLOR.Warning,
                     },
                   },
                 },

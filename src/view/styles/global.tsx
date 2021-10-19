@@ -27,6 +27,11 @@ const LAYOUT = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  listings: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  }
 });
 
 const ELEMENTS = StyleSheet.create({
@@ -128,6 +133,9 @@ const FONTS = StyleSheet.create({
     fontWeight: (TYPOGRAPHY.FONT.price.textStyle as TextStyle).fontWeight,
     marginTop: TYPOGRAPHY.FONT.price.margin,
   },
+  image: {
+    borderRadius: TYPOGRAPHY.IMAGE.borderRadius
+  }
 });
 
 const TEXT = StyleSheet.create({

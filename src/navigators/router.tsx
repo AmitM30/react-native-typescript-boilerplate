@@ -57,11 +57,11 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
  * Router method to show a screen by pushing on top of current stack
  * @param {object} params i.e {componentId is compulsory, passProps is optional},
  */
-const push = ({ componentId, passProps = {} }: Screen, id: string, name?: string ) => {
+const push = ({ componentId, passProps = {} }: Screen, id: string, title?: string ) => {
   Navigation.push(componentId, {
     component: {
       id: id,
-      name: name || id.toString(),
+      name: id,
       passProps: {
         ...passProps,
       },
@@ -71,12 +71,16 @@ const push = ({ componentId, passProps = {} }: Screen, id: string, name?: string
           visible: true,
           drawBehind: false,
           title: {
-            text: name || id.toString()
-          }
+            text: title || id.toString()
+          },
         },
       },
     },
   });
+};
+
+const showListingsScreen = ({ componentId, passProps = {} }: Screen, title?: string) => {
+  push({ componentId, passProps }, SCREENS.Listings, title);
 };
 
 const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
@@ -149,6 +153,7 @@ const ROUTER = {
   showSearchScreen,
   showDrawer,
   push,
+  showListingsScreen,
 };
 
 export default ROUTER;

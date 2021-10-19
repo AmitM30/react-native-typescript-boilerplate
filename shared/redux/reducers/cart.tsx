@@ -11,7 +11,7 @@ export default (state = initialState, action: IAction<any>) => {
     case ACTION_TYPES.CART.ADD_TO_CART:
       return {
         ...state,
-        items: [...state.items, action.data]
+        items: [...state.items, action.data],
       };
     default:
       return state;
