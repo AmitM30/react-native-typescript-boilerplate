@@ -1,5 +1,5 @@
 /**
- * Single location for Actions dispatched at `app` level
+ * Single location for Actions to be dispatched at `app` level
  */
 import { IAction } from '../types/IAction';
 import { ApplicationState } from '../types/stores/app';

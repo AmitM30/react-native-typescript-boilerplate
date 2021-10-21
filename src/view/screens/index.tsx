@@ -13,6 +13,7 @@ import * as Dummy2 from './dummy2';
 import * as Listings from './listings';
 import * as Search from './search';
 import * as Cart from './cart';
+import * as ProductDetails from './details';
 import * as CART_BUTTON from '../elements/actionButton';
 
 const registerComponentWithRedux = (redux: any) => (
@@ -39,5 +40,6 @@ export function registerScreens(redux: any) {
   registerComponentWithRedux(redux)(SCREENS.Cart, Cart);
   registerComponentWithRedux(redux)(SCREENS.Dummy2, Dummy2);
   registerComponentWithRedux(redux)(SCREENS.Listings, Listings);
+  registerComponentWithRedux(redux)(SCREENS.Details, ProductDetails);
   registerComponentWithRedux(redux)(ACTION_BUTTONS.CartAB, CART_BUTTON);
 }

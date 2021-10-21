@@ -1,5 +1,5 @@
 /**
- * Single location for Actions dispatched at `app` level
+ * Single location for Cart Actions
  */
 import { IAction } from '../types/IAction';
 import { CartItem } from '../types/stores/cart';

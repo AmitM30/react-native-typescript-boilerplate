@@ -34,7 +34,7 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
     onSubmit,
     value
   } = props;
-  const [data, setData] = React.useState(value || '');
+  const [data, setData]: [string | undefined, React.Dispatch<any>] = React.useState(value);
 
   return (
     <TextInput
@@ -45,7 +45,6 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
       placeholderTextColor={placeholderTextColor}
       underlineColorAndroid={'transparent'}
       onSubmitEditing={onSubmit}
-      {...props}
       style={[GLOBAL.TEXT_INPUT.Style.Default, style]}
       autoCorrect={false}
     />

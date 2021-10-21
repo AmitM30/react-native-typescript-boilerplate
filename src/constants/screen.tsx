@@ -11,6 +11,7 @@ const SCREENS = {
   Listings: 'Listings',
   Search: 'Search',
   Cart: 'Cart',
+  Details: 'ProductDetails',
 };
 
 const ACTION_BUTTONS = {

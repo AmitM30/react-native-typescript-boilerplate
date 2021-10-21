@@ -112,7 +112,7 @@ class Home extends React.PureComponent<Props, State> {
         {/* {this.renderHeader()} */}
         <ScrollView style={GLOBAL.LAYOUT.pageContainer} showsVerticalScrollIndicator={false}>
           <Header inputDisabled={true} onClick={this.showSearchScreen} />
-          <CategoryWidget />
+          <CategoryWidget componentId={componentId} />
           <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
           <Carousel data={carouselItems} item={this.renderCarouselItem} />
 
@@ -132,7 +132,7 @@ class Home extends React.PureComponent<Props, State> {
           {/* <List /> */}
           <BUTTON_PRIMARY onClick={this.addItemToCart} title={`Add To Cart ${cart.items.length}`} />
           
-          <CategoryWidget />
+          <CategoryWidget componentId={componentId} />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} />
           <SectionTitle title={'Categories'} subTitle={'See all'} />

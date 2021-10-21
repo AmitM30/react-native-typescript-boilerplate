@@ -13,7 +13,7 @@ export interface Props {
   text: string;
   cart: CartState;
   componentId: string;
-  addItemToCart: (data: CartItem) => (dispatch: Dispatch<any>) => Promise<void>
+  addItemToCart: (data: CartItem) => (dispatch: Dispatch<any>, getState: () => RootState) => Promise<void>
 }
 
 const mapStateToProps = (state: RootState) => ({

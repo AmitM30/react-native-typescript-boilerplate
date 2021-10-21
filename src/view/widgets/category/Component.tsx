@@ -9,7 +9,9 @@ import { Card, Carousel } from '../../elements/layout';
 import * as SVGIcons from '../../assets/svgs/category';
 import { BUTTON_CATEGORY } from '../../elements/buttons';
 
-interface Props {}
+interface Props {
+  componentId: string;
+}
 
 const data = [
   { title: 'Men', icon: <SVGIcons.Shoes /> },
@@ -22,20 +24,20 @@ const data = [
   { title: 'Devices', icon: <SVGIcons.Bulb /> },
 ];
 
-const onClick = () => {
-  router.push({ componentId: SCREENS.Listings }, SCREENS.Listings);
-};
+const CategoryWidget: React.FC<Props> = ({ componentId }: Props) => {
 
-const renderItem = ({ item }: any) => {
-  return (
-    <View style={GLOBAL.ELEMENTS.CategoryIcons} key={`carousel-item-${item.title}`}>
-      <BUTTON_CATEGORY onClick={onClick} icon={item.icon} />
-      <CText style={GLOBAL.FONTS.body}>{item.title}</CText>
-    </View>
-  );
-};
+  const renderItem = ({ item }: any) => {
+    return (
+      <View style={GLOBAL.ELEMENTS.CategoryIcons} key={`carousel-item-${item.title}`}>
+        <BUTTON_CATEGORY
+          onClick={() => router.showListingsScreen({ componentId }, item.title)}
+          icon={item.icon}
+        />
+        <CText style={GLOBAL.FONTS.body}>{item.title}</CText>
+      </View>
+    );
+  };
 
-const CategoryWidget: React.FC<Props> = (props: Props) => {
   return (
     <Card>
       <Carousel title={'Categories'} data={data} item={renderItem} />

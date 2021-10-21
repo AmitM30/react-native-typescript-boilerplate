@@ -1,6 +1,6 @@
 import { IAction } from '../types/IAction';
+import { CartState } from '../types/stores/cart';
 import { ACTION_TYPES } from '../constants/actionTypes';
-import { CartItem, CartState } from '../types/stores/cart';
 
 const initialState: CartState = {
   items: [],

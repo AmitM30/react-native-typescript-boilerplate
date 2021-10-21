@@ -1,21 +1,18 @@
 import * as React from 'react';
 import { NativeSyntheticEvent, SafeAreaView, TextInputSubmitEditingEventData, View } from 'react-native';
-import ROUTER from '../../../navigators/router';
-import { CText } from '../../elements/inputs';
-import { ListItem } from '../../elements/layout';
-import { SectionTitle } from '../../elements/section/title';
 
 import { GLOBAL } from '../../styles/global';
+import { CText } from '../../elements/inputs';
+import router from '../../../navigators/router';
+import { ListItem } from '../../elements/layout';
 import Header from '../../widgets/header/Component';
-
-interface Props {
-  componentId: string;
-}
+import { SectionTitle } from '../../elements/section/title';
+import { Props } from './index';
 
 const searchTerm = { searchTerm: '' };
 export const SearchContext = React.createContext(searchTerm);
 
-const Search: React.FC<Props> = (props: Props) => {
+const Search: React.FC<Props> = ({ componentId }: Props) => {
   const [recentSearches, setRecentSearches] = React.useState<Array<string>>([]);
 
   React.useEffect(() => {
@@ -34,8 +31,9 @@ const Search: React.FC<Props> = (props: Props) => {
   }, [setRecentSearches]);   // <--- this is very important
 
   const onSubmit = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
-    // console.log('>>> nativeEvent.text', nativeEvent.text);
-    setRecentSearches([...recentSearches, nativeEvent.text ])
+    const query = nativeEvent.text.trim();
+    setRecentSearches([...recentSearches, query ]);
+    router.showListingsScreen({ componentId }, query);
   }
 
   return (
@@ -46,7 +44,7 @@ const Search: React.FC<Props> = (props: Props) => {
           <SectionTitle title={'Recent Searches'} />
           {recentSearches.length > 0 && (
             recentSearches.map(
-              (text) => <ListItem onClick={() => ROUTER.showListingsScreen({ componentId: props.componentId, passProps: { query: text } }, text)} key={text}><CText>{text}</CText></ListItem>
+              (text) => <ListItem onClick={() => router.showListingsScreen({ componentId, passProps: { query: text } }, text)} key={text}><CText>{text}</CText></ListItem>
             )
           )}
         </View>

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Navigation } from 'react-native-navigation';
 import { SafeAreaView, ScrollView } from 'react-native';
 
 import { Props } from './index';
@@ -8,10 +7,7 @@ import ProductDisplay from '../../widgets/productDisplay/Component';
 import { SearchResponse } from '../../../../shared/redux/types/search/ISearchResponse';
 
 const Listings: React.FC<Props> = ({ componentId, search, query }: Props) => {
-  const [result, setResult] = React.useState<SearchResponse>({ results: [] });
-  const backNavigation = () => {
-    Navigation.popToRoot(componentId);
-  };
+  const [result, setResult]: [SearchResponse, React.Dispatch<any>] = React.useState<SearchResponse>({ results: [] });
 
   React.useEffect(() => {
     const getAPIdata = async () => {
