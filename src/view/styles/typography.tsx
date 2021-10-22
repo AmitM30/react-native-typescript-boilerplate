@@ -125,6 +125,9 @@ const ELEMENTS = {
   },
   Card: { marginBottom: 30 },
   ListItem: { marginBottom: 20 },
+  LinksWidget: {
+    fontSize: 20
+  }
 };
 
 const TYPOGRAPHY = {

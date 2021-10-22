@@ -51,6 +51,15 @@ const ELEMENTS = StyleSheet.create({
   ListItem: {
     marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom
   },
+  LinksWidget: {
+    marginVertical: 20,
+  },
+  LinksWidgetSelected: {
+    top: -4,
+    position: 'relative',
+    fontSize: TYPOGRAPHY.ELEMENTS.LinksWidget.fontSize,
+    color: TYPOGRAPHY.COLOR.Secondary,
+  },
 });
 
 const CTA = {

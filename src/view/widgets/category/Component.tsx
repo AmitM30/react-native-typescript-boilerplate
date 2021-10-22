@@ -4,7 +4,6 @@ import { View } from 'react-native';
 import { GLOBAL } from '../../styles/global';
 import { CText } from '../../elements/inputs';
 import router from '../../../navigators/router';
-import { SCREENS } from '../../../constants/screen';
 import { Card, Carousel } from '../../elements/layout';
 import * as SVGIcons from '../../assets/svgs/category';
 import { BUTTON_CATEGORY } from '../../elements/buttons';
