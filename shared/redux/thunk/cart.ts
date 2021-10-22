@@ -11,6 +11,9 @@ import { SCREENS } from '../../../src/constants/screen';
 
 export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(addToCart(item));
+  // if user logged in
+  // then save server side cart
+  // else may be save on local db, async storage
 
   const store = getState().cart;
   Navigation.mergeOptions(SCREENS.Cart, {
