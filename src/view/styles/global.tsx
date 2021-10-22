@@ -31,6 +31,10 @@ const LAYOUT = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  PillSection: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
   }
 });
 
@@ -52,7 +56,7 @@ const ELEMENTS = StyleSheet.create({
     marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom
   },
   LinksWidget: {
-    marginVertical: 20,
+    marginVertical: TYPOGRAPHY.ELEMENTS.LinksWidget.marginVertical,
   },
   LinksWidgetSelected: {
     top: -4,
@@ -60,6 +64,14 @@ const ELEMENTS = StyleSheet.create({
     fontSize: TYPOGRAPHY.ELEMENTS.LinksWidget.fontSize,
     color: TYPOGRAPHY.COLOR.Secondary,
   },
+  Pill: {
+    marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
+    marginBottom: TYPOGRAPHY.ELEMENTS.Pill.marginBottom,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
+    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
+  }
 });
 
 const CTA = {

@@ -2,12 +2,11 @@ import * as React from 'react';
 import { NativeSyntheticEvent, SafeAreaView, TextInputSubmitEditingEventData, View } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
-import { CText } from '../../elements/inputs';
 import router from '../../../navigators/router';
-import { ListItem } from '../../elements/layout';
 import Header from '../../widgets/header/Component';
 import { SectionTitle } from '../../elements/section/title';
 import { Props } from './index';
+import { Pill } from '../../elements/atoms';
 
 const searchTerm = { searchTerm: '' };
 export const SearchContext = React.createContext(searchTerm);
@@ -36,17 +35,26 @@ const Search: React.FC<Props> = ({ componentId }: Props) => {
     router.showListingsScreen({ componentId }, query);
   }
 
+  const renderRecentSearches = () => (
+    <View style={[GLOBAL.LAYOUT.PillSection]}>
+      {recentSearches.map(
+        (text) =>
+          <Pill
+            key={text}
+            text={text}
+            onClick={() => router.showListingsScreen({ componentId, passProps: { query: text } }, text)}
+          />
+      )}
+    </View>
+  )
+
   return (
     <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
       <SearchContext.Provider value={searchTerm} >
         <View style={GLOBAL.LAYOUT.pageContainer}>
           <Header onSubmit={onSubmit} />
           <SectionTitle title={'Recent Searches'} />
-          {recentSearches.length > 0 && (
-            recentSearches.map(
-              (text) => <ListItem onClick={() => router.showListingsScreen({ componentId, passProps: { query: text } }, text)} key={text}><CText>{text}</CText></ListItem>
-            )
-          )}
+          {recentSearches.length > 0 && renderRecentSearches()}
         </View>
       </SearchContext.Provider>
     </SafeAreaView>

@@ -126,7 +126,15 @@ const ELEMENTS = {
   Card: { marginBottom: 30 },
   ListItem: { marginBottom: 20 },
   LinksWidget: {
+    marginVertical: 20,
     fontSize: 20
+  },
+  Pill: {
+    marginRight: 5,
+    marginBottom: 20,
+    borderRadius: 25,
+    paddingVertical: 15,
+    paddingHorizontal: 30,
   }
 };
 

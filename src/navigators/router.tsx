@@ -60,7 +60,6 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
 const push = ({ componentId, passProps = {} }: Screen, id: string, title?: string) => {
   Navigation.push(componentId, {
     component: {
-      id: id,
       name: id,
       passProps: {
         ...passProps,
