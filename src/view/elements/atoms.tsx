@@ -26,7 +26,7 @@ const CImage: React.FC<ImageProps> = ({ style, path, uri, resizeMode }: ImagePro
 );
 
 const Pill: React.FC<PillProps> = ({ text, onClick }: PillProps) => (
-  <Pressable style={GLOBAL.ELEMENTS.Pill} onPress={() => onClick}>
+  <Pressable style={GLOBAL.ELEMENTS.Pill} onPress={() => onClick(text)}>
     <CText style={{ color: TYPOGRAPHY.COLOR.Secondary }}>{text}</CText>
   </Pressable>
 );

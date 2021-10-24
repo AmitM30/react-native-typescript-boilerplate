@@ -1715,6 +1715,13 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
+"@react-native-async-storage/async-storage@^1.15.9":
+  version "1.15.9"
+  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-async-storage/async-storage/-/async-storage-1.15.9.tgz#744ecd566f108e86b6b59e617c23fdb4b8d53358"
+  integrity sha1-dE7NVm8Qjoa2tZ5hfCP9tLjVM1g=
+  dependencies:
+    merge-options "^3.0.4"
+
 "@react-native-community/cli-debugger-ui@^6.0.0-rc.0":
   version "6.0.0-rc.0"
   resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0-rc.0.tgz#774378626e4b70f5e1e2e54910472dcbaffa1536"
@@ -3372,9 +3379,8 @@ camelcase@^6.0.0:
   integrity sha1-kkr4gcnVJaydh/QNlk5c6pgqGAk=
 
 caniuse-lite@^1.0.30001219:
-  version "1.0.30001228"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001228.tgz#bfdc5942cd3326fa51ee0b42fbef4da9d492a7fa"
-  integrity sha512-QQmLOGJ3DEgokHbMSA8cj2a+geXqmnpyOFT0lhQV6P3/YOJvGDEwoedcwxEQ30gJIwIIunHIicunJ2rzK5gB2A==
+  version "1.0.30001271"
+  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/caniuse-lite/-/caniuse-lite-1.0.30001271.tgz"
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -5262,6 +5268,11 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
+is-plain-obj@^2.1.0:
+  version "2.1.0"
+  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  integrity sha1-ReQuN/zPH0Dajl927iFRWEDAkoc=
+
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -6279,6 +6290,13 @@ mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
   integrity sha1-cRP8QoGRfWPOKbQ0RvcB5owlulA=
+
+merge-options@^3.0.4:
+  version "3.0.4"
+  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
+  integrity sha1-hHCcKqKkskwZgfZsF5/lVlzG27c=
+  dependencies:
+    is-plain-obj "^2.1.0"
 
 merge-stream@^2.0.0:
   version "2.0.0"

@@ -13,6 +13,11 @@ export default (state = initialState, action: IAction<any>) => {
         ...state,
         items: [...state.items, action.data],
       };
+    case ACTION_TYPES.CART.INIT_CART:
+      return {
+        ...state,
+        items: action.data.items,
+      };
     default:
       return state;
   }

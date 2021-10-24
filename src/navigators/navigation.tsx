@@ -3,6 +3,7 @@
  */
 import { Navigation } from 'react-native-navigation';
 
+import Store from '../../shared/redux/store';
 import { SCREENS } from '../constants/screen';
 import { TYPOGRAPHY } from '../view/styles/typography';
 
@@ -151,6 +152,7 @@ export const tabbedNavigation = () =>
                       iconColor: TYPOGRAPHY.COLOR.Title,
                       selectedIcon: require('../view/assets/images/tabbar/cart_active.png'),
                       selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
+                      badge: `${Store.getState().cart.items.length}`,
                     },
                   },
                 },

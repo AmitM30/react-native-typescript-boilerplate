@@ -35,6 +35,7 @@
     "lint:fix": "cross-env-shell tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.9",
     "react": "^17.0.2",
     "react-native": "^0.66.0",
     "react-native-navigation": "^7.23.1",

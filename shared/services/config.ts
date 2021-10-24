@@ -9,5 +9,8 @@ export default {
     endpoints: {
       search: `${baseAPI}/search/`
     }
+  },
+  Keys: {
+    cart: 'cart'
   }
 };

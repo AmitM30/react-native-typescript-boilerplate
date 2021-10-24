@@ -8,6 +8,8 @@ import { RootState } from '../reducers';
 import { addToCart } from '../actions/cart';
 import { CartItem } from '../types/stores/cart';
 import { SCREENS } from '../../../src/constants/screen';
+import Storage from '../../services/core/storage';
+import Config from '../../services/config';
 
 export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(addToCart(item));
@@ -16,6 +18,7 @@ export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, 
   // else may be save on local db, async storage
 
   const store = getState().cart;
+  await Storage.set(Config.Keys.cart, store.items);
   Navigation.mergeOptions(SCREENS.Cart, {
     bottomTab: {
       badge: `${store.items.length}`
