@@ -21,7 +21,7 @@ const Listings: React.FC<Props> = ({ componentId, search, query }: Props) => {
 
   React.useEffect(() => {
     getAPIdata(query);
-  }, [result]);
+  }, []);
 
   const { results } = result;
 
@@ -33,7 +33,7 @@ const Listings: React.FC<Props> = ({ componentId, search, query }: Props) => {
           onSelected={(text: string) => getAPIdata(text)}
           selectedCategory={query}
         />
-        {results.length > 0 && results.map(
+        {results && results.length > 0 && results.map(
           (product, index) => <ProductDisplay key={`search_product-${index}`} title={product.name.substr(0, 30)} price={product.price} imageUrl={product.image} />
         )}
       </ScrollView>

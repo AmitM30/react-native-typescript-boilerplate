@@ -16,6 +16,7 @@ const ACTION_TYPES = {
   },
   // Search Actions
   SEARCH: {
+    INIT_SEARCH: 'INIT_SEARCH',
     SEARCH_INITIATED: 'SEARCH_INITIATED',
     SEARCH_FAILED: 'SEARCH_FAILED',
   },

@@ -7,9 +7,9 @@ import { SearchResponse } from '../../../../shared/redux/types/search/ISearchRes
 import Component from './Component';
 
 export interface Props {
-  query: string
+  query: string;
   componentId: string;
-  search: (query: string) => (dispatch: Dispatch<any>) => Promise<SearchResponse>
+  search: (query: string) => (dispatch: Dispatch<any>) => Promise<SearchResponse>;
 }
 
 const mapStateToProps = () => ({});

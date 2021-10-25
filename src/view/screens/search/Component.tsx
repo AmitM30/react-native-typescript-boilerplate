@@ -11,13 +11,13 @@ import { Pill } from '../../elements/atoms';
 const searchTerm = { searchTerm: '' };
 export const SearchContext = React.createContext(searchTerm);
 
-const Search: React.FC<Props> = ({ componentId }: Props) => {
+const Search: React.FC<Props> = ({ componentId, recent }: Props) => {
   const [recentSearches, setRecentSearches] = React.useState<Array<string>>([]);
 
   React.useEffect(() => {
     // good place to make that API call
     async function thatAPIcall() {
-      setRecentSearches(['Speakers', 'Headphones']);
+      setRecentSearches(recent.list);
     }
     thatAPIcall();
 
@@ -32,7 +32,7 @@ const Search: React.FC<Props> = ({ componentId }: Props) => {
   const onSubmit = ({ nativeEvent }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
     const query = nativeEvent.text.trim();
     setRecentSearches([...recentSearches, query ]);
-    router.showListingsScreen({ componentId }, query);
+    router.showListingsScreen({ componentId, passProps: { query } }, query);
   }
 
   const renderRecentSearches = () => (

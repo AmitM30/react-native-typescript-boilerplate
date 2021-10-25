@@ -11,6 +11,7 @@ export default {
     }
   },
   Keys: {
-    cart: 'cart'
+    cart: 'cart',
+    recentSearches: 'recentSearches',
   }
 };

@@ -8,6 +8,8 @@ import Config from '../../services/config';
 import { CartItem } from '../types/stores/cart';
 import { splashLaunched } from '../actions/app';
 import Storage from '../../services/core/storage';
+import { initRecentSearches } from '../actions/search';
+import { RecentSearches } from '../types/stores/search';
 
 export const splashScreenLaunched = () => async (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(splashLaunched());
@@ -19,5 +21,8 @@ export const splashScreenLaunched = () => async (dispatch: AppDispatch, getState
    */
 
   const cart: Array<CartItem>  = await Storage.get(Config.Keys.cart);
-  dispatch(initCart({ items: cart || [] }))
+  dispatch(initCart({ items: cart || [] }));
+
+  const recentSearches: RecentSearches = await Storage.get(Config.Keys.recentSearches);
+  dispatch(initRecentSearches(recentSearches));
 };
