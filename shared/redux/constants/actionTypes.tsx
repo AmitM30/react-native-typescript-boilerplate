@@ -8,6 +8,7 @@ const ACTION_TYPES = {
   // Home Screen Actions
   HOME: {
     HOME_LAUNCHED: 'HOME_LAUNCHED',
+    LOAD_BEST_SELLING: 'LOAD_BEST_SELLING',
   },
   // Cart Actions
   CART: {

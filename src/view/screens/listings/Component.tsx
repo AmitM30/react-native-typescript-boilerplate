@@ -34,7 +34,7 @@ const Listings: React.FC<Props> = ({ componentId, search, query }: Props) => {
           selectedCategory={query}
         />
         {results && results.length > 0 && results.map(
-          (product, index) => <ProductDisplay key={`search_product-${index}`} title={product.name.substr(0, 30)} price={product.price} imageUrl={product.image} />
+          (product, index) => <ProductDisplay key={`search_product-${index}`} componentId={componentId} title={product.name.substr(0, 30)} price={product.price} imageUrl={product.image} />
         )}
       </ScrollView>
     </SafeAreaView>

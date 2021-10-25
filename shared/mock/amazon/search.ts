@@ -161,7 +161,8 @@ export default {
     {
       "availability_quantity": 1,
       "has_prime": true,
-      "image": "https://m.media-amazon.com/images/I/71Xwd706mIL.jpg",
+      // "image": "https://m.media-amazon.com/images/I/71Xwd706mIL.jpg",
+      image: 'https://i.pinimg.com/originals/eb/c5/d0/ebc5d040c8ff5fff0e623d44b337e0fa.jpg',
       "is_amazon_choice": false,
       "is_best_seller": false,
       "is_limited_deal": false,
@@ -180,7 +181,8 @@ export default {
     {
       "availability_quantity": null,
       "has_prime": true,
-      "image": "https://m.media-amazon.com/images/I/71zcuH0WpUL.jpg",
+      // "image": "https://m.media-amazon.com/images/I/71zcuH0WpUL.jpg",
+      image: 'https://i.pinimg.com/originals/83/21/6f/83216f9302bd2dd863ea63ddfc37ff95.jpg',
       "is_amazon_choice": false,
       "is_best_seller": false,
       "is_limited_deal": false,

@@ -6,6 +6,7 @@ import SVGIcons from '../../assets/svgs';
 import Header from '../../widgets/header';
 import { GLOBAL } from '../../styles/global';
 import { CImage } from '../../elements/atoms';
+import locale from '../../../constants/locale';
 import router from '../../../navigators/router';
 import { Carousel } from '../../elements/layout';
 import { SCREENS } from '../../../constants/screen';
@@ -15,6 +16,7 @@ import { TYPOGRAPHY } from '../../styles/typography';
 import ProductWidget from '../../widgets/productWidget';
 import { CText, CTextInput } from '../../elements/inputs';
 import { SectionTitle } from '../../elements/section/title';
+import { Product, SearchResponse } from '../../../../shared/redux/types/search/ISearchResponse';
 import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 
 import { Props } from './index';
@@ -22,6 +24,7 @@ import { Props } from './index';
 interface State {
   name: string;
   carouselItems: any;
+  bestSelling: Array<Product>;
 }
 
 class Home extends React.PureComponent<Props, State> {
@@ -34,11 +37,15 @@ class Home extends React.PureComponent<Props, State> {
         { url: 'https://i.pinimg.com/originals/2e/3a/29/2e3a290bef775346cdf97d810685d5ef.jpg' },
         { url: 'https://i.pinimg.com/originals/f9/a8/f1/f9a8f1d12e769c5a6a33948b7a611028.jpg' },
       ],
+      bestSelling: [],
     };
   }
 
-  componentDidMount() {
+  componentDidMount = async () => {
     // console.log('>>> MOUNT <<<');
+    const { loadBestSelling } = this.props;
+    const data: SearchResponse = await loadBestSelling();
+    this.setState({ bestSelling: data.results });
   }
 
   // componentDidAppear() {
@@ -105,7 +112,7 @@ class Home extends React.PureComponent<Props, State> {
 
   render() {
     const { text, componentId, cart } = this.props;
-    const { carouselItems } = this.state;
+    const { carouselItems, bestSelling } = this.state;
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -113,7 +120,7 @@ class Home extends React.PureComponent<Props, State> {
         <ScrollView style={GLOBAL.LAYOUT.pageContainer} showsVerticalScrollIndicator={false}>
           <Header inputDisabled={true} onClick={this.showSearchScreen} />
           <CategoryWidget componentId={componentId} />
-          <ProductWidget title={'Best Selling'} subtitle={'See all'} componentId={componentId} />
+          <ProductWidget productList={bestSelling} title={locale.BestSelling} subtitle={locale.SeeAll} componentId={componentId} />
           <Carousel data={carouselItems} item={this.renderCarouselItem} />
 
 
@@ -130,14 +137,14 @@ class Home extends React.PureComponent<Props, State> {
           /> */}
 
           {/* <List /> */}
-          <BUTTON_PRIMARY onClick={this.addItemToCart} title={`Add To Cart ${cart.items.length}`} />
+          <BUTTON_PRIMARY onClick={this.addItemToCart} title={`${locale.AddToCart} ${cart.items.length}`} />
           
           <CategoryWidget componentId={componentId} />
           <BUTTON_PRIMARY onClick={this.showPushScreen} title={'Push Screen'} />
           <BUTTON_SECONDARY onClick={this.showModal} title={'Show Modal'} />
-          <SectionTitle title={'Categories'} subTitle={'See all'} />
-          <CText style={GLOBAL.FONTS.title}>{'Categories'}</CText>
-          <CText style={GLOBAL.FONTS.subTitle}>{'See all'}</CText>
+          <SectionTitle title={locale.Categories} subTitle={locale.SeeAll} />
+          <CText style={GLOBAL.FONTS.title}>{locale.Categories}</CText>
+          <CText style={GLOBAL.FONTS.subTitle}>{locale.SeeAll}</CText>
           <CText style={GLOBAL.FONTS.body}>{'Bang and Olufsen'}</CText>
           <SVGIcons.Search />
           <CTextInput />
