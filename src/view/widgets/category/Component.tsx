@@ -29,7 +29,7 @@ const CategoryWidget: React.FC<Props> = ({ componentId }: Props) => {
     return (
       <View style={GLOBAL.ELEMENTS.CategoryIcons} key={`carousel-item-${item.title}`}>
         <BUTTON_CATEGORY
-          onClick={() => router.showListingsScreen({ componentId }, item.title)}
+          onClick={() => router.showListingsScreen({ componentId, passProps: { query: item.title } }, item.title)}
           icon={item.icon}
         />
         <CText style={GLOBAL.FONTS.body}>{item.title}</CText>

@@ -22,7 +22,7 @@ const ProductWidget: React.FC<Props> = ({ title, subtitle, componentId, productL
     <SectionTitle
       title={title}
       subTitle={subtitle}
-      onClick={() => router.showListingsScreen({ componentId }, title)} />
+      onClick={() => router.showListingsScreen({ componentId, passProps: { query: 'Bang Olufsen' } }, title)} />
     <View style={GLOBAL.LAYOUT.row}>
       {productList && productList.length > 0 && productList.slice(0, 2).map(
         (product, index) => <ProductDisplay key={`widget_product-${index}`} componentId={componentId} title={product.name.substr(0, 30)} price={product.price} imageUrl={product.image} />)

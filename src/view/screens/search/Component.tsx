@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { NativeSyntheticEvent, SafeAreaView, TextInputSubmitEditingEventData, View } from 'react-native';
 
+import { Pill } from '../../elements/atoms';
 import { GLOBAL } from '../../styles/global';
+import locale from '../../../constants/locale';
 import router from '../../../navigators/router';
 import Header from '../../widgets/header/Component';
 import { SectionTitle } from '../../elements/section/title';
+
 import { Props } from './index';
-import { Pill } from '../../elements/atoms';
 
 const searchTerm = { searchTerm: '' };
 export const SearchContext = React.createContext(searchTerm);
@@ -53,8 +55,8 @@ const Search: React.FC<Props> = ({ componentId, recent }: Props) => {
       <SearchContext.Provider value={searchTerm} >
         <View style={GLOBAL.LAYOUT.pageContainer}>
           <Header onSubmit={onSubmit} />
-          <SectionTitle title={'Recent Searches'} />
-          {recentSearches.length > 0 && renderRecentSearches()}
+          <SectionTitle title={locale.RecentSearches} />
+          {recentSearches && recentSearches.length > 0 && renderRecentSearches()}
         </View>
       </SearchContext.Provider>
     </SafeAreaView>

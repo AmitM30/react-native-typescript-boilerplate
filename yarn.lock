@@ -18,7 +18,7 @@
 
 "@babel/code-frame@^7.14.5", "@babel/code-frame@^7.15.8":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/code-frame/-/code-frame-7.15.8.tgz#45990c47adadb00c03677baa89221f7cc23d2503"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.15.8.tgz#45990c47adadb00c03677baa89221f7cc23d2503"
   integrity sha1-RZkMR62tsAwDZ3uqiSIffMI9JQM=
   dependencies:
     "@babel/highlight" "^7.14.5"
@@ -30,7 +30,7 @@
 
 "@babel/compat-data@^7.15.0":
   version "7.15.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/compat-data/-/compat-data-7.15.0.tgz#2dbaf8b85334796cafbb0f5793a90a2fc010b176"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.15.0.tgz#2dbaf8b85334796cafbb0f5793a90a2fc010b176"
   integrity sha1-Lbr4uFM0eWyvuw9Xk6kKL8AQsXY=
 
 "@babel/core@^7.1.0", "@babel/core@^7.12.9", "@babel/core@^7.7.5":
@@ -56,7 +56,7 @@
 
 "@babel/core@^7.1.6", "@babel/core@^7.14.0":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/core/-/core-7.15.8.tgz#195b9f2bffe995d2c6c159e72fe525b4114e8c10"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.15.8.tgz#195b9f2bffe995d2c6c159e72fe525b4114e8c10"
   integrity sha1-GVufK//pldLGwVnnL+UltBFOjBA=
   dependencies:
     "@babel/code-frame" "^7.15.8"
@@ -77,7 +77,7 @@
 
 "@babel/generator@^7.14.0", "@babel/generator@^7.15.4", "@babel/generator@^7.15.8":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/generator/-/generator-7.15.8.tgz#fa56be6b596952ceb231048cf84ee499a19c0cd1"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.15.8.tgz#fa56be6b596952ceb231048cf84ee499a19c0cd1"
   integrity sha1-+la+a1lpUs6yMQSM+E7kmaGcDNE=
   dependencies:
     "@babel/types" "^7.15.6"
@@ -102,7 +102,7 @@
 
 "@babel/helper-annotate-as-pure@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.15.4.tgz#3d0e43b00c5e49fdb6c57e421601a7a658d5f835"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.15.4.tgz#3d0e43b00c5e49fdb6c57e421601a7a658d5f835"
   integrity sha1-PQ5DsAxeSf22xX5CFgGnpljV+DU=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -127,7 +127,7 @@
 
 "@babel/helper-compilation-targets@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-compilation-targets/-/helper-compilation-targets-7.15.4.tgz#cf6d94f30fbefc139123e27dd6b02f65aeedb7b9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.15.4.tgz#cf6d94f30fbefc139123e27dd6b02f65aeedb7b9"
   integrity sha1-z22U8w++/BORI+J91rAvZa7tt7k=
   dependencies:
     "@babel/compat-data" "^7.15.0"
@@ -149,7 +149,7 @@
 
 "@babel/helper-create-class-features-plugin@^7.14.5", "@babel/helper-create-class-features-plugin@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.15.4.tgz#7f977c17bd12a5fba363cb19bea090394bf37d2e"
+  resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.15.4.tgz#7f977c17bd12a5fba363cb19bea090394bf37d2e"
   integrity sha1-f5d8F70SpfujY8sZvqCQOUvzfS4=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.15.4"
@@ -207,7 +207,7 @@
 
 "@babel/helper-function-name@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-function-name/-/helper-function-name-7.15.4.tgz#845744dafc4381a4a5fb6afa6c3d36f98a787ebc"
+  resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.15.4.tgz#845744dafc4381a4a5fb6afa6c3d36f98a787ebc"
   integrity sha1-hFdE2vxDgaSl+2r6bD02+Yp4frw=
   dependencies:
     "@babel/helper-get-function-arity" "^7.15.4"
@@ -223,7 +223,7 @@
 
 "@babel/helper-get-function-arity@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-get-function-arity/-/helper-get-function-arity-7.15.4.tgz#098818934a137fce78b536a3e015864be1e2879b"
+  resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.15.4.tgz#098818934a137fce78b536a3e015864be1e2879b"
   integrity sha1-CYgYk0oTf854tTaj4BWGS+Hih5s=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -238,7 +238,7 @@
 
 "@babel/helper-hoist-variables@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-hoist-variables/-/helper-hoist-variables-7.15.4.tgz#09993a3259c0e918f99d104261dfdfc033f178df"
+  resolved "https://registry.yarnpkg.com/@babel/helper-hoist-variables/-/helper-hoist-variables-7.15.4.tgz#09993a3259c0e918f99d104261dfdfc033f178df"
   integrity sha1-CZk6MlnA6Rj5nRBCYd/fwDPxeN8=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -252,7 +252,7 @@
 
 "@babel/helper-member-expression-to-functions@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.15.4.tgz#bfd34dc9bba9824a4658b0317ec2fd571a51e6ef"
+  resolved "https://registry.yarnpkg.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.15.4.tgz#bfd34dc9bba9824a4658b0317ec2fd571a51e6ef"
   integrity sha1-v9NNybupgkpGWLAxfsL9VxpR5u8=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -266,7 +266,7 @@
 
 "@babel/helper-module-imports@^7.14.5", "@babel/helper-module-imports@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-module-imports/-/helper-module-imports-7.15.4.tgz#e18007d230632dea19b47853b984476e7b4e103f"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.15.4.tgz#e18007d230632dea19b47853b984476e7b4e103f"
   integrity sha1-4YAH0jBjLeoZtHhTuYRHbntOED8=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -287,7 +287,7 @@
 
 "@babel/helper-module-transforms@^7.15.4", "@babel/helper-module-transforms@^7.15.8":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-module-transforms/-/helper-module-transforms-7.15.8.tgz#d8c0e75a87a52e374a8f25f855174786a09498b2"
+  resolved "https://registry.yarnpkg.com/@babel/helper-module-transforms/-/helper-module-transforms-7.15.8.tgz#d8c0e75a87a52e374a8f25f855174786a09498b2"
   integrity sha1-2MDnWoelLjdKjyX4VRdHhqCUmLI=
   dependencies:
     "@babel/helper-module-imports" "^7.15.4"
@@ -308,7 +308,7 @@
 
 "@babel/helper-optimise-call-expression@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.15.4.tgz#f310a5121a3b9cc52d9ab19122bd729822dee171"
+  resolved "https://registry.yarnpkg.com/@babel/helper-optimise-call-expression/-/helper-optimise-call-expression-7.15.4.tgz#f310a5121a3b9cc52d9ab19122bd729822dee171"
   integrity sha1-8xClEho7nMUtmrGRIr1ymCLe4XE=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -320,7 +320,7 @@
 
 "@babel/helper-plugin-utils@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-plugin-utils/-/helper-plugin-utils-7.14.5.tgz#5ac822ce97eec46741ab70a517971e443a70c5a9"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.14.5.tgz#5ac822ce97eec46741ab70a517971e443a70c5a9"
   integrity sha1-WsgizpfuxGdBq3ClF5ceRDpwxak=
 
 "@babel/helper-remap-async-to-generator@^7.13.0":
@@ -334,7 +334,7 @@
 
 "@babel/helper-remap-async-to-generator@^7.14.5":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.15.4.tgz#2637c0731e4c90fbf58ac58b50b2b5a192fc970f"
+  resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.15.4.tgz#2637c0731e4c90fbf58ac58b50b2b5a192fc970f"
   integrity sha1-JjfAcx5MkPv1isWLULK1oZL8lw8=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.15.4"
@@ -353,7 +353,7 @@
 
 "@babel/helper-replace-supers@^7.14.5", "@babel/helper-replace-supers@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-replace-supers/-/helper-replace-supers-7.15.4.tgz#52a8ab26ba918c7f6dee28628b07071ac7b7347a"
+  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.15.4.tgz#52a8ab26ba918c7f6dee28628b07071ac7b7347a"
   integrity sha1-UqirJrqRjH9t7ihiiwcHGse3NHo=
   dependencies:
     "@babel/helper-member-expression-to-functions" "^7.15.4"
@@ -370,7 +370,7 @@
 
 "@babel/helper-simple-access@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-simple-access/-/helper-simple-access-7.15.4.tgz#ac368905abf1de8e9781434b635d8f8674bcc13b"
+  resolved "https://registry.yarnpkg.com/@babel/helper-simple-access/-/helper-simple-access-7.15.4.tgz#ac368905abf1de8e9781434b635d8f8674bcc13b"
   integrity sha1-rDaJBavx3o6XgUNLY12PhnS8wTs=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -384,7 +384,7 @@
 
 "@babel/helper-skip-transparent-expression-wrappers@^7.14.5":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-skip-transparent-expression-wrappers/-/helper-skip-transparent-expression-wrappers-7.15.4.tgz#707dbdba1f4ad0fa34f9114fc8197aec7d5da2eb"
+  resolved "https://registry.yarnpkg.com/@babel/helper-skip-transparent-expression-wrappers/-/helper-skip-transparent-expression-wrappers-7.15.4.tgz#707dbdba1f4ad0fa34f9114fc8197aec7d5da2eb"
   integrity sha1-cH29uh9K0Po0+RFPyBl67H1dous=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -398,7 +398,7 @@
 
 "@babel/helper-split-export-declaration@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.15.4.tgz#aecab92dcdbef6a10aa3b62ab204b085f776e257"
+  resolved "https://registry.yarnpkg.com/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.15.4.tgz#aecab92dcdbef6a10aa3b62ab204b085f776e257"
   integrity sha1-rsq5Lc2+9qEKo7YqsgSwhfd24lc=
   dependencies:
     "@babel/types" "^7.15.4"
@@ -410,7 +410,7 @@
 
 "@babel/helper-validator-identifier@^7.14.5", "@babel/helper-validator-identifier@^7.14.9", "@babel/helper-validator-identifier@^7.15.7":
   version "7.15.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-validator-identifier/-/helper-validator-identifier-7.15.7.tgz#220df993bfe904a4a6b02ab4f3385a5ebf6e2389"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.15.7.tgz#220df993bfe904a4a6b02ab4f3385a5ebf6e2389"
   integrity sha1-Ig35k7/pBKSmsCq08zhaXr9uI4k=
 
 "@babel/helper-validator-option@^7.12.17":
@@ -420,7 +420,7 @@
 
 "@babel/helper-validator-option@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-validator-option/-/helper-validator-option-7.14.5.tgz#6e72a1fff18d5dfcb878e1e62f1a021c4b72d5a3"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.14.5.tgz#6e72a1fff18d5dfcb878e1e62f1a021c4b72d5a3"
   integrity sha1-bnKh//GNXfy4eOHmLxoCHEty1aM=
 
 "@babel/helper-wrap-function@^7.13.0":
@@ -435,7 +435,7 @@
 
 "@babel/helper-wrap-function@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helper-wrap-function/-/helper-wrap-function-7.15.4.tgz#6f754b2446cfaf3d612523e6ab8d79c27c3a3de7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-wrap-function/-/helper-wrap-function-7.15.4.tgz#6f754b2446cfaf3d612523e6ab8d79c27c3a3de7"
   integrity sha1-b3VLJEbPrz1hJSPmq415wnw6Pec=
   dependencies:
     "@babel/helper-function-name" "^7.15.4"
@@ -454,7 +454,7 @@
 
 "@babel/helpers@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/helpers/-/helpers-7.15.4.tgz#5f40f02050a3027121a3cf48d497c05c555eaf43"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.15.4.tgz#5f40f02050a3027121a3cf48d497c05c555eaf43"
   integrity sha1-X0DwIFCjAnEho89I1JfAXFVer0M=
   dependencies:
     "@babel/template" "^7.15.4"
@@ -472,7 +472,7 @@
 
 "@babel/highlight@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/highlight/-/highlight-7.14.5.tgz#6861a52f03966405001f6aa534a01a24d99e8cd9"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.14.5.tgz#6861a52f03966405001f6aa534a01a24d99e8cd9"
   integrity sha1-aGGlLwOWZAUAH2qlNKAaJNmejNk=
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.5"
@@ -486,7 +486,7 @@
 
 "@babel/parser@^7.1.6", "@babel/parser@^7.14.0", "@babel/parser@^7.15.4", "@babel/parser@^7.15.8":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/parser/-/parser-7.15.8.tgz#7bacdcbe71bdc3ff936d510c15dcea7cf0b99016"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.15.8.tgz#7bacdcbe71bdc3ff936d510c15dcea7cf0b99016"
   integrity sha1-e6zcvnG9w/+TbVEMFdzqfPC5kBY=
 
 "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@^7.13.12":
@@ -517,7 +517,7 @@
 
 "@babel/plugin-proposal-class-properties@^7.1.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
   integrity sha1-QNHuFAxbHjGjUPT17tlFCWVZtC4=
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.14.5"
@@ -582,7 +582,7 @@
 
 "@babel/plugin-proposal-nullish-coalescing-operator@^7.1.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-proposal-nullish-coalescing-operator/-/plugin-proposal-nullish-coalescing-operator-7.14.5.tgz#ee38589ce00e2cc59b299ec3ea406fcd3a0fdaf6"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-nullish-coalescing-operator/-/plugin-proposal-nullish-coalescing-operator-7.14.5.tgz#ee38589ce00e2cc59b299ec3ea406fcd3a0fdaf6"
   integrity sha1-7jhYnOAOLMWbKZ7D6kBvzToP2vY=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -626,7 +626,7 @@
 
 "@babel/plugin-proposal-optional-chaining@^7.1.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.14.5.tgz#fa83651e60a360e3f13797eef00b8d519695b603"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.14.5.tgz#fa83651e60a360e3f13797eef00b8d519695b603"
   integrity sha1-+oNlHmCjYOPxN5fu8AuNUZaVtgM=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -710,7 +710,7 @@
 
 "@babel/plugin-syntax-flow@^7.0.0", "@babel/plugin-syntax-flow@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.14.5.tgz#2ff654999497d7d7d142493260005263731da180"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.14.5.tgz#2ff654999497d7d7d142493260005263731da180"
   integrity sha1-L/ZUmZSX19fRQkkyYABSY3MdoYA=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -738,7 +738,7 @@
 
 "@babel/plugin-syntax-jsx@^7.0.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.14.5.tgz#000e2e25d8673cce49300517a3eda44c263e4201"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.14.5.tgz#000e2e25d8673cce49300517a3eda44c263e4201"
   integrity sha1-AA4uJdhnPM5JMAUXo+2kTCY+QgE=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -815,7 +815,7 @@
 
 "@babel/plugin-syntax-typescript@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.14.5.tgz#b82c6ce471b165b5ce420cf92914d6fb46225716"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.14.5.tgz#b82c6ce471b165b5ce420cf92914d6fb46225716"
   integrity sha1-uCxs5HGxZbXOQgz5KRTW+0YiVxY=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -829,7 +829,7 @@
 
 "@babel/plugin-transform-async-to-generator@^7.0.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-async-to-generator/-/plugin-transform-async-to-generator-7.14.5.tgz#72c789084d8f2094acb945633943ef8443d39e67"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-async-to-generator/-/plugin-transform-async-to-generator-7.14.5.tgz#72c789084d8f2094acb945633943ef8443d39e67"
   integrity sha1-cseJCE2PIJSsuUVjOUPvhEPTnmc=
   dependencies:
     "@babel/helper-module-imports" "^7.14.5"
@@ -847,7 +847,7 @@
 
 "@babel/plugin-transform-block-scoped-functions@^7.0.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.14.5.tgz#e48641d999d4bc157a67ef336aeb54bc44fd3ad4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.14.5.tgz#e48641d999d4bc157a67ef336aeb54bc44fd3ad4"
   integrity sha1-5IZB2ZnUvBV6Z+8zautUvET9OtQ=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -926,7 +926,7 @@
 
 "@babel/plugin-transform-flow-strip-types@^7.14.5":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.14.5.tgz#0dc9c1d11dcdc873417903d6df4bed019ef0f85e"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.14.5.tgz#0dc9c1d11dcdc873417903d6df4bed019ef0f85e"
   integrity sha1-DcnB0R3NyHNBeQPW30vtAZ7w+F4=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -989,7 +989,7 @@
 
 "@babel/plugin-transform-modules-commonjs@^7.1.0":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.15.4.tgz#8201101240eabb5a76c08ef61b2954f767b6b4c1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.15.4.tgz#8201101240eabb5a76c08ef61b2954f767b6b4c1"
   integrity sha1-ggEQEkDqu1p2wI72GylU92e2tME=
   dependencies:
     "@babel/helper-module-transforms" "^7.15.4"
@@ -1039,7 +1039,7 @@
 
 "@babel/plugin-transform-object-super@^7.0.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.14.5.tgz#d0b5faeac9e98597a161a9cf78c527ed934cdc45"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.14.5.tgz#d0b5faeac9e98597a161a9cf78c527ed934cdc45"
   integrity sha1-0LX66snphZehYanPeMUn7ZNM3EU=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -1186,7 +1186,7 @@
 
 "@babel/plugin-transform-typescript@^7.15.0":
   version "7.15.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.15.8.tgz#ff0e6a47de9b2d58652123ab5a879b2ff20665d8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.15.8.tgz#ff0e6a47de9b2d58652123ab5a879b2ff20665d8"
   integrity sha1-/w5qR96bLVhlISOrWoebL/IGZdg=
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.15.4"
@@ -1306,7 +1306,7 @@
 
 "@babel/preset-flow@^7.0.0":
   version "7.14.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/preset-flow/-/preset-flow-7.14.5.tgz#a1810b0780c8b48ab0bece8e7ab8d0d37712751c"
+  resolved "https://registry.yarnpkg.com/@babel/preset-flow/-/preset-flow-7.14.5.tgz#a1810b0780c8b48ab0bece8e7ab8d0d37712751c"
   integrity sha1-oYELB4DItIqwvs6OerjQ03cSdRw=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -1338,7 +1338,7 @@
 
 "@babel/preset-typescript@^7.1.0":
   version "7.15.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
   integrity sha1-6PymOKGg9k8U4RGff+RQAneECUU=
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
@@ -1347,7 +1347,7 @@
 
 "@babel/register@^7.0.0":
   version "7.15.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/register/-/register-7.15.3.tgz#6b40a549e06ec06c885b2ec42c3dd711f55fe752"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.15.3.tgz#6b40a549e06ec06c885b2ec42c3dd711f55fe752"
   integrity sha1-a0ClSeBuwGyIWy7ELD3XEfVf51I=
   dependencies:
     clone-deep "^4.0.1"
@@ -1382,7 +1382,7 @@
 
 "@babel/template@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/template/-/template-7.15.4.tgz#51898d35dcf3faa670c4ee6afcfd517ee139f194"
+  resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.15.4.tgz#51898d35dcf3faa670c4ee6afcfd517ee139f194"
   integrity sha1-UYmNNdzz+qZwxO5q/P1RfuE58ZQ=
   dependencies:
     "@babel/code-frame" "^7.14.5"
@@ -1405,7 +1405,7 @@
 
 "@babel/traverse@^7.15.4":
   version "7.15.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/traverse/-/traverse-7.15.4.tgz#ff8510367a144bfbff552d9e18e28f3e2889c22d"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.15.4.tgz#ff8510367a144bfbff552d9e18e28f3e2889c22d"
   integrity sha1-/4UQNnoUS/v/VS2eGOKPPiiJwi0=
   dependencies:
     "@babel/code-frame" "^7.14.5"
@@ -1428,7 +1428,7 @@
 
 "@babel/types@^7.15.4", "@babel/types@^7.15.6":
   version "7.15.6"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@babel/types/-/types-7.15.6.tgz#99abdc48218b2881c058dd0a7ab05b99c9be758f"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.15.6.tgz#99abdc48218b2881c058dd0a7ab05b99c9be758f"
   integrity sha1-mavcSCGLKIHAWN0KerBbmcm+dY8=
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
@@ -1483,12 +1483,12 @@
 
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
   integrity sha1-lVEUKhmAUDdSU2tQUP2Z9KfxOxc=
 
 "@hapi/topo@^5.0.0":
   version "5.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@hapi/topo/-/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
+  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
   integrity sha1-3ESOMyxsbjek3AL9hLqNRLmvsBI=
   dependencies:
     "@hapi/hoek" "^9.0.0"
@@ -1556,7 +1556,7 @@
 
 "@jest/create-cache-key-function@^27.0.1":
   version "27.2.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@jest/create-cache-key-function/-/create-cache-key-function-27.2.5.tgz#7ae71360c66d9cd0f29da2fbf10efdea7147962c"
+  resolved "https://registry.yarnpkg.com/@jest/create-cache-key-function/-/create-cache-key-function-27.2.5.tgz#7ae71360c66d9cd0f29da2fbf10efdea7147962c"
   integrity sha1-eucTYMZtnNDynaL78Q796nFHliw=
   dependencies:
     "@jest/types" "^27.2.5"
@@ -1695,7 +1695,7 @@
 
 "@jest/types@^26.6.2":
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@jest/types/-/types-26.6.2.tgz#bef5a532030e1d88a2f5a6d933f84e97226ed48e"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-26.6.2.tgz#bef5a532030e1d88a2f5a6d933f84e97226ed48e"
   integrity sha1-vvWlMgMOHYii9abZM/hOlyJu1I4=
   dependencies:
     "@types/istanbul-lib-coverage" "^2.0.0"
@@ -1706,7 +1706,7 @@
 
 "@jest/types@^27.2.5":
   version "27.2.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@jest/types/-/types-27.2.5.tgz#420765c052605e75686982d24b061b4cbba22132"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.2.5.tgz#420765c052605e75686982d24b061b4cbba22132"
   integrity sha1-QgdlwFJgXnVoaYLSSwYbTLuiITI=
   dependencies:
     "@types/istanbul-lib-coverage" "^2.0.0"
@@ -1717,21 +1717,21 @@
 
 "@react-native-async-storage/async-storage@^1.15.9":
   version "1.15.9"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-async-storage/async-storage/-/async-storage-1.15.9.tgz#744ecd566f108e86b6b59e617c23fdb4b8d53358"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.15.9.tgz#744ecd566f108e86b6b59e617c23fdb4b8d53358"
   integrity sha1-dE7NVm8Qjoa2tZ5hfCP9tLjVM1g=
   dependencies:
     merge-options "^3.0.4"
 
 "@react-native-community/cli-debugger-ui@^6.0.0-rc.0":
   version "6.0.0-rc.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0-rc.0.tgz#774378626e4b70f5e1e2e54910472dcbaffa1536"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0-rc.0.tgz#774378626e4b70f5e1e2e54910472dcbaffa1536"
   integrity sha1-d0N4Ym5LcPXh4uVJEEcty6/6FTY=
   dependencies:
     serve-static "^1.13.1"
 
 "@react-native-community/cli-hermes@^6.1.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-hermes/-/cli-hermes-6.1.0.tgz#f689f1b4fec4510cba063144b60da84ff6235858"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-hermes/-/cli-hermes-6.1.0.tgz#f689f1b4fec4510cba063144b60da84ff6235858"
   integrity sha1-9onxtP7EUQy6BjFEtg2oT/YjWFg=
   dependencies:
     "@react-native-community/cli-platform-android" "^6.1.0"
@@ -1742,7 +1742,7 @@
 
 "@react-native-community/cli-platform-android@^6.0.0", "@react-native-community/cli-platform-android@^6.1.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-platform-android/-/cli-platform-android-6.1.0.tgz#8c853807c8c1526593b735e8a19dc1f4471de69e"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-android/-/cli-platform-android-6.1.0.tgz#8c853807c8c1526593b735e8a19dc1f4471de69e"
   integrity sha1-jIU4B8jBUmWTtzXooZ3B9Ecd5p4=
   dependencies:
     "@react-native-community/cli-tools" "^6.1.0"
@@ -1758,7 +1758,7 @@
 
 "@react-native-community/cli-platform-ios@^6.0.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-platform-ios/-/cli-platform-ios-6.1.0.tgz#369cd936b689af93d070f52df2796994223e7705"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-platform-ios/-/cli-platform-ios-6.1.0.tgz#369cd936b689af93d070f52df2796994223e7705"
   integrity sha1-NpzZNraJr5PQcPUt8nlplCI+dwU=
   dependencies:
     "@react-native-community/cli-tools" "^6.1.0"
@@ -1771,7 +1771,7 @@
 
 "@react-native-community/cli-plugin-metro@^6.1.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-plugin-metro/-/cli-plugin-metro-6.1.0.tgz#3f34732a36a683c21e73843de49b13452ed63b06"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-plugin-metro/-/cli-plugin-metro-6.1.0.tgz#3f34732a36a683c21e73843de49b13452ed63b06"
   integrity sha1-PzRzKjamg8Iec4Q95JsTRS7WOwY=
   dependencies:
     "@react-native-community/cli-server-api" "^6.1.0"
@@ -1788,7 +1788,7 @@
 
 "@react-native-community/cli-server-api@^6.1.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-server-api/-/cli-server-api-6.1.0.tgz#13839052733fec6ee656425cd44ce39064c84af1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-server-api/-/cli-server-api-6.1.0.tgz#13839052733fec6ee656425cd44ce39064c84af1"
   integrity sha1-E4OQUnM/7G7mVkJc1EzjkGTISvE=
   dependencies:
     "@react-native-community/cli-debugger-ui" "^6.0.0-rc.0"
@@ -1803,7 +1803,7 @@
 
 "@react-native-community/cli-tools@^6.1.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-tools/-/cli-tools-6.1.0.tgz#fb16b8e4805dadf4d2a57c69ffe83ddadffbe771"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-tools/-/cli-tools-6.1.0.tgz#fb16b8e4805dadf4d2a57c69ffe83ddadffbe771"
   integrity sha1-+xa45IBdrfTSpXxp/+g92t/753E=
   dependencies:
     appdirsjs "^1.2.4"
@@ -1818,14 +1818,14 @@
 
 "@react-native-community/cli-types@^6.0.0":
   version "6.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli-types/-/cli-types-6.0.0.tgz#90269fbdc7229d5e3b8f2f3e029a94083551040d"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-types/-/cli-types-6.0.0.tgz#90269fbdc7229d5e3b8f2f3e029a94083551040d"
   integrity sha1-kCafvccinV47jy8+ApqUCDVRBA0=
   dependencies:
     ora "^3.4.0"
 
 "@react-native-community/cli@^6.0.0":
   version "6.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native-community/cli/-/cli-6.1.0.tgz#e4aad5240715a587a51d7f779f60d20199e347ce"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli/-/cli-6.1.0.tgz#e4aad5240715a587a51d7f779f60d20199e347ce"
   integrity sha1-5KrVJAcVpYelHX93n2DSAZnjR84=
   dependencies:
     "@react-native-community/cli-debugger-ui" "^6.0.0-rc.0"
@@ -1887,34 +1887,34 @@
 
 "@react-native/assets@1.0.0":
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native/assets/-/assets-1.0.0.tgz#c6f9bf63d274bafc8e970628de24986b30a55c8e"
+  resolved "https://registry.yarnpkg.com/@react-native/assets/-/assets-1.0.0.tgz#c6f9bf63d274bafc8e970628de24986b30a55c8e"
   integrity sha1-xvm/Y9J0uvyOlwYo3iSYazClXI4=
 
 "@react-native/normalize-color@1.0.0":
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native/normalize-color/-/normalize-color-1.0.0.tgz#c52a99d4fe01049102d47dc45d40cbde4f720ab6"
+  resolved "https://registry.yarnpkg.com/@react-native/normalize-color/-/normalize-color-1.0.0.tgz#c52a99d4fe01049102d47dc45d40cbde4f720ab6"
   integrity sha1-xSqZ1P4BBJEC1H3EXUDL3k9yCrY=
 
 "@react-native/polyfills@2.0.0":
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
+  resolved "https://registry.yarnpkg.com/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
   integrity sha1-TEC3RlXIOYLIz0dTDufcE9lXtqo=
 
 "@sideway/address@^4.1.0":
   version "4.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@sideway/address/-/address-4.1.2.tgz#811b84333a335739d3969cfc434736268170cad1"
+  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.2.tgz#811b84333a335739d3969cfc434736268170cad1"
   integrity sha1-gRuEMzozVznTlpz8Q0c2JoFwytE=
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
 "@sideway/formula@^3.0.0":
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
+  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
   integrity sha1-/hWK7jLmvV3oUES+YVvAhHigoTw=
 
 "@sideway/pinpoint@^2.0.0":
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
+  resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha1-z/j/rcNyrSn9P3gneusp5jLMcN8=
 
 "@sinonjs/commons@^1.7.0":
@@ -1999,7 +1999,7 @@
 
 "@types/istanbul-reports@^3.0.0":
   version "3.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@types/istanbul-reports/-/istanbul-reports-3.0.1.tgz#9153fe98bba2bd565a63add9436d6f0d7f8468ff"
+  resolved "https://registry.yarnpkg.com/@types/istanbul-reports/-/istanbul-reports-3.0.1.tgz#9153fe98bba2bd565a63add9436d6f0d7f8468ff"
   integrity sha1-kVP+mLuivVZaY63ZQ21vDX+EaP8=
   dependencies:
     "@types/istanbul-lib-report" "*"
@@ -2130,7 +2130,7 @@
 
 "@types/yargs@^16.0.0":
   version "16.0.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
   integrity sha1-JqrZjdLCo45CEIbqmtQrnlFkKXc=
   dependencies:
     "@types/yargs-parser" "*"
@@ -2219,19 +2219,19 @@ abab@^2.0.0:
 
 abort-controller@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
   integrity sha1-6vVNU7YrrkE46AnKIlyEOabvs5I=
   dependencies:
     event-target-shim "^5.0.0"
 
 absolute-path@^0.0.0:
   version "0.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/absolute-path/-/absolute-path-0.0.0.tgz#a78762fbdadfb5297be99b15d35a785b2f095bf7"
+  resolved "https://registry.yarnpkg.com/absolute-path/-/absolute-path-0.0.0.tgz#a78762fbdadfb5297be99b15d35a785b2f095bf7"
   integrity sha1-p4di+9rftSl76ZsV01p4Wy8JW/c=
 
 accepts@^1.3.7, accepts@~1.3.5, accepts@~1.3.7:
   version "1.3.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
+  resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
   integrity sha1-UxvHJlF6OytB+FACHGzBXqq1B80=
   dependencies:
     mime-types "~2.1.24"
@@ -2287,7 +2287,7 @@ ajv@^8.0.1:
 
 anser@^1.4.9:
   version "1.4.10"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/anser/-/anser-1.4.10.tgz#befa3eddf282684bd03b63dcda3927aef8c2e35b"
+  resolved "https://registry.yarnpkg.com/anser/-/anser-1.4.10.tgz#befa3eddf282684bd03b63dcda3927aef8c2e35b"
   integrity sha1-vvo+3fKCaEvQO2Pc2jknrvjC41s=
 
 ansi-colors@^4.1.1:
@@ -2304,7 +2304,7 @@ ansi-escapes@^4.2.1:
 
 ansi-fragments@^0.2.1:
   version "0.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ansi-fragments/-/ansi-fragments-0.2.1.tgz#24409c56c4cc37817c3d7caa99d8969e2de5a05e"
+  resolved "https://registry.yarnpkg.com/ansi-fragments/-/ansi-fragments-0.2.1.tgz#24409c56c4cc37817c3d7caa99d8969e2de5a05e"
   integrity sha1-JECcVsTMN4F8PXyqmdiWni3loF4=
   dependencies:
     colorette "^1.0.7"
@@ -2368,7 +2368,7 @@ anymatch@^3.0.3:
 
 appdirsjs@^1.2.4:
   version "1.2.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/appdirsjs/-/appdirsjs-1.2.5.tgz#c9888c8a0a908014533d5176ec56f1d5a8fd3700"
+  resolved "https://registry.yarnpkg.com/appdirsjs/-/appdirsjs-1.2.5.tgz#c9888c8a0a908014533d5176ec56f1d5a8fd3700"
   integrity sha1-yYiMigqQgBRTPVF27Fbx1aj9NwA=
 
 argparse@^1.0.7:
@@ -2408,7 +2408,7 @@ array-equal@^1.0.0:
 
 array-filter@~0.0.0:
   version "0.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
+  resolved "https://registry.yarnpkg.com/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
   integrity sha1-fajPLiZijtcygDWB/SH2fKzS7uw=
 
 array-includes@^3.1.1, array-includes@^3.1.2, array-includes@^3.1.3:
@@ -2424,12 +2424,12 @@ array-includes@^3.1.1, array-includes@^3.1.2, array-includes@^3.1.3:
 
 array-map@~0.0.0:
   version "0.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
+  resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
   integrity sha1-iKK6tz0c97zVwbEYoAP2b2ZfpmI=
 
 array-reduce@~0.0.0:
   version "0.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
+  resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
   integrity sha1-FziZ0//Rx9k4PkR5Ul2+J4yrXys=
 
 array-unique@^0.3.2:
@@ -2458,7 +2458,7 @@ array.prototype.flatmap@^1.2.4:
 
 asap@~2.0.6:
   version "2.0.6"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+  resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
 asn1@~0.2.3:
@@ -2485,7 +2485,7 @@ ast-types-flow@^0.0.7:
 
 ast-types@0.14.2:
   version "0.14.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ast-types/-/ast-types-0.14.2.tgz#600b882df8583e3cd4f2df5fa20fa83759d4bdfd"
+  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.14.2.tgz#600b882df8583e3cd4f2df5fa20fa83759d4bdfd"
   integrity sha1-YAuILfhYPjzU8t9fog+oN1nUvf0=
   dependencies:
     tslib "^2.0.1"
@@ -2507,12 +2507,12 @@ async-each@^1.0.1:
 
 async-limiter@~1.0.0:
   version "1.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
   integrity sha1-3TeelPDbgxCwgpH51kwyCXZmF/0=
 
 async@^2.4.0:
   version "2.6.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
@@ -2795,7 +2795,7 @@ babel-plugin-syntax-trailing-function-commas@^6.5.0:
 
 babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   version "7.0.0-beta.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha1-qiE8FDXiv/62/KhCKH71NK0F1c8=
 
 babel-plugin-transform-class-properties@^6.5.0:
@@ -3036,7 +3036,7 @@ babel-preset-current-node-syntax@^0.1.2:
 
 babel-preset-fbjs@^3.4.0:
   version "3.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/babel-preset-fbjs/-/babel-preset-fbjs-3.4.0.tgz#38a14e5a7a3b285a3f3a86552d650dca5cf6111c"
+  resolved "https://registry.yarnpkg.com/babel-preset-fbjs/-/babel-preset-fbjs-3.4.0.tgz#38a14e5a7a3b285a3f3a86552d650dca5cf6111c"
   integrity sha1-OKFOWno7KFo/OoZVLWUNylz2ERw=
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
@@ -3169,7 +3169,7 @@ balanced-match@^1.0.0:
 
 base64-js@^1.1.2, base64-js@^1.5.1:
   version "1.5.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=
 
 base@^0.11.1:
@@ -3194,7 +3194,7 @@ bcrypt-pbkdf@^1.0.0:
 
 big-integer@^1.6.44:
   version "1.6.50"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/big-integer/-/big-integer-1.6.50.tgz#299a4be8bd441c73dcc492ed46b7169c34e92e70"
+  resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.50.tgz#299a4be8bd441c73dcc492ed46b7169c34e92e70"
   integrity sha1-KZpL6L1EHHPcxJLtRrcWnDTpLnA=
 
 binary-extensions@^1.0.0:
@@ -3216,19 +3216,19 @@ bluebird@^3.5.1:
 
 boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+  resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
 bplist-creator@0.0.8:
   version "0.0.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/bplist-creator/-/bplist-creator-0.0.8.tgz#56b2a6e79e9aec3fc33bf831d09347d73794e79c"
+  resolved "https://registry.yarnpkg.com/bplist-creator/-/bplist-creator-0.0.8.tgz#56b2a6e79e9aec3fc33bf831d09347d73794e79c"
   integrity sha1-VrKm556a7D/DO/gx0JNH1zeU55w=
   dependencies:
     stream-buffers "~2.2.0"
 
 bplist-parser@0.2.0:
   version "0.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/bplist-parser/-/bplist-parser-0.2.0.tgz#43a9d183e5bf9d545200ceac3e712f79ebbe8d0e"
+  resolved "https://registry.yarnpkg.com/bplist-parser/-/bplist-parser-0.2.0.tgz#43a9d183e5bf9d545200ceac3e712f79ebbe8d0e"
   integrity sha1-Q6nRg+W/nVRSAM6sPnEveeu+jQ4=
   dependencies:
     big-integer "^1.6.44"
@@ -3313,7 +3313,7 @@ builtin-modules@^1.1.1:
 
 bytes@3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
+  resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
   integrity sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
 
 cache-base@^1.0.1:
@@ -3341,21 +3341,21 @@ call-bind@^1.0.0, call-bind@^1.0.2:
 
 caller-callsite@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/caller-callsite/-/caller-callsite-2.0.0.tgz#847e0fce0a223750a9a027c54b33731ad3154134"
+  resolved "https://registry.yarnpkg.com/caller-callsite/-/caller-callsite-2.0.0.tgz#847e0fce0a223750a9a027c54b33731ad3154134"
   integrity sha1-hH4PzgoiN1CpoCfFSzNzGtMVQTQ=
   dependencies:
     callsites "^2.0.0"
 
 caller-path@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/caller-path/-/caller-path-2.0.0.tgz#468f83044e369ab2010fac5f06ceee15bb2cb1f4"
+  resolved "https://registry.yarnpkg.com/caller-path/-/caller-path-2.0.0.tgz#468f83044e369ab2010fac5f06ceee15bb2cb1f4"
   integrity sha1-Ro+DBE42mrIBD6xfBs7uFbsssfQ=
   dependencies:
     caller-callsite "^2.0.0"
 
 callsites@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
+  resolved "https://registry.yarnpkg.com/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
   integrity sha1-BuuE8A7qQT2oav/vrL/7Ngk7PFA=
 
 callsites@^3.0.0:
@@ -3375,12 +3375,12 @@ camelcase@^5.0.0, camelcase@^5.3.1:
 
 camelcase@^6.0.0:
   version "6.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha1-kkr4gcnVJaydh/QNlk5c6pgqGAk=
 
 caniuse-lite@^1.0.30001219:
   version "1.0.30001271"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/caniuse-lite/-/caniuse-lite-1.0.30001271.tgz"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001271.tgz"
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3466,14 +3466,14 @@ class-utils@^0.3.5:
 
 cli-cursor@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
+  resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
   integrity sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
   dependencies:
     restore-cursor "^2.0.0"
 
 cli-spinners@^2.0.0:
   version "2.6.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/cli-spinners/-/cli-spinners-2.6.1.tgz#adc954ebe281c37a6319bfa401e6dd2488ffb70d"
+  resolved "https://registry.yarnpkg.com/cli-spinners/-/cli-spinners-2.6.1.tgz#adc954ebe281c37a6319bfa401e6dd2488ffb70d"
   integrity sha1-rclU6+KBw3pjGb+kAebdJIj/tw0=
 
 cliui@^6.0.0:
@@ -3487,7 +3487,7 @@ cliui@^6.0.0:
 
 clone-deep@^4.0.1:
   version "4.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
+  resolved "https://registry.yarnpkg.com/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
   integrity sha1-wZ/Zvbv4WUK0/ZechNz31fB8I4c=
   dependencies:
     is-plain-object "^2.0.4"
@@ -3496,7 +3496,7 @@ clone-deep@^4.0.1:
 
 clone@^1.0.2:
   version "1.0.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
 
 co@^4.6.0:
@@ -3543,7 +3543,7 @@ color-name@~1.1.4:
 
 colorette@^1.0.7:
   version "1.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha1-UZD7uHJ2JZqGrXAL/yxtb6o/ykA=
 
 colorette@^1.2.2:
@@ -3553,7 +3553,7 @@ colorette@^1.2.2:
 
 colors@^1.1.2:
   version "1.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha1-xQSRR51MG9rtLJztMs98fcI2D3g=
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
@@ -3565,7 +3565,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
 
 command-exists@^1.2.8:
   version "1.2.9"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
+  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha1-xQclrzgIyKsCYP1gsB+/oluVT2k=
 
 commander@^2.12.1, commander@^2.19.0:
@@ -3575,12 +3575,12 @@ commander@^2.12.1, commander@^2.19.0:
 
 commander@~2.13.0:
   version "2.13.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
   integrity sha1-aWS8pnaF33wfFDDFhPB9dZeIW5w=
 
 commondir@^1.0.1:
   version "1.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
+  resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
 component-emitter@^1.2.1:
@@ -3590,14 +3590,14 @@ component-emitter@^1.2.1:
 
 compressible@~2.0.16:
   version "2.0.18"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/compressible/-/compressible-2.0.18.tgz#af53cca6b070d4c3c0750fbd77286a6d7cc46fba"
+  resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.18.tgz#af53cca6b070d4c3c0750fbd77286a6d7cc46fba"
   integrity sha1-r1PMprBw1MPAdQ+9dyhqbXzEb7o=
   dependencies:
     mime-db ">= 1.43.0 < 2"
 
 compression@^1.7.1:
   version "1.7.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/compression/-/compression-1.7.4.tgz#95523eff170ca57c29a0ca41e6fe131f41e5bb8f"
+  resolved "https://registry.yarnpkg.com/compression/-/compression-1.7.4.tgz#95523eff170ca57c29a0ca41e6fe131f41e5bb8f"
   integrity sha1-lVI+/xcMpXwpoMpB5v4TH0Hlu48=
   dependencies:
     accepts "~1.3.5"
@@ -3620,7 +3620,7 @@ confusing-browser-globals@^1.0.5:
 
 connect@^3.6.5:
   version "3.7.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/connect/-/connect-3.7.0.tgz#5d49348910caa5e07a01800b030d0c35f20484f8"
+  resolved "https://registry.yarnpkg.com/connect/-/connect-3.7.0.tgz#5d49348910caa5e07a01800b030d0c35f20484f8"
   integrity sha1-XUk0iRDKpeB6AYALAw0MNfIEhPg=
   dependencies:
     debug "2.6.9"
@@ -3673,7 +3673,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
 
 cosmiconfig@^5.0.5, cosmiconfig@^5.1.0:
   version "5.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
   integrity sha1-BA9yaAnFked6F8CjYmykW08Wixo=
   dependencies:
     import-fresh "^2.0.0"
@@ -3683,7 +3683,7 @@ cosmiconfig@^5.0.5, cosmiconfig@^5.1.0:
 
 cross-env@^7.0.3:
   version "7.0.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
   integrity sha1-hlJkspZ33AFbqEGJGJZd0jL8VM8=
   dependencies:
     cross-spawn "^7.0.1"
@@ -3710,7 +3710,7 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2:
 
 css-select@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/css-select/-/css-select-2.1.0.tgz#6a34653356635934a81baca68d0255432105dbef"
+  resolved "https://registry.yarnpkg.com/css-select/-/css-select-2.1.0.tgz#6a34653356635934a81baca68d0255432105dbef"
   integrity sha1-ajRlM1ZjWTSoG6ymjQJVQyEF2+8=
   dependencies:
     boolbase "^1.0.0"
@@ -3720,7 +3720,7 @@ css-select@^2.1.0:
 
 css-tree@^1.0.0-alpha.39:
   version "1.1.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/css-tree/-/css-tree-1.1.3.tgz#eb4870fb6fd7707327ec95c2ff2ab09b5e8db91d"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.1.3.tgz#eb4870fb6fd7707327ec95c2ff2ab09b5e8db91d"
   integrity sha1-60hw+2/XcHMn7JXC/yqwm16NuR0=
   dependencies:
     mdn-data "2.0.14"
@@ -3728,7 +3728,7 @@ css-tree@^1.0.0-alpha.39:
 
 css-what@^3.2.1:
   version "3.4.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
+  resolved "https://registry.yarnpkg.com/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
   integrity sha1-6nAm/LAXd+295SEk4h8yfnrpUOQ=
 
 cssom@^0.4.1:
@@ -3776,7 +3776,7 @@ data-urls@^1.1.0:
 
 dayjs@^1.8.15:
   version "1.10.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
   integrity sha1-LPX5Gt0oEWdIRAhmoKHSbzps5Gg=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
@@ -3822,7 +3822,7 @@ deep-is@^0.1.3, deep-is@~0.1.3:
 
 deepmerge@^3.2.0:
   version "3.3.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
   integrity sha1-08R/1vOpPVF7FEJrBiihewEl9fc=
 
 deepmerge@^4.0.0, deepmerge@^4.2.2:
@@ -3832,7 +3832,7 @@ deepmerge@^4.0.0, deepmerge@^4.2.2:
 
 defaults@^1.0.3:
   version "1.0.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
+  resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
   integrity sha1-xlYFHpgX2f8I7YgUd/P+QBnz730=
   dependencies:
     clone "^1.0.2"
@@ -3873,17 +3873,17 @@ delayed-stream@~1.0.0:
 
 denodeify@^1.2.1:
   version "1.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/denodeify/-/denodeify-1.2.1.tgz#3a36287f5034e699e7577901052c2e6c94251631"
+  resolved "https://registry.yarnpkg.com/denodeify/-/denodeify-1.2.1.tgz#3a36287f5034e699e7577901052c2e6c94251631"
   integrity sha1-OjYof1A05pnnV3kBBSwubJQlFjE=
 
 depd@~1.1.2:
   version "1.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
 destroy@~1.0.4:
   version "1.0.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
+  resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
 detect-newline@^3.0.0:
@@ -3930,7 +3930,7 @@ doctrine@^3.0.0:
 
 dom-serializer@0:
   version "0.2.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/dom-serializer/-/dom-serializer-0.2.2.tgz#1afb81f533717175d478655debc5e332d9f9bb51"
+  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.2.2.tgz#1afb81f533717175d478655debc5e332d9f9bb51"
   integrity sha1-GvuB9TNxcXXUeGVd68XjMtn5u1E=
   dependencies:
     domelementtype "^2.0.1"
@@ -3943,12 +3943,12 @@ dom-walk@^0.1.0:
 
 domelementtype@1:
   version "1.3.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/domelementtype/-/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
   integrity sha1-0EjESzew0Qp/Kj1f7j9DM9eQSB8=
 
 domelementtype@^2.0.1:
   version "2.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
   integrity sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc=
 
 domexception@^1.0.1:
@@ -3960,7 +3960,7 @@ domexception@^1.0.1:
 
 domutils@^1.7.0:
   version "1.7.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
   integrity sha1-Vuo0HoNOBuZ0ivehyyXaZ+qfjCo=
   dependencies:
     dom-serializer "0"
@@ -3976,7 +3976,7 @@ ecc-jsbn@~0.1.1:
 
 ee-first@1.1.1:
   version "1.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+  resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.723:
@@ -3996,7 +3996,7 @@ emoji-regex@^9.0.0:
 
 encodeurl@~1.0.2:
   version "1.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+  resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
 end-of-stream@^1.1.0:
@@ -4015,12 +4015,12 @@ enquirer@^2.3.5:
 
 entities@^2.0.0:
   version "2.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=
 
 envinfo@^7.7.2:
   version "7.8.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/envinfo/-/envinfo-7.8.1.tgz#06377e3e5f4d379fea7ac592d5ad8927e0c4d475"
+  resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.8.1.tgz#06377e3e5f4d379fea7ac592d5ad8927e0c4d475"
   integrity sha1-Bjd+Pl9NN5/qesWS1a2JJ+DE1HU=
 
 error-ex@^1.3.1:
@@ -4032,14 +4032,14 @@ error-ex@^1.3.1:
 
 error-stack-parser@^2.0.6:
   version "2.0.6"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/error-stack-parser/-/error-stack-parser-2.0.6.tgz#5a99a707bd7a4c58a797902d48d82803ede6aad8"
+  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.6.tgz#5a99a707bd7a4c58a797902d48d82803ede6aad8"
   integrity sha1-WpmnB716TFinl5AtSNgoA+3mqtg=
   dependencies:
     stackframe "^1.1.1"
 
 errorhandler@^1.5.0:
   version "1.5.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/errorhandler/-/errorhandler-1.5.1.tgz#b9ba5d17cf90744cd1e851357a6e75bf806a9a91"
+  resolved "https://registry.yarnpkg.com/errorhandler/-/errorhandler-1.5.1.tgz#b9ba5d17cf90744cd1e851357a6e75bf806a9a91"
   integrity sha1-ubpdF8+QdEzR6FE1em51v4BqmpE=
   dependencies:
     accepts "~1.3.7"
@@ -4083,7 +4083,7 @@ escalade@^3.1.1:
 
 escape-html@~1.0.3:
   version "1.0.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
@@ -4402,12 +4402,12 @@ esutils@^2.0.2:
 
 etag@~1.8.1:
   version "1.8.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
+  resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
 event-target-shim@^5.0.0, event-target-shim@^5.0.1:
   version "5.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha1-XU0+vflYPWOlMzzi3rdICrKwV4k=
 
 exec-sh@^0.3.2:
@@ -4576,7 +4576,7 @@ fill-range@^7.0.1:
 
 finalhandler@1.1.2:
   version "1.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
+  resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
   integrity sha1-t+fQAP/RGTjQ/bBTUG9uur6fWH0=
   dependencies:
     debug "2.6.9"
@@ -4589,7 +4589,7 @@ finalhandler@1.1.2:
 
 find-cache-dir@^2.0.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/find-cache-dir/-/find-cache-dir-2.1.0.tgz#8d0f94cd13fe43c6c7c261a0d86115ca918c05f7"
+  resolved "https://registry.yarnpkg.com/find-cache-dir/-/find-cache-dir-2.1.0.tgz#8d0f94cd13fe43c6c7c261a0d86115ca918c05f7"
   integrity sha1-jQ+UzRP+Q8bHwmGg2GEVypGMBfc=
   dependencies:
     commondir "^1.0.1"
@@ -4610,7 +4610,7 @@ find-up@^2.0.0, find-up@^2.1.0:
 
 find-up@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
+  resolved "https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
   integrity sha1-SRafHXmTQwZG2mHsxa41XCHJe3M=
   dependencies:
     locate-path "^3.0.0"
@@ -4638,12 +4638,12 @@ flatted@^3.1.0:
 
 flow-parser@0.*:
   version "0.162.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/flow-parser/-/flow-parser-0.162.0.tgz#bd5317f71b38a71900979fa47528b68aeef099d1"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.162.0.tgz#bd5317f71b38a71900979fa47528b68aeef099d1"
   integrity sha1-vVMX9xs4pxkAl5+kdSi2iu7wmdE=
 
 flow-parser@^0.121.0:
   version "0.121.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/flow-parser/-/flow-parser-0.121.0.tgz#9f9898eaec91a9f7c323e9e992d81ab5c58e618f"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.121.0.tgz#9f9898eaec91a9f7c323e9e992d81ab5c58e618f"
   integrity sha1-n5iY6uyRqffDI+npktgatcWOYY8=
 
 for-in@^1.0.2:
@@ -4674,12 +4674,12 @@ fragment-cache@^0.2.1:
 
 fresh@0.5.2:
   version "0.5.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
+  resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
 fs-extra@^1.0.0:
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/fs-extra/-/fs-extra-1.0.0.tgz#cd3ce5f7e7cb6145883fcae3191e9877f8587950"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-1.0.0.tgz#cd3ce5f7e7cb6145883fcae3191e9877f8587950"
   integrity sha1-zTzl9+fLYUWIP8rjGR6Yd/hYeVA=
   dependencies:
     graceful-fs "^4.1.2"
@@ -4688,7 +4688,7 @@ fs-extra@^1.0.0:
 
 fs-extra@^8.1.0:
   version "8.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA=
   dependencies:
     graceful-fs "^4.2.0"
@@ -4844,7 +4844,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.2.4:
 
 graceful-fs@^4.1.3, graceful-fs@^4.1.6, graceful-fs@^4.1.9, graceful-fs@^4.2.0:
   version "4.2.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha1-5BK40z9eAGWTy9PO5t+fLOu+gCo=
 
 growly@^1.3.0:
@@ -4932,17 +4932,17 @@ has@^1.0.3:
 
 hermes-engine@~0.9.0:
   version "0.9.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/hermes-engine/-/hermes-engine-0.9.0.tgz#84d9cfe84e8f6b1b2020d6e71b350cec84ed982f"
+  resolved "https://registry.yarnpkg.com/hermes-engine/-/hermes-engine-0.9.0.tgz#84d9cfe84e8f6b1b2020d6e71b350cec84ed982f"
   integrity sha1-hNnP6E6PaxsgINbnGzUM7ITtmC8=
 
 hermes-parser@0.4.7:
   version "0.4.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/hermes-parser/-/hermes-parser-0.4.7.tgz#410f5129d57183784d205a0538e6fbdcf614c9ea"
+  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.4.7.tgz#410f5129d57183784d205a0538e6fbdcf614c9ea"
   integrity sha1-QQ9RKdVxg3hNIFoFOOb73PYUyeo=
 
 hermes-profile-transformer@^0.0.6:
   version "0.0.6"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/hermes-profile-transformer/-/hermes-profile-transformer-0.0.6.tgz#bd0f5ecceda80dd0ddaae443469ab26fb38fc27b"
+  resolved "https://registry.yarnpkg.com/hermes-profile-transformer/-/hermes-profile-transformer-0.0.6.tgz#bd0f5ecceda80dd0ddaae443469ab26fb38fc27b"
   integrity sha1-vQ9ezO2oDdDdquRDRpqyb7OPwns=
   dependencies:
     source-map "^0.7.3"
@@ -4973,7 +4973,7 @@ html-escaper@^2.0.0:
 
 http-errors@~1.7.2:
   version "1.7.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/http-errors/-/http-errors-1.7.3.tgz#6c619e4f9c60308c38519498c14fbb10aacebb06"
+  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.7.3.tgz#6c619e4f9c60308c38519498c14fbb10aacebb06"
   integrity sha1-bGGeT5xgMIw4UZSYwU+7EKrOuwY=
   dependencies:
     depd "~1.1.2"
@@ -5015,12 +5015,12 @@ ignore@^5.0.5:
 
 image-size@^0.6.0:
   version "0.6.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
   integrity sha1-5+XGW7U0vXzc7dbLUWYnKoX3X7I=
 
 import-fresh@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/import-fresh/-/import-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"
+  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"
   integrity sha1-2BNVwVYS04bGH53dOSLUMEgipUY=
   dependencies:
     caller-path "^2.0.0"
@@ -5088,7 +5088,7 @@ ip-regex@^2.1.0:
 
 ip@^1.1.5:
   version "1.1.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
   integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
 
 is-accessor-descriptor@^0.1.6:
@@ -5192,7 +5192,7 @@ is-descriptor@^1.0.0, is-descriptor@^1.0.2:
 
 is-directory@^0.3.1:
   version "0.3.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
+  resolved "https://registry.yarnpkg.com/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
   integrity sha1-YTObbyR1/Hcv2cnYP1yFddwVSuE=
 
 is-docker@^2.0.0:
@@ -5219,7 +5219,7 @@ is-extglob@^2.1.0, is-extglob@^2.1.1:
 
 is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
+  resolved "https://registry.yarnpkg.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
   integrity sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
 
 is-fullwidth-code-point@^3.0.0:
@@ -5270,7 +5270,7 @@ is-number@^7.0.0:
 
 is-plain-obj@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
   integrity sha1-ReQuN/zPH0Dajl927iFRWEDAkoc=
 
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
@@ -5322,7 +5322,7 @@ is-windows@^1.0.2:
 
 is-wsl@^1.1.0:
   version "1.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
+  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
   integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
 
 is-wsl@^2.1.1:
@@ -5533,7 +5533,7 @@ jest-get-type@^25.2.6:
 
 jest-get-type@^26.3.0:
   version "26.3.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-get-type/-/jest-get-type-26.3.0.tgz#e97dc3c3f53c2b406ca7afaed4493b1d099199e0"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-26.3.0.tgz#e97dc3c3f53c2b406ca7afaed4493b1d099199e0"
   integrity sha1-6X3Dw/U8K0Bsp6+u1Ek7HQmRmeA=
 
 jest-haste-map@^25.5.1:
@@ -5558,7 +5558,7 @@ jest-haste-map@^25.5.1:
 
 jest-haste-map@^26.5.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-haste-map/-/jest-haste-map-26.6.2.tgz#dd7e60fe7dc0e9f911a23d79c5ff7fb5c2cafeaa"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-26.6.2.tgz#dd7e60fe7dc0e9f911a23d79c5ff7fb5c2cafeaa"
   integrity sha1-3X5g/n3A6fkRoj15xf9/tcLK/qo=
   dependencies:
     "@jest/types" "^26.6.2"
@@ -5651,7 +5651,7 @@ jest-regex-util@^25.2.6:
 
 jest-regex-util@^26.0.0:
   version "26.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-regex-util/-/jest-regex-util-26.0.0.tgz#d25e7184b36e39fd466c3bc41be0971e821fee28"
+  resolved "https://registry.yarnpkg.com/jest-regex-util/-/jest-regex-util-26.0.0.tgz#d25e7184b36e39fd466c3bc41be0971e821fee28"
   integrity sha1-0l5xhLNuOf1GbDvEG+CXHoIf7ig=
 
 jest-resolve-dependencies@^25.5.4:
@@ -5744,7 +5744,7 @@ jest-serializer@^25.5.0:
 
 jest-serializer@^26.6.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-serializer/-/jest-serializer-26.6.2.tgz#d139aafd46957d3a448f3a6cdabe2919ba0742d1"
+  resolved "https://registry.yarnpkg.com/jest-serializer/-/jest-serializer-26.6.2.tgz#d139aafd46957d3a448f3a6cdabe2919ba0742d1"
   integrity sha1-0Tmq/UaVfTpEjzps2r4pGboHQtE=
   dependencies:
     "@types/node" "*"
@@ -5784,7 +5784,7 @@ jest-util@^25.5.0:
 
 jest-util@^26.6.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-util/-/jest-util-26.6.2.tgz#907535dbe4d5a6cb4c47ac9b926f6af29576cbc1"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-26.6.2.tgz#907535dbe4d5a6cb4c47ac9b926f6af29576cbc1"
   integrity sha1-kHU12+TVpstMR6ybkm9q8pV2y8E=
   dependencies:
     "@jest/types" "^26.6.2"
@@ -5808,7 +5808,7 @@ jest-validate@^25.5.0:
 
 jest-validate@^26.5.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-validate/-/jest-validate-26.6.2.tgz#23d380971587150467342911c3d7b4ac57ab20ec"
+  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-26.6.2.tgz#23d380971587150467342911c3d7b4ac57ab20ec"
   integrity sha1-I9OAlxWHFQRnNCkRw9e0rFerIOw=
   dependencies:
     "@jest/types" "^26.6.2"
@@ -5840,7 +5840,7 @@ jest-worker@^25.5.0:
 
 jest-worker@^26.0.0, jest-worker@^26.6.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jest-worker/-/jest-worker-26.6.2.tgz#7f72cbc4d643c365e27b9fd775f9d0eaa9c7a8ed"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-26.6.2.tgz#7f72cbc4d643c365e27b9fd775f9d0eaa9c7a8ed"
   integrity sha1-f3LLxNZDw2Xie5/XdfnQ6qnHqO0=
   dependencies:
     "@types/node" "*"
@@ -5858,7 +5858,7 @@ jest@^25.1.0:
 
 jetifier@^1.6.2:
   version "1.6.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jetifier/-/jetifier-1.6.8.tgz#e88068697875cbda98c32472902c4d3756247798"
+  resolved "https://registry.yarnpkg.com/jetifier/-/jetifier-1.6.8.tgz#e88068697875cbda98c32472902c4d3756247798"
   integrity sha1-6IBoaXh1y9qYwyRykCxNN1Ykd5g=
 
 jju@^1.3.0:
@@ -5868,7 +5868,7 @@ jju@^1.3.0:
 
 joi@^17.2.1:
   version "17.4.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/joi/-/joi-17.4.2.tgz#02f4eb5cf88e515e614830239379dcbbe28ce7f7"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.4.2.tgz#02f4eb5cf88e515e614830239379dcbbe28ce7f7"
   integrity sha1-AvTrXPiOUV5hSDAjk3ncu+KM5/c=
   dependencies:
     "@hapi/hoek" "^9.0.0"
@@ -5902,12 +5902,12 @@ jsbn@~0.1.0:
 
 jsc-android@^250230.2.1:
   version "250230.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jsc-android/-/jsc-android-250230.2.1.tgz#3790313a970586a03ab0ad47defbc84df54f1b83"
+  resolved "https://registry.yarnpkg.com/jsc-android/-/jsc-android-250230.2.1.tgz#3790313a970586a03ab0ad47defbc84df54f1b83"
   integrity sha1-N5AxOpcFhqA6sK1H3vvITfVPG4M=
 
 jscodeshift@^0.11.0:
   version "0.11.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jscodeshift/-/jscodeshift-0.11.0.tgz#4f95039408f3f06b0e39bb4d53bc3139f5330e2f"
+  resolved "https://registry.yarnpkg.com/jscodeshift/-/jscodeshift-0.11.0.tgz#4f95039408f3f06b0e39bb4d53bc3139f5330e2f"
   integrity sha1-T5UDlAjz8GsOObtNU7wxOfUzDi8=
   dependencies:
     "@babel/core" "^7.1.6"
@@ -6023,21 +6023,21 @@ json5@^1.0.1:
 
 jsonfile@^2.1.0:
   version "2.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-2.4.0.tgz#3736a2b428b87bbda0cc83b53fa3d633a35c2ae8"
   integrity sha1-NzaitCi4e72gzIO1P6PWM6NcKug=
   optionalDependencies:
     graceful-fs "^4.1.6"
 
 jsonfile@^4.0.0:
   version "4.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   optionalDependencies:
     graceful-fs "^4.1.6"
 
 jsonify@~0.0.0:
   version "0.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
 jsprim@^1.2.2:
@@ -6089,7 +6089,7 @@ kind-of@^6.0.0, kind-of@^6.0.2:
 
 klaw@^1.0.0:
   version "1.3.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
+  resolved "https://registry.yarnpkg.com/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
   integrity sha1-QIhDO0azsbolnXh4XY6W9zugJDk=
   optionalDependencies:
     graceful-fs "^4.1.9"
@@ -6157,7 +6157,7 @@ locate-path@^2.0.0:
 
 locate-path@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
+  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
   integrity sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=
   dependencies:
     p-locate "^3.0.0"
@@ -6192,7 +6192,7 @@ lodash.sortby@^4.7.0:
 
 lodash.throttle@^4.1.1:
   version "4.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 lodash.truncate@^4.4.2:
@@ -6212,14 +6212,14 @@ lodash@4.17.x, lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.1
 
 log-symbols@^2.2.0:
   version "2.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
+  resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   integrity sha1-V0Dhxdbw39pK2TI7UzIQfva0xAo=
   dependencies:
     chalk "^2.0.1"
 
 logkitty@^0.7.1:
   version "0.7.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/logkitty/-/logkitty-0.7.1.tgz#8e8d62f4085a826e8d38987722570234e33c6aa7"
+  resolved "https://registry.yarnpkg.com/logkitty/-/logkitty-0.7.1.tgz#8e8d62f4085a826e8d38987722570234e33c6aa7"
   integrity sha1-jo1i9Ahagm6NOJh3IlcCNOM8aqc=
   dependencies:
     ansi-fragments "^0.2.1"
@@ -6249,7 +6249,7 @@ lru-cache@^6.0.0:
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
+  resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
   integrity sha1-XwMQ4YuL6JjMBwCSlaMK5B6R5vU=
   dependencies:
     pify "^4.0.1"
@@ -6288,12 +6288,12 @@ map-visit@^1.0.0:
 
 mdn-data@2.0.14:
   version "2.0.14"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
+  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
   integrity sha1-cRP8QoGRfWPOKbQ0RvcB5owlulA=
 
 merge-options@^3.0.4:
   version "3.0.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
+  resolved "https://registry.yarnpkg.com/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
   integrity sha1-hHCcKqKkskwZgfZsF5/lVlzG27c=
   dependencies:
     is-plain-obj "^2.1.0"
@@ -6305,7 +6305,7 @@ merge-stream@^2.0.0:
 
 metro-babel-register@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-babel-register/-/metro-babel-register-0.66.2.tgz#c6bbe36c7a77590687ccd74b425dc020d17d05af"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.66.2.tgz#c6bbe36c7a77590687ccd74b425dc020d17d05af"
   integrity sha1-xrvjbHp3WQaHzNdLQl3AINF9Ba8=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6319,7 +6319,7 @@ metro-babel-register@0.66.2:
 
 metro-babel-transformer@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-babel-transformer/-/metro-babel-transformer-0.66.2.tgz#fce0a3e314d28a5e7141c135665e1cc9b8e7ce86"
+  resolved "https://registry.yarnpkg.com/metro-babel-transformer/-/metro-babel-transformer-0.66.2.tgz#fce0a3e314d28a5e7141c135665e1cc9b8e7ce86"
   integrity sha1-/OCj4xTSil5xQcE1Zl4cybjnzoY=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6329,12 +6329,12 @@ metro-babel-transformer@0.66.2:
 
 metro-cache-key@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-cache-key/-/metro-cache-key-0.66.2.tgz#d6463d2a53e887a38419d523962cc24ea0e780b4"
+  resolved "https://registry.yarnpkg.com/metro-cache-key/-/metro-cache-key-0.66.2.tgz#d6463d2a53e887a38419d523962cc24ea0e780b4"
   integrity sha1-1kY9KlPoh6OEGdUjlizCTqDngLQ=
 
 metro-cache@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-cache/-/metro-cache-0.66.2.tgz#e0af4e0a319898f7d42a980f7ee5da153fcfd019"
+  resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.66.2.tgz#e0af4e0a319898f7d42a980f7ee5da153fcfd019"
   integrity sha1-4K9OCjGYmPfUKpgPfuXaFT/P0Bk=
   dependencies:
     metro-core "0.66.2"
@@ -6343,7 +6343,7 @@ metro-cache@0.66.2:
 
 metro-config@0.66.2, metro-config@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-config/-/metro-config-0.66.2.tgz#e365acdb66ad0cda0182b9c9910760a97ee4293b"
+  resolved "https://registry.yarnpkg.com/metro-config/-/metro-config-0.66.2.tgz#e365acdb66ad0cda0182b9c9910760a97ee4293b"
   integrity sha1-42Ws22atDNoBgrnJkQdgqX7kKTs=
   dependencies:
     cosmiconfig "^5.0.5"
@@ -6355,7 +6355,7 @@ metro-config@0.66.2, metro-config@^0.66.1:
 
 metro-core@0.66.2, metro-core@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-core/-/metro-core-0.66.2.tgz#ead776a17b3e5a307e6dc22259db30bf5c7e8490"
+  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.66.2.tgz#ead776a17b3e5a307e6dc22259db30bf5c7e8490"
   integrity sha1-6td2oXs+WjB+bcIiWdswv1x+hJA=
   dependencies:
     jest-haste-map "^26.5.2"
@@ -6364,12 +6364,12 @@ metro-core@0.66.2, metro-core@^0.66.1:
 
 metro-hermes-compiler@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-hermes-compiler/-/metro-hermes-compiler-0.66.2.tgz#30290748f83805faa601aa487632444915795823"
+  resolved "https://registry.yarnpkg.com/metro-hermes-compiler/-/metro-hermes-compiler-0.66.2.tgz#30290748f83805faa601aa487632444915795823"
   integrity sha1-MCkHSPg4BfqmAapIdjJESRV5WCM=
 
 metro-inspector-proxy@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-inspector-proxy/-/metro-inspector-proxy-0.66.2.tgz#a83c76bd2f2fd7b9240be92acf9a8b1d1404547a"
+  resolved "https://registry.yarnpkg.com/metro-inspector-proxy/-/metro-inspector-proxy-0.66.2.tgz#a83c76bd2f2fd7b9240be92acf9a8b1d1404547a"
   integrity sha1-qDx2vS8v17kkC+kqz5qLHRQEVHo=
   dependencies:
     connect "^3.6.5"
@@ -6379,14 +6379,14 @@ metro-inspector-proxy@0.66.2:
 
 metro-minify-uglify@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-minify-uglify/-/metro-minify-uglify-0.66.2.tgz#6061dbee4f61e6d5bb3c100e4379ff6f2e16e42b"
+  resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.66.2.tgz#6061dbee4f61e6d5bb3c100e4379ff6f2e16e42b"
   integrity sha1-YGHb7k9h5tW7PBAOQ3n/by4W5Cs=
   dependencies:
     uglify-es "^3.1.9"
 
 metro-react-native-babel-preset@0.66.2, metro-react-native-babel-preset@^0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.66.2.tgz#fddebcf413ad4ea617d4f47f7c1da401052de734"
+  resolved "https://registry.yarnpkg.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.66.2.tgz#fddebcf413ad4ea617d4f47f7c1da401052de734"
   integrity sha1-/d689BOtTqYX1PR/fB2kAQUt5zQ=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6432,7 +6432,7 @@ metro-react-native-babel-preset@0.66.2, metro-react-native-babel-preset@^0.66.2:
 
 metro-react-native-babel-transformer@0.66.2, metro-react-native-babel-transformer@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.66.2.tgz#768f341e7c3d3d1c38189799c9884b90d1c32eb7"
+  resolved "https://registry.yarnpkg.com/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.66.2.tgz#768f341e7c3d3d1c38189799c9884b90d1c32eb7"
   integrity sha1-do80Hnw9PRw4GJeZyYhLkNHDLrc=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6445,19 +6445,19 @@ metro-react-native-babel-transformer@0.66.2, metro-react-native-babel-transforme
 
 metro-resolver@0.66.2, metro-resolver@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-resolver/-/metro-resolver-0.66.2.tgz#f743ddbe7a12dd137d1f7a555732cafcaea421f8"
+  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.66.2.tgz#f743ddbe7a12dd137d1f7a555732cafcaea421f8"
   integrity sha1-90PdvnoS3RN9H3pVVzLK/K6kIfg=
   dependencies:
     absolute-path "^0.0.0"
 
 metro-runtime@0.66.2, metro-runtime@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-runtime/-/metro-runtime-0.66.2.tgz#3409ee957b949b6c7b72ef6ed2b9af9a4f4a910e"
+  resolved "https://registry.yarnpkg.com/metro-runtime/-/metro-runtime-0.66.2.tgz#3409ee957b949b6c7b72ef6ed2b9af9a4f4a910e"
   integrity sha1-NAnulXuUm2x7cu9u0rmvmk9KkQ4=
 
 metro-source-map@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-source-map/-/metro-source-map-0.66.2.tgz#b5304a282a5d55fa67b599265e9cf3217175cdd7"
+  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.66.2.tgz#b5304a282a5d55fa67b599265e9cf3217175cdd7"
   integrity sha1-tTBKKCpdVfpntZkmXpzzIXF1zdc=
   dependencies:
     "@babel/traverse" "^7.14.0"
@@ -6471,7 +6471,7 @@ metro-source-map@0.66.2:
 
 metro-symbolicate@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-symbolicate/-/metro-symbolicate-0.66.2.tgz#addd095ce5f77e73ca21ddb5dfb396ff5d4fa041"
+  resolved "https://registry.yarnpkg.com/metro-symbolicate/-/metro-symbolicate-0.66.2.tgz#addd095ce5f77e73ca21ddb5dfb396ff5d4fa041"
   integrity sha1-rd0JXOX3fnPKId2137OW/11PoEE=
   dependencies:
     invariant "^2.2.4"
@@ -6483,7 +6483,7 @@ metro-symbolicate@0.66.2:
 
 metro-transform-plugins@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-transform-plugins/-/metro-transform-plugins-0.66.2.tgz#39dd044a23b1343e4f2d2ec34d08128cdf255ed4"
+  resolved "https://registry.yarnpkg.com/metro-transform-plugins/-/metro-transform-plugins-0.66.2.tgz#39dd044a23b1343e4f2d2ec34d08128cdf255ed4"
   integrity sha1-Od0ESiOxND5PLS7DTQgSjN8lXtQ=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6494,7 +6494,7 @@ metro-transform-plugins@0.66.2:
 
 metro-transform-worker@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro-transform-worker/-/metro-transform-worker-0.66.2.tgz#0a8455992132c479721accd52c9bd47deb77769e"
+  resolved "https://registry.yarnpkg.com/metro-transform-worker/-/metro-transform-worker-0.66.2.tgz#0a8455992132c479721accd52c9bd47deb77769e"
   integrity sha1-CoRVmSEyxHlyGszVLJvUfet3dp4=
   dependencies:
     "@babel/core" "^7.14.0"
@@ -6513,7 +6513,7 @@ metro-transform-worker@0.66.2:
 
 metro@0.66.2, metro@^0.66.1:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/metro/-/metro-0.66.2.tgz#f21759bf00995470e7577b5b88a5277963f24492"
+  resolved "https://registry.yarnpkg.com/metro/-/metro-0.66.2.tgz#f21759bf00995470e7577b5b88a5277963f24492"
   integrity sha1-8hdZvwCZVHDnV3tbiKUneWPyRJI=
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -6603,7 +6603,7 @@ mime-db@1.47.0:
 
 mime-db@1.50.0, "mime-db@>= 1.43.0 < 2":
   version "1.50.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mime-db/-/mime-db-1.50.0.tgz#abd4ac94e98d3c0e185016c67ab45d5fde40c11f"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.50.0.tgz#abd4ac94e98d3c0e185016c67ab45d5fde40c11f"
   integrity sha1-q9SslOmNPA4YUBbGerRdX95AwR8=
 
 mime-types@^2.1.12, mime-types@~2.1.19:
@@ -6615,24 +6615,24 @@ mime-types@^2.1.12, mime-types@~2.1.19:
 
 mime-types@^2.1.27, mime-types@~2.1.24:
   version "2.1.33"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mime-types/-/mime-types-2.1.33.tgz#1fa12a904472fafd068e48d9e8401f74d3f70edb"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.33.tgz#1fa12a904472fafd068e48d9e8401f74d3f70edb"
   integrity sha1-H6EqkERy+v0GjkjZ6EAfdNP3Dts=
   dependencies:
     mime-db "1.50.0"
 
 mime@1.6.0:
   version "1.6.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
 mime@^2.4.1:
   version "2.5.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mime/-/mime-2.5.2.tgz#6e3dc6cc2b9510643830e5f19d5cb753da5eeabe"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.5.2.tgz#6e3dc6cc2b9510643830e5f19d5cb753da5eeabe"
   integrity sha1-bj3GzCuVEGQ4MOXxnVy3U9pe6r4=
 
 mimic-fn@^1.0.0:
   version "1.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=
 
 mimic-fn@^2.1.0:
@@ -6681,7 +6681,7 @@ ms@2.0.0:
 
 ms@2.1.1:
   version "2.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha1-MKWGTrPrsKZvLr5tcnrwagnYbgo=
 
 ms@2.1.2:
@@ -6723,12 +6723,12 @@ natural-compare@^1.4.0:
 
 negotiator@0.6.2:
   version "0.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
+  resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha1-/qz3zPUlp3rpY0Q2pkiD/+yjRvs=
 
 neo-async@^2.5.0:
   version "2.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
 
 nice-try@^1.0.4:
@@ -6738,19 +6738,19 @@ nice-try@^1.0.4:
 
 nocache@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/nocache/-/nocache-2.1.0.tgz#120c9ffec43b5729b1d5de88cd71aa75a0ba491f"
+  resolved "https://registry.yarnpkg.com/nocache/-/nocache-2.1.0.tgz#120c9ffec43b5729b1d5de88cd71aa75a0ba491f"
   integrity sha1-Egyf/sQ7Vymx1d6IzXGqdaC6SR8=
 
 node-dir@^0.1.17:
   version "0.1.17"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/node-dir/-/node-dir-0.1.17.tgz#5f5665d93351335caabef8f1c554516cf5f1e4e5"
+  resolved "https://registry.yarnpkg.com/node-dir/-/node-dir-0.1.17.tgz#5f5665d93351335caabef8f1c554516cf5f1e4e5"
   integrity sha1-X1Zl2TNRM1yqvvjxxVRRbPXx5OU=
   dependencies:
     minimatch "^3.0.2"
 
 node-fetch@^2.2.0, node-fetch@^2.6.0:
   version "2.6.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
   integrity sha1-QnNVN9fwgKfl94tsVJtxRr4XQv0=
   dependencies:
     whatwg-url "^5.0.0"
@@ -6783,7 +6783,7 @@ node-releases@^1.1.71:
 
 node-stream-zip@^1.9.1:
   version "1.15.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/node-stream-zip/-/node-stream-zip-1.15.0.tgz#158adb88ed8004c6c49a396b50a6a5de3bca33ea"
+  resolved "https://registry.yarnpkg.com/node-stream-zip/-/node-stream-zip-1.15.0.tgz#158adb88ed8004c6c49a396b50a6a5de3bca33ea"
   integrity sha1-FYrbiO2ABMbEmjlrUKal3jvKM+o=
 
 normalize-package-data@^2.3.2, normalize-package-data@^2.5.0:
@@ -6824,14 +6824,14 @@ npm-run-path@^4.0.0:
 
 nth-check@^1.0.2:
   version "1.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
   integrity sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
   dependencies:
     boolbase "~1.0.0"
 
 nullthrows@^1.1.1:
   version "1.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
+  resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha1-eBgliEOFaulx6uQgitfX6xmkMbE=
 
 nwsapi@^2.2.0:
@@ -6846,7 +6846,7 @@ oauth-sign@~0.9.0:
 
 ob1@0.66.2:
   version "0.66.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ob1/-/ob1-0.66.2.tgz#8caf548202cf2688944bae47db405a08bca17a61"
+  resolved "https://registry.yarnpkg.com/ob1/-/ob1-0.66.2.tgz#8caf548202cf2688944bae47db405a08bca17a61"
   integrity sha1-jK9UggLPJoiUS65H20BaCLyhemE=
 
 object-assign@^4.1.1:
@@ -6929,14 +6929,14 @@ object.values@^1.1.3:
 
 on-finished@~2.3.0:
   version "2.3.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
+  resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
   integrity sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
   dependencies:
     ee-first "1.1.1"
 
 on-headers@~1.0.2:
   version "1.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
+  resolved "https://registry.yarnpkg.com/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
   integrity sha1-dysK5qqlJcOZ5Imt+tkMQD6zwo8=
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
@@ -6948,7 +6948,7 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
 
 onetime@^2.0.0:
   version "2.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/onetime/-/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
+  resolved "https://registry.yarnpkg.com/onetime/-/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
   integrity sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
   dependencies:
     mimic-fn "^1.0.0"
@@ -6962,7 +6962,7 @@ onetime@^5.1.0:
 
 open@^6.2.0:
   version "6.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/open/-/open-6.4.0.tgz#5c13e96d0dc894686164f18965ecfe889ecfc8a9"
+  resolved "https://registry.yarnpkg.com/open/-/open-6.4.0.tgz#5c13e96d0dc894686164f18965ecfe889ecfc8a9"
   integrity sha1-XBPpbQ3IlGhhZPGJZez+iJ7PyKk=
   dependencies:
     is-wsl "^1.1.0"
@@ -6993,12 +6993,12 @@ optionator@^0.9.1:
 
 options@>=0.0.5:
   version "0.0.6"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
+  resolved "https://registry.yarnpkg.com/options/-/options-0.0.6.tgz#ec22d312806bb53e731773e7cdaefcf1c643128f"
   integrity sha1-7CLTEoBrtT5zF3Pnza788cZDEo8=
 
 ora@^3.4.0:
   version "3.4.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ora/-/ora-3.4.0.tgz#bf0752491059a3ef3ed4c85097531de9fdbcd318"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-3.4.0.tgz#bf0752491059a3ef3ed4c85097531de9fdbcd318"
   integrity sha1-vwdSSRBZo+8+1MhQl1Md6f280xg=
   dependencies:
     chalk "^2.4.2"
@@ -7010,7 +7010,7 @@ ora@^3.4.0:
 
 os-tmpdir@^1.0.0:
   version "1.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
+  resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
 p-each-series@^2.1.0:
@@ -7051,7 +7051,7 @@ p-locate@^2.0.0:
 
 p-locate@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/p-locate/-/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4"
+  resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4"
   integrity sha1-Mi1poFwCZLJZl9n0DNiokasAZKQ=
   dependencies:
     p-limit "^2.0.0"
@@ -7105,7 +7105,7 @@ parse5@5.1.0:
 
 parseurl@~1.3.3:
   version "1.3.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
+  resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
 
 pascalcase@^0.1.1:
@@ -7179,7 +7179,7 @@ pify@^3.0.0:
 
 pify@^4.0.1:
   version "4.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
+  resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha1-SyzSXFDVmHNcUCkiJP2MbfQeMjE=
 
 pirates@^4.0.0, pirates@^4.0.1:
@@ -7198,7 +7198,7 @@ pkg-dir@^2.0.0:
 
 pkg-dir@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
+  resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
   integrity sha1-J0kCDyOe2ZCIGx9xIQ1R62UjvqM=
   dependencies:
     find-up "^3.0.0"
@@ -7219,7 +7219,7 @@ pkg-up@^2.0.0:
 
 plist@^3.0.1, plist@^3.0.2:
   version "3.0.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
   integrity sha1-pi34N+Ou0rs7c1iZ1RDE8YYBnL4=
   dependencies:
     base64-js "^1.5.1"
@@ -7279,7 +7279,7 @@ pretty-format@^25.5.0:
 
 pretty-format@^26.5.2, pretty-format@^26.6.2:
   version "26.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
   integrity sha1-41wnBfFMt/4v6U+geDRbREEg/JM=
   dependencies:
     "@jest/types" "^26.6.2"
@@ -7309,7 +7309,7 @@ progress@^2.0.0:
 
 promise@^8.0.3:
   version "8.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/promise/-/promise-8.1.0.tgz#697c25c3dfe7435dd79fcd58c38a135888eaf05e"
+  resolved "https://registry.yarnpkg.com/promise/-/promise-8.1.0.tgz#697c25c3dfe7435dd79fcd58c38a135888eaf05e"
   integrity sha1-aXwlw9/nQ13Xn81Yw4oTWIjq8F4=
   dependencies:
     asap "~2.0.6"
@@ -7324,7 +7324,7 @@ prompts@^2.0.1:
 
 prompts@^2.4.0:
   version "2.4.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/prompts/-/prompts-2.4.2.tgz#7b57e73b3a48029ad10ebd44f74b01722a4cb069"
+  resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.4.2.tgz#7b57e73b3a48029ad10ebd44f74b01722a4cb069"
   integrity sha1-e1fnOzpIAprRDr1E90sBcipMsGk=
   dependencies:
     kleur "^3.0.3"
@@ -7364,7 +7364,7 @@ qs@~6.5.2:
 
 range-parser@~1.2.1:
   version "1.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
+  resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
 
 react-addons-test-utils@^15.6.2:
@@ -7379,7 +7379,7 @@ react-deep-force-update@^1.0.0:
 
 react-devtools-core@^4.13.0:
   version "4.19.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-devtools-core/-/react-devtools-core-4.19.2.tgz#57f5d19b67e8658323474ab51c6c1292bf8243c9"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.19.2.tgz#57f5d19b67e8658323474ab51c6c1292bf8243c9"
   integrity sha1-V/XRm2foZYMjR0q1HGwSkr+CQ8k=
   dependencies:
     shell-quote "^1.6.1"
@@ -7397,12 +7397,12 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1, react-
 
 react-lifecycles-compat@2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
   integrity sha1-cdnEzeRxFMQQJFT3baBVwrxIyUg=
 
 react-native-codegen@^0.0.7:
   version "0.0.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-native-codegen/-/react-native-codegen-0.0.7.tgz#86651c5c5fec67a8077ef7f4e36f7ed459043e14"
+  resolved "https://registry.yarnpkg.com/react-native-codegen/-/react-native-codegen-0.0.7.tgz#86651c5c5fec67a8077ef7f4e36f7ed459043e14"
   integrity sha1-hmUcXF/sZ6gHfvf0429+1FkEPhQ=
   dependencies:
     flow-parser "^0.121.0"
@@ -7411,7 +7411,7 @@ react-native-codegen@^0.0.7:
 
 react-native-navigation@^7.23.1:
   version "7.23.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-native-navigation/-/react-native-navigation-7.23.1.tgz#11db7aa84cc8b0ea3f2492113e69d65a3d5a0be0"
+  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-7.23.1.tgz#11db7aa84cc8b0ea3f2492113e69d65a3d5a0be0"
   integrity sha1-Edt6qEzIsOo/JJIRPmnWWj1aC+A=
   dependencies:
     hoist-non-react-statics "3.x.x"
@@ -7422,7 +7422,7 @@ react-native-navigation@^7.23.1:
 
 react-native-svg@^12.1.1:
   version "12.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-native-svg/-/react-native-svg-12.1.1.tgz#5f292410b8bcc07bbc52b2da7ceb22caf5bcaaee"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.1.1.tgz#5f292410b8bcc07bbc52b2da7ceb22caf5bcaaee"
   integrity sha1-XykkELi8wHu8UrLafOsiyvW8qu4=
   dependencies:
     css-select "^2.1.0"
@@ -7443,7 +7443,7 @@ react-native-typescript-transformer@^1.2.11:
 
 react-native@^0.66.0:
   version "0.66.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-native/-/react-native-0.66.0.tgz#99bdd83a9a612a71b94242767989d666d445b007"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.66.0.tgz#99bdd83a9a612a71b94242767989d666d445b007"
   integrity sha1-mb3YOpphKnG5QkJ2eYnWZtRFsAc=
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
@@ -7505,7 +7505,7 @@ react-refresh@^0.4.0:
 
 react-shallow-renderer@^16.13.1:
   version "16.14.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-shallow-renderer/-/react-shallow-renderer-16.14.1.tgz#bf0d02df8a519a558fd9b8215442efa5c840e124"
+  resolved "https://registry.yarnpkg.com/react-shallow-renderer/-/react-shallow-renderer-16.14.1.tgz#bf0d02df8a519a558fd9b8215442efa5c840e124"
   integrity sha1-vw0C34pRmlWP2bghVELvpchA4SQ=
   dependencies:
     object-assign "^4.1.1"
@@ -7513,7 +7513,7 @@ react-shallow-renderer@^16.13.1:
 
 react-test-renderer@^17.0.2:
   version "17.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react-test-renderer/-/react-test-renderer-17.0.2.tgz#4cd4ae5ef1ad5670fc0ef776e8cc7e1231d9866c"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-17.0.2.tgz#4cd4ae5ef1ad5670fc0ef776e8cc7e1231d9866c"
   integrity sha1-TNSuXvGtVnD8Dvd26Mx+EjHZhmw=
   dependencies:
     object-assign "^4.1.1"
@@ -7531,7 +7531,7 @@ react-transform-hmr@^1.0.4:
 
 react@^17.0.2:
   version "17.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha1-0LXMUW0p6z7uOD91tihkz7aAADc=
   dependencies:
     loose-envify "^1.1.0"
@@ -7597,7 +7597,7 @@ readdirp@^2.2.1:
 
 readline@^1.3.0:
   version "1.3.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
+  resolved "https://registry.yarnpkg.com/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
   integrity sha1-xYDXfvLPyHUrEySYBg3JeTp6wBw=
 
 realpath-native@^2.0.0:
@@ -7607,7 +7607,7 @@ realpath-native@^2.0.0:
 
 recast@^0.20.3:
   version "0.20.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/recast/-/recast-0.20.5.tgz#8e2c6c96827a1b339c634dd232957d230553ceae"
+  resolved "https://registry.yarnpkg.com/recast/-/recast-0.20.5.tgz#8e2c6c96827a1b339c634dd232957d230553ceae"
   integrity sha1-jixsloJ6GzOcY03SMpV9IwVTzq4=
   dependencies:
     ast-types "0.14.2"
@@ -7663,7 +7663,7 @@ regenerator-runtime@^0.13.1, regenerator-runtime@^0.13.4:
 
 regenerator-runtime@^0.13.2:
   version "0.13.9"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=
 
 regenerator-transform@^0.10.0:
@@ -7808,7 +7808,7 @@ resolve-cwd@^3.0.0:
 
 resolve-from@^3.0.0:
   version "3.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
   integrity sha1-six699nWiBvItuZTM17rywoYh0g=
 
 resolve-from@^4.0.0:
@@ -7849,7 +7849,7 @@ resolve@^2.0.0-next.3:
 
 restore-cursor@^2.0.0:
   version "2.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
+  resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
   integrity sha1-n37ih/gv0ybU/RYpI9YhKe7g368=
   dependencies:
     onetime "^2.0.0"
@@ -7862,7 +7862,7 @@ ret@~0.1.10:
 
 rimraf@^2.5.4:
   version "2.7.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha1-NXl/E6f9rcVmFCwp1PB8ytSD4+w=
   dependencies:
     glob "^7.1.3"
@@ -7876,12 +7876,12 @@ rimraf@^3.0.0, rimraf@^3.0.2:
 
 rimraf@~2.2.6:
   version "2.2.8"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
 rimraf@~2.6.2:
   version "2.6.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha1-stEE/g2Psnz54KHNqCYt04M8bKs=
   dependencies:
     glob "^7.1.3"
@@ -7930,7 +7930,7 @@ sane@^4.0.3:
 
 sax@^1.2.1:
   version "1.2.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+  resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
 
 saxes@^3.1.9:
@@ -7977,7 +7977,7 @@ semver@^7.2.1, semver@^7.3.2:
 
 send@0.17.1:
   version "0.17.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/send/-/send-0.17.1.tgz#c1d8b059f7900f7466dd4938bdc44e11ddb376c8"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.17.1.tgz#c1d8b059f7900f7466dd4938bdc44e11ddb376c8"
   integrity sha1-wdiwWfeQD3Rm3Uk4vcROEd2zdsg=
   dependencies:
     debug "2.6.9"
@@ -7996,12 +7996,12 @@ send@0.17.1:
 
 serialize-error@^2.1.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/serialize-error/-/serialize-error-2.1.0.tgz#50b679d5635cdf84667bdc8e59af4e5b81d5f60a"
+  resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-2.1.0.tgz#50b679d5635cdf84667bdc8e59af4e5b81d5f60a"
   integrity sha1-ULZ51WNc34Rme9yOWa9OW4HV9go=
 
 serve-static@^1.13.1:
   version "1.14.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/serve-static/-/serve-static-1.14.1.tgz#666e636dc4f010f7ef29970a88a674320898b2f9"
+  resolved "https://registry.yarnpkg.com/serve-static/-/serve-static-1.14.1.tgz#666e636dc4f010f7ef29970a88a674320898b2f9"
   integrity sha1-Zm5jbcTwEPfvKZcKiKZ0MgiYsvk=
   dependencies:
     encodeurl "~1.0.2"
@@ -8026,12 +8026,12 @@ set-value@^2.0.0, set-value@^2.0.1:
 
 setprototypeof@1.1.1:
   version "1.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
+  resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha1-fpWsskqpL1iF4KvvW6ExMw1K5oM=
 
 shallow-clone@^3.0.0:
   version "3.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
+  resolved "https://registry.yarnpkg.com/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
   integrity sha1-jymBrZJTH1UDWwH7IwdppA4C76M=
   dependencies:
     kind-of "^6.0.2"
@@ -8062,7 +8062,7 @@ shebang-regex@^3.0.0:
 
 shell-quote@1.6.1:
   version "1.6.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
   integrity sha1-9HgZSczkAmlxJ0MOo7PFR29IF2c=
   dependencies:
     array-filter "~0.0.0"
@@ -8072,7 +8072,7 @@ shell-quote@1.6.1:
 
 shell-quote@^1.6.1:
   version "1.7.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
 
 shellwords@^0.1.1:
@@ -8096,7 +8096,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 
 simple-plist@^1.0.0:
   version "1.1.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/simple-plist/-/simple-plist-1.1.1.tgz#54367ca28bc5996a982c325c1c4a4c1a05f4047c"
+  resolved "https://registry.yarnpkg.com/simple-plist/-/simple-plist-1.1.1.tgz#54367ca28bc5996a982c325c1c4a4c1a05f4047c"
   integrity sha1-VDZ8oovFmWqYLDJcHEpMGgX0BHw=
   dependencies:
     bplist-creator "0.0.8"
@@ -8115,7 +8115,7 @@ slash@^3.0.0:
 
 slice-ansi@^2.0.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/slice-ansi/-/slice-ansi-2.1.0.tgz#cacd7693461a637a5788d92a7dd4fba068e81636"
+  resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-2.1.0.tgz#cacd7693461a637a5788d92a7dd4fba068e81636"
   integrity sha1-ys12k0YaY3pXiNkqfdT7oGjoFjY=
   dependencies:
     ansi-styles "^3.2.0"
@@ -8174,7 +8174,7 @@ source-map-resolve@^0.5.0:
 
 source-map-support@^0.5.16:
   version "0.5.20"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/source-map-support/-/source-map-support-0.5.20.tgz#12166089f8f5e5e8c56926b377633392dd2cb6c9"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.20.tgz#12166089f8f5e5e8c56926b377633392dd2cb6c9"
   integrity sha1-EhZgifj15ejFaSazd2Mzkt0stsk=
   dependencies:
     buffer-from "^1.0.0"
@@ -8270,12 +8270,12 @@ stack-utils@^1.0.1:
 
 stackframe@^1.1.1:
   version "1.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
+  resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha1-UkKUktY8YuuYmATBFVLj0i53kwM=
 
 stacktrace-parser@^0.1.3:
   version "0.1.10"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/stacktrace-parser/-/stacktrace-parser-0.1.10.tgz#29fb0cae4e0d0b85155879402857a1639eb6051a"
+  resolved "https://registry.yarnpkg.com/stacktrace-parser/-/stacktrace-parser-0.1.10.tgz#29fb0cae4e0d0b85155879402857a1639eb6051a"
   integrity sha1-KfsMrk4NC4UVWHlAKFehY562BRo=
   dependencies:
     type-fest "^0.7.1"
@@ -8290,7 +8290,7 @@ static-extend@^0.1.1:
 
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
+  resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
 stealthy-require@^1.1.1:
@@ -8300,7 +8300,7 @@ stealthy-require@^1.1.1:
 
 stream-buffers@~2.2.0:
   version "2.2.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
+  resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
   integrity sha1-kdX1Ew0c75bc+n9yaUUYh0HQnuQ=
 
 string-length@^3.1.0:
@@ -8411,7 +8411,7 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
 
 sudo-prompt@^9.0.0:
   version "9.2.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/sudo-prompt/-/sudo-prompt-9.2.1.tgz#77efb84309c9ca489527a4e749f287e6bdd52afd"
+  resolved "https://registry.yarnpkg.com/sudo-prompt/-/sudo-prompt-9.2.1.tgz#77efb84309c9ca489527a4e749f287e6bdd52afd"
   integrity sha1-d++4QwnJykiVJ6TnSfKH5r3VKv0=
 
 supports-color@^2.0.0:
@@ -8460,7 +8460,7 @@ table@^6.0.4:
 
 temp@0.8.3:
   version "0.8.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/temp/-/temp-0.8.3.tgz#e0c6bc4d26b903124410e4fed81103014dfc1f59"
+  resolved "https://registry.yarnpkg.com/temp/-/temp-0.8.3.tgz#e0c6bc4d26b903124410e4fed81103014dfc1f59"
   integrity sha1-4Ma8TSa5AxJEEOT+2BEDAU38H1k=
   dependencies:
     os-tmpdir "^1.0.0"
@@ -8468,7 +8468,7 @@ temp@0.8.3:
 
 temp@^0.8.1:
   version "0.8.4"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/temp/-/temp-0.8.4.tgz#8c97a33a4770072e0a05f919396c7665a7dd59f2"
+  resolved "https://registry.yarnpkg.com/temp/-/temp-0.8.4.tgz#8c97a33a4770072e0a05f919396c7665a7dd59f2"
   integrity sha1-jJejOkdwBy4KBfkZOWx2ZafdWfI=
   dependencies:
     rimraf "~2.6.2"
@@ -8502,7 +8502,7 @@ throat@^5.0.0:
 
 through2@^2.0.1:
   version "2.0.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
   integrity sha1-AcHjnrMdB8t9A6lqcIIyYLIxMs0=
   dependencies:
     readable-stream "~2.3.6"
@@ -8557,7 +8557,7 @@ to-regex@^3.0.1, to-regex@^3.0.2:
 
 toidentifier@1.0.0:
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
+  resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha1-fhvjRw8ed5SLxD2Uo8j013UrpVM=
 
 tough-cookie@^2.3.3, tough-cookie@~2.5.0:
@@ -8586,7 +8586,7 @@ tr46@^1.0.1:
 
 tr46@~0.0.3:
   version "0.0.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
 
 ts-jest@^24.0.2:
@@ -8622,7 +8622,7 @@ tslib@1.9.0:
 
 tslib@1.9.3:
   version "1.9.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
 
 tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1:
@@ -8632,7 +8632,7 @@ tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1:
 
 tslib@^2.0.1:
   version "2.3.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=
 
 tslint-config-airbnb@^5.11.1:
@@ -8757,7 +8757,7 @@ type-fest@^0.6.0:
 
 type-fest@^0.7.1:
   version "0.7.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/type-fest/-/type-fest-0.7.1.tgz#8dda65feaf03ed78f0a3f9678f1869147f7c5c48"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.7.1.tgz#8dda65feaf03ed78f0a3f9678f1869147f7c5c48"
   integrity sha1-jdpl/q8D7Xjwo/lnjxhpFH98XEg=
 
 type-fest@^0.8.1:
@@ -8779,7 +8779,7 @@ typescript@^3.7.2:
 
 uglify-es@^3.1.9:
   version "3.3.9"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
   integrity sha1-DBxPBwC+2NvBJM2zBNJZLKID5nc=
   dependencies:
     commander "~2.13.0"
@@ -8787,7 +8787,7 @@ uglify-es@^3.1.9:
 
 ultron@1.0.x:
   version "1.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
+  resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
   integrity sha1-rOEWq1V80Zc4ak6I9GhTeMiy5Po=
 
 unbox-primitive@^1.0.0:
@@ -8840,12 +8840,12 @@ union-value@^1.0.0:
 
 universalify@^0.1.0:
   version "0.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=
 
 unpipe@~1.0.0:
   version "1.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
+  resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
 unset-value@^1.0.0:
@@ -8875,7 +8875,7 @@ urix@^0.1.0:
 
 use-subscription@^1.0.0:
   version "1.5.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/use-subscription/-/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"
+  resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"
   integrity sha1-c1ARB/AvrYTG3VeWW+sLdcaMQtE=
   dependencies:
     object-assign "^4.1.1"
@@ -8892,7 +8892,7 @@ util-deprecate@~1.0.1:
 
 utils-merge@1.0.1:
   version "1.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
+  resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
 uuid@^3.3.2:
@@ -8924,7 +8924,7 @@ validate-npm-package-license@^3.0.1:
 
 vary@~1.1.2:
   version "1.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
+  resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
 verror@1.10.0:
@@ -8938,7 +8938,7 @@ verror@1.10.0:
 
 vlq@^1.0.0:
   version "1.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/vlq/-/vlq-1.0.1.tgz#c003f6e7c0b4c1edd623fd6ee50bbc0d6a1de468"
+  resolved "https://registry.yarnpkg.com/vlq/-/vlq-1.0.1.tgz#c003f6e7c0b4c1edd623fd6ee50bbc0d6a1de468"
   integrity sha1-wAP258C0we3WI/1u5Qu8DWod5Gg=
 
 w3c-hr-time@^1.0.1:
@@ -8966,14 +8966,14 @@ walker@^1.0.7, walker@~1.0.5:
 
 wcwidth@^1.0.1:
   version "1.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/wcwidth/-/wcwidth-1.0.1.tgz#f0b0dcf915bc5ff1528afadb2c0e17b532da2fe8"
+  resolved "https://registry.yarnpkg.com/wcwidth/-/wcwidth-1.0.1.tgz#f0b0dcf915bc5ff1528afadb2c0e17b532da2fe8"
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
   integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
 
 webidl-conversions@^4.0.2:
@@ -8990,7 +8990,7 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.5:
 
 whatwg-fetch@^3.0.0:
   version "3.6.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
   integrity sha1-3O0k838mJO0CgXJdUdDi4/5nf4w=
 
 whatwg-mimetype@^2.2.0, whatwg-mimetype@^2.3.0:
@@ -9000,7 +9000,7 @@ whatwg-mimetype@^2.2.0, whatwg-mimetype@^2.3.0:
 
 whatwg-url@^5.0.0:
   version "5.0.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
   integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
   dependencies:
     tr46 "~0.0.3"
@@ -9066,7 +9066,7 @@ wrappy@1:
 
 write-file-atomic@^2.3.0:
   version "2.4.3"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/write-file-atomic/-/write-file-atomic-2.4.3.tgz#1fd2e9ae1df3e75b8d8c367443c692d4ca81f481"
+  resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-2.4.3.tgz#1fd2e9ae1df3e75b8d8c367443c692d4ca81f481"
   integrity sha1-H9Lprh3z51uNjDZ0Q8aS1MqB9IE=
   dependencies:
     graceful-fs "^4.1.11"
@@ -9085,7 +9085,7 @@ write-file-atomic@^3.0.0:
 
 ws@^1.1.0, ws@^1.1.5:
   version "1.1.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ws/-/ws-1.1.5.tgz#cbd9e6e75e09fc5d2c90015f21f0c40875e0dd51"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.5.tgz#cbd9e6e75e09fc5d2c90015f21f0c40875e0dd51"
   integrity sha1-y9nm514J/F0skAFfIfDECHXg3VE=
   dependencies:
     options ">=0.0.5"
@@ -9093,14 +9093,14 @@ ws@^1.1.0, ws@^1.1.5:
 
 ws@^6.1.4:
   version "6.2.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.2.tgz#dd5cdbd57a9979916097652d78f1cc5faea0c32e"
   integrity sha1-3Vzb1XqZeZFgl2UtePHMX66gwy4=
   dependencies:
     async-limiter "~1.0.0"
 
 ws@^7:
   version "7.5.5"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
   integrity sha1-i0vEr1GM+r0Ec65PmRRCh7M+uIE=
 
 ws@^7.0.0:
@@ -9110,7 +9110,7 @@ ws@^7.0.0:
 
 xcode@^2.0.0:
   version "2.1.0"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/xcode/-/xcode-2.1.0.tgz#bab64a7e954bb50ca8d19da7e09531c65a43ecfe"
+  resolved "https://registry.yarnpkg.com/xcode/-/xcode-2.1.0.tgz#bab64a7e954bb50ca8d19da7e09531c65a43ecfe"
   integrity sha1-urZKfpVLtQyo0Z2n4JUxxlpD7P4=
   dependencies:
     simple-plist "^1.0.0"
@@ -9123,7 +9123,7 @@ xml-name-validator@^3.0.0:
 
 xmlbuilder@^9.0.7:
   version "9.0.7"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
   integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
 
 xmlchars@^2.1.1:
@@ -9133,14 +9133,14 @@ xmlchars@^2.1.1:
 
 xmldoc@^1.1.2:
   version "1.1.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/xmldoc/-/xmldoc-1.1.2.tgz#6666e029fe25470d599cd30e23ff0d1ed50466d7"
+  resolved "https://registry.yarnpkg.com/xmldoc/-/xmldoc-1.1.2.tgz#6666e029fe25470d599cd30e23ff0d1ed50466d7"
   integrity sha1-ZmbgKf4lRw1ZnNMOI/8NHtUEZtc=
   dependencies:
     sax "^1.2.1"
 
 xtend@~4.0.1:
   version "4.0.2"
-  resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^4.0.0:

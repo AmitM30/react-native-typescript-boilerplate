@@ -24,5 +24,5 @@ export const splashScreenLaunched = () => async (dispatch: AppDispatch, getState
   dispatch(initCart({ items: cart || [] }));
 
   const recentSearches: RecentSearches = await Storage.get(Config.Keys.recentSearches);
-  dispatch(initRecentSearches(recentSearches));
+  dispatch(initRecentSearches(recentSearches || []));
 };

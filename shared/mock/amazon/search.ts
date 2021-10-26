@@ -201,7 +201,8 @@ export default {
     {
       "availability_quantity": 2,
       "has_prime": true,
-      "image": "https://m.media-amazon.com/images/I/81Fr+BlHhtS.jpg",
+      // "image": "https://m.media-amazon.com/images/I/81Fr+BlHhtS.jpg",
+      image: 'https://kanjitsu-boplay.jp/img/detail/speakers/a9mk2/gallery_img04.jpg',
       "is_amazon_choice": true,
       "is_best_seller": false,
       "is_limited_deal": false,
@@ -220,7 +221,8 @@ export default {
     {
       "availability_quantity": null,
       "has_prime": true,
-      "image": "https://m.media-amazon.com/images/I/710wVYAn1nL.jpg",
+      // "image": "https://m.media-amazon.com/images/I/710wVYAn1nL.jpg",
+      image: 'https://kanjitsu-boplay.jp/img/detail/speakers/a9mk2/gallery_img01.jpg',
       "is_amazon_choice": false,
       "is_best_seller": false,
       "is_limited_deal": false,

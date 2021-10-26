@@ -10,6 +10,7 @@ import { SearchState } from '../types/stores/search';
 import { SearchService } from '../../services/search';
 
 export const searchRequested = (data: SearchState) => async (dispatch: AppDispatch, getState: () => RootState) => {
+  if (data.query.trim().length === 0) return {};
   dispatch(searchInitiated(data));
   const result = await SearchService.fetch(data.query);
 

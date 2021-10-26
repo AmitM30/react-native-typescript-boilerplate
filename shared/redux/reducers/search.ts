@@ -9,10 +9,13 @@ const initialState: RecentSearches = {
 export default (state = initialState, action: IAction<any>) => {
   switch (action.type) {
     case ACTION_TYPES.SEARCH.SEARCH_INITIATED:
-      return {
-        ...state,
-        list: [...state.list, action.data.query],
-      };
+      if (state.list.indexOf(action.data.query) >= 0)
+        return { ...state };
+      else
+        return {
+          ...state,
+          list: [...state.list, action.data.query],
+        };
     case ACTION_TYPES.SEARCH.INIT_SEARCH:
       return {
         ...state,
