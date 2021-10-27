@@ -25,6 +25,12 @@ const CText: React.FC<TextProps> = (props: TextProps) => (
   </Text>
 );
 
+const CTextPrice: React.FC<TextProps> = (props: TextProps) => (
+  <Text style={[GLOBAL.TEXT.Default, GLOBAL.FONTS.price, props.style]}>
+    {props.children}
+  </Text>
+);
+
 const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
   const {
     style,
@@ -51,4 +57,4 @@ const CTextInput: React.FC<TextInputProps> = (props: TextInputProps) => {
   );
 };
 
-export { CText, CTextInput };
+export { CText, CTextPrice, CTextInput };

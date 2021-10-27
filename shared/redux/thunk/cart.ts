@@ -9,7 +9,7 @@ import { addToCart } from '../actions/cart';
 import { CartItem } from '../types/stores/cart';
 import { SCREENS } from '../../../src/constants/screen';
 import Storage from '../../services/core/storage';
-import Config from '../../services/config';
+import Config from '../../../src/config';
 
 export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(addToCart(item));

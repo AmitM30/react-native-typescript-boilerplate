@@ -4,7 +4,7 @@
 import { AppDispatch } from '../store';
 import { RootState } from '../reducers';
 import { initCart } from '../actions/cart';
-import Config from '../../services/config';
+import Config from '../../../src/config';
 import { CartItem } from '../types/stores/cart';
 import { splashLaunched } from '../actions/app';
 import Storage from '../../services/core/storage';

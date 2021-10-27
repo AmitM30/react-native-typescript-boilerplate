@@ -82,9 +82,15 @@ const showListingsScreen = ({ componentId, passProps = {} }: Screen, title?: str
   push({ componentId, passProps }, SCREENS.Listings, title);
 };
 
-const showDetailsScreen = ({ componentId, passProps = {} }: Screen, title?: string) => {
-  push({ componentId, passProps }, SCREENS.Details, title);
-};
+const showDetailsScreen = ({ componentId, passProps = {} }: Screen, title?: string) =>
+  Navigation.push(componentId, {
+    component: {
+      name: SCREENS.Details,
+      passProps: {
+        ...passProps,
+      },
+    },
+  });
 
 const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
   Navigation.mergeOptions(componentId, {

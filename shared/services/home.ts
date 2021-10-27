@@ -1,5 +1,5 @@
 import API from './core/api';
-import Config from './config';
+import Config from '../../src/config';
 
 export const HomeService = {
   loadCarouselData: (searchTerm: string) => {

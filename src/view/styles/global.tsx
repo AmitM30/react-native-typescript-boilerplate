@@ -27,10 +27,20 @@ const LAYOUT = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
+  column: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
   listings: {
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  details: {
+    marginTop: -91, // TODO: The status bar height to come from Config.
+  },
+  detailsContainer: {
+    marginVertical: TYPOGRAPHY.ELEMENTS.detailsContainer.marginVertical
   },
   PillSection: {
     flexWrap: 'wrap',
@@ -65,12 +75,34 @@ const ELEMENTS = StyleSheet.create({
     color: TYPOGRAPHY.COLOR.Secondary,
   },
   Pill: {
+    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
     marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
     borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
     marginBottom: TYPOGRAPHY.ELEMENTS.Pill.marginBottom,
     paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
     paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
-    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
+  },
+  BottomControl: {
+    bottom: 0,
+    width: '100%',
+    position: 'absolute',
+    backgroundColor: TYPOGRAPHY.COLOR.Default,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.BottomControl.paddingVertical,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.BottomControl.paddingHorizontal,
+  },
+  BottomControlButton: {
+    width: TYPOGRAPHY.ELEMENTS.BottomControlButton.width,
+  },
+  PillLight: {
+    alignItems: 'center',
+    marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
+    borderColor: TYPOGRAPHY.COLOR.BgColor,
+    width: TYPOGRAPHY.ELEMENTS.PillLight.width,
+    maxWidth: TYPOGRAPHY.ELEMENTS.PillLight.maxWidth,
+    borderWidth: TYPOGRAPHY.ELEMENTS.PillLight.borderWidth,
   }
 });
 
@@ -98,11 +130,12 @@ const CTA = {
       height: TYPOGRAPHY.BUTTON.secondary.height,
       borderWidth: TYPOGRAPHY.BUTTON.secondary.borderWidth,
       borderRadius: TYPOGRAPHY.BUTTON.secondary.borderRadius,
+      marginVertical: TYPOGRAPHY.BUTTON.secondary.marginVertical,
       paddingHorizontal: TYPOGRAPHY.BUTTON.secondary.paddingHorizontal,
     },
     secondaryText: {
       textAlign: 'center',
-      color: TYPOGRAPHY.COLOR.Primary,
+      color: TYPOGRAPHY.COLOR.Secondary,
       fontSize: TYPOGRAPHY.BUTTON.secondary.text.fontSize,
     },
     categoryIcons: {
@@ -168,9 +201,10 @@ const TEXT = StyleSheet.create({
   },
   Bold: {
     textAlign: 'left',
-    color: TYPOGRAPHY.COLOR.Paragraph,
     fontFamily: TYPOGRAPHY.FONT.Primary,
+    color: TYPOGRAPHY.COLOR.DefaultSelected,
     fontSize: TYPOGRAPHY.FONT.paragraph.fontSize,
+    fontWeight: (TYPOGRAPHY.FONT.bold as TextStyle).fontWeight,
   },
 });
 

@@ -27,7 +27,7 @@ const app = () => {
         visible: true, elevation: 0,
         backButton: {
           // title: 'Back',
-          icon: require('../view/assets/images/back_button.png'),
+          icon: require('../view/assets/images/back.png'),
           color: TYPOGRAPHY.COLOR.DefaultSelected,
         },
       },

@@ -18,6 +18,7 @@ const COLOR = {
 
   // StatusBar
   StatusBar: 'transparent',
+  DefaultBlue: '#3F51B5',
 };
 
 const FONT = {
@@ -33,7 +34,10 @@ const FONT = {
     margin: 4,
   },
   paragraph: {
-    fontSize: 14,
+    fontSize: 12,
+  },
+  bold: {
+    fontWeight: 'bold',
   },
   input :{
     height: 36,
@@ -65,12 +69,13 @@ const BUTTON = {
     },
   },
   secondary: {
-    height: 40,
+    height: 54,
     borderRadius: 5,
+    marginVertical: 5,
     borderWidth: 1,
-    paddingHorizontal: 8,
+    paddingHorizontal: 12,
     text: {
-      fontSize: 14,
+      fontSize: 12,
     },
   },
   category: {
@@ -129,12 +134,27 @@ const ELEMENTS = {
     marginVertical: 20,
     fontSize: 20
   },
+  BottomControl: {
+    paddingVertical: 5,
+    paddingHorizontal: 30,
+  },
+  detailsContainer: {
+    marginVertical: 20
+  },
+  BottomControlButton: {
+    width: '48%'
+  },
   Pill: {
     marginRight: 5,
     marginBottom: 20,
     borderRadius: 25,
-    paddingVertical: 15,
-    paddingHorizontal: 30,
+    paddingVertical: 8,
+    paddingHorizontal: 20,
+  },
+  PillLight: {
+    borderWidth: 1,
+    maxWidth: '50%',
+    width: '100%',
   }
 };
 

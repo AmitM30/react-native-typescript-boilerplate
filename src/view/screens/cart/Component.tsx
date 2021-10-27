@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { SafeAreaView, View } from 'react-native';
 
-import styles from './styles';
 import { CText } from '../../elements/inputs';
 import { GLOBAL } from '../../styles/global';
 

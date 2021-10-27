@@ -39,8 +39,21 @@ const Camera = ({ style, color = TYPOGRAPHY.COLOR.Primary }: Props) => {
 };
 Camera.defaultProps = SVGDefaultProps;
 
+const RoundedSquare = ({ style, color = TYPOGRAPHY.COLOR.Primary }: Props) => {
+  return (
+    <Svg viewBox="0 0 48 48" style={style}>
+      <Path
+        fill={color}
+        d="M15,6h18c4.971,0,9,4.029,9,9v18c0,4.971-4.029,9-9,9H15c-4.971,0-9-4.029-9-9V15 C6,10.029,10.029,6,15,6z"
+      />
+    </Svg>
+  );
+};
+RoundedSquare.defaultProps = SVGDefaultProps;
+
 export default {
   Search,
   Camera,
+  RoundedSquare,
   CategoryIcons,
 };

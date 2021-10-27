@@ -14,7 +14,7 @@ import { SearchInput } from '../../elements/search';
 import CategoryWidget from '../../widgets/category';
 import { TYPOGRAPHY } from '../../styles/typography';
 import ProductWidget from '../../widgets/productWidget';
-import { CText, CTextInput } from '../../elements/inputs';
+import { CText, CTextInput, CTextPrice } from '../../elements/inputs';
 import { SectionTitle } from '../../elements/section/title';
 import { Product, SearchResponse } from '../../../../shared/redux/types/search/ISearchResponse';
 import { BUTTON_CATEGORY, BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
@@ -160,7 +160,7 @@ class Home extends React.PureComponent<Props, State> {
               style={TYPOGRAPHY.BUTTON.cameraIcon}
             />}
           />
-          <CText style={[GLOBAL.FONTS.price]}>{'$755'}</CText>
+          <CTextPrice>{'$755'}</CTextPrice>
           <SearchInput disabled />
         </ScrollView>
       </SafeAreaView>

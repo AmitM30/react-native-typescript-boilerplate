@@ -16,6 +16,7 @@ const SCREENS = {
 
 const ACTION_BUTTONS = {
   CartAB: 'CartAB',
+  AddToWishlist: 'AddToWishlist',
 };
 
 export { SCREENS, ACTION_BUTTONS };
