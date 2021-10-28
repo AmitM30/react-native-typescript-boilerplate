@@ -5,11 +5,12 @@ import { Navigation } from 'react-native-navigation';
 
 import { AppDispatch } from '../store';
 import { RootState } from '../reducers';
-import { addToCart } from '../actions/cart';
-import { CartItem } from '../types/stores/cart';
-import { SCREENS } from '../../../src/constants/screen';
-import Storage from '../../services/core/storage';
 import Config from '../../../src/config';
+import { CartItem } from '../types/stores/cart';
+import Storage from '../../services/core/storage';
+import { CartService } from '../../services/cart';
+import { SCREENS } from '../../../src/constants/screen';
+import { addToCart, cartLaunched } from '../actions/cart';
 
 export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(addToCart(item));
@@ -24,4 +25,12 @@ export const addItemsToCart = (item: CartItem) => async (dispatch: AppDispatch, 
       badge: `${store.items.length}`
     }
   })
+};
+
+export const cartViewed = () => async (dispatch: AppDispatch, getState: () => RootState) => {
+  const cart = getState().cart;
+  dispatch(cartLaunched(cart));
+
+  const response = await CartService.fetch(cart);
+  return response;
 };

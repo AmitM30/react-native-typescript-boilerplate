@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {
-  Image, StyleProp, ImageStyle, ImageSourcePropType, ImageResizeMode, Pressable
+  Image, StyleProp, ImageStyle, ImageSourcePropType, ImageResizeMode, Pressable, View, Touchable, TouchableOpacity
 } from 'react-native';
 
 import { CText } from './inputs';
@@ -24,6 +24,11 @@ interface PillLightProps {
   right: React.ReactElement;
 }
 
+
+interface StepperProps {
+  count?: number;
+}
+
 const CImage: React.FC<ImageProps> = ({ style, path, uri, resizeMode }: ImageProps) => (
   <Image
     style={[GLOBAL.FONTS.image, style]}
@@ -45,4 +50,23 @@ const PillLight: React.FC<PillLightProps> = ({ left, right }: PillLightProps) =>
   </Pressable>
 );
 
-export { CImage, Pill, PillLight };
+const Stepper: React.FC<StepperProps> = ({ count = 0 }: StepperProps) => {
+  const [counter, setCounter] = React.useState(count)
+  const displayText = (text: string) => (<CText style={{...TYPOGRAPHY.ELEMENTS.StepperText}}>{`${text}`}</CText>)
+
+  return (
+    <View style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.Stepper]}>
+      <TouchableOpacity
+        activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
+        onPress={() => setCounter(counter + 1)}
+      >{displayText('+')}</TouchableOpacity>
+      {displayText(counter.toString())}
+      <TouchableOpacity
+        activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
+        onPress={() => counter > 0 && setCounter(counter - 1)}
+      >{displayText('-')}</TouchableOpacity>
+    </View>
+  )
+};
+
+export { CImage, Pill, PillLight, Stepper };

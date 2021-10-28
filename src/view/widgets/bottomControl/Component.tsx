@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { StyleProp, View, ViewStyle } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
-import { Card } from '../../elements/layout';
-import locale from '../../../constants/locale';
 import { CText, CTextPrice } from '../../elements/inputs';
 import { BUTTON_PRIMARY, BUTTON_SECONDARY } from '../../elements/buttons';
 
@@ -11,6 +9,7 @@ interface Props {
   componentId: string;
   rightButtonText: string;
   onSubmitRight: () => void;
+  style?: StyleProp<ViewStyle>;
 }
 
 interface LeftButtonProps {
@@ -19,8 +18,8 @@ interface LeftButtonProps {
 }
 
 type leftColumnProps =
-  | { price: number; text?: never }
-  | { text: string; price?: never }
+  | { price: number; priceText: string; text?: never }
+  | { text: string; priceText?: never; price?: never }
 
 type showLeftButtonProps =
   | { showLeftButton?: false; left: leftColumnProps, leftButton?: never }
@@ -33,7 +32,7 @@ const BottomControl: React.FC<Props & showLeftButtonProps> = (props: Props & sho
 
   const renderPrice = () => !showLeftButton && left?.price && (
     <View style={GLOBAL.LAYOUT.column}>
-      <CText style={GLOBAL.FONTS.body}>{locale.Price.toLocaleUpperCase()}</CText>
+      <CText style={GLOBAL.FONTS.body}>{left.priceText.toUpperCase()}</CText>
       <CTextPrice>{`$${left.price}`}</CTextPrice>
     </View>
   );
@@ -45,7 +44,7 @@ const BottomControl: React.FC<Props & showLeftButtonProps> = (props: Props & sho
   );
 
   return (
-    <Card style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.BottomControl]}>
+    <View style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.BottomControl, props.style]}>
       {showLeftButton && leftButton && (
         <BUTTON_SECONDARY
           style={GLOBAL.ELEMENTS.BottomControlButton}
@@ -60,7 +59,7 @@ const BottomControl: React.FC<Props & showLeftButtonProps> = (props: Props & sho
         title={rightButtonText}
         onClick={onSubmitRight}
       />
-    </Card>
+    </View>
   );
 };
 

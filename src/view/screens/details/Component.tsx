@@ -15,7 +15,7 @@ import { ACTION_BUTTONS } from '../../../constants/screen';
 
 import { Props } from './index';
 
-const ProductDetails: NavigationFunctionComponent<Props> = ({ componentId, getDetail }: Props) => {
+const ProductDetails: NavigationFunctionComponent<Props> = ({ componentId, getDetail, addItemToCart }: Props) => {
   const [product, setProduct]: [ProductResponse | undefined, React.Dispatch<any>] = React.useState<ProductResponse>();
 
   const getAPIdata = async (text: string) => {
@@ -33,6 +33,13 @@ const ProductDetails: NavigationFunctionComponent<Props> = ({ componentId, getDe
 
     return () => { navigationButtonEventListener.remove() };
   }, []);
+
+  const addToCart = () => {
+    if (product) {
+      addItemToCart({ sku: product?.id });
+      Alert.alert(`${product.name}`, locale.AddedToCart);
+    }
+  }
 
   return (
     <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -62,9 +69,9 @@ const ProductDetails: NavigationFunctionComponent<Props> = ({ componentId, getDe
       <BottomControl
         componentId={componentId}
         rightButtonText={locale.Add}
-        onSubmitRight={() => { }}
+        onSubmitRight={addToCart}
         showLeftButton={false}
-        left={{ price: 1500 }}
+        left={{ price: 1500, priceText: locale.Price }}
 
         // // To show left button
         // showLeftButton={true}

@@ -23,6 +23,9 @@ const LAYOUT = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: TYPOGRAPHY.ELEMENTS.SectionTitle.marginBottom,
   },
+  adjascent: {
+    flexDirection: 'row',
+  },
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -45,6 +48,9 @@ const LAYOUT = StyleSheet.create({
   PillSection: {
     flexWrap: 'wrap',
     flexDirection: 'row',
+  },
+  cart: {
+    marginTop: TYPOGRAPHY.ELEMENTS.cartContainer.marginVertical,
   }
 });
 
@@ -85,10 +91,11 @@ const ELEMENTS = StyleSheet.create({
   BottomControl: {
     bottom: 0,
     width: '100%',
-    position: 'absolute',
+    position: 'relative',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
     paddingVertical: TYPOGRAPHY.ELEMENTS.BottomControl.paddingVertical,
     paddingHorizontal: TYPOGRAPHY.ELEMENTS.BottomControl.paddingHorizontal,
+    ...TYPOGRAPHY.BOTTOM_CONTROL_SHADOW,
   },
   BottomControlButton: {
     width: TYPOGRAPHY.ELEMENTS.BottomControlButton.width,
@@ -97,12 +104,29 @@ const ELEMENTS = StyleSheet.create({
     alignItems: 'center',
     marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
     borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
     paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.PillLight.paddingVertical,
     borderColor: TYPOGRAPHY.COLOR.BgColor,
     width: TYPOGRAPHY.ELEMENTS.PillLight.width,
     maxWidth: TYPOGRAPHY.ELEMENTS.PillLight.maxWidth,
     borderWidth: TYPOGRAPHY.ELEMENTS.PillLight.borderWidth,
+  },
+  Stepper: {
+    alignItems: 'center',
+    width: TYPOGRAPHY.ELEMENTS.Stepper.width,
+    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
+    height: TYPOGRAPHY.ELEMENTS.Stepper.height,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Stepper.borderRadius,
+  },
+  CartItem: {
+    marginBottom: TYPOGRAPHY.ELEMENTS.CartItem.marginBottom,
+  },
+  PriceSection: {
+    borderColor: TYPOGRAPHY.COLOR.Border,
+    marginBottom: TYPOGRAPHY.ELEMENTS.PriceSection.marginBottom,
+    borderTopWidth: TYPOGRAPHY.ELEMENTS.PriceSection.borderWidth,
+    borderBottomWidth: TYPOGRAPHY.ELEMENTS.PriceSection.borderWidth,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.PriceSection.paddingVertical,
   }
 });
 

@@ -73,7 +73,7 @@ const BUTTON = {
     borderRadius: 5,
     marginVertical: 5,
     borderWidth: 1,
-    paddingHorizontal: 12,
+    paddingHorizontal: 20,
     text: {
       fontSize: 12,
     },
@@ -107,6 +107,13 @@ const SHADOW = {
   shadowOpacity: 0.20,
   shadowRadius: 6,
   shadowOffset: { width: 0, height: 0 },
+  elevation: Platform.OS === 'ios' ? 0 : 5,
+};
+
+const BOTTOM_CONTROL_SHADOW = {
+  shadowOpacity: 0.10,
+  shadowRadius: 3,
+  shadowOffset: { width: 0, height: -5 },
   elevation: Platform.OS === 'ios' ? 0 : 5,
 };
 
@@ -148,14 +155,46 @@ const ELEMENTS = {
     marginRight: 5,
     marginBottom: 20,
     borderRadius: 25,
-    paddingVertical: 8,
+    paddingVertical: 14,
     paddingHorizontal: 20,
   },
   PillLight: {
-    borderWidth: 1,
-    maxWidth: '50%',
     width: '100%',
-  }
+    maxWidth: '50%',
+    borderWidth: 1,
+    paddingVertical: 8,
+  },
+  Stepper: {
+    height: 32,
+    width: 100,
+    borderWidth: 1,
+    borderRadius: 5,
+  },
+  StepperText: {
+    fontSize: 14,
+    paddingHorizontal: 12,
+    includeFontPadding: true,
+  },
+  CartItem: {
+    marginBottom: 10,
+    image: {
+      height: 100,
+      width: 100,
+    },
+    container: { marginLeft: 30 },
+    price: {
+      marginTop: 0,
+      marginBottom: 15
+    }
+  },
+  PriceSection: {
+    borderWidth: 1,
+    paddingVertical: 20,
+    marginBottom: 20,
+  },
+  cartContainer: {
+    marginVertical: 40,
+  },
 };
 
 const TYPOGRAPHY = {
@@ -164,6 +203,7 @@ const TYPOGRAPHY = {
   BUTTON,
   SPACING,
   SHADOW,
+  BOTTOM_CONTROL_SHADOW,
   ELEMENTS,
   IMAGE,
 };

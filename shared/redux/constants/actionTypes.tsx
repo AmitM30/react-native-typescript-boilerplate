@@ -14,6 +14,7 @@ const ACTION_TYPES = {
   CART: {
     INIT_CART: 'INIT_CART',
     ADD_TO_CART: 'ADD_TO_CART',
+    CART_VIEWED: 'CART_VIEWED',
   },
   // Search Actions
   SEARCH: {

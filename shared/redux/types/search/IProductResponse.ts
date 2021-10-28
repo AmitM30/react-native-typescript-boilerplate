@@ -1,4 +1,5 @@
 export interface ProductResponse {
+  id: string;
   name: string;
   brand: string;
   brand_url: string;
