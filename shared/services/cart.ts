@@ -11,9 +11,8 @@ export const CartService = {
      * Make call to some API that return data for cart page
      * Mocking it here with search response
      */
-    searchResult.results = searchResult.results.slice(0, cart.items.length);
     return new Promise((resolve) => {
-      window.setTimeout(() => resolve(searchResult), 1000);
+      window.setTimeout(() => resolve({ results: searchResult.results.slice(0, cart.items.length) }), 1000);
     });
   },
 };

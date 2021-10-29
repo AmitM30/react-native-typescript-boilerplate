@@ -29,6 +29,10 @@ interface StepperProps {
   count?: number;
 }
 
+interface BadgeProps {
+  text: string;
+}
+
 const CImage: React.FC<ImageProps> = ({ style, path, uri, resizeMode }: ImageProps) => (
   <Image
     style={[GLOBAL.FONTS.image, style]}
@@ -38,7 +42,7 @@ const CImage: React.FC<ImageProps> = ({ style, path, uri, resizeMode }: ImagePro
 );
 
 const Pill: React.FC<PillProps> = ({ text, onClick }: PillProps) => (
-  <Pressable style={GLOBAL.ELEMENTS.Pill} onPress={() => onClick(text)}>
+  <Pressable style={GLOBAL.ATOMS.Pill} onPress={() => onClick(text)}>
     <CText style={{ color: TYPOGRAPHY.COLOR.Secondary }}>{text}</CText>
   </Pressable>
 );
@@ -52,10 +56,10 @@ const PillLight: React.FC<PillLightProps> = ({ left, right }: PillLightProps) =>
 
 const Stepper: React.FC<StepperProps> = ({ count = 0 }: StepperProps) => {
   const [counter, setCounter] = React.useState(count)
-  const displayText = (text: string) => (<CText style={{...TYPOGRAPHY.ELEMENTS.StepperText}}>{`${text}`}</CText>)
+  const displayText = (text: string) => (<CText style={{...TYPOGRAPHY.FONT.StepperText}}>{`${text}`}</CText>)
 
   return (
-    <View style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.Stepper]}>
+    <View style={[GLOBAL.LAYOUT.row, GLOBAL.ATOMS.Stepper]}>
       <TouchableOpacity
         activeOpacity={GLOBAL.CTA.TouchableOpacity.default}
         onPress={() => setCounter(counter + 1)}
@@ -69,4 +73,10 @@ const Stepper: React.FC<StepperProps> = ({ count = 0 }: StepperProps) => {
   )
 };
 
-export { CImage, Pill, PillLight, Stepper };
+const Badge: React.FC<BadgeProps> = ({ text }: BadgeProps) => (
+  <View style={GLOBAL.ATOMS.Badge}>
+    <CText style={GLOBAL.ATOMS.BadgeText}>{text}</CText>
+  </View>
+);
+
+export { CImage, Pill, PillLight, Stepper, Badge };

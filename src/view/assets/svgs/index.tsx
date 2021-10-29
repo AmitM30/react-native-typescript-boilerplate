@@ -51,9 +51,33 @@ const RoundedSquare = ({ style, color = TYPOGRAPHY.COLOR.Primary }: Props) => {
 };
 RoundedSquare.defaultProps = SVGDefaultProps;
 
+const ChevronRight = ({ style, color = TYPOGRAPHY.COLOR.Primary }: Props) => {
+  return (
+    <Svg viewBox="0 0 24 24" width={16} height={16} style={style}>
+      <Path
+        fill={color}
+        d="M11.109,3L11.109,3C9.78,3,8.988,4.481,9.725,5.587L14,12l-4.275,6.413C8.988,19.519,9.78,21,11.109,21h0 c0.556,0,1.076-0.278,1.385-0.741l4.766-7.15c0.448-0.672,0.448-1.547,0-2.219l-4.766-7.15C12.185,3.278,11.666,3,11.109,3z"
+      />
+    </Svg>
+    // <Svg viewBox="0 0 24 24" style={style}>
+    //   <Path
+    //     fill={color}
+    //     d="M6.879,7.121c-1.172-1.171-1.172-3.071,0-4.242c1.171-1.172,3.071-1.172,4.242,0l7,7	C18.707,10.465,19,11.232,19,12h-7.243L6.879,7.121z"
+    //     fillOpacity={'0.35'}
+    //   />
+    //   <Path
+    //     fill={color}
+    //     d="M11.121,21.121C10.536,21.707,9.768,22,9,22s-1.536-0.293-2.121-0.879c-1.172-1.171-1.172-3.071,0-4.242L11.757,12H19	c0,0.768-0.293,1.535-0.879,2.121L11.121,21.121z"
+    //   />
+    // </Svg>
+  );
+};
+ChevronRight.defaultProps = SVGDefaultProps;
+
 export default {
   Search,
   Camera,
   RoundedSquare,
   CategoryIcons,
+  ChevronRight,
 };

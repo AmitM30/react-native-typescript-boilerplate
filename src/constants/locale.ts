@@ -13,4 +13,5 @@ export default {
   Total: 'Total',
   SubTotal: 'Sub Total',
   Tax: 'Tax',
+  New: 'New',
 };

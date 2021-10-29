@@ -54,6 +54,46 @@ const LAYOUT = StyleSheet.create({
   }
 });
 
+const ATOMS = StyleSheet.create({
+  Stepper: {
+    alignItems: 'center',
+    width: TYPOGRAPHY.ELEMENTS.Stepper.width,
+    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
+    height: TYPOGRAPHY.ELEMENTS.Stepper.height,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Stepper.borderRadius,
+  },
+  Pill: {
+    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
+    marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
+    marginBottom: TYPOGRAPHY.ELEMENTS.Pill.marginBottom,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
+  },
+  Badge: {
+    backgroundColor: TYPOGRAPHY.COLOR.BadgeBgColor,
+    marginLeft: TYPOGRAPHY.ELEMENTS.Badge.marginLeft,
+    borderRadius: TYPOGRAPHY.ELEMENTS.Badge.borderRadius,
+    paddingVertical: TYPOGRAPHY.ELEMENTS.Badge.paddingVertical,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Badge.paddingHorizontal,
+  },
+  BadgeText: {
+    color: TYPOGRAPHY.COLOR.Default,
+    fontSize: TYPOGRAPHY.FONT.badge.fontSize,
+    fontWeight: (TYPOGRAPHY.FONT.badge as TextStyle).fontWeight,
+  },
+  ListItemIcon: {
+    padding: TYPOGRAPHY.FONT.ListItemIcon.padding,
+    backgroundColor: TYPOGRAPHY.COLOR.IconBgColor,
+    marginRight: TYPOGRAPHY.FONT.ListItemIcon.marginRight,
+    borderRadius: TYPOGRAPHY.FONT.ListItemIcon.borderRadius,
+  },
+  ListItemTitle: {
+    color: TYPOGRAPHY.COLOR.DefaultSelected,
+    fontSize: TYPOGRAPHY.FONT.ListItemTitle.fontSize,
+  },
+});
+
 const ELEMENTS = StyleSheet.create({
   CategoryIcons: {
     alignItems: 'center',
@@ -69,7 +109,9 @@ const ELEMENTS = StyleSheet.create({
     marginBottom: TYPOGRAPHY.ELEMENTS.Card.marginBottom
   },
   ListItem: {
-    marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom
+    alignItems: 'center',
+    paddingRight: TYPOGRAPHY.ELEMENTS.ListItem.paddingRight,
+    marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom,
   },
   LinksWidget: {
     marginVertical: TYPOGRAPHY.ELEMENTS.LinksWidget.marginVertical,
@@ -79,14 +121,6 @@ const ELEMENTS = StyleSheet.create({
     position: 'relative',
     fontSize: TYPOGRAPHY.ELEMENTS.LinksWidget.fontSize,
     color: TYPOGRAPHY.COLOR.Secondary,
-  },
-  Pill: {
-    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
-    marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
-    borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
-    marginBottom: TYPOGRAPHY.ELEMENTS.Pill.marginBottom,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
   },
   BottomControl: {
     bottom: 0,
@@ -111,13 +145,6 @@ const ELEMENTS = StyleSheet.create({
     maxWidth: TYPOGRAPHY.ELEMENTS.PillLight.maxWidth,
     borderWidth: TYPOGRAPHY.ELEMENTS.PillLight.borderWidth,
   },
-  Stepper: {
-    alignItems: 'center',
-    width: TYPOGRAPHY.ELEMENTS.Stepper.width,
-    backgroundColor: TYPOGRAPHY.COLOR.BgColor,
-    height: TYPOGRAPHY.ELEMENTS.Stepper.height,
-    borderRadius: TYPOGRAPHY.ELEMENTS.Stepper.borderRadius,
-  },
   CartItem: {
     marginBottom: TYPOGRAPHY.ELEMENTS.CartItem.marginBottom,
   },
@@ -127,7 +154,7 @@ const ELEMENTS = StyleSheet.create({
     borderTopWidth: TYPOGRAPHY.ELEMENTS.PriceSection.borderWidth,
     borderBottomWidth: TYPOGRAPHY.ELEMENTS.PriceSection.borderWidth,
     paddingVertical: TYPOGRAPHY.ELEMENTS.PriceSection.paddingVertical,
-  }
+  },
 });
 
 const CTA = {
@@ -263,6 +290,7 @@ const TEXT_INPUT = {
 
 const GLOBAL = {
   LAYOUT,
+  ATOMS,
   ELEMENTS,
   CTA,
   FONTS,

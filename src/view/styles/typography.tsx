@@ -19,6 +19,10 @@ const COLOR = {
   // StatusBar
   StatusBar: 'transparent',
   DefaultBlue: '#3F51B5',
+
+  // Icons
+  IconBgColor: '#ECFBF5',
+  BadgeBgColor: '#E40056',
 };
 
 const FONT = {
@@ -56,6 +60,23 @@ const FONT = {
     },
     margin: 8,
   },
+  ListItemIcon: {
+    padding: 5,
+    borderRadius: 3,
+    marginRight: 15,
+  },
+  ListItemTitle: {
+    fontSize: 16,
+  },
+  StepperText: {
+    fontSize: 14,
+    paddingHorizontal: 12,
+    includeFontPadding: true,
+  },
+  badge: {
+    fontSize: 10,
+    fontWeight: 'bold'
+  }
 };
 
 const BUTTON = {
@@ -136,7 +157,8 @@ const ELEMENTS = {
     marginVertical: 5
   },
   Card: { marginBottom: 30 },
-  ListItem: { marginBottom: 20 },
+  ListItem: { paddingRight: 20, marginBottom: 30 },
+  ListItemImage: { width: 20, height: 20 },
   LinksWidget: {
     marginVertical: 20,
     fontSize: 20
@@ -170,11 +192,6 @@ const ELEMENTS = {
     borderWidth: 1,
     borderRadius: 5,
   },
-  StepperText: {
-    fontSize: 14,
-    paddingHorizontal: 12,
-    includeFontPadding: true,
-  },
   CartItem: {
     marginBottom: 10,
     image: {
@@ -194,6 +211,12 @@ const ELEMENTS = {
   },
   cartContainer: {
     marginVertical: 40,
+  },
+  Badge: {
+    marginLeft: 20,
+    borderRadius: 3,
+    paddingVertical: 3,
+    paddingHorizontal: 8,
   },
 };
 

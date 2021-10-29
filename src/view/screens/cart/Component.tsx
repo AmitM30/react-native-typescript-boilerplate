@@ -12,6 +12,19 @@ import { Product, SearchResponse } from '../../../../shared/redux/types/search/I
 
 import { Props } from './index';
 
+const renderPriceDetails = () => (
+  <View style={GLOBAL.ELEMENTS.PriceSection}>
+    <Card style={GLOBAL.LAYOUT.row}>
+      <CText style={GLOBAL.FONTS.body}>{locale.SubTotal}</CText>
+      <CText style={GLOBAL.FONTS.subTitle}>{'$3950'}</CText>
+    </Card>
+    <View style={GLOBAL.LAYOUT.row}>
+      <CText style={GLOBAL.FONTS.body}>{locale.Tax}</CText>
+      <CText style={GLOBAL.FONTS.subTitle}>{'$50'}</CText>
+    </View>
+  </View>
+);
+
 const Cart: React.FC<Props> = ({ componentId, cartViewed }: Props) => {
   const [items, setItems]: [SearchResponse, React.Dispatch<any>] = React.useState({ results: [] });
 
@@ -23,19 +36,6 @@ const Cart: React.FC<Props> = ({ componentId, cartViewed }: Props) => {
       }
     });
   }, []);
-
-  const renderPriceDetails = () => (
-    <View style={GLOBAL.ELEMENTS.PriceSection}>
-      <Card style={GLOBAL.LAYOUT.row}>
-        <CText style={GLOBAL.FONTS.body}>{locale.SubTotal}</CText>
-        <CText style={GLOBAL.FONTS.subTitle}>$3950</CText>
-      </Card>
-      <View style={GLOBAL.LAYOUT.row}>
-        <CText style={GLOBAL.FONTS.body}>{locale.Tax}</CText>
-        <CText style={GLOBAL.FONTS.subTitle}>$50</CText>
-      </View>
-    </View>
-  );
 
   return (
     <SafeAreaView style={[GLOBAL.LAYOUT.SafeArea]}>
