@@ -4,7 +4,7 @@ import { SafeAreaView, ScrollView } from 'react-native';
 import { GLOBAL } from '../../styles/global';
 import locale from '../../../constants/locale';
 import { ListItem } from '../../elements/layout';
-import UserProfile from '../../widgets/profile/Component';
+import UserProfile from '../../widgets/profile';
 
 export interface Props {
   componentId: string;

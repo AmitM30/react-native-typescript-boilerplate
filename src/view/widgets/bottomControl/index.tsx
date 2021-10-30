@@ -49,7 +49,7 @@ const BottomControl: React.FC<Props & showLeftButtonProps> = (props: Props & sho
         <BUTTON_SECONDARY
           style={GLOBAL.ELEMENTS.BottomControlButton}
           title={leftButton.title}
-          onClick={leftButton.onSubmitLeft} 
+          onClick={leftButton.onSubmitLeft}
         />
       )}
       {renderPrice()}

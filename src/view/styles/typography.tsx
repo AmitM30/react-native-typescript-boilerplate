@@ -198,7 +198,7 @@ const ELEMENTS = {
       height: 100,
       width: 100,
     },
-    container: { marginLeft: 30 },
+    container: { flex: 1, marginLeft: 30 },
     price: {
       marginTop: 0,
       marginBottom: 15

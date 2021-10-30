@@ -9,7 +9,7 @@ import { CText } from '../../elements/inputs';
 import locale from '../../../constants/locale';
 import { PillLight } from '../../elements/atoms';
 import { TYPOGRAPHY } from '../../styles/typography';
-import BottomControl from '../../widgets/bottomControl/Component';
+import BottomControl from '../../widgets/bottomControl';
 import { ProductResponse } from '../../../../shared/redux/types/search/IProductResponse';
 import { ACTION_BUTTONS } from '../../../constants/screen';
 
@@ -32,7 +32,7 @@ const ProductDetails: NavigationFunctionComponent<Props> = ({ componentId, getDe
     });
 
     return () => { navigationButtonEventListener.remove() };
-  }, []);
+  }, [product]);
 
   const addToCart = () => {
     if (product) {

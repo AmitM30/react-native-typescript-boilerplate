@@ -212,7 +212,7 @@ export default {
       "is_amazon_choice": true,
       "is_best_seller": false,
       "is_limited_deal": false,
-      name: "Beosound Explore - Wireless Outdoor Bluetooth Speaker, IP 67 Dustproof and Waterproof, Black Anthracite",
+      name: "Beosound Explore - Wireless Outdoor Bluetooth Speaker",
       brand: "Bang and Olufsen",
       price: 180,
       "price_string": "₹18,000",

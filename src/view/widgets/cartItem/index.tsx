@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { Dimensions, View } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
 import { TYPOGRAPHY } from '../../styles/typography';

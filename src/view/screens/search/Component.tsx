@@ -5,7 +5,7 @@ import { Pill } from '../../elements/atoms';
 import { GLOBAL } from '../../styles/global';
 import locale from '../../../constants/locale';
 import router from '../../../navigators/router';
-import Header from '../../widgets/header/Component';
+import Header from '../../widgets/header';
 import { SectionTitle } from '../../elements/section/title';
 
 import { Props } from './index';

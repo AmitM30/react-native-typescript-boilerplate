@@ -6,8 +6,8 @@ import { Card } from '../../elements/layout';
 import { GLOBAL } from '../../styles/global';
 import { CText } from '../../elements/inputs';
 import locale from '../../../constants/locale';
-import CartItem from '../../widgets/cartItem/Component';
-import BottomControl from '../../widgets/bottomControl/Component';
+import CartItem from '../../widgets/cartItem';
+import BottomControl from '../../widgets/bottomControl';
 import { Product, SearchResponse } from '../../../../shared/redux/types/search/ISearchResponse';
 
 import { Props } from './index';

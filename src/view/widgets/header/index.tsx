@@ -27,7 +27,7 @@ const Header: React.FC<Props> = ({ inputDisabled = false, onClick, onSubmit }: P
     <View style={[GLOBAL.LAYOUT.row, GLOBAL.ELEMENTS.Header]}>
       <SearchInput onSubmit={onSubmit} disabled={inputDisabled} />
       <BUTTON_CATEGORY
-        onClick={onClick || (() => {})}
+        onClick={onClick || (() => { })}
         style={GLOBAL.CTA.Style.cameraIcon}
         hideShadow={true}
         icon={<SVGIcons.Camera
