@@ -21,7 +21,7 @@ export const showSplash = () => {
       sideMenu: {
         left: {
           component: {
-            name: SCREENS.Drawer,
+            name: SCREENS.Settings,
             id: 'drawerComponentId',
           },
         },
@@ -99,8 +99,8 @@ export const tabbedNavigation = () =>
                     topBar: TOP_BAR_OPTIONS,
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
-                      icon: require('../view/assets/images/tabbar/home_new.png'),
-                      selectedIcon: require('../view/assets/images/tabbar/home_active.png'),
+                      icon: require('../view/assets/images/tabbar/explore.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/explore_active.png'),
                     },
                   },
                 },
@@ -124,8 +124,9 @@ export const tabbedNavigation = () =>
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
                       icon: require('../view/assets/images/tabbar/search.png'),
-                      iconColor: TYPOGRAPHY.COLOR.Title,
-                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
+                      selectedIcon: require('../view/assets/images/tabbar/search_active.png'),
+                      // iconColor: TYPOGRAPHY.COLOR.Title,
+                      // selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                     },
                   },
                 },
@@ -173,11 +174,11 @@ export const tabbedNavigation = () =>
                     bottomTab: {
                       ...BOTTOM_TAB_OPTIONS,
                       text: '',
-                      icon: require('../view/assets/images/tabbar/profile.png'),
-                      iconColor: TYPOGRAPHY.COLOR.Title,
-                      selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
-                      selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                       badge: '1',
+                      icon: require('../view/assets/images/tabbar/profile.png'),
+                      selectedIcon: require('../view/assets/images/tabbar/profile_active.png'),
+                      // iconColor: TYPOGRAPHY.COLOR.Title,
+                      // selectedIconColor: TYPOGRAPHY.COLOR.DefaultSelected,
                     },
                   },
                 },

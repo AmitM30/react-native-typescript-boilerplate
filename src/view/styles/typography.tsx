@@ -178,13 +178,14 @@ const ELEMENTS = {
     marginBottom: 20,
     borderRadius: 25,
     paddingVertical: 14,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
   },
   PillLight: {
     width: '100%',
     maxWidth: '50%',
     borderWidth: 1,
     paddingVertical: 8,
+    paddingHorizontal: 20,
   },
   Stepper: {
     height: 32,

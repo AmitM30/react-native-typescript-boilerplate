@@ -138,7 +138,7 @@ const ELEMENTS = StyleSheet.create({
     alignItems: 'center',
     marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
     borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
+    paddingHorizontal: TYPOGRAPHY.ELEMENTS.PillLight.paddingHorizontal,
     paddingVertical: TYPOGRAPHY.ELEMENTS.PillLight.paddingVertical,
     borderColor: TYPOGRAPHY.COLOR.BgColor,
     width: TYPOGRAPHY.ELEMENTS.PillLight.width,

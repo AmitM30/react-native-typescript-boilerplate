@@ -5,11 +5,16 @@
 This branch is specifically for the **Newline** course that I have written on developing apps using React Native, from a Product perspective. It contains all the code that has been discussed in the course.
 
 [The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers)
+
+> To know more about this template, go to the [master](../) branch.
 ___
 
 #### The eCommerce App - From the course
 
-![eCommerce](./src/view/assets/images/sample/layout.png "eCommerce")
+![Home and Listings](./src/view/assets/images/sample/screen1.jpeg "Home and Listings")
+
+| ![Search and Details](./src/view/assets/images/sample/screen2.jpeg "Search and Details") |![Cart and Profile](./src/view/assets/images/sample/screen3.jpeg "Cart and Profile") |
+| :---------------------------------------------------: | :---------------------------------------------------: |
 
 ___
 
@@ -49,150 +54,3 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - [Airbnb's JS](https://github.com/airbnb/javascript) Linting
 
 > _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
-
-##### App Screens
-
-| ![Splash](./src/view/assets/images/sample/1.png "Splash") | ![Home](./src/view/assets/images/sample/2.png "Home") |![Side Menu](./src/view/assets/images/sample/3.png "Side Menu") |
-| :-------------------------------------------------------: | :---------------------------------------------------: | :---------------------------------------------------: |
-
-##### Flipper Support
-
-![Flipper](./src/view/assets/images/sample/4.png "Flipper")
-
-### Table of Contents
-
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Cheat Sheet](#cheat-sheet)
-  - [Renaming the App](#renaming-the-app)
-  - [iOS Launch Screen](#ios-launch-screen)
-  - [Android Launch Screen](#android-launch-screen)
-- [Contributing](#contributing)
-
-### Project Structure
-
-```
-/
-├── android					Android Native code
-├── ios						iOS Native Code
-├── shared
-│   ├── redux					Applications Logic
-│   │   ├── constants
-│   │   ├── actions
-│   │   ├── api
-│   │   ├── reducers
-│   │   ├── store
-│   │   └── thunk
-│   └── utilities
-├── src
-│   ├── config					Global Configuration
-│   ├── constants				Screens, Localization
-│   ├── navigators				Router, Navigation
-│   ├── view					UI compoments
-│   │   ├── elements			  Custom elements
-│   │   ├── assets
-│   │   ├── screens
-│   │   ├── styles				  Typography
-│   │   └── widgets				  Custom components
-│   └── utilities
-├── __tests__					Unit Tests
-│   ├── presentation
-│   └── redux
-├── .babelrc
-├── .gitignore
-├── .travis.yml					Travis CI
-├── tsconfig.json				TypeScript Configuration
-├── tslint.js					TSLint configuration - extending AirBnb
-├── tsconfig.json
-├── app.json
-├── index.js					Application Entry point
-├── package.json
-└── README.md
-```
-
-`shared`
-Everything related to application business logic. The redux store.
-
-`src`
-Presentation layer for the app - screens, styles, images, icons etc.
-
-### Getting Started
-
-Make sure node version installed is `>=10.x.x`. Then install using yarn (or npm):
-```
-yarn install
-```
-
-Start the Metro Bundler:
-```
-yarn start
-```
-
-###### iOS
-
-One time. Move to `ios` folder and install pods:
-
-```
-cd ios && pod install
-```
-
-Launch application from XCode (`Command + R`) Or launch from Terminal:
-
-```
-yarn ios
-# runs the following command. change device name here
-# `npx react-native run-ios --simulator='iPhone 11'`
-```
-
-###### Android
-
-Start an Android Simulator from:
-```
-Android Studio > Tools > AVD Manager > Run any device
-```
-
-Similarly, run from Android Studio itself Or from Terminal:
-```
-yarn android
-# runs the following command
-# react-native run-android --variant=Debug
-```
-
-### Cheat Sheet
-
-#### iOS Launch Screen
-
-```shell
-XCode -> Project Folder -> Click on `Images.xcassets` -> Click on `LaunchScreen`
-```
-
-Change the 3 images here to set the new launch screen for iOS.
-
-![Launch Screen](./src/view/assets/images/sample/splash-image.png "Launch Screen")
-
-#### Android Launch Screen
-
-```shell
-`./android/app/src/main/res/drawable-*` folders
-```
-
-Change the images the `drawable-*` folders to set the new launch screen for Android.
-
-#### Single Screen vs Tabbed Based Navigation
-
-The application launches with a splash screen, and then moves to a tabbed based navigation. Splash screen is a good place to fetch data / build application launch logic like getting user token from API or Async Store, load persist state etc.
-
-For Single screen application, replace this tabbed based navigation with a single screen - just `home`, or simply use the splash screen to setup the app, may be with a burger menu.
-
-#### Renaming the App
-
-You might also want to rename the app for your own use. Follow any of the links below.
-- [How to Rename A React Native App](https://medium.com/the-react-native-log/how-to-rename-a-react-native-app-dafd92161c35)
-
-Or
-
-- NPM Package: [react-native-rename](https://www.npmjs.com/package/react-native-rename)
-
-### Contributing
-
-Please check out [Contributing](https://github.com/AmitM30/react-native-typescript-boilerplate/blob/master/CONTRIBUTING.md).
