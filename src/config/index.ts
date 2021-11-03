@@ -1,26 +1,26 @@
 const base = '/api/v1';
 const domain = 'somecompany.com';
-const Defaults = {
-  appName: 'FridayApp',
+const DEFAULTS = {
   domain,
+  appName: 'FridayApp',
   defaultLocale: {
-    lang: 'en'
+    lang: 'en',
   },
   app: {
-    platforms: ['ios', 'android']
+    platforms: ['ios', 'android'],
   },
   apis: {
     baseUrl: `https://api.${domain}`,
     public: {
-      base: `${base}`,
-      backend: `${base}`
+      backend: `${base}`,
     },
+    search: `${base}/search`,
     user: {
       base: `${base}`,
       login: `${base}/login`,
-      logout: `${base}/logout`
-    }
-  }
+      logout: `${base}/logout`,
+    },
+  },
 };
 
-export default Defaults;
+export default DEFAULTS;

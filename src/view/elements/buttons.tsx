@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { TouchableOpacity, ViewStyle } from 'react-native';
 
-import { GLOBAL } from '../styles/global';
 import { CTEXT } from './custom';
+import { GLOBAL } from '../styles/global';
 
 type Callback = () => any;
 export interface Props {

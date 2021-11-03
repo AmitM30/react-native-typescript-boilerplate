@@ -8,10 +8,16 @@ The project has been setup based off [RN Getting Started](https://facebook.githu
 
 ___
 
-### Supports React Native 0.64.1, React Native Navigation v7, Flipper and Hermes
+### Supports React 17, React Native 0.66.0, React Native Navigation v7, Flipper and Hermes
+
+Update (Nov 2021):
+- Added Types (actions, reducers, store, components and more).
+- Core API service using fetch
+- Support for M1
 
 | Updates | RNN | RN | React | Comments |
 |---|---|---|---|---|
+|  Nov '21 | 7.23.1 | 0.66.0 | 17.0.2 | Type definitions
 |  May '21 | 7.14.0 | 0.64.1 | 17.0.1 | Update RN RNN, Hermes Support
 |  Oct '20 | 7.1.0 | 0.63.3 | 16.13.1 | Support for Flipper
 |  Apr '20 | 3.7.0 | 0.61.5 | 16.9.0 | Support for RN > 0.60, Android X
@@ -34,6 +40,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
 - Typography
   - Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
+- Type Definitions
+  - Type definitons for actions, reducers, store, components and more.
 - Code Lint
   - [Airbnb's JS](https://github.com/airbnb/javascript) Linting
 
@@ -53,6 +61,7 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Cheat Sheet](#cheat-sheet)
+  - [M1 support](#m1-support)
   - [Single Screen vs Tabbed Based Navigation](#single-screen-vs-tabbed-based-navigation)
   - [Renaming the App](#renaming-the-app)
   - [iOS Launch Screen](#ios-launch-screen)
@@ -64,8 +73,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 
 ```
 /
-├── android					Android Native code
-├── ios						iOS Native Code
+├── android					    Android Native code
+├── ios						    iOS Native Code
 ├── shared
 │   ├── redux					Applications Logic
 │   │   ├── constants
@@ -75,16 +84,22 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 │   │   ├── store
 │   │   └── thunk
 │   └── utilities
+│   ├── services
+│   │   ├── core				Core Services - API (fetch/axios), storage
+│   │   │  ├── API
+│   │   │  └── Storage
+│   │   ├── home
+│   │   └── search
 ├── src
 │   ├── config					Global Configuration
-│   ├── constants				Screens, Localization
+│   ├── constants				Screen names and ids, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments
-│   │   ├── elements			  Custom elements
+│   │   ├── elements			Custom elements
 │   │   ├── assets
 │   │   ├── screens
-│   │   ├── styles				  Typography
-│   │   └── widgets				  Custom components
+│   │   ├── styles				Typography
+│   │   └── widgets				Custom components
 │   └── utilities
 ├── __tests__					Unit Tests
 │   ├── presentation
@@ -109,7 +124,7 @@ Presentation layer for the app - screens, styles, images, icons etc.
 
 ### Getting Started
 
-Make sure node version installed is `>=10.x.x`. Then install using yarn (or npm):
+Make sure node version installed is `>=12.x.x`. Then install using yarn (or npm):
 ```
 yarn install
 ```
@@ -180,6 +195,22 @@ Change the 3 images here to set the new launch screen for iOS.
 ```
 
 Change the images the `drawable-*` folders to set the new launch screen for Android.
+
+#### M1 support
+Some additional steps may be required for project to work on M1.
+
+  - Disable Rosetta in Terminal
+  - Install ffi
+```
+sudo arch -x86_64 gem install ffi
+```
+  - Re-install dependencies
+```
+arch -x86_64 pod install
+```
+Now try and run CocoaPods.
+
+P.S.: Thanks to samanthadotcom#7043 (discord)
 
 #### Single Screen vs Tabbed Based Navigation
 

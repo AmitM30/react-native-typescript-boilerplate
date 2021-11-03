@@ -8,6 +8,7 @@ const ACTION_TYPES = {
   // Home Screen Actions
   HOME: {
     HOME_LAUNCHED: 'HOME_LAUNCHED',
+    HOME_DATA_FETCHED: 'HOME_DATA_FETCHED',
   },
 };
 

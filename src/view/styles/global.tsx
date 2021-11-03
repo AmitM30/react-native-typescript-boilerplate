@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform, ViewStyle, TextStyle } from 'react-native';
 
 import { TYPOGRAPHY } from './typography';
 
@@ -7,7 +7,7 @@ export const widgetPaddingValue = 16;
 const LAYOUT = StyleSheet.create({
   SafeArea: {
     flex: 1,
-    backgroundColor: TYPOGRAPHY.COLOR.Primary,
+    backgroundColor: TYPOGRAPHY.COLOR.Default,
   },
   container: {
     flex: 1,
@@ -23,35 +23,45 @@ const LAYOUT = StyleSheet.create({
   },
 });
 
+const ELEMENTS = StyleSheet.create({
+  Card: {
+    marginBottom: TYPOGRAPHY.ELEMENTS.Card.marginBottom,
+  },
+  CategoryIcons: {
+    alignItems: 'center',
+    marginRight: TYPOGRAPHY.ELEMENTS.CategoryIcons.marginRight,
+  },
+});
+
 const CTA = {
   Style: StyleSheet.create({
     primary: {
-      height: 48,
-      borderWidth: 1,
-      borderRadius: 10,
-      paddingVertical: 8,
-      alignItems: 'center',
-      paddingHorizontal: 20,
+      justifyContent: 'center',
       backgroundColor: TYPOGRAPHY.COLOR.Secondary,
+      height: TYPOGRAPHY.BUTTON.primary.height,
+      borderWidth: TYPOGRAPHY.BUTTON.primary.borderWidth,
+      borderRadius: TYPOGRAPHY.BUTTON.primary.borderRadius,
+      paddingVertical: TYPOGRAPHY.BUTTON.primary.paddingVertical,
+      paddingHorizontal: TYPOGRAPHY.BUTTON.primary.paddingHorizontal,
     },
     primaryText: {
-      fontSize: 16,
       color: TYPOGRAPHY.COLOR.Default,
+      fontSize: (TYPOGRAPHY.BUTTON.primary.text as TextStyle).fontSize,
     },
     secondary: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
-      height: 48,
-      borderWidth: 1,
-      backgroundColor: TYPOGRAPHY.COLOR.Default,
-      borderRadius: 5,
       borderColor: TYPOGRAPHY.COLOR.Primary,
+      backgroundColor: TYPOGRAPHY.COLOR.Default,
+      height: TYPOGRAPHY.BUTTON.secondary.height,
+      borderWidth: TYPOGRAPHY.BUTTON.secondary.borderWidth,
+      borderRadius: TYPOGRAPHY.BUTTON.secondary.borderRadius,
     },
     secondaryText: {
-      color: TYPOGRAPHY.COLOR.Primary,
-      fontSize: 16,
       textAlign: 'center',
+      color: TYPOGRAPHY.COLOR.Primary,
+      fontSize: (TYPOGRAPHY.BUTTON.secondary.text as TextStyle).fontSize,
     },
   }),
   TouchableOpacity: {
@@ -95,13 +105,15 @@ const TEXT = StyleSheet.create({
 const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
-      fontSize: 12,
-      borderWidth: 1,
-      borderRadius: 5,
-      textAlign: 'left',
+      color: TYPOGRAPHY.COLOR.DefaultSelected,
+      height: TYPOGRAPHY.FONT.input.height,
+      borderRadius: TYPOGRAPHY.FONT.input.borderRadius,
+      backgroundColor: TYPOGRAPHY.COLOR.Border,
       fontFamily: TYPOGRAPHY.FONT.Primary,
       borderColor: TYPOGRAPHY.COLOR.Border,
-      color: TYPOGRAPHY.COLOR.Primary,
+      fontSize: TYPOGRAPHY.FONT.input.fontSize,
+      borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
+      paddingHorizontal: TYPOGRAPHY.FONT.input.paddingHorizontal,
     },
     Bold: {
       fontSize: 12,
@@ -116,6 +128,7 @@ const TEXT_INPUT = {
 
 const GLOBAL = {
   LAYOUT,
+  ELEMENTS,
   CTA,
   FONTS,
   TEXT,

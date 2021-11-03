@@ -5,7 +5,13 @@
 import { combineReducers } from 'redux';
 
 import app from './app';
+import { IAction } from '../types/IAction';
+import { ApplicationState } from '../types/stores/app';
 
-export default combineReducers({
+export interface RootState {
+  app: ApplicationState;
+}
+
+export default combineReducers<RootState, IAction<any>>({
   app,
 });

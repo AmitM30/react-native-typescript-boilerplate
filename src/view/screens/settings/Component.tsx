@@ -1,14 +1,16 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
-import styles from './styles';
+import { GLOBAL } from '../../styles/global';
 import { CTEXT } from '../../elements/custom';
 
 export interface Props {}
 
 const SETTINGS: React.FC<Props> = (props: Props) => (
-  <SafeAreaView style={styles.container}>
-    <CTEXT>{'Settings'}</CTEXT>
+  <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+    <View style={GLOBAL.LAYOUT.pageContainer}>
+      <CTEXT>{'Settings'}</CTEXT>
+    </View>
   </SafeAreaView>
 );
 

@@ -1,14 +1,16 @@
 import * as React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
-import styles from './styles';
+import { GLOBAL } from '../../styles/global';
 import { CTEXT } from '../../elements/custom';
 
 interface Props {}
 
 const DRAWER: React.FC<Props> = () => (
-  <SafeAreaView style={styles.container}>
-    <CTEXT>{'Drawer Menu'}</CTEXT>
+  <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+    <View style={GLOBAL.LAYOUT.pageContainer}>
+      <CTEXT>{'Drawer Menu'}</CTEXT>
+    </View>
   </SafeAreaView>
 );
 
