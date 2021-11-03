@@ -2,12 +2,11 @@ import * as React from 'react';
 import { View, Image, SafeAreaView } from 'react-native';
 
 import styles from './styles';
-import { tabbedNavigation } from '../../../navigators/navigation';
+import { GLOBAL } from '../../styles/global';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { tabbedNavigation } from '../../../navigators/navigation';
 
-export interface Props {
-  splashLaunched: Function;
-}
+import { Props } from './index';
 
 const SPLASH: React.FC<Props> = (props: Props) => {
 
@@ -21,23 +20,23 @@ const SPLASH: React.FC<Props> = (props: Props) => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-        <View style={styles.container}>
-          <Image
-            style={styles.image}
-            resizeMode="contain"
-            source={require('../../assets/images/rnn2.png')}
-          />
-          <Image
-            resizeMode="center"
-            source={require('../../assets/images/rn_ts.png')}
-          />
-          <BUTTON_DEFAULT
-            title="Continue To App"
-            onClick={navigateToHome}
-          />
-        </View>
-      </SafeAreaView>
+    <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+      <View style={styles.container}>
+        <Image
+          style={styles.image}
+          resizeMode={'contain'}
+          source={require('../../assets/images/rnn2.png')}
+        />
+        <Image
+          resizeMode={'center'}
+          source={require('../../assets/images/rn_ts.png')}
+        />
+        <BUTTON_DEFAULT
+          title={'Continue To App'}
+          onClick={navigateToHome}
+        />
+      </View>
+    </SafeAreaView>
   );
 };
 

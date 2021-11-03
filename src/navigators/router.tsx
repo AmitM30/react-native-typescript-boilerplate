@@ -6,6 +6,7 @@
 import { Navigation } from 'react-native-navigation';
 
 import { SCREENS } from '../constants/screen';
+import { STATUS_BAR_OPTIONS } from './navigation';
 
 interface Screen {
   componentId: string;
@@ -33,6 +34,35 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
   });
 };
 
+/**
+ * Router method to show a screen by pushing on top of current stack
+ * @param {object} params i.e {componentId is compulsory, passProps is optional},
+ */
+const push = ({ componentId, passProps = {} }: Screen, id: string, title?: string) => {
+  Navigation.push(componentId, {
+    component: {
+      name: id,
+      passProps: {
+        ...passProps,
+      },
+      options: {
+        statusBar: STATUS_BAR_OPTIONS,
+        topBar: {
+          visible: true,
+          drawBehind: false,
+          title: {
+            text: title || id.toString(),
+          },
+        },
+      },
+    },
+  });
+};
+
+const showListingsScreen = ({ componentId, passProps = {} }: Screen, title?: string) => {
+  push({ componentId, passProps }, SCREENS.Dummy, title);
+};
+
 const popToScreen = (componentId: string) => {
   Navigation.popTo(componentId);
 };
@@ -50,7 +80,9 @@ const ROUTER = {
   popToScreen,
   dismissModal,
   pop,
+  push,
   popToRoot,
+  showListingsScreen,
 };
 
 export default ROUTER;

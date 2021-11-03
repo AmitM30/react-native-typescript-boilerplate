@@ -6,6 +6,11 @@ import { Navigation } from 'react-native-navigation';
 import { SCREENS } from '../constants/screen';
 import { TYPOGRAPHY } from '../view/styles/typography';
 
+export const STATUS_BAR_OPTIONS = {
+  hideWithTopBar: true,
+  backgroundColor: TYPOGRAPHY.COLOR.StatusBar,
+};
+
 export const showSplash = () => {
   Navigation.setRoot({
     root: {

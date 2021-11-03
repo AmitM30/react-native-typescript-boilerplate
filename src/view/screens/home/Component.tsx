@@ -1,16 +1,14 @@
 import * as React from 'react';
 import { Navigation } from 'react-native-navigation';
-import { SafeAreaView, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, ScrollView, TouchableOpacity, Image } from 'react-native';
 
-import styles from './styles';
-import { CTEXT, CTEXTINPUT } from '../../elements/custom';
+import { GLOBAL } from '../../styles/global';
+import locale from '../../../constants/locale';
 import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
+import { CTEXT, CTEXTINPUT } from '../../elements/custom';
 
-export interface Props {
-  name: string;
-  componentId: string;
-}
+import { Props } from './index';
 
 interface State {
   name: string;
@@ -51,18 +49,24 @@ class Home extends React.PureComponent<Props, State> {
     const { name } = this.state;
 
     return (
-      <SafeAreaView style={styles.container}>
-        <TouchableOpacity onPress={this.showBurgerMenu}>
-          <Image
-            style={styles.image}
-            resizeMode="contain"
-            source={require('../../assets/images/burger-menu.png')}
-          />
-        </TouchableOpacity>
-        <CTEXT>{'Home'}</CTEXT>
-        <CTEXT>{name}</CTEXT>
-        <CTEXTINPUT />
-        <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={styles.button} />
+      <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
+        <ScrollView style={GLOBAL.LAYOUT.pageContainer}>
+          <TouchableOpacity onPress={this.showBurgerMenu}>
+            <Image
+              style={{ marginBottom: 20, width: 40, height: 40 }}
+              resizeMode={'contain'}
+              source={require('../../assets/images/burger-menu.png')}
+            />
+          </TouchableOpacity>
+          <CTEXT>{locale.Home}</CTEXT>
+          <CTEXT>{name}</CTEXT>
+          <CTEXTINPUT />
+          <BUTTON_DEFAULT onClick={this.showPushScreen} title={'Push Screen'} style={{
+            alignSelf: 'center',
+            marginTop: 50,
+            width: 250,
+          }} />
+        </ScrollView>
       </SafeAreaView>
     );
   }

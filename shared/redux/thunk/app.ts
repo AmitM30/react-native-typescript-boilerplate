@@ -1,10 +1,11 @@
 /**
  * Thunks are a great place for application business logic
  */
-import { splashLaunched } from '../actions/app';
 import { AppDispatch } from '../store';
+import { RootState } from '../reducers';
+import { splashLaunched } from '../actions/app';
 
-export const splashScreenLaunched = () => async (dispatch: AppDispatch) => {
+export const splashScreenLaunched = () => (dispatch: AppDispatch, getState: () => RootState) => {
   dispatch(splashLaunched());
   /**
    * Application launch Logic can go here, like
