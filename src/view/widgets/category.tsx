@@ -30,7 +30,11 @@ const Category: React.FC<Props> = ({ componentId }: Props) => {
       <View style={GLOBAL.ELEMENTS.CategoryIcons} key={`carousel-item-${item.title}`}>
         <BUTTON_DEFAULT
           title={item.title}
-          onClick={() => router.showListingsScreen({ componentId, passProps: { query: item.title } }, item.title)}
+          onClick={
+          () => router.showListingsScreen(
+            { componentId, passProps: { query: item.title } },
+            item.title,
+          )}
         />
         <CTEXT style={GLOBAL.FONTS.body}>{item.title}</CTEXT>
       </View>

@@ -3,6 +3,7 @@ branches:
   only:
     - master
     - dev
+    - updates
 jobs:
   include:
     - stage: Test and lint ✅

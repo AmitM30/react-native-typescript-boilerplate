@@ -10,6 +10,6 @@ export const homeLaunched = (): IAction<ApplicationState> => ({
 });
 
 export const homeDataFetched = (data: any): IAction<ApplicationState> => ({
-  type: ACTION_TYPES.HOME.HOME_DATA_FETCHED,
   data,
+  type: ACTION_TYPES.HOME.HOME_DATA_FETCHED,
 });

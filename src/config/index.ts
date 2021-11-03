@@ -1,8 +1,8 @@
 const base = '/api/v1';
 const domain = 'somecompany.com';
-const Defaults = {
-  appName: 'FridayApp',
+const DEFAULTS = {
   domain,
+  appName: 'FridayApp',
   defaultLocale: {
     lang: 'en',
   },
@@ -23,4 +23,4 @@ const Defaults = {
   },
 };
 
-export default Defaults;
+export default DEFAULTS;
