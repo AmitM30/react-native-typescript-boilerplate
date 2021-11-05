@@ -47,9 +47,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - [Redux](https://redux.js.org/introduction/getting-started)
   - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware - side-effect handling
 - Atomic Design pattern
-  The structure of the app is inspired by [atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/).
-  - Widgets / Elements
-    Build your own design system with these building blocks.
+  - The structure of the app is inspired by [atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/).
+  - Widgets / Elements: Build your own design system with these building blocks.
     - **Typography**: Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
     - **elements**: `<BUTTON_DEFAULT>` or `<CTEXT>`. They are custom elements that have default properties like font, size and so on.
     - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
