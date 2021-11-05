@@ -2,7 +2,7 @@
   <br>
   <img alt="Friday App" src="./src/view/assets/images/sample/template.png" width="400px">
   <h1>🚀 Friday App 🚀</h1>
-  <strong>Your next React Native app, in 10 minutes</strong>
+  <strong>Build enterprise React Native apps</strong>
 </div>
 <br />
 
