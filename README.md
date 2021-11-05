@@ -1,6 +1,18 @@
+<div align="center">
+  <br>
+  <img alt="Friday App" src="./src/view/assets/images/sample/template.png" width="400px">
+  <h1>🚀 Friday App 🚀</h1>
+  <strong>Build enterprise React Native apps</strong>
+</div>
+<br />
+
 # React Native Template - TypeScript
 
-![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+<div align="center">
+
+![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) ![Code Size](https://img.shields.io/github/languages/code-size/amitm30/react-native-typescript-boilerplate.svg) ![Releases](https://img.shields.io/github/v/release/amitm30/react-native-typescript-boilerplate.svg?style=flat)
+
+</div>
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
@@ -33,13 +45,13 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - Side Menu support
 - State Management using Flux Architecture
   - [Redux](https://redux.js.org/introduction/getting-started)
-  - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware
-- Widgets / Elements
-  Build your own design system with these building blocks.
-  - **elements**: `<BUTTON_DEFAULT>` or `<CText>`. They are custom elements that have default properties like font, size and so on.
-  - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
-- Typography
-  - Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
+  - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware - side-effect handling
+- Atomic Design pattern
+  - The structure of the app is inspired by [atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/).
+  - Widgets / Elements: Build your own design system with these building blocks.
+    - **Typography**: Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
+    - **elements**: `<BUTTON_DEFAULT>` or `<CTEXT>`. They are custom elements that have default properties like font, size and so on.
+    - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
 - Type Definitions
   - Type definitons for actions, reducers, store, components and more.
 - Code Lint
@@ -73,8 +85,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 
 ```
 /
-├── android					    Android Native code
-├── ios						    iOS Native Code
+├── android						Android Native code
+├── ios							iOS Native Code
 ├── shared
 │   ├── redux					Applications Logic
 │   │   ├── constants
@@ -95,7 +107,7 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 │   ├── constants				Screen names and ids, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments
-│   │   ├── elements			Custom elements
+│   │   ├── elements				Custom elements
 │   │   ├── assets
 │   │   ├── screens
 │   │   ├── styles				Typography

@@ -3,6 +3,7 @@ import { Navigation } from 'react-native-navigation';
 import { SafeAreaView, ScrollView, TouchableOpacity, Image } from 'react-native';
 
 import { GLOBAL } from '../../styles/global';
+import { Category } from '../../widgets/category';
 import locale from '../../../constants/locale';
 import router from '../../../navigators/router';
 import { BUTTON_DEFAULT } from '../../elements/buttons';
@@ -47,6 +48,7 @@ class Home extends React.PureComponent<Props, State> {
 
   render() {
     const { name } = this.state;
+    const { componentId } = this.props;
 
     return (
       <SafeAreaView style={GLOBAL.LAYOUT.SafeArea}>
@@ -58,6 +60,7 @@ class Home extends React.PureComponent<Props, State> {
               source={require('../../assets/images/burger-menu.png')}
             />
           </TouchableOpacity>
+          <Category componentId={componentId} title={locale.Categories} />
           <CTEXT>{locale.Home}</CTEXT>
           <CTEXT>{name}</CTEXT>
           <CTEXTINPUT />

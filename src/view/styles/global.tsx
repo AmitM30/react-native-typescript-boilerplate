@@ -36,6 +36,7 @@ const ELEMENTS = StyleSheet.create({
 const CTA = {
   Style: StyleSheet.create({
     primary: {
+      alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: TYPOGRAPHY.COLOR.Secondary,
       height: TYPOGRAPHY.BUTTON.primary.height,
@@ -71,17 +72,17 @@ const CTA = {
 
 const FONTS = StyleSheet.create({
   h1: {
-    fontSize: 30,
+    ...TYPOGRAPHY.FONT.h1,
     fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.DefaultSelected,
   },
   body: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.Default,
   },
   subTitle: {
-    fontSize: 14,
+    fontSize: 16,
     fontFamily: TYPOGRAPHY.FONT.Primary,
     color: TYPOGRAPHY.COLOR.Secondary,
   },
