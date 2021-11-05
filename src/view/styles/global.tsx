@@ -57,25 +57,16 @@ const LAYOUT = StyleSheet.create({
 const ATOMS = StyleSheet.create({
   Stepper: {
     alignItems: 'center',
-    width: TYPOGRAPHY.ELEMENTS.Stepper.width,
+    ...TYPOGRAPHY.ELEMENTS.Stepper,
     backgroundColor: TYPOGRAPHY.COLOR.BgColor,
-    height: TYPOGRAPHY.ELEMENTS.Stepper.height,
-    borderRadius: TYPOGRAPHY.ELEMENTS.Stepper.borderRadius,
   },
   Pill: {
+    ...TYPOGRAPHY.ELEMENTS.Pill,
     backgroundColor: TYPOGRAPHY.COLOR.BgColor,
-    marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
-    borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
-    marginBottom: TYPOGRAPHY.ELEMENTS.Pill.marginBottom,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.Pill.paddingVertical,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Pill.paddingHorizontal,
   },
   Badge: {
+    ...TYPOGRAPHY.ELEMENTS.Badge,
     backgroundColor: TYPOGRAPHY.COLOR.BadgeBgColor,
-    marginLeft: TYPOGRAPHY.ELEMENTS.Badge.marginLeft,
-    borderRadius: TYPOGRAPHY.ELEMENTS.Badge.borderRadius,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.Badge.paddingVertical,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.Badge.paddingHorizontal,
   },
   BadgeText: {
     color: TYPOGRAPHY.COLOR.Default,
@@ -83,10 +74,8 @@ const ATOMS = StyleSheet.create({
     fontWeight: (TYPOGRAPHY.FONT.badge as TextStyle).fontWeight,
   },
   ListItemIcon: {
-    padding: TYPOGRAPHY.FONT.ListItemIcon.padding,
+    ...TYPOGRAPHY.FONT.ListItemIcon,
     backgroundColor: TYPOGRAPHY.COLOR.IconBgColor,
-    marginRight: TYPOGRAPHY.FONT.ListItemIcon.marginRight,
-    borderRadius: TYPOGRAPHY.FONT.ListItemIcon.borderRadius,
   },
   ListItemTitle: {
     color: TYPOGRAPHY.COLOR.DefaultSelected,
@@ -110,8 +99,7 @@ const ELEMENTS = StyleSheet.create({
   },
   ListItem: {
     alignItems: 'center',
-    paddingRight: TYPOGRAPHY.ELEMENTS.ListItem.paddingRight,
-    marginBottom: TYPOGRAPHY.ELEMENTS.ListItem.marginBottom,
+    ...TYPOGRAPHY.ELEMENTS.ListItem,
   },
   LinksWidget: {
     marginVertical: TYPOGRAPHY.ELEMENTS.LinksWidget.marginVertical,
@@ -127,8 +115,7 @@ const ELEMENTS = StyleSheet.create({
     width: '100%',
     position: 'relative',
     backgroundColor: TYPOGRAPHY.COLOR.Default,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.BottomControl.paddingVertical,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.BottomControl.paddingHorizontal,
+    ...TYPOGRAPHY.ELEMENTS.BottomControl,
     ...TYPOGRAPHY.BOTTOM_CONTROL_SHADOW,
   },
   BottomControlButton: {
@@ -136,14 +123,10 @@ const ELEMENTS = StyleSheet.create({
   },
   PillLight: {
     alignItems: 'center',
+    ...TYPOGRAPHY.ELEMENTS.PillLight,
+    borderColor: TYPOGRAPHY.COLOR.BgColor,
     marginRight: TYPOGRAPHY.ELEMENTS.Pill.marginRight,
     borderRadius: TYPOGRAPHY.ELEMENTS.Pill.borderRadius,
-    paddingHorizontal: TYPOGRAPHY.ELEMENTS.PillLight.paddingHorizontal,
-    paddingVertical: TYPOGRAPHY.ELEMENTS.PillLight.paddingVertical,
-    borderColor: TYPOGRAPHY.COLOR.BgColor,
-    width: TYPOGRAPHY.ELEMENTS.PillLight.width,
-    maxWidth: TYPOGRAPHY.ELEMENTS.PillLight.maxWidth,
-    borderWidth: TYPOGRAPHY.ELEMENTS.PillLight.borderWidth,
   },
   CartItem: {
     marginBottom: TYPOGRAPHY.ELEMENTS.CartItem.marginBottom,
@@ -262,15 +245,11 @@ const TEXT = StyleSheet.create({
 const TEXT_INPUT = {
   Style: StyleSheet.create({
     Default: {
+      ...TYPOGRAPHY.FONT.input,
       color: TYPOGRAPHY.COLOR.DefaultSelected,
-      height: TYPOGRAPHY.FONT.input.height,
-      borderRadius: TYPOGRAPHY.FONT.input.borderRadius,
       backgroundColor: TYPOGRAPHY.COLOR.BgColor,
       fontFamily: TYPOGRAPHY.FONT.Primary,
       borderColor: TYPOGRAPHY.COLOR.Border,
-      fontSize: TYPOGRAPHY.FONT.input.fontSize,
-      borderWidth: TYPOGRAPHY.FONT.input.borderWidth,
-      paddingHorizontal: TYPOGRAPHY.FONT.input.paddingHorizontal,
     },
     Bold: {
       color: TYPOGRAPHY.COLOR.Primary,
