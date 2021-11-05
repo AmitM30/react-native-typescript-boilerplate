@@ -45,13 +45,14 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
   - Side Menu support
 - State Management using Flux Architecture
   - [Redux](https://redux.js.org/introduction/getting-started)
-  - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware
-- Widgets / Elements
-  Build your own design system with these building blocks.
-  - **elements**: `<BUTTON_DEFAULT>` or `<CText>`. They are custom elements that have default properties like font, size and so on.
-  - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
-- Typography
-  - Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
+  - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware - side-effect handling
+- Atomic Design pattern
+  The structure of the app is inspired by [atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/).
+  - Widgets / Elements
+    Build your own design system with these building blocks.
+    - **Typography**: Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
+    - **elements**: `<BUTTON_DEFAULT>` or `<CTEXT>`. They are custom elements that have default properties like font, size and so on.
+    - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
 - Type Definitions
   - Type definitons for actions, reducers, store, components and more.
 - Code Lint
@@ -85,8 +86,8 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 
 ```
 /
-├── android					    Android Native code
-├── ios						    iOS Native Code
+├── android						Android Native code
+├── ios							iOS Native Code
 ├── shared
 │   ├── redux					Applications Logic
 │   │   ├── constants
@@ -107,7 +108,7 @@ Jumpstart building robust apps using React Native and TypeScript with most commo
 │   ├── constants				Screen names and ids, Localization
 │   ├── navigators				Router, Navigation
 │   ├── view					UI compoments
-│   │   ├── elements			Custom elements
+│   │   ├── elements				Custom elements
 │   │   ├── assets
 │   │   ├── screens
 │   │   ├── styles				Typography

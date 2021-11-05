@@ -14,6 +14,10 @@ const COLOR = {
 
 const FONT = {
   Primary: 'Helvetica',
+  h1: {
+    fontSize: 24,
+    marginBottom: 10,
+  },
   input: {
     height: 36,
     fontSize: 14,

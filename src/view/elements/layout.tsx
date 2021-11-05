@@ -1,11 +1,9 @@
 import * as React from 'react';
 import {
-  FlatList, ListRenderItem, Pressable, StyleProp, View, ViewStyle,
+  FlatList, ListRenderItem, Pressable, StyleProp, ViewStyle,
 } from 'react-native';
 
-import { CTEXT } from './custom';
 import { GLOBAL } from '../styles/global';
-import locale from '../../constants/locale';
 
 type Callback = () => any;
 interface Props {
@@ -16,7 +14,6 @@ interface Props {
 
 interface CarouselProps {
   data: any[];
-  title?: string;
   item: ListRenderItem<React.ReactElement>;
 }
 
@@ -26,16 +23,13 @@ const Card: React.FC<Props> = (props: Props) => (
   </Pressable>
 );
 
-const Carousel: React.FC<CarouselProps> = ({ title, data, item }: CarouselProps) => (
-  <View>
-    <FlatList
-      ListHeaderComponent={() => <CTEXT>{title || locale.Categories}</CTEXT>}
-      keyExtractor={(_, index) => `flatlist-${index}-${Math.floor(Math.random() * 100)}`}
-      data={data}
-      renderItem={item}
-      horizontal={true}
-    />
-  </View>
+const Carousel: React.FC<CarouselProps> = ({ data, item }: CarouselProps) => (
+  <FlatList
+    keyExtractor={(_, index) => `flatlist-${index}-${Math.floor(Math.random() * 100)}`}
+    data={data}
+    renderItem={item}
+    horizontal={true}
+  />
 );
 
 export { Card, Carousel };

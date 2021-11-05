@@ -10,6 +10,7 @@ import { BUTTON_DEFAULT } from '../elements/buttons';
 
 interface Props {
   componentId: string;
+  title?: string;
 }
 
 const data = [
@@ -23,7 +24,7 @@ const data = [
   { title: 'Devices' },
 ];
 
-const Category: React.FC<Props> = ({ componentId }: Props) => {
+const Category: React.FC<Props> = ({ componentId, title }: Props) => {
 
   const renderItem = ({ item }: any) => {
     return (
@@ -43,9 +44,10 @@ const Category: React.FC<Props> = ({ componentId }: Props) => {
 
   return (
     <Card>
-      <Carousel title={locale.Categories} data={data} item={renderItem} />
+      {title && <CTEXT style={GLOBAL.FONTS.h1}>{title}</CTEXT>}
+      <Carousel data={data} item={renderItem} />
     </Card>
   );
 };
 
-export default Category;
+export { Category };
