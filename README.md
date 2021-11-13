@@ -6,7 +6,7 @@ This branch is specifically for the **Newline** course that I have written on de
 
 [The newline Guide to React Native for JavaScript Developers using TypeScript](https://www.newline.co/courses/the-newline-guide-to-react-native-for-javascript-developers)
 
-> To know more about this template, go to the [master](../) branch.
+> To learn more about the template and code structure, go to the [master](../../) branch.
 ___
 
 #### The eCommerce App - From the course

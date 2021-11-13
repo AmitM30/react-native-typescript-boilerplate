@@ -5,20 +5,16 @@
  */
 import { Navigation } from 'react-native-navigation';
 
-import { ACTION_BUTTONS, SCREENS } from '../constants/screen';
-import { TYPOGRAPHY } from '../view/styles/typography';
 import { STATUS_BAR_OPTIONS } from './navigation';
-
-interface Screen {
-  componentId: string;
-  passProps?: object;
-}
+import { TYPOGRAPHY } from '../view/styles/typography';
+import { ACTION_BUTTONS, SCREENS } from '../constants/screen';
+import { INavigation } from '../../shared/redux/types/INavigation';
 
 /**
  * Router method to show a screen by pushing on top of current stack
  * @param {object} params i.e {componentId is compulsory, passProps is optional},
  */
-const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
+const showPushScreen = ({ componentId, passProps = {} }: INavigation) => {
   Navigation.push(componentId, {
     component: {
       name: SCREENS.Dummy,
@@ -57,7 +53,7 @@ const showPushScreen = ({ componentId, passProps = {} }: Screen) => {
  * Router method to show a screen by pushing on top of current stack
  * @param {object} params i.e {componentId is compulsory, passProps is optional},
  */
-const push = ({ componentId, passProps = {} }: Screen, id: string, title?: string) => {
+const push = ({ componentId, passProps = {} }: INavigation, id: string, title?: string) => {
   Navigation.push(componentId, {
     component: {
       name: id,
@@ -78,11 +74,11 @@ const push = ({ componentId, passProps = {} }: Screen, id: string, title?: strin
   });
 };
 
-const showListingsScreen = ({ componentId, passProps = {} }: Screen, title?: string) => {
+const showListingsScreen = ({ componentId, passProps = {} }: INavigation, title?: string) => {
   push({ componentId, passProps }, SCREENS.Listings, title);
 };
 
-const showDetailsScreen = ({ componentId, passProps = {} }: Screen, title?: string) =>
+const showDetailsScreen = ({ componentId, passProps = {} }: INavigation, title?: string) =>
   Navigation.push(componentId, {
     component: {
       name: SCREENS.Details,
@@ -92,7 +88,7 @@ const showDetailsScreen = ({ componentId, passProps = {} }: Screen, title?: stri
     },
   });
 
-const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
+const showCartScreen = ({ componentId, passProps = {} }: INavigation) => {
   Navigation.mergeOptions(componentId, {
     bottomTabs: {
       currentTabIndex: 2,
@@ -100,7 +96,7 @@ const showCartScreen = ({ componentId, passProps = {} }: Screen) => {
   });
 };
 
-const showSearchScreen = ({ componentId, passProps = {} }: Screen) => {
+const showSearchScreen = ({ componentId, passProps = {} }: INavigation) => {
   Navigation.mergeOptions(componentId, {
     bottomTabs: {
       currentTabIndex: 1,
@@ -118,7 +114,7 @@ const showDrawer = () => {
   });
 };
 
-const popToScreen = (componentId: string) => {
+const popToScreen = ({ componentId }: INavigation) => {
   Navigation.popTo(componentId);
 };
 
@@ -143,13 +139,13 @@ const showModal = (name: string, id?: string) => {
   });
 };
 
-const dismissModal = (componentId: string) => {
+const dismissModal = ({ componentId }: INavigation) => {
   Navigation.dismissModal(componentId);
 };
 
-const pop = ({ componentId }: Screen) => Navigation.pop(componentId);
+const pop = ({ componentId }: INavigation) => Navigation.pop(componentId);
 
-const popToRoot = ({ componentId }: Screen) => Navigation.popToRoot(componentId);
+const popToRoot = ({ componentId }: INavigation) => Navigation.popToRoot(componentId);
 
 const ROUTER = {
   showPushScreen,
