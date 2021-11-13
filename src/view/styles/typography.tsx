@@ -190,7 +190,6 @@ const ELEMENTS = {
   Stepper: {
     height: 32,
     width: 100,
-    borderWidth: 1,
     borderRadius: 5,
   },
   CartItem: {
