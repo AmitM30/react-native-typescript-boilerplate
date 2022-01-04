@@ -10,13 +10,17 @@
 
 <div align="center">
 
-![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) ![Code Size](https://img.shields.io/github/languages/code-size/amitm30/react-native-typescript-boilerplate.svg) ![Releases](https://img.shields.io/github/v/release/amitm30/react-native-typescript-boilerplate.svg?style=flat)
+![Travis](https://api.travis-ci.com/AmitM30/react-native-typescript-boilerplate.svg?branch=master) [![Code Climate](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/AmitM30/react-native-typescript-boilerplate) ![iOS and Android](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=flat) ![License](https://img.shields.io/github/license/AmitM30/react-native-typescript-boilerplate.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) ![Code Size](https://img.shields.io/github/languages/code-size/amitm30/react-native-typescript-boilerplate.svg) ![Releases](https://img.shields.io/github/v/release/amitm30/react-native-typescript-boilerplate.svg?style=flat)
 
 </div>
 
 #### An opinionated [React Native](https://facebook.github.io/react-native/docs/getting-started) Starter Kit with [React Native Navigation](https://github.com/wix/react-native-navigation) + [Redux](https://github.com/reactjs/redux) + [Airbnb TSLint](https://github.com/airbnb/javascript) to build iOS and Android apps using [TypeScript](https://github.com/Microsoft/TypeScript-React-Native-Starter)
 
 The project has been setup based off [RN Getting Started](https://facebook.github.io/react-native/docs/getting-started) and instructions from [Microsoft's Github TypeScript React Native Starter](https://github.com/Microsoft/TypeScript-React-Native-Starter) repo.
+
+<p align="center">
+  <img alt="React Native Typescript Boilerplate" src="./src/view/assets/images/sample/gif_compressed.gif" height="800px" />
+</p>
 
 ___
 
@@ -40,24 +44,30 @@ Update (Nov 2021):
 
 Jumpstart building robust apps using React Native and TypeScript with most commoly needed tools already setup. Just `yarn install` and get going from respective IDEs.
 
-- Routing and Navigation
-  - Tabbed navigation using [React Native Navigation v7](https://github.com/wix/react-native-navigation)
-  - Side Menu support
-- State Management using Flux Architecture
+- **Routing and Navigation**
+  - **Native** Tabbed navigation using [React Native Navigation v7](https://github.com/wix/react-native-navigation)
+  - Side / Drawer Menu support
+- State Management using **Flux Architecture**
   - [Redux](https://redux.js.org/introduction/getting-started)
   - [Redux-Thunk](https://github.com/reduxjs/redux-thunk) middleware - side-effect handling
-- Atomic Design pattern
+- **Atomic Design pattern**
   - The structure of the app is inspired by [atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/).
-  - Widgets / Elements: Build your own design system with these building blocks.
+  - Widgets / Elements: Build your own **Design Language System** with these building blocks.
     - **Typography**: Base Typography setup - Color, Font, LAYOUT, CTA, FONTS, TEXT, TEXT_INPUT
     - **elements**: `<BUTTON_DEFAULT>` or `<CTEXT>`. They are custom elements that have default properties like font, size and so on.
+    ```typescript
+    <CTEXT style={GLOBAL.CTA.Style.primaryText}>{title}</CTEXT>
+    ```
     - **widgets**: Any component providing a complete functionality. E.g. carousels component, banner component, etc.
-- Type Definitions
+    ```typescript
+    <Category componentId={componentId} title={locale.Categories} />
+    ```
+- **Type Definitions**
   - Type definitons for actions, reducers, store, components and more.
-- Code Lint
+- **Built-in Splash screen**
+- **Hermes** and **Flipper** integrations
+- **Code Lint**
   - [Airbnb's JS](https://github.com/airbnb/javascript) Linting
-
-> _Disclaimer_: This is an **opinionated** approach to building apps with RN. The project structure is inspired by multiple production apps built by the contributors.
 
 ##### App Screens
 
