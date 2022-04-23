@@ -8,23 +8,29 @@ import { ProductResponse } from '../redux/types/search/IProductResponse';
 
 export const SearchService = {
   fetch: (searchTerm: string): Promise<SearchResponse> => {
-    return API.get(
-      Config.APIs.endpoints.search + encodeURI(searchTerm),
-      { api_key: Config.APIs.api_key }
-    ).then((res) => res.json())
-    .catch((err) => {
-      console.log('>>> err:', err);
-      return Promise.resolve({ error: err });
+    // return API.get(
+    //   Config.APIs.endpoints.search + encodeURI(searchTerm),
+    //   { api_key: Config.APIs.api_key }
+    // ).then((res) => res.json())
+    // .catch((err) => {
+    //   console.log('>>> err:', err);
+    //   return Promise.resolve({ error: err });
+    // });
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(searchResult), 1000);
     });
   },
   product: (productId: string): Promise<ProductResponse> => {
-    return API.get(
-      Config.APIs.endpoints.product + encodeURI(productId),
-      { api_key: Config.APIs.api_key }
-    ).then((res) => res.json())
-    .catch((err) => {
-      console.log('>>> err:', err);
-      return Promise.resolve({ error: err });
-    });
+    // return API.get(
+    //   Config.APIs.endpoints.product + encodeURI(productId),
+    //   { api_key: Config.APIs.api_key }
+    // ).then((res) => res.json())
+    // .catch((err) => {
+    //   console.log('>>> err:', err);
+    //   return Promise.resolve({ error: err });
+    // });
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(productResult), 1000);
+    })
   }
 };
