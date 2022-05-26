@@ -40,6 +40,10 @@ Update (Nov 2021):
 |  Nov '19 | 2.26.2 | 0.59.10 |  | Maintenance |
 |  Mar '19 | 2.13.1 | 0.58.6 | 16.8.4 |
 
+## Sponsor
+
+I will keep supporting the projects that I have open sourced. If you have used any of my projects, for yourself or your business, I'd love your support through Github [sponsors](https://github.com/sponsors/AmitM30). You can also try to convince your employer to sponsor as a business.
+
 ## Introduction
 
 Jumpstart building robust apps using React Native and TypeScript with most commoly needed tools already setup. Just `yarn install` and get going from respective IDEs.
